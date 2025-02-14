@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Brain, Cpu, Globe, Zap } from "lucide-react"
 import Countdown from "@/components/Countdown"
-import QuotesCarousel from "@/components/QuotesCarousel"
+import QuotesCarousel from "@/components/ui/QuotesCarousel"
 
 export default function Home() {
   return (
