@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Brain, Cpu, Globe, Zap } from "lucide-react"
 import Countdown from "@/components/Countdown"
+import QuotesCarousel from "@/components/QuotesCarousel"
 
 export default function Home() {
   return (
@@ -42,6 +43,14 @@ export default function Home() {
                 Get Involved
               </Button>
             </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 bg-gray-900">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
+              Perspectives on Superintelligence
+            </h2>
+            <QuotesCarousel />
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
