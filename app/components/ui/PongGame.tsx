@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Button } from './button'
+import { Button } from '@/components/ui/button'
 
 const PADDLE_HEIGHT = 100
 const PADDLE_WIDTH = 10
