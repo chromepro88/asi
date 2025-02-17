@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Brain, Cpu, Globe, Zap } from "lucide-react"
 import Countdown from "@/components/Countdown"
 import QuotesCarousel from "@/components/ui/QuotesCarousel"
+import PongGame from "@/components/ui/PongGame"
 
 export default function Home() {
   return (
@@ -51,6 +52,18 @@ export default function Home() {
               Perspectives on Superintelligence
             </h2>
             <QuotesCarousel />
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 bg-gray-900">
+          <div className="container px-4 md:px-6">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold tracking-tighter mb-4">Take a Break with Pong</h2>
+              <p className="text-gray-400 max-w-[600px] mx-auto">
+                While waiting for superintelligence, challenge our simple AI to a game of Pong. 
+                Move your mouse up and down to control the left paddle.
+              </p>
+            </div>
+            <PongGame />
           </div>
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
