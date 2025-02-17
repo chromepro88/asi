@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true,
-  },
+    typedRoutes: true
+  }
 }
 
 module.exports = nextConfig 
