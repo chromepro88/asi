@@ -14,7 +14,7 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-14 flex items-center justify-center">
         <div className="container flex items-center justify-between">
           <Link className="flex items-center justify-center" href="#">
-            <Image src="logo.png" alt="Logo" width={40} height={40} className="h-6 w-6" />
+            <Image src="logo 4.png" alt="Logo" width={40} height={40} className="h-6 w-6" />
             <span className="ml-2 font-bold text-xl">AI Super</span>
           </Link>
           <nav className="flex gap-4 sm:gap-6">
