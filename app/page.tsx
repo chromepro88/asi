@@ -15,7 +15,6 @@ export default function Home() {
         <div className="container flex items-center justify-between">
           <Link className="flex items-center justify-center" href="#">
             <Image src="logo 4.png" alt="Logo" width={40} height={40} className="h-6 w-6" />
-            <span className="ml-2 font-bold text-xl">AI Super</span>
           </Link>
           <nav className="flex gap-4 sm:gap-6">
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
@@ -35,7 +34,7 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   AI Landline
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">ASI | AI Customer Support</p>
+                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">Limited Offer @ $99 / Month</p>
               </div>
               <div className="space-x-4">
                 <Button className="bg-[#062e86] text-white hover:bg-[#0842c2]" asChild>
