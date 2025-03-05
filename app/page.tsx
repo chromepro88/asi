@@ -1,156 +1,157 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Brain, Cpu, Globe, Zap } from "lucide-react"
-import Countdown from "@/components/Countdown"
-import QuotesCarousel from "@/components/ui/QuotesCarousel"
-import PongGame from "@/components/ui/PongGame"
+import { Phone, MessageSquare, Settings, Download, HeadphonesIcon } from "lucide-react"
+import { MailchimpForm } from "@/components/MailchimpForm"
+import { SmoothScroll } from "@/components/SmoothScroll"
+import { WhatsAppButton } from "@/components/WhatsAppButton"
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      <header className="px-4 lg:px-6 h-14 flex items-center border-b border-gray-800">
-        <Link className="flex items-center justify-center" href="#">
-          <Cpu className="h-6 w-6 text-blue-400" />
-          <span className="ml-2 font-bold">AI Advent</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:text-blue-400" href="#">
-            About
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+      <WhatsAppButton />
+      <SmoothScroll />
+      <header className="px-4 lg:px-6 h-14 flex items-center justify-center">
+        <div className="container flex items-center justify-between">
+          <Link className="flex items-center justify-center" href="#">
+            <Phone className="h-6 w-6 text-[#062e86]" />
+            <span className="ml-2 font-bold text-xl">AI Landline</span>
           </Link>
-          <Link className="text-sm font-medium hover:text-blue-400" href="#">
-            Updates
-          </Link>
-          <Link className="text-sm font-medium hover:text-blue-400" href="#">
-            Contact
-          </Link>
-        </nav>
+          <nav className="flex gap-4 sm:gap-6">
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
+              Features
+            </Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="#how-it-works">
+              How It Works
+            </Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="#try-it-now">
+              Try It Now
+            </Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="/video">
+              Videos
+            </Link>
+          </nav>
+        </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex items-center justify-center">
-          <div className="container px-4 md:px-6 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4">
-              Countdown to Superintelligence
-            </h1>
-            <p className="mx-auto max-w-[700px] text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl mb-8">
-              The dawn of a new era approaches on July 14, 2025. Are you ready?
-            </p>
-            <Countdown />
-            <div className="mt-8 space-y-2 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
-              <Button variant="outline" className="bg-blue-500 text-white hover:bg-blue-600">
-                Learn More
-              </Button>
-              <Button variant="outline" className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
-                Get Involved
-              </Button>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 bg-gray-900">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
-              Perspectives on Superintelligence
-            </h2>
-            <QuotesCarousel />
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 bg-gray-900">
-          <div className="container px-4 md:px-6">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold tracking-tighter mb-4">Take a Break with Pong</h2>
-              <p className="text-gray-400 max-w-[600px] mx-auto">
-                While waiting for superintelligence, challenge our simple AI to a game of Pong. 
-                Move your mouse up and down to control the left paddle.
-              </p>
-            </div>
-            <PongGame />
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <Brain className="h-12 w-12 text-blue-400" />
-                <h2 className="text-2xl font-bold">Cognitive Leap</h2>
-                <p className="text-gray-400">
-                  Prepare for intelligence that surpasses human capabilities across all domains.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <Globe className="h-12 w-12 text-blue-400" />
-                <h2 className="text-2xl font-bold">Global Impact</h2>
-                <p className="text-gray-400">Anticipate AI-driven solutions to the world's most pressing challenges.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <Zap className="h-12 w-12 text-blue-400" />
-                <h2 className="text-2xl font-bold">Rapid Advancement</h2>
-                <p className="text-gray-400">Witness exponential growth in technology and scientific discoveries.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-20 items-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Preparing for Tomorrow</h2>
-                <p className="text-gray-400">
-                  As we count down to the advent of artificial superintelligence, it's crucial to consider the
-                  implications and prepare ourselves. This transformative technology will reshape our world in ways
-                  we're only beginning to imagine.
-                </p>
-                <Button className="bg-blue-500 text-white hover:bg-blue-600">Join the Discussion</Button>
-              </div>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Futuristic AI Visualization"
-                  className="rounded-lg object-cover"
-                  width={400}
-                  height={400}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Stay Informed</h2>
-                <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Don't miss a moment in the countdown to superintelligence. Subscribe for regular updates.
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  AI Landline
+                </h1>
+                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">ASI | AI Customized Support</p>
+              </div>
+              <div className="space-x-4">
+                <Button className="bg-[#062e86] text-white hover:bg-[#0842c2]" asChild>
+                  <Link href="#try-it-now">Try It Now</Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="border-[#062e86] text-[#062e86] hover:bg-[#062e86] hover:text-white"
+                  asChild
+                >
+                  <Link href="#try-it-now">Learn More</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+          <div className="container px-4 md:px-6 mx-auto">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Features</h2>
+            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <Phone className="h-12 w-12 text-[#062e86]" />
+                <h3 className="text-2xl font-bold">Automated Response</h3>
+                <p className="text-gray-300">Efficient and accurate automated responses for common inquiries.</p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <MessageSquare className="h-12 w-12 text-[#062e86]" />
+                <h3 className="text-2xl font-bold">Customizable FAQ</h3>
+                <p className="text-gray-300">Tailor your FAQ to address specific customer needs and queries.</p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <Settings className="h-12 w-12 text-[#062e86]" />
+                <h3 className="text-2xl font-bold">Personalized Chat</h3>
+                <p className="text-gray-300">
+                  Engage in personalized conversations with AI-powered chat functionality.
                 </p>
               </div>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex space-x-2">
-                  <input
-                    className="flex h-10 w-full rounded-md border border-gray-700 bg-gray-900 px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-white"
-                    placeholder="Enter your email"
-                    type="email"
-                  />
-                  <Button type="submit" className="bg-blue-500 text-white hover:bg-blue-600">
-                    Subscribe
-                  </Button>
-                </form>
-                <p className="text-xs text-gray-400">
-                  By subscribing, you agree to our Terms & Conditions and Privacy Policy.
-                </p>
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <Phone className="h-12 w-12 text-[#062e86]" />
+                <h3 className="text-2xl font-bold">Free On-site Installation</h3>
+                <p className="text-gray-300">Expert installation service provided at no additional cost.</p>
               </div>
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <Download className="h-12 w-12 text-[#062e86]" />
+                <h3 className="text-2xl font-bold">Regular Software Updates</h3>
+                <p className="text-gray-300">Stay up-to-date with the latest features and improvements.</p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 text-center">
+                <HeadphonesIcon className="h-12 w-12 text-[#062e86]" />
+                <h3 className="text-2xl font-bold">24/7 Customer Support</h3>
+                <p className="text-gray-300">Round-the-clock assistance for any inquiries or issues.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6 mx-auto">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
+              How It Works
+            </h2>
+            <div className="grid gap-10 lg:grid-cols-3 items-center justify-items-center">
+              <div className="space-y-4 text-center">
+                <h3 className="text-2xl font-bold">1. Install</h3>
+                <p className="text-gray-300">Our team provides free on-site installation of AI Landline.</p>
+              </div>
+              <div className="space-y-4 text-center">
+                <h3 className="text-2xl font-bold">2. Customize</h3>
+                <p className="text-gray-300">Set up your personalized FAQ and chat preferences.</p>
+              </div>
+              <div className="space-y-4 text-center">
+                <h3 className="text-2xl font-bold">3. Communicate</h3>
+                <p className="text-gray-300">Start using AI-powered communication for your business needs.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="try-it-now" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Try It Now</h2>
+              <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Experience the future of communication with AI Landline!
+              </p>
+              <MailchimpForm />
+              <p className="text-sm text-gray-400">
+                We'll only use your email or phone number to contact you about AI Landline.
+              </p>
             </div>
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-800">
-        <p className="text-xs text-gray-400">© 2025 AI Advent Initiative. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4 text-gray-400 hover:text-white" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4 text-gray-400 hover:text-white" href="#">
-            Privacy
-          </Link>
-        </nav>
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700">
+        <div className="container flex flex-col items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-4">
+            <p className="text-xs text-gray-400">© 2023 AI Landline. All rights reserved.</p>
+            <nav className="flex gap-4 sm:gap-6 mt-2 sm:mt-0">
+              <Link className="text-xs hover:underline underline-offset-4 text-gray-400" href="#">
+                Terms of Service
+              </Link>
+              <Link className="text-xs hover:underline underline-offset-4 text-gray-400" href="#">
+                Privacy
+              </Link>
+            </nav>
+          </div>
+          <div className="text-center text-xs text-gray-400 space-y-1">
+            <p>AI SUPER PRIVATE LIMITED</p>
+            <p>Registration No: 202508712N</p>
+            <p>540 SIMS AVENUE, #03-05, SIMS AVENUE CENTRE, SINGAPORE 387603</p>
+            <p>Phone: +65 8837 9368</p>
+          </div>
+        </div>
       </footer>
     </div>
   )
