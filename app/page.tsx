@@ -129,7 +129,7 @@ export default function Home() {
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700">
         <div className="container flex flex-col items-center justify-between">
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-4">
-            <p className="text-xs text-gray-400">© 2023 AI Landline. All rights reserved.</p>
+            <p className="text-xs text-gray-400">© 2025 AI Super Private Limited. All rights reserved.</p>
             <nav className="flex gap-4 sm:gap-6 mt-2 sm:mt-0">
               <Link className="text-xs hover:underline underline-offset-4 text-gray-400" href="#">
                 Terms of Service
