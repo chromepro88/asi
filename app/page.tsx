@@ -40,7 +40,7 @@ export default function Home() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   AI Landline
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">ASI | AI Customized Support</p>
+                <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">ASI | AI Customer Support</p>
               </div>
               <div className="space-x-4">
                 <Button className="bg-[#062e86] text-white hover:bg-[#0842c2]" asChild>
