@@ -77,12 +77,8 @@ export function MailchimpForm() {
       >
         {status === "loading" ? "Submitting..." : "Get Started"}
       </Button>
-      {status === "success" && <p className="text-green-400">Thank you for subscribing to RetroVoice!</p>}
+      {status === "success" && <p className="text-green-400">Thank you for subscribing to ASI!</p>}
       {status === "error" && <p className="text-red-400">{errorMessage}</p>}
-
-      <p className="text-sm text-gray-400">
-        We'll only use your email or phone number to contact you about RetroVoice.
-      </p>
     </form>
   )
 }
