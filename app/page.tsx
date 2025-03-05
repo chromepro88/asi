@@ -13,18 +13,12 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-14 flex items-center justify-center">
         <div className="container flex items-center justify-between">
           <Link className="flex items-center justify-center" href="#">
-            <Phone className="h-6 w-6 text-[#062e86]" />
-            <span className="ml-2 font-bold text-xl">AI Landline</span>
+            <Image src="logo.png" alt="Logo" width={40} height={40} className="h-6 w-6" />
+            <span className="ml-2 font-bold text-xl">AI Super</span>
           </Link>
           <nav className="flex gap-4 sm:gap-6">
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
               Features
-            </Link>
-            <Link className="text-sm font-medium hover:underline underline-offset-4" href="#how-it-works">
-              How It Works
-            </Link>
-            <Link className="text-sm font-medium hover:underline underline-offset-4" href="#try-it-now">
-              Try It Now
             </Link>
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/video">
               Videos
