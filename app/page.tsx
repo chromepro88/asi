@@ -135,7 +135,7 @@ export default function Home() {
                 Privacy
               </Link>
               <Link className="text-xs hover:underline underline-offset-4 text-gray-400" href="https://www.instagram.com/aisupersg/" target="_blank" rel="noopener noreferrer">
-                <Image src="/path/to/Instagram_icon.webp" alt="Instagram" width={20} height={20} className="inline-block mr-1" />
+                <Image src="instagram_icon.webp" alt="Instagram" width={20} height={20} className="inline-block mr-1" />
                 Instagram
               </Link>
             </nav>
