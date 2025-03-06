@@ -14,7 +14,7 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-14 flex items-center justify-center">
         <div className="container flex items-center justify-between">
           <Link className="flex items-center justify-center" href="#">
-            <Image src="logo8.jpg" alt="Logo" width={120} height={120} className="h-12 w-12" />
+            <Image src="logo8.jpg" alt="Logo" width={120} height={120} className="h-12 w-12" /> 
           </Link>
           <nav className="flex gap-4 sm:gap-6">
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
