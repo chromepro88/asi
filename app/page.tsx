@@ -11,13 +11,14 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       <WhatsAppButton />
       <SmoothScroll />
-  
+
       <header className="px-4 lg:px-6 h-14 flex items-center justify-center">
         <div className="container flex items-center justify-between">
           <Link className="flex items-center justify-center" href="#">
             <Image src="logo_final5.png" alt="Logo" width={120} height={120} className="h-16 w-16" />
           </Link>
           <nav className="flex gap-4 sm:gap-6">
+            {/* When pressed, this link scrolls to the Features section (id="features") */}
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
               Features
             </Link>
@@ -27,7 +28,7 @@ export default function Home() {
           </nav>
         </div>
       </header>
-  
+
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
@@ -43,12 +44,12 @@ export default function Home() {
               <Button className="bg-[#062e86] text-white hover:bg-[#0842c2]" asChild>
                 <Link href="#try-it-now">Try It Now</Link>
               </Button>
-              {/* "Learn More" Button Removed */}
+              {/* "Learn More" button has been removed */}
             </div>
           </div>
         </div>
       </section>
-  
+
       {/* Features Section */}
       <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
         <div className="container px-4 md:px-6 mx-auto">
@@ -101,8 +102,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-  
-      {/* Try It Now Section with the Form */}
+
+      {/* Try It Now Section (scroll target for Try It Now button) */}
       <section id="try-it-now" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -119,7 +120,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-  
+
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700">
         <div className="container flex flex-col items-center justify-between">
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-4">
