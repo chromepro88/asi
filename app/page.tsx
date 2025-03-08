@@ -22,7 +22,7 @@ export default function Home() {
               Features
             </Link>
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/video">
-              Videos
+              Demo
             </Link>
           </nav>
         </div>
@@ -123,7 +123,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Try It Now
+              Schedule a Visit
             </h2>
             <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Experience the future of communication with AI Landline!
