@@ -18,7 +18,6 @@ export default function Home() {
             <Image src="logo_final5.png" alt="Logo" width={120} height={120} className="h-16 w-16" />
           </Link>
           <nav className="flex gap-4 sm:gap-6">
-            {/* When pressed, this link scrolls to the Features section (id="features") */}
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
               Features
             </Link>
@@ -44,7 +43,7 @@ export default function Home() {
               <Button className="bg-[#062e86] text-white hover:bg-[#0842c2]" asChild>
                 <Link href="#try-it-now">Try It Now</Link>
               </Button>
-              {/* "Learn More" button has been removed */}
+              {/* "Learn More" button removed */}
             </div>
           </div>
         </div>
@@ -100,6 +99,22 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section id="video-embed" className="w-full py-12 md:py-24 lg:py-32 bg-gray-700">
+        <div className="container px-4 md:px-6 mx-auto flex justify-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/P209gslKhM8?si=AYPG4y7TCqu90n7K"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 
