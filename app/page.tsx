@@ -40,13 +40,6 @@ export default function Home() {
               <Button className="bg-[#062e86] text-white hover:bg-[#0842c2]" asChild>
                 <Link href="#try-it-now">Try It Now</Link>
               </Button>
-              <Button
-                variant="outline"
-                className="border-[#062e86] text-[#062e86] hover:bg-[#062e86] hover:text-white"
-                asChild
-              >
-                <Link href="#try-it-now">Learn More</Link>
-              </Button>
             </div>
           </div>
         </div>
