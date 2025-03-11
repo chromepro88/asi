@@ -5,6 +5,7 @@ import { Phone, MessageSquare, Settings, Download, HeadphonesIcon } from "lucide
 import { MailchimpForm } from "@/components/MailchimpForm";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   return (
