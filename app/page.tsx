@@ -60,7 +60,7 @@ export default function Home() {
               <Phone className="h-12 w-12 text-[#062e86]" />
               <h3 className="text-2xl font-bold">Automated Response</h3>
               <p className="text-gray-300">
-                Efficient and accurate automated responses for common inquiries.
+                Get Whatsapp full transcript of call to your number.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -74,7 +74,7 @@ export default function Home() {
               <Settings className="h-12 w-12 text-[#062e86]" />
               <h3 className="text-2xl font-bold">Personalized Chat</h3>
               <p className="text-gray-300">
-                Engage in personalized conversations with AI-powered chat functionality.
+                Never miss a sale from missing their call.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-4 text-center">
