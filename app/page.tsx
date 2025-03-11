@@ -78,13 +78,6 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center space-y-4 text-center">
-              <Phone className="h-12 w-12 text-[#062e86]" />
-              <h3 className="text-2xl font-bold">Free On-site Installation</h3>
-              <p className="text-gray-300">
-                Expert installation service provided at no additional cost.
-              </p>
-            </div>
-            <div className="flex flex-col items-center space-y-4 text-center">
               <Download className="h-12 w-12 text-[#062e86]" />
               <h3 className="text-2xl font-bold">Regular Software Updates</h3>
               <p className="text-gray-300">
