@@ -77,17 +77,17 @@ export default function Home() {
                 Never miss a sale from missing their call.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center h-full">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center h-full w-full mx-auto px-4">
               <Download className="h-12 w-12 text-[#062e86]" />
               <h3 className="text-2xl font-bold">Regular Software Updates</h3>
-              <p className="text-gray-300">
+              <p className="text-gray-300 max-w-sm">
                 Stay up-to-date with the latest features and improvements.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center h-full">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center h-full w-full mx-auto px-4">
               <HeadphonesIcon className="h-12 w-12 text-[#062e86]" />
               <h3 className="text-2xl font-bold">24/7 Customer Support</h3>
-              <p className="text-gray-300">
+              <p className="text-gray-300 max-w-sm">
                 Round-the-clock assistance for any inquiries or issues.
               </p>
             </div>
