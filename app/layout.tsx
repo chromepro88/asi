@@ -16,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="logo.png" type="image/x-icon" />
-        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
