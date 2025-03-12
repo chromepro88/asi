@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,23 @@ import { Analytics } from "@vercel/analytics/react"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+      <Head>
+        <title>AI Landline</title>
+        <meta name="description" content="AI Customer Support" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16922868318');
+            `,
+          }}
+        />
+      </Head>
       <WhatsAppButton />
       <SmoothScroll />
 
