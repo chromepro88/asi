@@ -1,36 +1,43 @@
-import type { Metadata } from 'next'
-import Head from 'next/head'
-import './globals.css'
+import type { Metadata } from 'next';
+import Script from 'next/script'; // Import Script from next/script
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'ASI',
   description: 'AI Customer Support',
   generator: 'v0.dev',
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <>
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="logo.png" type="image/x-icon" />
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"></script>
-        <script>
+    <html lang="en">
+      <head>
+        {/* Metadata is handled automatically by Next.js from the metadata object */}
+        <link rel="icon" href="/logo.png" type="image/x-icon" />
+      </head>
+      <body>
+        {children}
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"
+          strategy="afterInteractive" // Load after the page is interactive
+        />
+        <Script
+          id="google-analytics" // Unique ID for the inline script
+          strategy="afterInteractive"
+        >
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-16922868318');
           `}
-        </script>
-      </Head>
-      <body>{children}</body>
-    </>
-  )
+        </Script>
+      </body>
+    </html>
+  );
 }
