@@ -68,6 +68,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* New Product Section */}
+      <section id="new-product" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              New Whatsapp Chatbot
+            </h2>
+            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+              <strong>NEW Whatsapp Chatbot</strong> for only $<strong>19/Month</strong>! Promo till End March‼️
+            </p>
+            <ul className="list-disc text-gray-300 text-left mx-auto max-w-[700px]">
+              <li>Unlimited SKU items</li>
+              <li>24/7 Chatbot response</li>
+              <li>Support all Whatsapp accounts</li>
+            </ul>
+            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+              𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲'𝘀 <strong>First AI Whatsapp Company</strong>
+            </p>
+            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+              At ASI, we empower thousands of businesses in Singapore by providing a convenient, industry-level & affordable solution to effectively convert customers.
+            </p>
+            <ul className="list-disc text-gray-300 text-left mx-auto max-w-[700px]">
+              <li>✅ 𝗨𝗻𝗯𝗲𝗮𝘁𝗮𝗯𝗹𝗲 𝗣𝗿𝗶𝗰𝗲𝘀 𝗶𝗻 𝗠𝗮𝗿𝗸𝗲𝘁</li>
+              <li>✅ <strong>24/7 Customer care</strong></li>
+              <li>✅ <strong>Customized Solution</strong></li>
+              <li>✅ <strong>Unlimited Capacity</strong></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
         <div className="container px-4 md:px-6 mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
