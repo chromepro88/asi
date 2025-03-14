@@ -99,51 +99,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
-        <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
-            Features
-          </h2>
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <Phone className="h-12 w-12 text-[#062e86]" />
-              <h3 className="text-2xl font-bold">Whatsapp Logging</h3>
-              <p className="text-gray-300">
-                Get Whatsapp full transcript of call to your number.
-              </p>
-            </div>
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <MessageSquare className="h-12 w-12 text-[#062e86]" />
-              <h3 className="text-2xl font-bold">Customizable FAQ</h3>
-              <p className="text-gray-300">
-                Tailor your FAQ to address specific customer needs and queries.
-              </p>
-            </div>
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <Settings className="h-12 w-12 text-[#062e86]" />
-              <h3 className="text-2xl font-bold">Message or Callback missed customers</h3>
-              <p className="text-gray-300">
-                Never miss a sale from missing their call.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center h-full w-full mx-auto px-4">
-              <Download className="h-12 w-12 text-[#062e86]" />
-              <h3 className="text-2xl font-bold">Regular Software Updates</h3>
-              <p className="text-gray-300 max-w-sm">
-                Stay up-to-date with the latest features and improvements.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center h-full w-full mx-auto px-4">
-              <HeadphonesIcon className="h-12 w-12 text-[#062e86]" />
-              <h3 className="text-2xl font-bold">24/7 Customer Support</h3>
-              <p className="text-gray-300 max-w-sm">
-                Round-the-clock assistance for any inquiries or issues.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Video Section */}
       <section id="video-embed" className="w-full py-12 md:py-24 lg:py-32 bg-gray-700">
         <div className="container px-4 md:px-6 mx-auto flex justify-center">
