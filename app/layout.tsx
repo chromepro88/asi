@@ -1,12 +1,36 @@
 import type { Metadata } from 'next';
-import Script from 'next/script'; // Import Script from next/script
+import Script from 'next/script';
+import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: 'ASI',
-  description: 'AI Customer Support',
+  title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
+  description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
   generator: 'v0.dev',
+  keywords: ['WhatsApp Chatbot', 'AI Customer Support', 'Singapore AI', 'AI Super', 'Business Automation'],
+  openGraph: {
+    title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
+    description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
+    url: 'https://asi.sg',
+    siteName: 'AI Super Private Limited',
+    images: [
+      {
+        url: '/logo8.jpg',
+        width: 120,
+        height: 120,
+        alt: 'AI Super Private Limited Logo',
+      },
+    ],
+    locale: 'en_SG',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
+    description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
+    images: ['/logo8.jpg'],
+  },
 };
 
 export default function RootLayout({
@@ -15,29 +39,37 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
-        {/* Metadata is handled automatically by Next.js from the metadata object */}
-        <link rel="icon" href="/logo.png" type="image/x-icon" />
+        <link rel="icon" href="/logo8.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/logo8.jpg" />
       </head>
       <body>
-        {children}
-        {/* Google Analytics Script */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"
-          strategy="afterInteractive" // Load after the page is interactive
-        />
-        <Script
-          id="google-analytics" // Unique ID for the inline script
-          strategy="afterInteractive"
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
         >
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16922868318');
-          `}
-        </Script>
+          {children}
+          <Analytics />
+          {/* Google Analytics Script */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
+          >
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-16922868318');
+            `}
+          </Script>
+        </ThemeProvider>
       </body>
     </html>
   );
