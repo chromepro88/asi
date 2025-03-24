@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'AI Super Private Limited',
     images: [
       {
-        url: 'logo8.jpg',
+        url: 'logo_final5.png',
         width: 120,
         height: 120,
         alt: 'AI Super Private Limited Logo',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
     description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
-    images: ['logo8.jpg'],
+    images: ['logo_final5.png'],
   },
 };
 
@@ -41,8 +41,8 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="logo8.jpg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="logo8.jpg" />
+        <link rel="icon" href="logo_final5.png" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="logo_final5.png" />
       </head>
       <body>
         <ThemeProvider

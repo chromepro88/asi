@@ -21,7 +21,7 @@ export const generateMetadata = (): Metadata => ({
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
-    images: [{ url: "logo8.jpg", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
+    images: [{ url: "logo_final5.png", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
     locale: "en_SG",
     type: "website",
   },
@@ -29,7 +29,7 @@ export const generateMetadata = (): Metadata => ({
     card: "summary_large_image",
     title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
-    images: ["logo8.jpg"],
+    images: ["logo_final5.png"],
   },
 });
 
@@ -43,7 +43,7 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-12 flex items-center justify-center">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
-            <Image src="logo8.jpg" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
+            <Image src="logo_final5.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
           </Link>
           <nav className="flex gap-3 sm:gap-5">
             <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">Features</Link>
