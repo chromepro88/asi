@@ -64,7 +64,9 @@ export default function Home() {
               AI-empowered WhatsApp Chatbot for Closing Sales
             </p>
             <Button className="btn-primary" asChild>
-              <Link href="#try-it-now">Try It Now</Link>
+              <Link href="https://buy.stripe.com/eVag2G23599m9TG7ss" target="_blank" rel="noopener noreferrer">
+                Try It Now
+              </Link>
             </Button>
           </div>
         </div>
@@ -115,7 +117,6 @@ export default function Home() {
             <Card className="card-bg">
               <CardHeader>
                 <div className="flex items-center space-x-2">
-                  <span className="text-lg font-bold text-gray-200">PropNex</span>
                   <Image src="/PropNex.png" alt="PropNex Logo" width={64} height={64} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
@@ -126,7 +127,6 @@ export default function Home() {
             <Card className="card-bg">
               <CardHeader>
                 <div className="flex items-center space-x-2">
-                  <span className="text-lg font-bold text-gray-200">OrangeTee</span>
                   <Image src="/OrangeTee.jpeg" alt="OrangeTee Logo" width={64} height={64} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
@@ -137,7 +137,6 @@ export default function Home() {
             <Card className="card-bg">
               <CardHeader>
                 <div className="flex items-center space-x-2">
-                  <span className="text-lg font-bold text-gray-200">Huttons</span>
                   <Image src="/Huttons.png" alt="Huttons Logo" width={64} height={64} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
@@ -167,7 +166,9 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Button className="w-full btn-primary" asChild>
-                  <Link href="#try-it-now">Get Started</Link>
+                  <Link href="https://buy.stripe.com/eVag2G23599m9TG7ss" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -182,7 +183,9 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Button className="w-full btn-primary" asChild>
-                  <Link href="#try-it-now">Get Started</Link>
+                  <Link href="https://buy.stripe.com/cN2eYC5fh0CQ0j6289" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -197,7 +200,9 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Button className="w-full btn-primary" asChild>
-                  <Link href="#try-it-now">Get Started</Link>
+                  <Link href="https://buy.stripe.com/9AQ17MazB2KY0j6fZ0" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -261,7 +266,7 @@ export default function Home() {
               <Link href="https://www.instagram.com/aisupersg/" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
                 <Instagram className="inline-block mr-1 h-4 w-4" /> Instagram
               </Link>
-              <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
+              <Link href="https://www.facebook.com/people/AI-Super-SG/61573691083537/" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
                 <Facebook className="inline-block mr-1 h-4 w-4" /> Facebook
               </Link>
             </nav>
