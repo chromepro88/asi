@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
+import { Instagram, Facebook } from "lucide-react";
 
 // Lazy load components
 const MailchimpForm = dynamic(() => import("@/components/MailchimpForm").then((mod) => mod.MailchimpForm), { ssr: false });
@@ -20,7 +21,7 @@ export const generateMetadata = (): Metadata => ({
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
-    images: [{ url: "/logo8.webp", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
+    images: [{ url: "logo8.jpg", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
     locale: "en_SG",
     type: "website",
   },
@@ -28,7 +29,7 @@ export const generateMetadata = (): Metadata => ({
     card: "summary_large_image",
     title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
-    images: ["/logo8.webp"],
+    images: ["logo8.jpg"],
   },
 });
 
@@ -42,7 +43,7 @@ export default function Home() {
       <header className="px-4 lg:px-6 h-12 flex items-center justify-center">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
-            <Image src="/logo8.webp" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
+            <Image src="logo8.jpg" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
           </Link>
           <nav className="flex gap-3 sm:gap-5">
             <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">Features</Link>
@@ -301,10 +302,10 @@ export default function Home() {
               <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">Terms</Link>
               <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">Privacy</Link>
               <Link href="https://www.instagram.com/aisupersg/" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
-                <Image src="/instagram.webp" alt="Instagram" width={20} height={20} className="inline-block mr-1" /> Instagram
+                <Instagram className="inline-block mr-1 h-4 w-4" /> Instagram
               </Link>
               <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
-                <Image src="/facebook.webp" alt="Facebook" width={20} height={20} className="inline-block mr-1" /> Facebook
+                <Facebook className="inline-block mr-1 h-4 w-4" /> Facebook
               </Link>
             </nav>
           </div>
