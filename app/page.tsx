@@ -1,6 +1,6 @@
-import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
@@ -11,39 +11,40 @@ import { Analytics } from "@vercel/analytics/react";
 const MailchimpForm = dynamic(() => import('@/components/MailchimpForm'), { ssr: false });
 const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false });
 
+// Define metadata for the homepage using generateMetadata
+export const generateMetadata = (): Metadata => {
+  return {
+    title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
+    description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
+    keywords: ['WhatsApp Chatbot', 'AI Customer Support', 'Singapore AI', 'AI Super', 'Business Automation'],
+    openGraph: {
+      title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
+      description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
+      url: 'https://asi.sg',
+      siteName: 'AI Super Private Limited',
+      images: [
+        {
+          url: '/logo8.jpg',
+          width: 120,
+          height: 120,
+          alt: 'AI Super Private Limited Logo',
+        },
+      ],
+      locale: 'en_SG',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
+      description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
+      images: ['/logo8.jpg'],
+    },
+  };
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      <Head>
-        <title>AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore</title>
-        <meta
-          name="description"
-          content="Boost your business with AI Super's WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month."
-        />
-        <meta
-          name="keywords"
-          content="WhatsApp Chatbot, AI Customer Support, Singapore AI, AI Super, Business Automation"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore" />
-        <meta
-          property="og:description"
-          content="Boost your business with AI Super's WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month."
-        />
-        <meta property="og:url" content="https://asi.sg" />
-        <meta property="og:image" content="/logo8.jpg" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16922868318"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16922868318');
-            `,
-          }}
-        />
-      </Head>
       <WhatsAppButton />
       <SmoothScroll />
 
