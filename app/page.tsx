@@ -33,6 +33,24 @@ export const generateMetadata = (): Metadata => ({
 });
 
 export default function Home() {
+  const handleShare = async () => {
+    const shareData = {
+      title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
+      text: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
+      url: "https://asi.sg",
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        console.error("Error sharing:", err);
+      }
+    } else {
+      alert("Sharing is not supported on this browser. Please copy the URL: https://asi.sg");
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       <WhatsAppButton />
@@ -233,7 +251,9 @@ export default function Home() {
           <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
             Invite a friend and get 5% off your next purchase—both of you!
           </p>
-          <Button className="btn-primary">Share Now</Button>
+          <Button className="btn-primary" onClick={handleShare}>
+            Share Now
+          </Button>
         </div>
       </section>
 
