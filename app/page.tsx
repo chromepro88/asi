@@ -9,7 +9,6 @@ import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
 
 // Lazy load components
-const MailchimpForm = dynamic(() => import("@/components/MailchimpForm").then((mod) => mod.MailchimpForm), { ssr: false });
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
 
 export const generateMetadata = (): Metadata => ({
@@ -96,9 +95,9 @@ export default function Home() {
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>24/7 Support</CardTitle>
+                <CardTitle>Supports WhatsApp Calls & Messages</CardTitle>
                 <CardDescription className="text-gray-200">
-                  Assistance anytime, day or night.
+                  Seamlessly handle calls and messages anytime.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -117,7 +116,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg font-bold text-gray-200">PropNex</span>
-                  <Image src="/PropNex.png" alt="PropNex Logo" width={24} height={24} className="rounded-full" />
+                  <Image src="/PropNex.png" alt="PropNex Logo" width={64} height={64} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
                   "Transformed our engagement and boosted sales."
@@ -128,7 +127,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg font-bold text-gray-200">OrangeTee</span>
-                  <Image src="/OrangeTee.jpeg" alt="OrangeTee Logo" width={24} height={24} className="rounded-full" />
+                  <Image src="/OrangeTee.jpeg" alt="OrangeTee Logo" width={64} height={64} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
                   "Cost-effective with excellent support!"
@@ -139,7 +138,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg font-bold text-gray-200">Huttons</span>
-                  <Image src="/Huttons.png" alt="Huttons Logo" width={24} height={24} className="rounded-full" />
+                  <Image src="/Huttons.png" alt="Huttons Logo" width={64} height={64} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
                   "24/7 response—a game-changer."
@@ -214,25 +213,11 @@ export default function Home() {
             height="560"
             src="https://www.youtube.com/embed/WQvXVIEp6o8"
             title="AI Super WhatsApp Chatbot Demo - YouTube Short"
-            frameBorder="0"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             loading="lazy"
           />
-        </div>
-      </section>
-
-      {/* Try It Now Section */}
-      <section id="try-it-now" className="w-full py-8 md:py-16 lg:py-20 bg-gray-800">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center space-y-3 text-center">
-            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">Schedule a Demo</h2>
-            <p className="max-w-[600px] text-gray-200 text-lg md:text-xl">
-              Experience the future of communication with our WhatsApp Chatbot!
-            </p>
-            <MailchimpForm />
-            <p className="text-sm text-gray-400">We’ll only contact you about our services.</p>
-          </div>
         </div>
       </section>
 
