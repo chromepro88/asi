@@ -29,7 +29,7 @@ export const generateMetadata = (): Metadata => {
       siteName: 'AI Super Private Limited',
       images: [
         {
-          url: '/logo8.jpg',
+          url: '/logo8.webp',
           width: 120,
           height: 120,
           alt: 'AI Super Private Limited Logo',
@@ -42,7 +42,7 @@ export const generateMetadata = (): Metadata => {
       card: 'summary_large_image',
       title: 'AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore',
       description: 'Boost your business with AI Super\'s WhatsApp Chatbot—24/7 customer support, automated responses, and affordable pricing starting at $19/month.',
-      images: ['/logo8.jpg'],
+      images: ['/logo8.webp'],
     },
   };
 };
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="container flex items-center justify-between">
           <Link className="flex items-center justify-center" href="/">
             <Image
-              src="/logo8.jpg"
+              src="/logo8.webp"
               alt="AI Super Private Limited Logo"
               width={120}
               height={120}
@@ -83,14 +83,14 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full section-spacing">
+      <section className="w-full py-16 md:py-32 lg:py-48 xl:py-64">
         <div className="container-padding">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
+              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">
                 The No.1 AI Chatbot in Singapore
               </h1>
-              <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
                 AI-empowered WhatsApp Chatbot for Closing Sales
               </p>
             </div>
@@ -110,21 +110,21 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               New WhatsApp Chatbot
             </h2>
-            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+            <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
               <strong>NEW WhatsApp Chatbot</strong> for only <strong>$19/Month</strong>! Promo till End March‼️
             </p>
-            <ul className="list-disc text-gray-300 text-left mx-auto max-w-[700px]">
+            <ul className="list-disc text-gray-200 text-left mx-auto max-w-[700px]">
               <li>Unlimited SKU items</li>
               <li>24/7 Chatbot response</li>
               <li>Support all WhatsApp accounts</li>
             </ul>
-            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+            <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
               𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲'𝘀 <strong>First AI WhatsApp Company</strong>
             </p>
-            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+            <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
               At ASI, we empower thousands of businesses in Singapore by providing a convenient, industry-level & affordable solution to effectively convert customers.
             </p>
-            <ul className="list-disc text-gray-300 text-left mx-auto max-w-[700px]">
+            <ul className="list-disc text-gray-200 text-left mx-auto max-w-[700px]">
               <li>✅ 𝗨𝗻𝗯𝗲𝗮𝘁𝗮𝗯𝗹𝗲 𝗣𝗿𝗶𝗰𝗲𝘀 𝗶𝗻 𝗠𝗮𝗿𝗸𝗲𝘁</li>
               <li>✅ <strong>24/7 Customer care</strong></li>
               <li>✅ <strong>Customized Solution</strong></li>
@@ -144,7 +144,7 @@ export default function Home() {
             <Card className="card-bg">
               <CardHeader>
                 <CardTitle>Free Installation</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardDescription className="text-gray-200">
                   Get started with zero setup costs—our team handles everything for you.
                 </CardDescription>
               </CardHeader>
@@ -152,7 +152,7 @@ export default function Home() {
             <Card className="card-bg">
               <CardHeader>
                 <CardTitle>Regular Software Updates</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardDescription className="text-gray-200">
                   Stay ahead with automatic updates to keep your chatbot running smoothly.
                 </CardDescription>
               </CardHeader>
@@ -160,7 +160,7 @@ export default function Home() {
             <Card className="card-bg">
               <CardHeader>
                 <CardTitle>24/7 Customer Support</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardDescription className="text-gray-200">
                   Our team is always here to assist you, day or night.
                 </CardDescription>
               </CardHeader>
@@ -178,24 +178,33 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>PropNex</CardTitle>
-                <CardDescription className="text-gray-300">
+                <div className="flex items-center space-x-2">
+                  <span className="text-lg font-bold text-gray-200">PropNex</span>
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                </div>
+                <CardDescription className="text-gray-200">
                   "The WhatsApp Chatbot from AI Super has transformed our customer engagement, saving us time and boosting sales."
                 </CardDescription>
               </CardHeader>
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>OrangeTee</CardTitle>
-                <CardDescription className="text-gray-300">
+                <div className="flex items-center space-x-2">
+                  <span className="text-lg font-bold text-gray-200">OrangeTee</span>
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                </div>
+                <CardDescription className="text-gray-200">
                   "A cost-effective solution with excellent support—highly recommend!"
                 </CardDescription>
               </CardHeader>
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>Huttons</CardTitle>
-                <CardDescription className="text-gray-300">
+                <div className="flex items-center space-x-2">
+                  <span className="text-lg font-bold text-gray-200">Huttons</span>
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
+                </div>
+                <CardDescription className="text-gray-200">
                   "The 24/7 chatbot response has been a game-changer for our business."
                 </CardDescription>
               </CardHeader>
@@ -217,11 +226,12 @@ export default function Home() {
                 <CardDescription>
                   <span className="text-2xl font-bold">$19</span>/month
                   <p className="text-red-400 line-through">$69/month</p>
+                  <p className="text-green-400">Save $50/month!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full btn-primary">
-                  Get Started
+                <Button className="w-full btn-primary" asChild>
+                  <Link href="#try-it-now">Get Started</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -231,11 +241,12 @@ export default function Home() {
                 <CardDescription>
                   <span className="text-2xl font-bold">$49</span>/3 months
                   <p className="text-red-400 line-through">$199/3 months</p>
+                  <p className="text-green-400">Save $150 over 3 months!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full btn-primary">
-                  Get Started
+                <Button className="w-full btn-primary" asChild>
+                  <Link href="#try-it-now">Get Started</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -245,11 +256,12 @@ export default function Home() {
                 <CardDescription>
                   <span className="text-2xl font-bold">$189</span>/12 months
                   <p className="text-red-400 line-through">$699/12 months</p>
+                  <p className="text-green-400">Save $510 over 12 months!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full btn-primary">
-                  Get Started
+                <Button className="w-full btn-primary" asChild>
+                  <Link href="#try-it-now">Get Started</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -267,6 +279,7 @@ export default function Home() {
             title="AI Super WhatsApp Chatbot Demo Video"
             frameBorder="0"
             allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
       </section>
@@ -278,7 +291,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Schedule a Demo
             </h2>
-            <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Experience the future of communication with AI Super's WhatsApp Chatbot!
             </p>
             <MailchimpForm />
@@ -295,7 +308,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
             Refer a Friend
           </h2>
-          <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl mb-6">
+          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl mb-6">
             Invite a friend to try our WhatsApp Chatbot and get 5% off your next purchase—both of you!
           </p>
           <Button className="btn-primary">
@@ -310,7 +323,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
             Get in Touch
           </h2>
-          <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl mb-6">
+          <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl mb-6">
             Have questions? Contact us today to learn more about our WhatsApp Chatbot solutions.
           </p>
           <div className="flex justify-center gap-4">
@@ -345,13 +358,28 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="instagram.png"
+                  src="/instagram.webp"
                   alt="Instagram Icon"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                   className="inline-block mr-1"
                 />
                 Instagram
+              </Link>
+              <Link
+                className="text-xs hover:underline underline-offset-4 text-gray-400"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/facebook.webp"
+                  alt="Facebook Icon"
+                  width={24}
+                  height={24}
+                  className="inline-block mr-1"
+                />
+                Facebook
               </Link>
             </nav>
           </div>
