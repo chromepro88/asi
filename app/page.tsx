@@ -71,35 +71,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* New Product Section */}
-      <section id="new-product" className="w-full py-8 md:py-16 lg:py-20 bg-gray-800">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center space-y-3 text-center">
-            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">New WhatsApp Chatbot</h2>
-            <p className="max-w-[600px] text-gray-200 text-lg md:text-xl">
-              <strong>NEW WhatsApp Chatbot</strong> for only <strong>$19/Month</strong>! Promo till End March‼️
-            </p>
-            <ul className="list-disc text-gray-200 text-left max-w-[600px]">
-              <li>Unlimited SKU items</li>
-              <li>24/7 Chatbot response</li>
-              <li>Support all WhatsApp accounts</li>
-            </ul>
-            <p className="max-w-[600px] text-gray-200 text-lg md:text-xl">
-              Singapore's <strong>First AI WhatsApp Company</strong>
-            </p>
-            <p className="max-w-[600px] text-gray-200 text-base md:text-lg">
-              At ASI, we empower businesses with a convenient, affordable solution to convert customers.
-            </p>
-            <ul className="list-disc text-gray-200 text-left max-w-[600px]">
-              <li>✅ Unbeatable Prices</li>
-              <li>✅ <strong>24/7 Customer Care</strong></li>
-              <li>✅ <strong>Customized Solutions</strong></li>
-              <li>✅ <strong>Unlimited Capacity</strong></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-900">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
@@ -146,7 +117,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg font-bold text-gray-200">PropNex</span>
-                  <div className="w-6 h-6 bg-gray-500 rounded-full" />
+                  <Image src="/PropNex.png" alt="PropNex Logo" width={24} height={24} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
                   "Transformed our engagement and boosted sales."
@@ -157,7 +128,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg font-bold text-gray-200">OrangeTee</span>
-                  <div className="w-6 h-6 bg-gray-500 rounded-full" />
+                  <Image src="/OrangeTee.jpeg" alt="OrangeTee Logo" width={24} height={24} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
                   "Cost-effective with excellent support!"
@@ -168,7 +139,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg font-bold text-gray-200">Huttons</span>
-                  <div className="w-6 h-6 bg-gray-500 rounded-full" />
+                  <Image src="/Huttons.png" alt="Huttons Logo" width={24} height={24} className="rounded-full" />
                 </div>
                 <CardDescription className="text-gray-200">
                   "24/7 response—a game-changer."
@@ -239,11 +210,12 @@ export default function Home() {
       <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex justify-center">
           <iframe
-            width="560"
-            height="315"
-            src="https://www.instagram.com/reel/DHOj_V9TX2f/embed"
-            title="AI Super WhatsApp Chatbot Demo"
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/WQvXVIEp6o8"
+            title="AI Super WhatsApp Chatbot Demo - YouTube Short"
             frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             loading="lazy"
           />
@@ -268,7 +240,7 @@ export default function Home() {
       <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-800">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3">Refer a Friend</h2>
-          <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4">
+          <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
             Invite a friend and get 5% off your next purchase—both of you!
           </p>
           <Button className="btn-primary">Share Now</Button>
@@ -279,7 +251,7 @@ export default function Home() {
       <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-gray-900">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3">Get in Touch</h2>
-          <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4">
+          <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
             Questions? Contact us to learn more about our solutions.
           </p>
           <div className="flex justify-center gap-3">
