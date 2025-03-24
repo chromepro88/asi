@@ -7,6 +7,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
+import ShareButton from "@/components/ShareButton";
 
 // Lazy load components
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
@@ -32,25 +33,7 @@ export const generateMetadata = (): Metadata => ({
   },
 });
 
-export default function Home() {
-  const handleShare = async () => {
-    const shareData = {
-      title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
-      text: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
-      url: "https://asi.sg",
-    };
-
-    if (navigator.share) {
-      try {
-        await navigator.share(shareData);
-      } catch (err) {
-        console.error("Error sharing:", err);
-      }
-    } else {
-      alert("Sharing is not supported on this browser. Please copy the URL: https://asi.sg");
-    }
-  };
-
+const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       <WhatsAppButton />
@@ -63,10 +46,18 @@ export default function Home() {
             <Image src="logo_final5.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
           </Link>
           <nav className="flex gap-3 sm:gap-5">
-            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">Features</Link>
-            <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4">Pricing</Link>
-            <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4">Demo</Link>
-            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">Contact</Link>
+            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">
+              Features
+            </Link>
+            <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4">
+              Pricing
+            </Link>
+            <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4">
+              Demo
+            </Link>
+            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
+              Contact
+            </Link>
           </nav>
         </div>
       </header>
@@ -236,7 +227,7 @@ export default function Home() {
             height="560"
             src="https://www.youtube.com/embed/WQvXVIEp6o8"
             title="AI Super WhatsApp Chatbot Demo - YouTube Short"
-            frameborder="0"
+            frameBorder={0}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             loading="lazy"
@@ -251,9 +242,7 @@ export default function Home() {
           <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
             Invite a friend and get 5% off your next purchase—both of you!
           </p>
-          <Button className="btn-primary" onClick={handleShare}>
-            Share Now
-          </Button>
+          <ShareButton />
         </div>
       </section>
 
@@ -281,12 +270,26 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2">
             <p className="text-xs text-gray-400">© 2025 AI Super Private Limited. All rights reserved.</p>
             <nav className="flex gap-3 sm:gap-5 mt-2 sm:mt-0">
-              <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">Terms</Link>
-              <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">Privacy</Link>
-              <Link href="https://www.instagram.com/aisupersg/" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
+              <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">
+                Terms
+              </Link>
+              <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">
+                Privacy
+              </Link>
+              <Link
+                href="https://www.instagram.com/aisupersg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs hover:underline underline-offset-4 text-gray-400"
+              >
                 <Instagram className="inline-block mr-1 h-4 w-4" /> Instagram
               </Link>
-              <Link href="https://www.facebook.com/people/AI-Super-SG/61573691083537/" target="_blank" rel="noopener noreferrer" className="text-xs hover:underline underline-offset-4 text-gray-400">
+              <Link
+                href="https://www.facebook.com/people/AI-Super-SG/61573691083537/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs hover:underline underline-offset-4 text-gray-400"
+              >
                 <Facebook className="inline-block mr-1 h-4 w-4" /> Facebook
               </Link>
             </nav>
@@ -302,4 +305,6 @@ export default function Home() {
       <Analytics />
     </div>
   );
-}
+};
+
+export default Home;
