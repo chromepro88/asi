@@ -8,9 +8,14 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 
 // Lazy load components to improve performance
-const MailchimpForm = dynamic(() => import('@/components/MailchimpForm'), { ssr: false });
-const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton'), { ssr: false });
-
+const MailchimpForm = dynamic(
+  () => import('@/components/MailchimpForm').then((mod) => mod.MailchimpForm),
+  { ssr: false }
+);
+const WhatsAppButton = dynamic(
+  () => import('@/components/WhatsAppButton').then((mod) => mod.WhatsAppButton),
+  { ssr: false }
+);
 // Define metadata for the homepage using generateMetadata
 export const generateMetadata = (): Metadata => {
   return {
