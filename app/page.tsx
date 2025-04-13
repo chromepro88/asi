@@ -14,11 +14,11 @@ const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then(
 
 export const generateMetadata = (): Metadata => ({
   title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
-  description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
+  description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
   keywords: ["WhatsApp Chatbot", "AI Customer Support", "Singapore AI", "AI Super", "Business Automation"],
   openGraph: {
     title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
-    description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
+    description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
     images: [{ url: "logo_final5.png", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
@@ -28,7 +28,7 @@ export const generateMetadata = (): Metadata => ({
   twitter: {
     card: "summary_large_image",
     title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
-    description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $19/month.",
+    description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
     images: ["logo_final5.png"],
   },
 });
@@ -168,9 +168,9 @@ const Home: React.FC = () => {
               <CardHeader>
                 <CardTitle>Monthly</CardTitle>
                 <CardDescription>
-                  <span className="text-xl font-bold">$19</span>/month
+                  <span className="text-xl font-bold">$29</span>/month
                   <p className="text-red-400 line-through">$69</p>
-                  <p className="text-green-400">Save $50!</p>
+                  <p className="text-green-400">Save $40!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -185,9 +185,9 @@ const Home: React.FC = () => {
               <CardHeader>
                 <CardTitle>3 Months</CardTitle>
                 <CardDescription>
-                  <span className="text-xl font-bold">$49</span>/3 months
+                  <span className="text-xl font-bold">$69</span>/3 months
                   <p className="text-red-400 line-through">$199</p>
-                  <p className="text-green-400">Save $150!</p>
+                  <p className="text-green-400">Save $130!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -202,9 +202,9 @@ const Home: React.FC = () => {
               <CardHeader>
                 <CardTitle>12 Months</CardTitle>
                 <CardDescription>
-                  <span className="text-xl font-bold">$189</span>/12 months
+                  <span className="text-xl font-bold">$249</span>/12 months
                   <p className="text-red-400 line-through">$699</p>
-                  <p className="text-green-400">Save $510!</p>
+                  <p className="text-green-400">Save $450!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
