@@ -170,20 +170,21 @@ const Home: React.FC = () => {
       {/* Pricing Section */}
       <section id="pricing" className="w-full py-8 md:py-16 lg:py-20 bg-gray-800">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8">
             Pricing Plans
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Card className="card-bg">
-              <CardHeader>
-                <CardTitle>Monthly</CardTitle>
-                <CardDescription>
-                  <span className="text-xl font-bold">$29</span>/month
-                  <p className="text-red-400 line-through">$69</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="card-bg transition-shadow hover:shadow-lg">
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg font-semibold">Monthly</CardTitle>
+                <CardDescription className="flex flex-col items-center">
+                  <span className="text-2xl font-bold">$29</span>
+                  <span className="text-sm text-gray-400">/month</span>
+                  <p className="text-red-400 line-through mt-2">$69</p>
                   <p className="text-green-400">Save $40!</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex justify-center">
                 <Button className="w-full btn-primary" asChild>
                   <Link href="https://buy.stripe.com/eVag2G23599m9TG7ss" target="_blank" rel="noopener noreferrer">
                     Get Started
@@ -191,16 +192,17 @@ const Home: React.FC = () => {
                 </Button>
               </CardContent>
             </Card>
-            <Card className="card-bg">
-              <CardHeader>
-                <CardTitle>3 Months</CardTitle>
-                <CardDescription>
-                  <span className="text-xl font-bold">$69</span>/3 months
-                  <p className="text-red-400 line-through">$199</p>
+            <Card className="card-bg transition-shadow hover:shadow-lg">
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg font-semibold">3 Months</CardTitle>
+                <CardDescription className="flex flex-col items-center">
+                  <span className="text-2xl font-bold">$69</span>
+                  <span className="text-sm text-gray-400">/3 months</span>
+                  <p className="text-red-400 line-through mt-2">$199</p>
                   <p className="text-green-400">Save $130!</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex justify-center">
                 <Button className="w-full btn-primary" asChild>
                   <Link href="https://buy.stripe.com/cN2eYC5fh0CQ0j6289" target="_blank" rel="noopener noreferrer">
                     Get Started
@@ -208,16 +210,20 @@ const Home: React.FC = () => {
                 </Button>
               </CardContent>
             </Card>
-            <Card className="card-bg">
-              <CardHeader>
-                <CardTitle>12 Months</CardTitle>
-                <CardDescription>
-                  <span className="text-xl font-bold">$249</span>/12 months
-                  <p className="text-red-400 line-through">$699</p>
+            <Card className="card-bg transition-shadow hover:shadow-lg relative border-2 border-yellow-500">
+              <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-bl">
+                Best Value
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg font-semibold">12 Months</CardTitle>
+                <CardDescription className="flex flex-col items-center">
+                  <span className="text-2xl font-bold">$249</span>
+                  <span className="text-sm text-gray-400">/12 months</span>
+                  <p className="text-red-400 line-through mt-2">$699</p>
                   <p className="text-green-400">Save $450!</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex justify-center">
                 <Button className="w-full btn-primary" asChild>
                   <Link href="https://buy.stripe.com/9AQ17MazB2KY0j6fZ0" target="_blank" rel="noopener noreferrer">
                     Get Started
@@ -226,6 +232,9 @@ const Home: React.FC = () => {
               </CardContent>
             </Card>
           </div>
+          <p className="text-center text-gray-200 mt-8 text-sm">
+            All plans include: Free Installation, Voice Message Recognition, Multilingual Support, and Google Calendar Integration.
+          </p>
         </div>
       </section>
 
