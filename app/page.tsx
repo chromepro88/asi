@@ -307,7 +307,7 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3">Refer a Friend</h2>
           <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
-            Invite a friend and get 5% off your next purchase—both of you!
+            Invite a friend and get 5% off your next purchase!
           </p>
           <ShareButton />
         </div>
