@@ -126,41 +126,61 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8">
             Trusted by Leading Brands
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Card className="card-bg">
-              <CardHeader>
-                <div className="flex items-center space-x-2">
-                  <Image src="/PropNex.png" alt="PropNex Logo" width={64} height={64} className="rounded-full" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="card-bg transition-shadow hover:shadow-lg border border-gray-600">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src="/PropNex.png"
+                    alt="PropNex Logo"
+                    width={64}
+                    height={64}
+                    className="rounded-full"
+                  />
                 </div>
-                <CardDescription className="text-gray-200">
-                  "Transformed our engagement and boosted sales."
+                <CardDescription className="text-gray-200 text-base italic">
+                  “Transformed our engagement and <strong>boosted sales</strong>.”
                 </CardDescription>
+                <p className="text-sm text-gray-400 mt-2">John Leong, PropNex</p>
               </CardHeader>
             </Card>
-            <Card className="card-bg">
-              <CardHeader>
-                <div className="flex items-center space-x-2">
-                  <Image src="/OrangeTee.jpeg" alt="OrangeTee Logo" width={64} height={64} className="rounded-full" />
+            <Card className="card-bg transition-shadow hover:shadow-lg border border-gray-600">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src="/OrangeTee.jpeg"
+                    alt="OrangeTee Logo"
+                    width={64}
+                    height={64}
+                    className="rounded-full"
+                  />
                 </div>
-                <CardDescription className="text-gray-200">
-                  "Cost-effective with excellent support!"
+                <CardDescription className="text-gray-200 text-base italic">
+                  “Cost-effective with <strong>excellent support</strong>!”
                 </CardDescription>
+                <p className="text-sm text-gray-400 mt-2">Patricia Lee, OrangeTee & Tie</p>
               </CardHeader>
             </Card>
-            <Card className="card-bg">
-              <CardHeader>
-                <div className="flex items-center space-x-2">
-                  <Image src="/Huttons.png" alt="Huttons Logo" width={64} height={64} className="rounded-full" />
+            <Card className="card-bg transition-shadow hover:shadow-lg border border-gray-600">
+              <CardHeader className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Image
+                    src="/Huttons.png"
+                    alt="Huttons Logo"
+                    width={64}
+                    height={64}
+                    className="rounded-full"
+                  />
                 </div>
-                <CardDescription className="text-gray-200">
-                  "24/7 response—a game-changer."
+                <CardDescription className="text-gray-200 text-base italic">
+                  “24/7 response—a <strong>game-changer</strong>.”
                 </CardDescription>
+                <p className="text-sm text-gray-400 mt-2">Alex Tan, Huttons Asia</p>
               </CardHeader>
             </Card>
           </div>
