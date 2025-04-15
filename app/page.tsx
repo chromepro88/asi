@@ -232,6 +232,7 @@ const Home: React.FC = () => {
       {/* Video Section */}
       <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
+          <div className="w-full flex flex-col items-center justify-center gap-6 md:flex-row md:gap-6">
             <div className="w-full md:w-1/3 flex justify-center">
               <iframe
                 width="315"
@@ -250,6 +251,18 @@ const Home: React.FC = () => {
                 height="560"
                 src="https://www.youtube.com/embed/eyRn4bsszTE"
                 title="AI Super WhatsApp Chatbot Voice Message and Multilingual Support Demo - YouTube Short"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/8_ANamhvIxc"
+                title="AI Super WhatsApp Chatbot Integration with Privyr CRM Demo - YouTube Video"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
