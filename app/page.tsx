@@ -8,6 +8,8 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 // Lazy load components
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
@@ -355,6 +357,7 @@ const Home: React.FC = () => {
         </div>
       </footer>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 };
