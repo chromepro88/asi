@@ -100,22 +100,6 @@ const Home: React.FC = () => {
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>Regular Updates</CardTitle>
-                <CardDescription className="text-gray-200">
-                  Automatic updates keep your chatbot smooth.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="card-bg">
-              <CardHeader>
-                <CardTitle>Supports WhatsApp Calls & Messages</CardTitle>
-                <CardDescription className="text-gray-200">
-                  Seamlessly handle calls and messages anytime.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="card-bg">
-              <CardHeader>
                 <CardTitle>Voice Message Recognition</CardTitle>
                 <CardDescription className="text-gray-200">
                   Understands and responds to voice messages effortlessly.
@@ -248,19 +232,6 @@ const Home: React.FC = () => {
       {/* Video Section */}
       <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
-          <div className="w-full flex flex-col items-center justify-center gap-6 md:flex-row md:gap-6">
-            <div className="w-full md:w-1/3 flex justify-center">
-              <iframe
-                width="315"x
-                height="560"
-                src="https://www.youtube.com/embed/WQvXVIEp6o8"
-                title="AI Super WhatsApp Chatbot Demo - YouTube Short"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
             <div className="w-full md:w-1/3 flex justify-center">
               <iframe
                 width="315"
