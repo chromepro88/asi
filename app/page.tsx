@@ -290,7 +290,7 @@ const Home: React.FC = () => {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/8_ANamhvIxc"
+                src="https://www.youtube.com/embed/QTTf4EX6844"
                 title="AI Super WhatsApp Chatbot Integration with Privyr CRM Demo - YouTube Video"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
