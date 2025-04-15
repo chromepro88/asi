@@ -112,6 +112,30 @@ const Home: React.FC = () => {
                 </CardDescription>
               </CardHeader>
             </Card>
+            <Card className="card-bg">
+              <CardHeader>
+                <CardTitle>Voice Message Recognition</CardTitle>
+                <CardDescription className="text-gray-200">
+                  Understands and responds to voice messages effortlessly.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="card-bg">
+              <CardHeader>
+                <CardTitle>Multilingual Support</CardTitle>
+                <CardDescription className="text-gray-200">
+                  Communicates in any language, breaking barriers.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="card-bg">
+              <CardHeader>
+                <CardTitle>Google Calendar Integration</CardTitle>
+                <CardDescription className="text-gray-200">
+                  Books appointments directly through your calendar.
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
@@ -221,17 +245,45 @@ const Home: React.FC = () => {
 
       {/* Video Section */}
       <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex justify-center">
-          <iframe
-            width="315"
-            height="560"
-            src="https://www.youtube.com/embed/WQvXVIEp6o8"
-            title="AI Super WhatsApp Chatbot Demo - YouTube Short"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-          />
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
+          <div className="w-full flex flex-col items-center justify-center gap-6 md:flex-row md:gap-6">
+            <div className="w-full md:w-1/3 flex justify-center">
+              <iframe
+                width="315"x
+                height="560"
+                src="https://www.youtube.com/embed/WQvXVIEp6o8"
+                title="AI Super WhatsApp Chatbot Demo - YouTube Short"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/mU-sAJOYk4U"
+                title="AI Super WhatsApp Chatbot Calendar Integration Demo - YouTube Short"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/eyRn4bsszTE"
+                title="AI Super WhatsApp Chatbot Voice Message and Multilingual Support Demo - YouTube Short"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
