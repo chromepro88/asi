@@ -325,10 +325,10 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2">
             <p className="text-xs text-gray-400">© 2025 AI Super Private Limited. All rights reserved.</p>
             <nav className="flex gap-3 sm:gap-5 mt-2 sm:mt-0">
-              <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">
+              <Link href="/terms-of-service" className="text-xs hover:underline underline-offset-4 text-gray-400">
                 Terms
               </Link>
-              <Link href="#" className="text-xs hover:underline underline-offset-4 text-gray-400">
+              <Link href="/privacy" className="text-xs hover:underline underline-offset-4 text-gray-400">
                 Privacy
               </Link>
               <Link
