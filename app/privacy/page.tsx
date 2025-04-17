@@ -1,9 +1,9 @@
-// app/privacy-policy/page.tsx
+// app/privacy/page.tsx
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | AI Super",
+  title: "Privacy Policy| AI Super",
   description: "Learn how AI Super Private Limited collects, uses, and protects your personal information.",
 };
 
