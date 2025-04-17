@@ -286,18 +286,6 @@ const Home: React.FC = () => {
                 loading="lazy"
               />
             </div>
-            <div className="w-full md:w-1/3 flex justify-center">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/QTTf4EX6844"
-                title="AI Super WhatsApp Chatbot Integration with Privyr CRM Demo - YouTube Video"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
           </div>
         </div>
       </section>
