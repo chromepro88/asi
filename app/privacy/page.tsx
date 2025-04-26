@@ -46,6 +46,7 @@ export default function PrivacyPolicy() {
               <li>Communicate with you, including sending updates or responding to inquiries.</li>
               <li>Analyze usage trends to enhance user experience.</li>
               <li>Comply with legal obligations.</li>
+              <li>We explicitly affirm that Google Workspace APIs are not used to develop, improve, or train generalized AI and/or ML models.</li>
             </ul>
           </section>
 
