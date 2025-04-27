@@ -15,11 +15,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
 
 export const generateMetadata = (): Metadata => ({
-  title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
+  title: "AI Super Private Limited | No.1 WhatsApp Chatbot in the World",
   description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
-  keywords: ["WhatsApp Chatbot", "AI Customer Support", "Singapore AI", "AI Super", "Business Automation"],
+  keywords: ["WhatsApp Chatbot", "AI Customer Support", "World AI", "AI Super", "Business Automation"],
   openGraph: {
-    title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
+    title: "AI Super Private Limited | No.1 WhatsApp Chatbot in the World",
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
@@ -29,7 +29,7 @@ export const generateMetadata = (): Metadata => ({
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
+    title: "AI Super Private Limited | No.1 WhatsApp Chatbot in the World",
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
     images: ["logo2.png"],
   },
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="flex flex-col items-center space-y-3 text-center">
             <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-              The No.1 AI Chatbot in Singapore
+              The No.1 AI Chatbot in the World
             </h1>
             <p className="max-w-[600px] text-gray-200 text-lg md:text-xl">
               AI-empowered WhatsApp Chatbot for Closing Sales
