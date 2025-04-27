@@ -31,7 +31,7 @@ export const generateMetadata = (): Metadata => ({
     card: "summary_large_image",
     title: "AI Super Private Limited | No.1 WhatsApp Chatbot in Singapore",
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
-    images: ["logo_final5.png"],
+    images: ["logo2.png"],
   },
 });
 
