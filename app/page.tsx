@@ -23,7 +23,7 @@ export const generateMetadata = (): Metadata => ({
     description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
-    images: [{ url: "logo_final5.png", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
+    images: [{ url: "logo2.png", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
     locale: "en_SG",
     type: "website",
   },
