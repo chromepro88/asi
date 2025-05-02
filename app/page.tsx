@@ -194,14 +194,14 @@ const Home: React.FC = () => {
             Pricing Plans
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="card-bg transition-shadow hover:shadow-lg">
+          <Card className="card-bg transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold">Monthly</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold">$29</span>
+                  <span className="text-2xl font-bold">$39</span>
                   <span className="text-sm text-gray-400">/month</span>
                   <p className="text-red-400 line-through mt-2">$69</p>
-                  <p className="text-green-400">Save $40!</p>
+                  <p className="text-green-400">Save $30!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
@@ -216,10 +216,10 @@ const Home: React.FC = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold">3 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold">$69</span>
+                  <span className="text-2xl font-bold">$99</span>
                   <span className="text-sm text-gray-400">/3 months</span>
                   <p className="text-red-400 line-through mt-2">$199</p>
-                  <p className="text-green-400">Save $130!</p>
+                  <p className="text-green-400">Save $100!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
@@ -237,10 +237,10 @@ const Home: React.FC = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold">12 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold">$249</span>
+                  <span className="text-2xl font-bold">$349</span>
                   <span className="text-sm text-gray-400">/12 months</span>
                   <p className="text-red-400 line-through mt-2">$699</p>
-                  <p className="text-green-400">Save $450!</p>
+                  <p className="text-green-400">Save $350!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
