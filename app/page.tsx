@@ -206,7 +206,7 @@ const Home: React.FC = () => {
               </CardHeader>
               <CardContent className="flex justify-center">
                 <Button className="w-full btn-primary" asChild>
-                  <Link href="https://buy.stripe.com/eVag2G23599m9TG7ss" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
                     Get Started
                   </Link>
                 </Button>
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
               </CardHeader>
               <CardContent className="flex justify-center">
                 <Button className="w-full btn-primary" asChild>
-                  <Link href="https://buy.stripe.com/cN2eYC5fh0CQ0j6289" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://buy.stripe.com/fZeeYCdLNdpCe9W7sw" target="_blank" rel="noopener noreferrer">
                     Get Started
                   </Link>
                 </Button>
@@ -245,7 +245,7 @@ const Home: React.FC = () => {
               </CardHeader>
               <CardContent className="flex justify-center">
                 <Button className="w-full btn-primary" asChild>
-                  <Link href="https://buy.stripe.com/9AQ17MazB2KY0j6fZ0" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer">
                     Get Started
                   </Link>
                 </Button>
