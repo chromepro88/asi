@@ -200,8 +200,8 @@ const Home: React.FC = () => {
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold">$39</span>
                   <span className="text-sm text-gray-400">/month</span>
-                  <p className="text-red-400 line-through mt-2">$69</p>
-                  <p className="text-green-400">Save $30!</p>
+                  <p className="text-red-400 line-through mt-2">$99</p>
+                  <p className="text-green-400">Save $60!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
