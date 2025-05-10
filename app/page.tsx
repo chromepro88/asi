@@ -89,7 +89,7 @@ const Home: React.FC = () => {
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6 text-gray-900">
             Why Choose Our WhatsApp Chatbot?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader>
                 <CardTitle className="text-blue-600">WhatsApp Blasting</CardTitle>
@@ -119,6 +119,14 @@ const Home: React.FC = () => {
                 <CardTitle className="text-blue-600">WhatsApp Follow Up</CardTitle>
                 <CardDescription className="text-gray-600">
                   Automate follow-up messages to engage leads and close sales effectively.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-white shadow-md border border-gray-200">
+              <CardHeader>
+                <CardTitle className="text-blue-600">Set Up in 5 Minutes</CardTitle>
+                <CardDescription className="text-gray-600">
+                  Get started quickly with a simple setup process, linked to your phone, and still receive calls.
                 </CardDescription>
               </CardHeader>
             </Card>
