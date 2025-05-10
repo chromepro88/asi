@@ -163,7 +163,7 @@ const Home: React.FC = () => {
                 <CardDescription className="text-gray-600 text-base italic">
                   “Good!”
                 </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">Victor, Dade</p>
+                <p className="text-sm text-gray-500 mt-2">Victor, Dade.sg</p>
               </CardHeader>
             </Card>
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
@@ -180,7 +180,7 @@ const Home: React.FC = () => {
                 <CardDescription className="text-gray-600 text-base italic">
                   “Wow, it worked like Magic with the voice command to input appointment. This helps a lot. Like a PA!”
                 </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">James Lee, REALSTAR PREMIER GROUP PRIVATE LIMITED</p>
+                <p className="text-sm text-gray-500 mt-2">James Lee, Realstar Premier Group Private Limited</p>
               </CardHeader>
             </Card>
           </div>
