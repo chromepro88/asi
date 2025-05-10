@@ -132,7 +132,7 @@ const Home: React.FC = () => {
             Trusted by Leading Brands
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="card-bg transition-shadow hover:shadow-lg border border-gray-600">
+            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
                   <Image
@@ -143,13 +143,13 @@ const Home: React.FC = () => {
                     className="rounded-full"
                   />
                 </div>
-                <CardDescription className="text-gray-200 text-base italic">
+                <CardDescription className="text-gray-600 text-base italic">
                   “Transformed our engagement and <strong>boosted sales</strong>.”
                 </CardDescription>
-                <p className="text-sm text-gray-400 mt-2">John Leong, PropNex</p>
+                <p className="text-sm text-gray-500 mt-2">John Leong, PropNex</p>
               </CardHeader>
             </Card>
-            <Card className="card-bg transition-shadow hover:shadow-lg border border-gray-600">
+            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
                   <Image
@@ -160,13 +160,13 @@ const Home: React.FC = () => {
                     className="rounded-full"
                   />
                 </div>
-                <CardDescription className="text-gray-200 text-base italic">
+                <CardDescription className="text-gray-600 text-base italic">
                   “Cost-effective with <strong>excellent support</strong>!”
                 </CardDescription>
-                <p className="text-sm text-gray-400 mt-2">Patricia Lee, OrangeTee & Tie</p>
+                <p className="text-sm text-gray-500 mt-2">Patricia Lee, OrangeTee & Tie</p>
               </CardHeader>
             </Card>
-            <Card className="card-bg transition-shadow hover:shadow-lg border border-gray-600">
+            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
                   <Image
@@ -177,10 +177,10 @@ const Home: React.FC = () => {
                     className="rounded-full"
                   />
                 </div>
-                <CardDescription className="text-gray-200 text-base italic">
+                <CardDescription className="text-gray-600 text-base italic">
                   “24/7 response—a <strong>game-changer</strong>.”
                 </CardDescription>
-                <p className="text-sm text-gray-400 mt-2">Alex Tan, Huttons Asia</p>
+                <p className="text-sm text-gray-500 mt-2">Alex Tan, Huttons Asia</p>
               </CardHeader>
             </Card>
           </div>
@@ -212,39 +212,39 @@ const Home: React.FC = () => {
                 </Button>
               </CardContent>
             </Card>
-            <Card className="card-bg transition-shadow hover:shadow-lg">
+            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold">3 Months</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">3 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold">$99</span>
-                  <span className="text-sm text-gray-400">/3 months</span>
-                  <p className="text-red-400 line-through mt-2">$199</p>
-                  <p className="text-green-400">Save $100!</p>
+                  <span className="text-2xl font-bold text-gray-900">$99</span>
+                  <span className="text-sm text-gray-500">/3 months</span>
+                  <p className="text-red-500 line-through mt-2">$199</p>
+                  <p className="text-green-500">Save $100!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
-                <Button className="w-full btn-primary" asChild>
+                <Button className="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
                   <Link href="https://buy.stripe.com/fZeeYCdLNdpCe9W7sw" target="_blank" rel="noopener noreferrer">
                     Get Started
                   </Link>
                 </Button>
               </CardContent>
             </Card>
-            <Card className="card-bg transition-shadow hover:shadow-lg relative border-2 border-yellow-500">
-              <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-semibold px-2 py-1 rounded-bl">
+            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg relative border-2 border-blue-500">
+              <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-bl">
                 Best Value
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold">12 Months</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">12 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold">$349</span>
-                  <span className="text-sm text-gray-400">/12 months</span>
-                  <p className="text-red-400 line-through mt-2">$699</p>
-                  <p className="text-green-400">Save $350!</p>
+                  <span className="text-2xl font-bold text-gray-900">$349</span>
+                  <span className="text-sm text-gray-500">/12 months</span>
+                  <p className="text-red-500 line-through mt-2">$699</p>
+                  <p className="text-green-500">Save $350!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
-                <Button className="w-full btn-primary" asChild>
+                <Button className="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
                   <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer">
                     Get Started
                   </Link>
@@ -252,13 +252,12 @@ const Home: React.FC = () => {
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-gray-200 mt-8 text-sm">
+          <p className="text-center text-gray-600 mt-8 text-sm">
             All plans include: Free Installation, Voice Message Recognition, Multilingual Support, and Google Calendar Integration.
           </p>
         </div>
       </section>
 
-      {/* Video Section */}
       {/* Video Section */}
       <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
