@@ -22,7 +22,7 @@ const ShareButton: React.FC = () => {
   };
 
   return (
-    <Button className="btn-primary" onClick={handleShare}>
+    <Button className="btn-primary bg-blue-600 hover:bg-blue-700 text-white" onClick={handleShare}>
       Share Now
     </Button>
   );
