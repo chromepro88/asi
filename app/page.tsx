@@ -89,36 +89,36 @@ const Home: React.FC = () => {
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6">
             Why Choose Our WhatsApp Chatbot?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>Free Installation</CardTitle>
+                <CardTitle>WhatsApp Blasting</CardTitle>
                 <CardDescription className="text-gray-200">
-                  Zero setup costs—our team handles it all.
+                  Send bulk messages to your customers instantly, ensuring effective communication at scale.
                 </CardDescription>
               </CardHeader>
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>Voice Message Recognition</CardTitle>
+                <CardTitle>WhatsApp Chatbot</CardTitle>
                 <CardDescription className="text-gray-200">
-                  Understands and responds to voice messages effortlessly.
+                  Automate customer interactions with AI-powered responses, available 24/7.
                 </CardDescription>
               </CardHeader>
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>Multilingual Support</CardTitle>
+                <CardTitle>CRM Integration</CardTitle>
                 <CardDescription className="text-gray-200">
-                  Communicates in any language, breaking barriers.
+                  Seamlessly manage customer relationships with integrated CRM tools.
                 </CardDescription>
               </CardHeader>
             </Card>
             <Card className="card-bg">
               <CardHeader>
-                <CardTitle>Google Calendar Integration</CardTitle>
+                <CardTitle>WhatsApp Follow Up</CardTitle>
                 <CardDescription className="text-gray-200">
-                  Books appointments directly through your calendar.
+                  Automate follow-up messages to engage leads and close sales effectively.
                 </CardDescription>
               </CardHeader>
             </Card>
