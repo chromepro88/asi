@@ -9,21 +9,21 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 flex flex-col">
       <main className="flex-grow container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-6 text-center">Privacy Policy</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Privacy Policy</h1>
         <div className="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
           <p className="text-gray-600 mb-4">Last updated: April 12, 2025</p>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">1. Introduction</h2>
             <p className="text-gray-700">
               Welcome to AI Super Private Limited ("we," "us," or "our"). We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application and services.
             </p>
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">2. Information We Collect</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">2. Information We Collect</h2>
             <p className="text-gray-700">We may collect the following types of information:</p>
             <ul className="list-disc pl-6 text-gray-700">
               <li>
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">3. How We Use Your Information</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">3. How We Use Your Information</h2>
             <p className="text-gray-700">We use your information to:</p>
             <ul className="list-disc pl-6 text-gray-700">
               <li>Provide, operate, and improve our services.</li>
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">4. Sharing Your Information</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">4. Sharing Your Information</h2>
             <p className="text-gray-700">
               We do not sell your personal information. We may share your information with:
             </p>
@@ -62,14 +62,14 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">5. Data Security</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">5. Data Security</h2>
             <p className="text-gray-700">
               We implement reasonable security measures to protect your information. However, no method of transmission over the internet is completely secure, and we cannot guarantee absolute security.
             </p>
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">6. Your Rights</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">6. Your Rights</h2>
             <p className="text-gray-700">
               Depending on your location, you may have rights to:
             </p>
@@ -87,21 +87,21 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">7. Third-Party Links</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">7. Third-Party Links</h2>
             <p className="text-gray-700">
               Our app may contain links to third-party websites. We are not responsible for their privacy practices and encourage you to review their policies.
             </p>
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">8. Changes to This Policy</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">8. Changes to This Policy</h2>
             <p className="text-gray-700">
               We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Please review periodically.
             </p>
           </section>
 
           <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-3">9. Contact Us</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-blue-600">9. Contact Us</h2>
             <p className="text-gray-700">
               If you have questions about this Privacy Policy, please contact us at:
             </p>

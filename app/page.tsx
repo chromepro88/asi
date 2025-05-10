@@ -146,41 +146,41 @@ const Home: React.FC = () => {
                 <CardDescription className="text-gray-600 text-base italic">
                   “Transformed our engagement and <strong>boosted sales</strong>.”
                 </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">John Leong, PropNex</p>
+                <p className="text-sm text-gray-500 mt-2">Patrick Ho, PropNex</p>
               </CardHeader>
             </Card>
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
                   <Image
-                    src="/OrangeTee.jpeg"
-                    alt="OrangeTee Logo"
+                    src="/dade.png"
+                    alt="Dade Logo"
                     width={64}
                     height={64}
                     className="rounded-full"
                   />
                 </div>
                 <CardDescription className="text-gray-600 text-base italic">
-                  “Cost-effective with <strong>excellent support</strong>!”
+                  “Good!”
                 </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">Patricia Lee, OrangeTee & Tie</p>
+                <p className="text-sm text-gray-500 mt-2">Victor, Dade</p>
               </CardHeader>
             </Card>
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
                   <Image
-                    src="/Huttons.png"
-                    alt="Huttons Logo"
+                    src="/realstar.png"
+                    alt="Realstar Premier Group Logo"
                     width={64}
                     height={64}
                     className="rounded-full"
                   />
                 </div>
                 <CardDescription className="text-gray-600 text-base italic">
-                  “24/7 response—a <strong>game-changer</strong>.”
+                  “Wow, it worked like Magic with the voice command to input appointment. This helps a lot. Like a PA!”
                 </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">Alex Tan, Huttons Asia</p>
+                <p className="text-sm text-gray-500 mt-2">James Lee, REALSTAR PREMIER GROUP PRIVATE LIMITED</p>
               </CardHeader>
             </Card>
           </div>
