@@ -37,27 +37,27 @@ export const generateMetadata = (): Metadata => ({
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
       <WhatsAppButton />
       <SmoothScroll />
 
       {/* Header */}
-      <header className="px-4 lg:px-6 h-12 flex items-center justify-center">
+      <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
             <Image src="logo_final5.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
           </Link>
           <nav className="flex gap-3 sm:gap-5">
-            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
               Features
             </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
               Pricing
             </Link>
-            <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
               Demo
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
               Contact
             </Link>
           </nav>
@@ -65,16 +65,16 @@ const Home: React.FC = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-20 lg:py-28 xl:py-36">
+      <section className="w-full py-12 md:py-20 lg:py-28 xl:py-36 bg-white">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="flex flex-col items-center space-y-3 text-center">
-            <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">
               The No.1 AI Chatbot in the World
             </h1>
-            <p className="max-w-[600px] text-gray-200 text-lg md:text-xl">
+            <p className="max-w-[600px] text-gray-600 text-lg md:text-xl">
               AI-empowered WhatsApp Chatbot for Closing Sales
             </p>
-            <Button className="btn-primary" asChild>
+            <Button className="btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
               <Link href="https://buy.stripe.com/eVag2G23599m9TG7ss" target="_blank" rel="noopener noreferrer">
                 Try It Now
               </Link>
@@ -84,40 +84,40 @@ const Home: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-900">
+      <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6 text-gray-900">
             Why Choose Our WhatsApp Chatbot?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Card className="card-bg">
+            <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader>
-                <CardTitle>WhatsApp Blasting</CardTitle>
-                <CardDescription className="text-gray-200">
+                <CardTitle className="text-blue-600">WhatsApp Blasting</CardTitle>
+                <CardDescription className="text-gray-600">
                   Send bulk messages to your customers instantly, ensuring effective communication at scale.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="card-bg">
+            <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader>
-                <CardTitle>WhatsApp Chatbot</CardTitle>
-                <CardDescription className="text-gray-200">
+                <CardTitle className="text-blue-600">WhatsApp Chatbot</CardTitle>
+                <CardDescription className="text-gray-600">
                   Automate customer interactions with AI-powered responses, available 24/7.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="card-bg">
+            <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader>
-                <CardTitle>CRM Integration</CardTitle>
-                <CardDescription className="text-gray-200">
+                <CardTitle className="text-blue-600">CRM Integration</CardTitle>
+                <CardDescription className="text-gray-600">
                   Seamlessly manage customer relationships with integrated CRM tools.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="card-bg">
+            <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader>
-                <CardTitle>WhatsApp Follow Up</CardTitle>
-                <CardDescription className="text-gray-200">
+                <CardTitle className="text-blue-600">WhatsApp Follow Up</CardTitle>
+                <CardDescription className="text-gray-600">
                   Automate follow-up messages to engage leads and close sales effectively.
                 </CardDescription>
               </CardHeader>
@@ -126,9 +126,9 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
+      <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8 text-gray-900">
             Trusted by Leading Brands
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -188,24 +188,24 @@ const Home: React.FC = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="w-full py-8 md:py-16 lg:py-20 bg-gray-800">
+      <section id="pricing" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8 text-gray-900">
             Pricing Plans
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className="card-bg transition-shadow hover:shadow-lg">
+            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold">Monthly</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold">$39</span>
-                  <span className="text-sm text-gray-400">/month</span>
-                  <p className="text-red-400 line-through mt-2">$99</p>
-                  <p className="text-green-400">Save $60!</p>
+                  <span className="text-2xl font-bold text-gray-900">$39</span>
+                  <span className="text-sm text-gray-500">/month</span>
+                  <p className="text-red-500 line-through mt-2">$99</p>
+                  <p className="text-green-500">Save $60!</p>
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">
-                <Button className="w-full btn-primary" asChild>
+                <Button className="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
                   <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
                     Get Started
                   </Link>
@@ -259,7 +259,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* Video Section */}
-      <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-gray-700">
+      {/* Video Section */}
+      <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
           <div className="w-full flex flex-col items-center justify-center gap-6 md:flex-row md:gap-6">
             <div className="w-full md:w-1/3 flex justify-center">
@@ -303,10 +304,10 @@ const Home: React.FC = () => {
       </section>
 
       {/* Referral Program Section */}
-      <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-800">
+      <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3">Refer a Friend</h2>
-          <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Refer a Friend</h2>
+          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
             Invite a friend and get 5% off your next purchase!
           </p>
           <ShareButton />
