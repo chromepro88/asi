@@ -314,17 +314,17 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-gray-900">
+      <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3">Get in Touch</h2>
-          <p className="max-w-[600px] text-gray-200 text-lg md:text-xl mb-4 text-center mx-auto">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Get in Touch</h2>
+          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
             Questions? Contact us to learn more about our solutions.
           </p>
           <div className="flex justify-center gap-3">
-            <Button asChild className="btn-primary">
+            <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
               <a href="mailto:hello@asi.sg">Email Us</a>
             </Button>
-            <Button asChild className="btn-primary">
+            <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
               <a href="tel:+6588379368">Call: +65 8837 9368</a>
             </Button>
           </div>
