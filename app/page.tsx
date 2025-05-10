@@ -75,7 +75,7 @@ const Home: React.FC = () => {
               AI-empowered WhatsApp Chatbot for Closing Sales
             </p>
             <Button className="btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
-              <Link href="https://buy.stripe.com/eVag2G23599m9TG7ss" target="_blank" rel="noopener noreferrer">
+              <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
                 Try It Now
               </Link>
             </Button>
