@@ -141,46 +141,81 @@ const Home: React.FC = () => {
       <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6 text-gray-900">
-            Why Choose Our WhatsApp Chatbot?
+            Transform Your Business with AI Automation
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            <Card className="bg-white shadow-md border border-gray-200">
+          <p className="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+            Stop losing customers to slow responses. Our AI chatbot works 24/7 to capture leads, answer questions, and close sales automatically.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-blue-600">WhatsApp Blasting</CardTitle>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl">📢</span>
+                </div>
+                <CardTitle className="text-blue-600">Reach Thousands Instantly</CardTitle>
                 <CardDescription className="text-gray-600">
-                  Send bulk messages to your customers instantly, ensuring effective communication at scale.
+                  Send personalized bulk messages to your entire customer base in seconds. 
+                  <span className="font-semibold text-green-600"> Increase engagement by 300%</span> with targeted messaging.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-white shadow-md border border-gray-200">
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-blue-600">WhatsApp Chatbot</CardTitle>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl">🤖</span>
+                </div>
+                <CardTitle className="text-blue-600">Never Miss a Lead Again</CardTitle>
                 <CardDescription className="text-gray-600">
-                  Automate customer interactions with AI-powered responses, available 24/7.
+                  AI responds to customers instantly, 24/7. Capture leads while you sleep and 
+                  <span className="font-semibold text-green-600"> convert 40% more prospects</span> into paying customers.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-white shadow-md border border-gray-200">
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-blue-600">CRM Integration</CardTitle>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl">📊</span>
+                </div>
+                <CardTitle className="text-blue-600">Manage Customers Effortlessly</CardTitle>
                 <CardDescription className="text-gray-600">
-                  Seamlessly manage customer relationships with integrated CRM tools.
+                  Automatically organize contacts and track conversations. 
+                  <span className="font-semibold text-green-600"> Save 10+ hours per week</span> on customer management.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-white shadow-md border border-gray-200">
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-blue-600">WhatsApp Follow Up</CardTitle>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl">🔄</span>
+                </div>
+                <CardTitle className="text-blue-600">Automatic Follow-ups</CardTitle>
                 <CardDescription className="text-gray-600">
-                  Automate follow-up messages to engage leads and close sales effectively.
+                  Smart AI nurtures leads with perfectly timed follow-ups. 
+                  <span className="font-semibold text-green-600"> Close 60% more deals</span> without lifting a finger.
                 </CardDescription>
               </CardHeader>
             </Card>
-            <Card className="bg-white shadow-md border border-gray-200">
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-blue-600">Set Up in 5 Minutes</CardTitle>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <CardTitle className="text-blue-600">Setup in Minutes, Not Days</CardTitle>
                 <CardDescription className="text-gray-600">
-                  Get started quickly with a simple setup process, linked to your phone, and still receive calls.
+                  Connect your WhatsApp and go live instantly. No technical skills needed. 
+                  <span className="font-semibold text-green-600"> Start earning in 5 minutes.</span>
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-2xl">🗣️</span>
+                </div>
+                <CardTitle className="text-blue-600">Voice & Multilingual Support</CardTitle>
+                <CardDescription className="text-gray-600">
+                  Understands voice messages and speaks multiple languages. 
+                  <span className="font-semibold text-green-600"> Serve global customers</span> effortlessly.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -360,6 +395,93 @@ const Home: React.FC = () => {
                 loading="lazy"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Referral Program Section */}
+      <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Refer a Friend</h2>
+          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
+            Invite a friend and get 5% off your next purchase!
+          </p>
+          <ShareButton />
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Get in Touch</h2>
+          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
+            Questions? Contact us to learn more about our solutions.
+          </p>
+          <div className="flex justify-center gap-3">
+            <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
+              <a href="mailto:hello@asi.sg">Email Us</a>
+            </Button>
+            <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
+              <a href="tel:+6588379368">Call: +65 8837 9368</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="w-full py-8 md:py-16 lg:py-20 bg-white">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-12 text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          <div className="grid gap-6">
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">How quickly can I set up the WhatsApp chatbot?</h3>
+              <p className="text-gray-600">
+                Setup takes just 5 minutes! Simply connect your WhatsApp number, customize your responses, and you're live. 
+                No technical skills or coding required - we handle everything for you.
+              </p>
+            </Card>
+            
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Will I still receive calls on my WhatsApp number?</h3>
+              <p className="text-gray-600">
+                Absolutely! Your phone number remains fully functional for calls and personal messages. 
+                The AI only handles business messages automatically while preserving all your normal WhatsApp functionality.
+              </p>
+            </Card>
+            
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">What languages does the chatbot support?</h3>
+              <p className="text-gray-600">
+                Our AI chatbot supports multiple languages including English, Mandarin, Malay, Tamil, and many others. 
+                It can even understand and respond to voice messages in different languages automatically.
+              </p>
+            </Card>
+            
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Is my customer data secure?</h3>
+              <p className="text-gray-600">
+                Yes, we take security seriously. All data is encrypted and stored securely. We're fully compliant with 
+                privacy regulations and never share your customer information with third parties.
+              </p>
+            </Card>
+            
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">What if I need to cancel my subscription?</h3>
+              <p className="text-gray-600">
+                You can cancel anytime with no questions asked. We offer a 30-day money-back guarantee if you're not 
+                completely satisfied with the results.
+              </p>
+            </Card>
+            
+            <Card className="p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Can the AI handle complex customer inquiries?</h3>
+              <p className="text-gray-600">
+                Our AI is trained to handle 90% of common customer questions automatically. For complex issues, 
+                it seamlessly transfers to you with full conversation context, so you never miss important details.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
