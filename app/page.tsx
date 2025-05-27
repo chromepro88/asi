@@ -551,8 +551,9 @@ const Home: React.FC = () => {
             <Card className="p-6 bg-white shadow-lg border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Is my customer data secure?</h3>
               <p className="text-gray-700 text-base leading-relaxed">
-                Yes, we take security seriously. All data is encrypted and stored securely. We're fully compliant with 
-                privacy regulations and never share your customer information with third parties.
+                Yes, we take security seriously. We don't store your chat conversations - all messages are processed in real-time 
+                and not saved on our servers. Your customer data is encrypted during processing and we're fully compliant with 
+                privacy regulations. We never share your customer information with third parties.
               </p>
             </Card>
             
