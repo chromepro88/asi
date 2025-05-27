@@ -303,13 +303,13 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">Starter</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-gray-900">$39</span>
                   <span className="text-sm text-gray-500">/month</span>
                   <p className="text-red-500 line-through mt-2">$99</p>
                   <p className="text-green-500 font-semibold">Save $60!</p>
-                  <p className="text-xs text-gray-500 mt-2">Perfect for small businesses</p>
+                  <p className="text-xs text-gray-500 mt-2">Pay monthly</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -324,11 +324,27 @@ const Home: React.FC = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Basic CRM features
+                    Voice message recognition
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Email support
+                    Multilingual support
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Google Calendar integration
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    CRM features
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Free installation & setup
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Email & chat support
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
@@ -341,7 +357,7 @@ const Home: React.FC = () => {
             
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">Growth</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">3 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-gray-900">$99</span>
                   <span className="text-sm text-gray-500">/3 months</span>
@@ -354,19 +370,35 @@ const Home: React.FC = () => {
                 <ul className="text-sm text-gray-600 space-y-2 mb-6">
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Everything in Starter
+                    Unlimited AI responses
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Advanced analytics
+                    WhatsApp integration
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Priority support
+                    Voice message recognition
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Custom integrations
+                    Multilingual support
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Google Calendar integration
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    CRM features
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Free installation & setup
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Email & chat support
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
@@ -384,32 +416,48 @@ const Home: React.FC = () => {
                 </span>
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">Enterprise</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">12 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-gray-900">$349</span>
                   <span className="text-sm text-gray-500">/12 months</span>
                   <p className="text-red-500 line-through mt-2">$699</p>
                   <p className="text-green-500 font-semibold">Save $350!</p>
-                  <p className="text-xs text-gray-500 mt-2">Maximum ROI for growing businesses</p>
+                  <p className="text-xs text-gray-500 mt-2">Maximum savings</p>
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-gray-600 space-y-2 mb-6">
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Everything in Growth
+                    Unlimited AI responses
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    White-label solution
+                    WhatsApp integration
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Dedicated account manager
+                    Voice message recognition
                   </li>
                   <li className="flex items-center">
                     <span className="text-green-500 mr-2">✓</span>
-                    Custom training & setup
+                    Multilingual support
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Google Calendar integration
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    CRM features
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Free installation & setup
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Email & chat support
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
