@@ -297,7 +297,6 @@ const Home: React.FC = () => {
             {/* Urgency Element */}
             <div className="bg-red-50 border border-red-200 rounded-lg p-4 max-w-2xl mx-auto mb-8">
               <p className="text-red-600 font-semibold">⚡ Limited Time: Save up to 50% - Offer ends soon!</p>
-              <p className="text-sm text-red-500 mt-1">30-day money-back guarantee included</p>
             </div>
           </div>
           
@@ -435,10 +434,6 @@ const Home: React.FC = () => {
                 <span className="text-green-500 mr-1">💳</span>
                 Secure Payment
               </span>
-              <span className="flex items-center">
-                <span className="text-green-500 mr-1">↩️</span>
-                30-Day Guarantee
-              </span>
             </div>
           </div>
         </div>
@@ -560,8 +555,7 @@ const Home: React.FC = () => {
             <Card className="p-6 bg-white shadow-lg border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-4">What if I need to cancel my subscription?</h3>
               <p className="text-gray-700 text-base leading-relaxed">
-                You can cancel anytime with no questions asked. We offer a 30-day money-back guarantee if you're not 
-                completely satisfied with the results.
+                You can cancel anytime with no questions asked.
               </p>
             </Card>
             
@@ -569,7 +563,7 @@ const Home: React.FC = () => {
               <h3 className="text-lg font-bold text-gray-900 mb-4">Can the AI handle complex customer inquiries?</h3>
               <p className="text-gray-700 text-base leading-relaxed">
                 Our AI is trained to handle 90% of common customer questions automatically. For complex issues, 
-                it seamlessly transfers to you with full conversation context, so you never miss important details.
+                it can be programmed to connect customers to a human agent with full conversation context, so you never miss important details.
               </p>
             </Card>
           </div>
@@ -598,7 +592,6 @@ const Home: React.FC = () => {
               </Link>
             </Button>
           </div>
-          <p className="text-blue-200 text-sm mt-4">30-day money-back guarantee</p>
         </div>
       </section>
 
