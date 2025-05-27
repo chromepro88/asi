@@ -67,18 +67,72 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="w-full py-12 md:py-20 lg:py-28 xl:py-36 bg-white">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center space-y-3 text-center">
+          <div className="flex flex-col items-center space-y-6 text-center">
+            {/* Trust Badge */}
+            <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full border border-blue-200">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span className="text-sm text-blue-700 font-medium">Trusted by 500+ businesses worldwide</span>
+            </div>
+            
             <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">
               The No.1 AI Chatbot in the World
             </h1>
-            <p className="max-w-[600px] text-gray-600 text-lg md:text-xl">
-              AI-empowered WhatsApp Chatbot for Closing Sales
+            <p className="max-w-[700px] text-gray-600 text-lg md:text-xl leading-relaxed">
+              Transform your WhatsApp into a powerful sales machine. Our AI chatbot automatically responds to customers 24/7, 
+              nurtures leads, and <span className="font-semibold text-blue-600">increases sales by up to 40%</span> - all while you sleep.
             </p>
-            <Button className="btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
-              <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
-                Try It Now
-              </Link>
-            </Button>
+            
+            {/* Key Benefits */}
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span>5-minute setup</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span>24/7 automation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span>No coding required</span>
+              </div>
+            </div>
+            
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+              <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 text-lg font-semibold" asChild>
+                <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                  Start Free Trial
+                </Link>
+              </Button>
+              <Button variant="outline" className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 py-3 px-6 text-lg font-semibold" asChild>
+                <Link href="#video-embed">
+                  Watch Demo
+                </Link>
+              </Button>
+            </div>
+            
+            {/* Social Proof Numbers */}
+            <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t border-gray-200 w-full max-w-lg">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600">10K+</div>
+                <div className="text-sm text-gray-500">Messages Automated Daily</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600">500+</div>
+                <div className="text-sm text-gray-500">Happy Clients</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600">40%</div>
+                <div className="text-sm text-gray-500">Average Sales Increase</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
