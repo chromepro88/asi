@@ -518,55 +518,55 @@ const Home: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="w-full py-8 md:py-16 lg:py-20 bg-white">
+      <section id="faq" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-12 text-gray-900">
             Frequently Asked Questions
           </h2>
           <div className="grid gap-6">
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">How quickly can I set up the WhatsApp chatbot?</h3>
-              <p className="text-gray-600">
+            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">How quickly can I set up the WhatsApp chatbot?</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Setup takes just 5 minutes! Simply connect your WhatsApp number, customize your responses, and you're live. 
                 No technical skills or coding required - we handle everything for you.
               </p>
             </Card>
             
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Will I still receive calls on my WhatsApp number?</h3>
-              <p className="text-gray-600">
+            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">Will I still receive calls on my WhatsApp number?</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Absolutely! Your phone number remains fully functional for calls and personal messages. 
                 The AI only handles business messages automatically while preserving all your normal WhatsApp functionality.
               </p>
             </Card>
             
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">What languages does the chatbot support?</h3>
-              <p className="text-gray-600">
+            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">What languages does the chatbot support?</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Our AI chatbot supports multiple languages including English, Mandarin, Malay, Tamil, and many others. 
                 It can even understand and respond to voice messages in different languages automatically.
               </p>
             </Card>
             
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Is my customer data secure?</h3>
-              <p className="text-gray-600">
+            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">Is my customer data secure?</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Yes, we take security seriously. All data is encrypted and stored securely. We're fully compliant with 
                 privacy regulations and never share your customer information with third parties.
               </p>
             </Card>
             
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">What if I need to cancel my subscription?</h3>
-              <p className="text-gray-600">
+            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">What if I need to cancel my subscription?</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 You can cancel anytime with no questions asked. We offer a 30-day money-back guarantee if you're not 
                 completely satisfied with the results.
               </p>
             </Card>
             
-            <Card className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Can the AI handle complex customer inquiries?</h3>
-              <p className="text-gray-600">
+            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">Can the AI handle complex customer inquiries?</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Our AI is trained to handle 90% of common customer questions automatically. For complex issues, 
                 it seamlessly transfers to you with full conversation context, so you never miss important details.
               </p>
