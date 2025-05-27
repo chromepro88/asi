@@ -108,7 +108,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
               <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 text-lg font-semibold" asChild>
                 <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                  Start Free Trial
+                  Get Started Now
                 </Link>
               </Button>
               <Button variant="outline" className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 py-3 px-6 text-lg font-semibold" asChild>
@@ -583,12 +583,12 @@ const Home: React.FC = () => {
           </h2>
           <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             Join 500+ successful businesses using AI to automate their WhatsApp sales. 
-            Start your free trial today and see results in just 5 minutes.
+            Get started today and see results in just 5 minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold" asChild>
               <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                Start Free Trial Now
+                Get Started Now
               </Link>
             </Button>
             <Button variant="outline" className="flex-1 border-white text-white hover:bg-white hover:text-blue-600 py-3 px-8 text-lg font-semibold" asChild>
@@ -597,7 +597,7 @@ const Home: React.FC = () => {
               </Link>
             </Button>
           </div>
-          <p className="text-blue-200 text-sm mt-4">No credit card required • 30-day money-back guarantee</p>
+          <p className="text-blue-200 text-sm mt-4">30-day money-back guarantee</p>
         </div>
       </section>
 
