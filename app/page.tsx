@@ -287,71 +287,160 @@ const Home: React.FC = () => {
       {/* Pricing Section */}
       <section id="pricing" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8 text-gray-900">
-            Pricing Plans
-          </h2>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-4 text-gray-900">
+              Choose Your Success Plan
+            </h2>
+            <p className="text-gray-600 text-lg mb-4">
+              Join 500+ businesses already automating their WhatsApp sales
+            </p>
+            {/* Urgency Element */}
+            <div className="bg-red-50 border border-red-200 rounded-lg p-4 max-w-2xl mx-auto mb-8">
+              <p className="text-red-600 font-semibold">⚡ Limited Time: Save up to 50% - Offer ends soon!</p>
+              <p className="text-sm text-red-500 mt-1">30-day money-back guarantee included</p>
+            </div>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">Starter</CardTitle>
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-gray-900">$39</span>
                   <span className="text-sm text-gray-500">/month</span>
                   <p className="text-red-500 line-through mt-2">$99</p>
-                  <p className="text-green-500">Save $60!</p>
+                  <p className="text-green-500 font-semibold">Save $60!</p>
+                  <p className="text-xs text-gray-500 mt-2">Perfect for small businesses</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex justify-center">
-                <Button className="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
+              <CardContent>
+                <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Unlimited AI responses
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    WhatsApp integration
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Basic CRM features
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Email support
+                  </li>
+                </ul>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
                   <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
-                    Get Started
+                    Start Now
                   </Link>
                 </Button>
               </CardContent>
             </Card>
+            
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">3 Months</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">Growth</CardTitle>
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-gray-900">$99</span>
                   <span className="text-sm text-gray-500">/3 months</span>
                   <p className="text-red-500 line-through mt-2">$199</p>
-                  <p className="text-green-500">Save $100!</p>
+                  <p className="text-green-500 font-semibold">Save $100!</p>
+                  <p className="text-xs text-gray-500 mt-2">Most popular choice</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex justify-center">
-                <Button className="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
+              <CardContent>
+                <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Everything in Starter
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Advanced analytics
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Priority support
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Custom integrations
+                  </li>
+                </ul>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
                   <Link href="https://buy.stripe.com/fZeeYCdLNdpCe9W7sw" target="_blank" rel="noopener noreferrer">
-                    Get Started
+                    Start Now
                   </Link>
                 </Button>
               </CardContent>
             </Card>
-            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg relative border-2 border-blue-500">
-              <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-bl">
-                Best Value
+            
+            <Card className="bg-white shadow-md border-2 border-blue-500 transition-shadow hover:shadow-lg relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                  BEST VALUE
+                </span>
               </div>
               <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">12 Months</CardTitle>
+                <CardTitle className="text-lg font-semibold text-gray-900">Enterprise</CardTitle>
                 <CardDescription className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-gray-900">$349</span>
                   <span className="text-sm text-gray-500">/12 months</span>
                   <p className="text-red-500 line-through mt-2">$699</p>
-                  <p className="text-green-500">Save $350!</p>
+                  <p className="text-green-500 font-semibold">Save $350!</p>
+                  <p className="text-xs text-gray-500 mt-2">Maximum ROI for growing businesses</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex justify-center">
-                <Button className="w-full btn-primary bg-blue-600 hover:bg-blue-700 text-white" asChild>
+              <CardContent>
+                <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Everything in Growth
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    White-label solution
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Dedicated account manager
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">✓</span>
+                    Custom training & setup
+                  </li>
+                </ul>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
                   <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer">
-                    Get Started
+                    Start Now
                   </Link>
                 </Button>
               </CardContent>
             </Card>
           </div>
-          <p className="text-center text-gray-600 mt-8 text-sm">
-            All plans include: Free Installation, Voice Message Recognition, Multilingual Support, and Google Calendar Integration.
-          </p>
+          
+          <div className="text-center mt-8">
+            <p className="text-gray-600 text-sm mb-4">
+              All plans include: Free Installation, Voice Message Recognition, Multilingual Support, and Google Calendar Integration.
+            </p>
+            <div className="flex justify-center items-center gap-4 text-sm text-gray-500">
+              <span className="flex items-center">
+                <span className="text-green-500 mr-1">🔒</span>
+                SSL Secured
+              </span>
+              <span className="flex items-center">
+                <span className="text-green-500 mr-1">💳</span>
+                Secure Payment
+              </span>
+              <span className="flex items-center">
+                <span className="text-green-500 mr-1">↩️</span>
+                30-Day Guarantee
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -411,7 +500,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
+      <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-white">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Get in Touch</h2>
           <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
@@ -486,32 +575,29 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Referral Program Section */}
-      <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Refer a Friend</h2>
-          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
-            Invite a friend and get 5% off your next purchase!
+      {/* Final CTA Section */}
+      <section className="w-full py-12 md:py-20 bg-blue-600">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-6 text-white">
+            Ready to Transform Your Business?
+          </h2>
+          <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            Join 500+ successful businesses using AI to automate their WhatsApp sales. 
+            Start your free trial today and see results in just 5 minutes.
           </p>
-          <ShareButton />
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Get in Touch</h2>
-          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
-            Questions? Contact us to learn more about our solutions.
-          </p>
-          <div className="flex justify-center gap-3">
-            <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
-              <a href="mailto:hello@asi.sg">Email Us</a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+            <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold" asChild>
+              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                Start Free Trial Now
+              </Link>
             </Button>
-            <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
-              <a href="tel:+6588379368">Call: +65 8837 9368</a>
+            <Button variant="outline" className="flex-1 border-white text-white hover:bg-white hover:text-blue-600 py-3 px-8 text-lg font-semibold" asChild>
+              <Link href="#contact">
+                Talk to Sales
+              </Link>
             </Button>
           </div>
+          <p className="text-blue-200 text-sm mt-4">No credit card required • 30-day money-back guarantee</p>
         </div>
       </section>
 
