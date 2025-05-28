@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Mail, Globe, MapPin, CheckCircle, Zap, Shield, Clock, Users, Star, ArrowRight } from "lucide-react";
+import { Phone, Mail, Globe, MapPin, CheckCircle, Zap, Shield, Clock, Users, Star } from "lucide-react";
 
 export default function BrochurePage() {
   const companyInfo = {
@@ -30,13 +30,12 @@ export default function BrochurePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white print:bg-white">
-      {/* Print styles */}
+    <div className="min-h-screen bg-white print:bg-white">      {/* Print styles */}
       <style jsx global>{`
         @media print {
           @page {
             size: A5;
-            margin: 0;
+            margin: 8mm;
           }
           
           body, * {
@@ -49,18 +48,25 @@ export default function BrochurePage() {
           }
           
           .brochure-page {
-            width: 148mm;
-            height: 210mm;
+            width: 100%;
+            height: 100vh;
             page-break-after: always;
             page-break-inside: avoid;
             margin: 0;
             padding: 0;
             box-shadow: none !important;
             border-radius: 0 !important;
+            display: flex;
+            flex-direction: column;
           }
           
           .brochure-page:last-child {
             page-break-after: auto;
+          }
+          
+          /* Namecard styles - Hide when printing brochure */
+          .namecard, .namecard-page {
+            display: none !important;
           }
         }
         
@@ -72,6 +78,8 @@ export default function BrochurePage() {
             box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1), 0 15px 15px -5px rgba(0, 0, 0, 0.05);
             border-radius: 8px;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
           }
         }
       `}</style>
@@ -91,7 +99,7 @@ export default function BrochurePage() {
                 <li>3. Choose "Paper size" → "A5 (148 × 210 mm)"</li>
                 <li>4. Enable "Background graphics"</li>
               </ol>
-              <ol className="text-left space-y-2" start="5">
+              <ol className="text-left space-y-2" start={5}>
                 <li>5. Select "Print on both sides" (duplex)</li>
                 <li>6. Choose "Long edge binding"</li>
                 <li>7. Set "Scale" to 100%</li>
@@ -198,12 +206,10 @@ export default function BrochurePage() {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-blue-900 mb-2">Why Choose AI Super?</h2>
             <p className="text-gray-600">Join Singapore's leading businesses already using our AI solutions</p>
-          </div>
-
-          {/* Services Section */}
-          <div className="mb-8">
-            <h3 className="text-xl font-bold text-blue-900 mb-4">Our Services</h3>
-            <div className="grid grid-cols-1 gap-3">
+          </div>          {/* Services Section - Optimized */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Our Services</h3>
+            <div className="grid grid-cols-1 gap-2">
               {[
                 "WhatsApp AI Chatbots - Automate customer conversations",
                 "Voice Message Recognition - Understand spoken messages",
@@ -212,24 +218,24 @@ export default function BrochurePage() {
                 "Lead Capture & CRM - Never lose a potential customer",
                 "Custom AI Solutions - Tailored to your business needs"
               ].map((service, index) => (
-                <div key={index} className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <div key={index} className="flex items-start space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                   <span className="text-sm">{service}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Testimonials */}
-          <div className="mb-8">
-            <h3 className="text-xl font-bold text-blue-900 mb-4">What Our Clients Say</h3>
-            <div className="space-y-4">
+          {/* Testimonials - Optimized */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-blue-900 mb-3">What Our Clients Say</h3>
+            <div className="space-y-3">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="bg-blue-50 rounded-lg p-4">
-                  <div className="flex items-start space-x-3">
-                    <Star className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                <div key={index} className="bg-blue-50 rounded-lg p-3">
+                  <div className="flex items-start space-x-2">
+                    <Star className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm italic mb-2">"{testimonial.text}"</p>
+                      <p className="text-sm italic mb-1">"{testimonial.text}"</p>
                       <p className="text-xs text-gray-600">
                         <strong>{testimonial.name}</strong> - {testimonial.company}
                       </p>
@@ -238,13 +244,11 @@ export default function BrochurePage() {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Pricing */}
-          <div className="mb-8">
-            <h3 className="text-xl font-bold text-blue-900 mb-4">Special Launch Pricing</h3>
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-4 text-center">
-              <div className="grid grid-cols-3 gap-4 text-center">
+          </div>{/* Pricing - Optimized layout */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Special Launch Pricing</h3>
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-3">
+              <div className="grid grid-cols-3 gap-3 text-center mb-2">
                 <div>
                   <p className="text-xs opacity-90">Monthly</p>
                   <p className="text-lg font-bold">$39</p>
@@ -261,24 +265,22 @@ export default function BrochurePage() {
                   <p className="text-xs line-through opacity-70">$699</p>
                 </div>
               </div>
-              <p className="text-sm mt-2 opacity-90">⚡ Save up to 50% - Limited time offer!</p>
+              <p className="text-xs text-center opacity-90">⚡ Save up to 50% - Limited time offer!</p>
             </div>
-          </div>
-
-          {/* Contact Information */}
+          </div>          {/* Contact Information - Optimized */}
           <div className="mt-auto">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <div className="flex items-center justify-between mb-4">
+            <div className="bg-gray-50 rounded-lg p-4">
+              <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center space-x-3">
                   <Image
                     src="/logo_final5.png"
                     alt="AI Super Logo"
-                    width={40}
-                    height={40}
+                    width={32}
+                    height={32}
                     className="rounded"
                   />
                   <div>
-                    <h4 className="font-bold text-blue-900">{companyInfo.name}</h4>
+                    <h4 className="font-bold text-blue-900 text-sm">{companyInfo.name}</h4>
                     <p className="text-xs text-gray-600">Reg. No: {companyInfo.regNo}</p>
                   </div>
                 </div>
@@ -287,24 +289,24 @@ export default function BrochurePage() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="space-y-2">
+              <div className="grid grid-cols-2 gap-3 text-sm">
+                <div className="space-y-1">
                   <div className="flex items-center space-x-2">
-                    <Phone className="w-4 h-4 text-blue-600" />
-                    <span>{companyInfo.phone}</span>
+                    <Phone className="w-3 h-3 text-blue-600" />
+                    <span className="text-xs">{companyInfo.phone}</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Mail className="w-4 h-4 text-blue-600" />
-                    <span>{companyInfo.email}</span>
+                    <Mail className="w-3 h-3 text-blue-600" />
+                    <span className="text-xs">{companyInfo.email}</span>
                   </div>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <div className="flex items-center space-x-2">
-                    <Globe className="w-4 h-4 text-blue-600" />
-                    <span>{companyInfo.website}</span>
+                    <Globe className="w-3 h-3 text-blue-600" />
+                    <span className="text-xs">{companyInfo.website}</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <MapPin className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <MapPin className="w-3 h-3 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div className="text-xs">
                       <p>{companyInfo.address.line1}</p>
                       <p>{companyInfo.address.line2}</p>
@@ -313,7 +315,7 @@ export default function BrochurePage() {
                 </div>
               </div>
               
-              <div className="text-center mt-4 pt-4 border-t border-gray-200">
+              <div className="text-center mt-3 pt-3 border-t border-gray-200">
                 <p className="text-sm font-semibold text-blue-900">
                   🚀 No.1 WhatsApp AI Solution in Singapore
                 </p>
@@ -322,215 +324,7 @@ export default function BrochurePage() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Additional copies for printing (hidden on screen) */}
-      <div className="hidden print:block">
-        {[...Array(3)].map((_, index) => (
-          <div key={index}>
-            {/* Front Page Copy */}
-            <div className="brochure-page bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white relative overflow-hidden">
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white transform translate-x-32 -translate-y-32"></div>
-                <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-white transform -translate-x-24 translate-y-24"></div>
-                <div className="absolute top-1/2 left-1/2 w-32 h-32 rounded-full bg-white transform -translate-x-16 -translate-y-16"></div>
-              </div>
-
-              <div className="relative h-full flex flex-col">
-                <div className="p-8 pb-4">
-                  <div className="flex items-center space-x-4 mb-6">
-                    <Image
-                      src="/logo_final5.png"
-                      alt="AI Super Logo"
-                      width={60}
-                      height={60}
-                      className="rounded-lg"
-                    />
-                    <div>
-                      <h1 className="text-2xl font-bold">AI SUPER</h1>
-                      <p className="text-blue-200 text-sm">WhatsApp AI Solutions</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex-1 p-8 pt-0 flex flex-col justify-center">
-                  <div className="text-center mb-8">
-                    <h2 className="text-4xl font-bold mb-4 leading-tight">
-                      Transform Your<br />
-                      <span className="text-yellow-300">WhatsApp</span><br />
-                      Into a Sales Machine
-                    </h2>
-                    <p className="text-lg text-blue-100 mb-6 leading-relaxed">
-                      Automate customer service, capture leads, and close sales 24/7 
-                      with Singapore's #1 WhatsApp AI chatbot
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4 mb-8">
-                    {features.map((feature, idx) => (
-                      <div key={idx} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                        <div className="text-yellow-300 mb-2 flex justify-center">
-                          {feature.icon}
-                        </div>
-                        <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
-                        <p className="text-xs text-blue-100">{feature.desc}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="text-center">
-                    <div className="bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-lg inline-block mb-3">
-                      <span className="text-lg">Save 50% - Limited Time!</span>
-                    </div>
-                    <p className="text-sm text-blue-100">
-                      Starting from <span className="font-bold text-yellow-300">$39/month</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-8 pt-4">
-                  <div className="text-center border-t border-white/20 pt-4">
-                    <p className="text-sm text-blue-200">
-                      Trusted by 500+ businesses • Setup in 5 minutes
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Back Page Copy */}
-            <div className="brochure-page bg-white text-gray-800">
-              <div className="h-full flex flex-col p-8">
-                <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-blue-900 mb-2">Why Choose AI Super?</h2>
-                  <p className="text-gray-600">Join Singapore's leading businesses already using our AI solutions</p>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">Our Services</h3>
-                  <div className="grid grid-cols-1 gap-3">
-                    {[
-                      "WhatsApp AI Chatbots - Automate customer conversations",
-                      "Voice Message Recognition - Understand spoken messages",
-                      "Multilingual Support - Communicate in 50+ languages",
-                      "Calendar Integration - Schedule appointments automatically",
-                      "Lead Capture & CRM - Never lose a potential customer",
-                      "Custom AI Solutions - Tailored to your business needs"
-                    ].map((service, idx) => (
-                      <div key={idx} className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">{service}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">What Our Clients Say</h3>
-                  <div className="space-y-4">
-                    {testimonials.map((testimonial, idx) => (
-                      <div key={idx} className="bg-blue-50 rounded-lg p-4">
-                        <div className="flex items-start space-x-3">
-                          <Star className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
-                          <div>
-                            <p className="text-sm italic mb-2">"{testimonial.text}"</p>
-                            <p className="text-xs text-gray-600">
-                              <strong>{testimonial.name}</strong> - {testimonial.company}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="mb-8">
-                  <h3 className="text-xl font-bold text-blue-900 mb-4">Special Launch Pricing</h3>
-                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-4 text-center">
-                    <div className="grid grid-cols-3 gap-4 text-center">
-                      <div>
-                        <p className="text-xs opacity-90">Monthly</p>
-                        <p className="text-lg font-bold">$39</p>
-                        <p className="text-xs line-through opacity-70">$99</p>
-                      </div>
-                      <div>
-                        <p className="text-xs opacity-90">3 Months</p>
-                        <p className="text-lg font-bold">$99</p>
-                        <p className="text-xs line-through opacity-70">$199</p>
-                      </div>
-                      <div>
-                        <p className="text-xs opacity-90">12 Months</p>
-                        <p className="text-lg font-bold">$349</p>
-                        <p className="text-xs line-through opacity-70">$699</p>
-                      </div>
-                    </div>
-                    <p className="text-sm mt-2 opacity-90">⚡ Save up to 50% - Limited time offer!</p>
-                  </div>
-                </div>
-
-                <div className="mt-auto">
-                  <div className="bg-gray-50 rounded-lg p-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center space-x-3">
-                        <Image
-                          src="/logo_final5.png"
-                          alt="AI Super Logo"
-                          width={40}
-                          height={40}
-                          className="rounded"
-                        />
-                        <div>
-                          <h4 className="font-bold text-blue-900">{companyInfo.name}</h4>
-                          <p className="text-xs text-gray-600">Reg. No: {companyInfo.regNo}</p>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <p className="text-sm font-semibold text-blue-600">Get Started Today!</p>
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div className="space-y-2">
-                        <div className="flex items-center space-x-2">
-                          <Phone className="w-4 h-4 text-blue-600" />
-                          <span>{companyInfo.phone}</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <Mail className="w-4 h-4 text-blue-600" />
-                          <span>{companyInfo.email}</span>
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="flex items-center space-x-2">
-                          <Globe className="w-4 h-4 text-blue-600" />
-                          <span>{companyInfo.website}</span>
-                        </div>
-                        <div className="flex items-start space-x-2">
-                          <MapPin className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                          <div className="text-xs">
-                            <p>{companyInfo.address.line1}</p>
-                            <p>{companyInfo.address.line2}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="text-center mt-4 pt-4 border-t border-gray-200">
-                      <p className="text-sm font-semibold text-blue-900">
-                        🚀 No.1 WhatsApp AI Solution in Singapore
-                      </p>
-                      <p className="text-xs text-gray-600 mt-1">
-                        Free setup • 5-minute installation • Cancel anytime
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+          </div>        </div>
       </div>
     </div>
   );
