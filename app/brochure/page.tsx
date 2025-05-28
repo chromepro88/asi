@@ -31,11 +31,16 @@ export default function BrochurePage() {
 
   return (
     <div className="min-h-screen bg-white print:bg-white">      {/* Print styles */}
-      <style jsx global>{`
-        @media print {
+      <style jsx global>{`        @media print {
           @page {
             size: A5;
-            margin: 8mm;
+            margin: 0;
+          }
+          
+          body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background: white !important;
           }
           
           body, * {
@@ -48,16 +53,17 @@ export default function BrochurePage() {
           }
           
           .brochure-page {
-            width: 100%;
-            height: 100vh;
+            width: 148mm;
+            height: 210mm;
             page-break-after: always;
             page-break-inside: avoid;
             margin: 0;
-            padding: 0;
+            padding: 8mm;
             box-shadow: none !important;
             border-radius: 0 !important;
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
           }
           
           .brochure-page:last-child {
@@ -67,6 +73,11 @@ export default function BrochurePage() {
           /* Namecard styles - Hide when printing brochure */
           .namecard, .namecard-page {
             display: none !important;
+          }
+          
+          /* Prevent page breaks within sections */
+          .no-break {
+            page-break-inside: avoid;
           }
         }
         
@@ -121,9 +132,7 @@ export default function BrochurePage() {
             🖨️ Print A5 Brochure
           </button>
         </div>
-      </div>
-
-      {/* Front Page of Brochure */}
+      </div>      {/* Front Page of Brochure */}
       <div className="brochure-page bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 opacity-5">
@@ -134,41 +143,41 @@ export default function BrochurePage() {
 
         <div className="relative h-full flex flex-col">
           {/* Header */}
-          <div className="p-8 pb-4">
-            <div className="flex items-center space-x-4 mb-6">
+          <div className="mb-4">
+            <div className="flex items-center space-x-4 mb-4">
               <Image
                 src="/logo_final5.png"
                 alt="AI Super Logo"
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 className="rounded-lg"
               />
               <div>
-                <h1 className="text-2xl font-bold">AI SUPER</h1>
+                <h1 className="text-xl font-bold">AI SUPER</h1>
                 <p className="text-blue-200 text-sm">WhatsApp AI Solutions</p>
               </div>
             </div>
           </div>
 
           {/* Main Content */}
-          <div className="flex-1 p-8 pt-0 flex flex-col justify-center">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold mb-4 leading-tight">
+          <div className="flex-1 flex flex-col justify-center">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl font-bold mb-3 leading-tight">
                 Transform Your<br />
                 <span className="text-yellow-300">WhatsApp</span><br />
                 Into a Sales Machine
               </h2>
-              <p className="text-lg text-blue-100 mb-6 leading-relaxed">
+              <p className="text-base text-blue-100 mb-4 leading-relaxed">
                 Automate customer service, capture leads, and close sales 24/7 
                 with Singapore's #1 WhatsApp AI chatbot
               </p>
             </div>
 
             {/* Key Features Grid */}
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-2 gap-3 mb-6">
               {features.map((feature, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-yellow-300 mb-2 flex justify-center">
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
+                  <div className="text-yellow-300 mb-1 flex justify-center">
                     {feature.icon}
                   </div>
                   <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
@@ -179,8 +188,8 @@ export default function BrochurePage() {
 
             {/* CTA Section */}
             <div className="text-center">
-              <div className="bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-lg inline-block mb-3">
-                <span className="text-lg">Save 50% - Limited Time!</span>
+              <div className="bg-yellow-400 text-blue-900 font-bold py-2 px-4 rounded-lg inline-block mb-2">
+                <span className="text-base">Save 50% - Limited Time!</span>
               </div>
               <p className="text-sm text-blue-100">
                 Starting from <span className="font-bold text-yellow-300">$39/month</span>
@@ -189,27 +198,27 @@ export default function BrochurePage() {
           </div>
 
           {/* Footer */}
-          <div className="p-8 pt-4">
-            <div className="text-center border-t border-white/20 pt-4">
+          <div className="mt-4">
+            <div className="text-center border-t border-white/20 pt-3">
               <p className="text-sm text-blue-200">
                 Trusted by 500+ businesses • Setup in 5 minutes
               </p>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Back Page of Brochure */}
+      </div>{/* Back Page of Brochure */}
       <div className="brochure-page bg-white text-gray-800">
-        <div className="h-full flex flex-col p-8">
+        <div className="h-full flex flex-col">
           {/* Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-blue-900 mb-2">Why Choose AI Super?</h2>
             <p className="text-gray-600">Join Singapore's leading businesses already using our AI solutions</p>
-          </div>          {/* Services Section - Optimized */}
-          <div className="mb-6">
-            <h3 className="text-xl font-bold text-blue-900 mb-3">Our Services</h3>
-            <div className="grid grid-cols-1 gap-2">
+          </div>
+
+          {/* Services Section - Compact */}
+          <div className="mb-5 no-break">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Our Services</h3>
+            <div className="grid grid-cols-1 gap-1">
               {[
                 "WhatsApp AI Chatbots - Automate customer conversations",
                 "Voice Message Recognition - Understand spoken messages",
@@ -219,23 +228,23 @@ export default function BrochurePage() {
                 "Custom AI Solutions - Tailored to your business needs"
               ].map((service, index) => (
                 <div key={index} className="flex items-start space-x-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">{service}</span>
+                  <CheckCircle className="w-3 h-3 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-xs">{service}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Testimonials - Optimized */}
-          <div className="mb-6">
-            <h3 className="text-xl font-bold text-blue-900 mb-3">What Our Clients Say</h3>
-            <div className="space-y-3">
+          {/* Testimonials - Compact */}
+          <div className="mb-5 no-break">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">What Our Clients Say</h3>
+            <div className="space-y-2">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="bg-blue-50 rounded-lg p-3">
+                <div key={index} className="bg-blue-50 rounded-lg p-2">
                   <div className="flex items-start space-x-2">
-                    <Star className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
+                    <Star className="w-3 h-3 text-yellow-500 mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="text-sm italic mb-1">"{testimonial.text}"</p>
+                      <p className="text-xs italic mb-1">"{testimonial.text}"</p>
                       <p className="text-xs text-gray-600">
                         <strong>{testimonial.name}</strong> - {testimonial.company}
                       </p>
@@ -244,68 +253,79 @@ export default function BrochurePage() {
                 </div>
               ))}
             </div>
-          </div>{/* Pricing - Optimized layout */}
-          <div className="mb-6">
-            <h3 className="text-xl font-bold text-blue-900 mb-3">Special Launch Pricing</h3>
+          </div>
+
+          {/* Pricing - Compact and no-break */}
+          <div className="mb-5 no-break">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">Special Launch Pricing</h3>
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-3">
-              <div className="grid grid-cols-3 gap-3 text-center mb-2">
+              <div className="grid grid-cols-3 gap-2 text-center mb-2">
                 <div>
                   <p className="text-xs opacity-90">Monthly</p>
-                  <p className="text-lg font-bold">$39</p>
+                  <p className="text-base font-bold">$39</p>
                   <p className="text-xs line-through opacity-70">$99</p>
                 </div>
                 <div>
                   <p className="text-xs opacity-90">3 Months</p>
-                  <p className="text-lg font-bold">$99</p>
+                  <p className="text-base font-bold">$99</p>
                   <p className="text-xs line-through opacity-70">$199</p>
                 </div>
                 <div>
                   <p className="text-xs opacity-90">12 Months</p>
-                  <p className="text-lg font-bold">$349</p>
+                  <p className="text-base font-bold">$349</p>
                   <p className="text-xs line-through opacity-70">$699</p>
                 </div>
               </div>
               <p className="text-xs text-center opacity-90">⚡ Save up to 50% - Limited time offer!</p>
             </div>
-          </div>          {/* Contact Information - Optimized */}
+          </div>          {/* Contact Information - Takes remaining space */}
           <div className="mt-auto">
-            <div className="bg-gray-50 rounded-lg p-4">
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center space-x-3">
+            <div className="bg-gray-50 rounded-lg p-3">
+              <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center space-x-2">
                   <Image
                     src="/logo_final5.png"
                     alt="AI Super Logo"
+                    width={24}
+                    height={24}
+                    className="rounded"
+                  />
+                  <div>
+                    <h4 className="font-bold text-blue-900 text-xs">{companyInfo.name}</h4>
+                    <p className="text-xs text-gray-600">Reg. No: {companyInfo.regNo}</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="text-right">
+                    <p className="text-xs font-semibold text-blue-600">Scan to Contact</p>
+                  </div>
+                  <Image
+                    src="/qr code.png"
+                    alt="QR Code - Contact AI Super"
                     width={32}
                     height={32}
                     className="rounded"
                   />
-                  <div>
-                    <h4 className="font-bold text-blue-900 text-sm">{companyInfo.name}</h4>
-                    <p className="text-xs text-gray-600">Reg. No: {companyInfo.regNo}</p>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm font-semibold text-blue-600">Get Started Today!</p>
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 gap-3 text-sm">
+              <div className="grid grid-cols-2 gap-2 text-xs">
                 <div className="space-y-1">
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-1">
                     <Phone className="w-3 h-3 text-blue-600" />
-                    <span className="text-xs">{companyInfo.phone}</span>
+                    <span>{companyInfo.phone}</span>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-1">
                     <Mail className="w-3 h-3 text-blue-600" />
-                    <span className="text-xs">{companyInfo.email}</span>
+                    <span>{companyInfo.email}</span>
                   </div>
                 </div>
                 <div className="space-y-1">
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-1">
                     <Globe className="w-3 h-3 text-blue-600" />
-                    <span className="text-xs">{companyInfo.website}</span>
+                    <span>{companyInfo.website}</span>
                   </div>
-                  <div className="flex items-start space-x-2">
+                  <div className="flex items-start space-x-1">
                     <MapPin className="w-3 h-3 text-blue-600 mt-0.5 flex-shrink-0" />
                     <div className="text-xs">
                       <p>{companyInfo.address.line1}</p>
@@ -315,8 +335,8 @@ export default function BrochurePage() {
                 </div>
               </div>
               
-              <div className="text-center mt-3 pt-3 border-t border-gray-200">
-                <p className="text-sm font-semibold text-blue-900">
+              <div className="text-center mt-2 pt-2 border-t border-gray-200">
+                <p className="text-xs font-semibold text-blue-900">
                   🚀 No.1 WhatsApp AI Solution in Singapore
                 </p>
                 <p className="text-xs text-gray-600 mt-1">
@@ -324,7 +344,8 @@ export default function BrochurePage() {
                 </p>
               </div>
             </div>
-          </div>        </div>
+          </div>
+        </div>
       </div>
     </div>
   );

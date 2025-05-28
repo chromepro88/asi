@@ -105,8 +105,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
           <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white transform -translate-x-12 translate-y-12"></div>
         </div>
 
-        <div className="relative p-4 h-full flex flex-col justify-between">
-          {/* Header with Logo */}
+        <div className="relative p-4 h-full flex flex-col justify-between">          {/* Header with Logo */}
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Image
@@ -121,11 +120,20 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                 <p className="text-xs opacity-90">Private Limited</p>
               </div>
             </div>
-            <div className="text-right">
-              <p className="text-xs opacity-90">WhatsApp AI</p>
-              <p className="text-xs opacity-90">Solutions</p>
+            <div className="flex items-center space-x-2">
+              <div className="text-right">
+                <p className="text-xs opacity-90">WhatsApp AI</p>
+                <p className="text-xs opacity-90">Solutions</p>
+              </div>
+              <Image
+                src="/qr code.png"
+                alt="QR Code - Contact AI Super"
+                width={24}
+                height={24}
+                className="rounded opacity-90"
+              />
             </div>
-          </div>          {/* Name and Title */}
+          </div>{/* Name and Title */}
           <div className="flex-1 flex flex-col justify-center">
             <h1 className="text-lg font-bold mb-1">{contactInfo.name}</h1>
             <p className="text-sm opacity-90 mb-2">{contactInfo.title}</p>
@@ -162,18 +170,23 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
               <li>• Business Automation</li>
               <li>• Custom AI Solutions</li>
             </ul>
-          </div>
-
-          {/* Center Logo */}
-          <div className="flex justify-center">
+          </div>          {/* Center Logo and QR Code */}
+          <div className="flex justify-center items-center space-x-4">
             <Image
               src="/logo_final5.png"
               alt="AI Super Logo"
-              width={40}
-              height={40}
+              width={32}
+              height={32}
               className="opacity-20"
             />
-          </div>          {/* Address and Social */}
+            <Image
+              src="/qr code.png"
+              alt="QR Code - Contact AI Super"
+              width={28}
+              height={28}
+              className="opacity-60"
+            />
+          </div>{/* Address and Social */}
           <div>
             <div className="text-xs mb-2">
               <p className="font-semibold text-blue-900">{contactInfo.company.name}</p>
@@ -207,8 +220,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                 <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full bg-white transform -translate-x-12 translate-y-12"></div>
               </div>
 
-              <div className="relative p-4 h-full flex flex-col justify-between">
-                <div className="flex items-center justify-between">
+              <div className="relative p-4 h-full flex flex-col justify-between">                <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <Image
                       src="/logo_final5.png"
@@ -222,11 +234,20 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                       <p className="text-xs opacity-90">Private Limited</p>
                     </div>
                   </div>
-                  <div className="text-right">
-                    <p className="text-xs opacity-90">WhatsApp AI</p>
-                    <p className="text-xs opacity-90">Solutions</p>
+                  <div className="flex items-center space-x-2">
+                    <div className="text-right">
+                      <p className="text-xs opacity-90">WhatsApp AI</p>
+                      <p className="text-xs opacity-90">Solutions</p>
+                    </div>
+                    <Image
+                      src="/qr code.png"
+                      alt="QR Code - Contact AI Super"
+                      width={24}
+                      height={24}
+                      className="rounded opacity-90"
+                    />
                   </div>
-                </div>                <div className="flex-1 flex flex-col justify-center">
+                </div><div className="flex-1 flex flex-col justify-center">
                   <h1 className="text-lg font-bold mb-1">{contactInfo.name}</h1>
                   <p className="text-sm opacity-90 mb-2">{contactInfo.title}</p>
                   <div className="w-12 h-0.5 bg-white opacity-60"></div>
