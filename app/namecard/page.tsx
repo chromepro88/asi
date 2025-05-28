@@ -1,12 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, Globe, MapPin, User, Building } from "lucide-react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "AI Super Business Card | Print-Ready Namecard",
-  description: "Professional business card for AI Super team members, ready for PDF printing.",
-};
 
 export default function NamecardPage() {  // Contact information for Sin Ren Xiang, CEO
   const contactInfo = {
