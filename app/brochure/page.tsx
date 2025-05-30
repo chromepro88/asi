@@ -57,7 +57,7 @@ export default function BrochurePage() {
             height: 210mm;
             page-break-after: always;
             page-break-inside: avoid;
-            margin: 0;
+            margin: 0 !important; /* Ensure no margins */
             padding: 8mm;
             box-shadow: none !important;
             border-radius: 0 !important;
