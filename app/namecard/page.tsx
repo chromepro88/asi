@@ -163,35 +163,34 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
 
       {/* Back of Namecard */}
       <div className="namecard bg-white border-2 border-gray-200 text-gray-800">
-        <div className="p-4 h-full flex">
+        <div className="p-2.5 h-full flex">
           {/* Left side - Services and Info */}
-          <div className="flex-1 flex flex-col justify-between pr-4">
+          <div className="flex-1 flex flex-col justify-between pr-2">
             {/* Services */}
-            <div>
-              <h3 className="text-sm font-bold text-blue-900 mb-2">WhatsApp AI Chatbot</h3>
-              <ul className="text-xs space-y-1">
+            <div className="mb-2">
+              <h3 className="text-sm font-bold text-blue-900 mb-1.5">WhatsApp AI Chatbot</h3>
+              <ul className="text-xs space-y-1 leading-tight">
                 <li>• 24/7 Automated Responses</li>
                 <li>• Voice Message Recognition</li>
                 <li>• Multilingual Support</li>
                 <li>• Lead Capture & CRM</li>
-                <li>• Calendar Integration</li>
               </ul>
             </div>
 
             {/* Company Info and Address */}
-            <div>
-              <div className="text-xs mb-2">
-                <p className="font-semibold text-blue-900">{contactInfo.company.name}</p>
-                <p className="text-gray-600">Reg. No: {contactInfo.company.regNo}</p>
+            <div className="space-y-1.5">
+              <div className="text-xs">
+                <p className="font-semibold text-blue-900 mb-0.5">{contactInfo.company.name}</p>
+                <p className="text-gray-600 mb-1">Reg. No: {contactInfo.company.regNo}</p>
               </div>
-              <div className="flex items-start space-x-2 text-xs mb-2">
-                <MapPin className="w-3 h-3 mt-0.5 flex-shrink-0" />
-                <div>
+              <div className="flex items-start space-x-1.5 text-xs">
+                <MapPin className="w-3 h-3 mt-0.5 flex-shrink-0 text-gray-500" />
+                <div className="leading-tight">
                   <p>{contactInfo.address.line1}</p>
                   <p>{contactInfo.address.line2}</p>
                 </div>
               </div>
-              <p className="text-xs text-blue-600 font-medium">Singapore's #1 WhatsApp AI Solution</p>
+              <p className="text-xs text-blue-600 font-medium mt-1">Singapore's #1 WhatsApp AI Solution</p>
             </div>
           </div>
 
@@ -200,17 +199,17 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             <Image
               src="/qr code.png"
               alt="QR Code - Contact AI Super"
-              width={120}
-              height={120}
-              className="mx-auto mb-2 rounded-lg border border-gray-300"
+              width={125}
+              height={125}
+              className="mx-auto mb-1.5 rounded-lg border border-gray-300 bg-white p-1"
             />
             <div className="text-center">
               <Image
                 src="/logo_final5.png"
                 alt="AI Super Logo"
-                width={24}
-                height={24}
-                className="mx-auto mb-1 opacity-60"
+                width={20}
+                height={20}
+                className="mx-auto mb-0.5 opacity-60"
               />
               <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
             </div>
