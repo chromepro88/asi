@@ -170,8 +170,18 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
               <li>• Business Automation</li>
               <li>• Custom AI Solutions</li>
             </ul>
-          </div>          {/* Center QR Code - More prominent */}
-          <div className="flex justify-center items-center">
+          </div>          {/* Center section with Logo and QR Code */}
+          <div className="flex justify-center items-center space-x-6">
+            <div className="text-center">
+              <Image
+                src="/logo_final5.png"
+                alt="AI Super Logo"
+                width={40}
+                height={40}
+                className="mx-auto mb-1 opacity-30"
+              />
+              <p className="text-xs text-gray-500">AI Super</p>
+            </div>
             <div className="text-center">
               <Image
                 src="/qr code.png"
@@ -180,7 +190,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                 height={56}
                 className="mx-auto mb-1 opacity-80"
               />
-              <p className="text-xs text-gray-600">Scan to Chat</p>
+              <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
             </div>
           </div>{/* Address and Social */}
           <div>
@@ -278,7 +288,17 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   </ul>
                 </div>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center space-x-6">
+                  <div className="text-center">
+                    <Image
+                      src="/logo_final5.png"
+                      alt="AI Super Logo"
+                      width={40}
+                      height={40}
+                      className="mx-auto mb-1 opacity-30"
+                    />
+                    <p className="text-xs text-gray-500">AI Super</p>
+                  </div>
                   <div className="text-center">
                     <Image
                       src="/qr code.png"
@@ -287,7 +307,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                       height={56}
                       className="mx-auto mb-1 opacity-80"
                     />
-                    <p className="text-xs text-gray-600">Scan to Chat</p>
+                    <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
                   </div>
                 </div>                <div>
                   <div className="text-xs mb-2">
