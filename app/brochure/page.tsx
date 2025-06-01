@@ -31,6 +31,64 @@ export default function BrochurePage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Print Control Button - Only visible on screen */}
+      <div className="fixed top-4 right-4 z-50 print:hidden">
+        <button
+          onClick={() => {
+            alert('To print with colors:\n\n1. In the print dialog, click "More settings"\n2. Check "Background graphics"\n3. Set margins to "Minimum"\n4. Click "Print"');
+            window.print();
+          }}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg font-medium transition-colors"
+        >
+          🖨️ Print with Colors
+        </button>
+      </div>
+
+      {/* Print styles to ensure colors print */}
+      <style jsx global>{`
+        @media print {
+          * {
+            -webkit-print-color-adjust: exact !important;
+            color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+          
+          @page {
+            margin: 0.5in;
+            size: auto;
+          }
+          
+          body {
+            -webkit-print-color-adjust: exact !important;
+            color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+          
+          /* Force background colors and gradients to print */
+          .bg-gradient-to-br,
+          .bg-gradient-to-r,
+          .bg-blue-50,
+          .bg-gray-50,
+          .bg-white,
+          .bg-yellow-400 {
+            -webkit-print-color-adjust: exact !important;
+            color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+          
+          /* Ensure specific elements print with colors */
+          [class*="bg-gradient"],
+          [class*="bg-blue"],
+          [class*="bg-gray"],
+          [class*="bg-yellow"],
+          [class*="bg-white"] {
+            -webkit-print-color-adjust: exact !important;
+            color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+        }
+      `}</style>
+
       {/* Front Page of Brochure */}
       <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white relative overflow-hidden p-8">
         {/* Background Elements */}
