@@ -26,7 +26,7 @@ export default function BrochurePage() {
   const testimonials = [
     { name: "Patrick Lee", company: "PropNex", text: "Transformed our engagement completely!" },
     { name: "James Lee", company: "Realstar Premier Group", text: "Works like magic with voice commands!" },
-    { name: "Victor", company: "Dade.sg", text: "Simply amazing results!" }
+    { name: "Victor", company: "Dade.sg", text: "Good!" }
   ];
 
   return (
