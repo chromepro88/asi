@@ -152,11 +152,11 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             <Image
               src="/qr code.png"
               alt="QR Code - Contact AI Super"
-              width={160}
-              height={160}
-              className="rounded-lg opacity-95 bg-white p-2"
+              width={120}
+              height={120}
+              className="rounded-lg opacity-95 bg-white p-1"
             />
-            <p className="text-xs text-center mt-2 opacity-90">Scan to Chat</p>
+            <p className="text-xs text-center mt-1 opacity-90">Scan to Chat</p>
           </div>
         </div>
       </div>
@@ -199,16 +199,16 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             <Image
               src="/qr code.png"
               alt="QR Code - Contact AI Super"
-              width={140}
-              height={140}
-              className="mx-auto mb-2 rounded-lg border border-gray-300"
+              width={100}
+              height={100}
+              className="mx-auto mb-1 rounded-lg border border-gray-300"
             />
             <div className="text-center">
               <Image
                 src="/logo_final5.png"
                 alt="AI Super Logo"
-                width={24}
-                height={24}
+                width={20}
+                height={20}
                 className="mx-auto mb-1 opacity-60"
               />
               <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
@@ -280,11 +280,11 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   <Image
                     src="/qr code.png"
                     alt="QR Code - Contact AI Super"
-                    width={160}
-                    height={160}
-                    className="rounded-lg opacity-95 bg-white p-2"
+                    width={120}
+                    height={120}
+                    className="rounded-lg opacity-95 bg-white p-1"
                   />
-                  <p className="text-xs text-center mt-2 opacity-90">Scan to Chat</p>
+                  <p className="text-xs text-center mt-1 opacity-90">Scan to Chat</p>
                 </div>
               </div>
             </div>
@@ -327,16 +327,16 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   <Image
                     src="/qr code.png"
                     alt="QR Code - Contact AI Super"
-                    width={140}
-                    height={140}
-                    className="mx-auto mb-2 rounded-lg border border-gray-300"
+                    width={100}
+                    height={100}
+                    className="mx-auto mb-1 rounded-lg border border-gray-300"
                   />
                   <div className="text-center">
                     <Image
                       src="/logo_final5.png"
                       alt="AI Super Logo"
-                      width={24}
-                      height={24}
+                      width={20}
+                      height={20}
                       className="mx-auto mb-1 opacity-60"
                     />
                     <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
