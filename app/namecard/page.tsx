@@ -120,7 +120,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                 <p className="text-xs opacity-90">Private Limited</p>
               </div>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
               <div className="text-right">
                 <p className="text-xs opacity-90">WhatsApp AI</p>
                 <p className="text-xs opacity-90">Solutions</p>
@@ -128,8 +128,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
               <Image
                 src="/qr code.png"
                 alt="QR Code - Contact AI Super"
-                width={36}
-                height={36}
+                width={48}
+                height={48}
                 className="rounded opacity-90"
               />
             </div>
@@ -170,22 +170,18 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
               <li>• Business Automation</li>
               <li>• Custom AI Solutions</li>
             </ul>
-          </div>          {/* Center Logo and QR Code */}
-          <div className="flex justify-center items-center space-x-4">
-            <Image
-              src="/logo_final5.png"
-              alt="AI Super Logo"
-              width={32}
-              height={32}
-              className="opacity-20"
-            />
-            <Image
-              src="/qr code.png"
-              alt="QR Code - Contact AI Super"
-              width={40}
-              height={40}
-              className="opacity-60"
-            />
+          </div>          {/* Center QR Code - More prominent */}
+          <div className="flex justify-center items-center">
+            <div className="text-center">
+              <Image
+                src="/qr code.png"
+                alt="QR Code - Contact AI Super"
+                width={56}
+                height={56}
+                className="mx-auto mb-1 opacity-80"
+              />
+              <p className="text-xs text-gray-600">Scan to Chat</p>
+            </div>
           </div>{/* Address and Social */}
           <div>
             <div className="text-xs mb-2">
@@ -234,7 +230,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                       <p className="text-xs opacity-90">Private Limited</p>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-3">
                     <div className="text-right">
                       <p className="text-xs opacity-90">WhatsApp AI</p>
                       <p className="text-xs opacity-90">Solutions</p>
@@ -242,8 +238,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                     <Image
                       src="/qr code.png"
                       alt="QR Code - Contact AI Super"
-                      width={36}
-                      height={36}
+                      width={48}
+                      height={48}
                       className="rounded opacity-90"
                     />
                   </div>
@@ -282,14 +278,17 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   </ul>
                 </div>
 
-                <div className="flex justify-center">
-                  <Image
-                    src="/logo_final5.png"
-                    alt="AI Super Logo"
-                    width={40}
-                    height={40}
-                    className="opacity-20"
-                  />
+                <div className="flex justify-center items-center">
+                  <div className="text-center">
+                    <Image
+                      src="/qr code.png"
+                      alt="QR Code - Contact AI Super"
+                      width={56}
+                      height={56}
+                      className="mx-auto mb-1 opacity-80"
+                    />
+                    <p className="text-xs text-gray-600">Scan to Chat</p>
+                  </div>
                 </div>                <div>
                   <div className="text-xs mb-2">
                     <p className="font-semibold text-blue-900">{contactInfo.company.name}</p>
