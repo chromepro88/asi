@@ -305,9 +305,9 @@ const Home: React.FC = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$39</span>
+                  <span className="text-2xl font-bold text-gray-900">$49</span>
                   <p className="text-red-500 line-through mt-2">$99</p>
-                  <p className="text-green-500 font-semibold">Save $60!</p>
+                  <p className="text-green-500 font-semibold">Save $50!</p>
                   <p className="text-xs text-gray-500 mt-2">Pay monthly</p>
                 </CardDescription>
               </CardHeader>
@@ -358,9 +358,9 @@ const Home: React.FC = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold text-gray-900">3 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$99</span>
+                  <span className="text-2xl font-bold text-gray-900">$129</span>
                   <p className="text-red-500 line-through mt-2">$199</p>
-                  <p className="text-green-500 font-semibold">Save $100!</p>
+                  <p className="text-green-500 font-semibold">Save $70!</p>
                   <p className="text-xs text-gray-500 mt-2">Most popular choice</p>
                 </CardDescription>
               </CardHeader>
@@ -416,9 +416,9 @@ const Home: React.FC = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold text-gray-900">12 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$349</span>
+                  <span className="text-2xl font-bold text-gray-900">$449</span>
                   <p className="text-red-500 line-through mt-2">$699</p>
-                  <p className="text-green-500 font-semibold">Save $350!</p>
+                  <p className="text-green-500 font-semibold">Save $250!</p>
                   <p className="text-xs text-gray-500 mt-2">Maximum savings</p>
                 </CardDescription>
               </CardHeader>

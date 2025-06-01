@@ -151,7 +151,7 @@ export default function BrochurePage() {
                 <span className="text-2xl">Save 50% - Limited Time!</span>
               </div>
               <p className="text-xl text-blue-100">
-                Starting from <span className="font-bold text-yellow-300 text-2xl">$39/month</span>
+                Starting from <span className="font-bold text-yellow-300 text-2xl">$49/month</span>
               </p>
             </div>
           </div>
@@ -227,17 +227,17 @@ export default function BrochurePage() {
                   <div className="grid grid-cols-3 gap-4 text-center mb-4">
                     <div>
                       <p className="text-sm opacity-90">Monthly</p>
-                      <p className="text-2xl font-bold">$39</p>
+                      <p className="text-2xl font-bold">$49</p>
                       <p className="text-sm line-through opacity-70">$99</p>
                     </div>
                     <div>
                       <p className="text-sm opacity-90">3 Months</p>
-                      <p className="text-2xl font-bold">$99</p>
+                      <p className="text-2xl font-bold">$129</p>
                       <p className="text-sm line-through opacity-70">$199</p>
                     </div>
                     <div>
                       <p className="text-sm opacity-90">12 Months</p>
-                      <p className="text-2xl font-bold">$349</p>
+                      <p className="text-2xl font-bold">$449</p>
                       <p className="text-sm line-through opacity-70">$699</p>
                     </div>
                   </div>
