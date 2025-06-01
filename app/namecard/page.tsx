@@ -168,14 +168,13 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
           <div className="flex-1 flex flex-col justify-between pr-4">
             {/* Services */}
             <div>
-              <h3 className="text-sm font-bold text-blue-900 mb-2">WhatsApp AI Chatbot Features</h3>
+              <h3 className="text-sm font-bold text-blue-900 mb-2">WhatsApp AI Chatbot</h3>
               <ul className="text-xs space-y-1">
                 <li>• 24/7 Automated Responses</li>
                 <li>• Voice Message Recognition</li>
-                <li>• Multilingual Support (50+ Languages)</li>
-                <li>• Lead Capture & CRM Integration</li>
-                <li>• Calendar Booking Automation</li>
-                <li>• 5-Minute Setup • Free Trial</li>
+                <li>• Multilingual Support</li>
+                <li>• Lead Capture & CRM</li>
+                <li>• Calendar Integration</li>
               </ul>
             </div>
 
@@ -192,7 +191,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   <p>{contactInfo.address.line2}</p>
                 </div>
               </div>
-              <p className="text-xs text-blue-600 font-medium">Singapore's #1 WhatsApp AI • Increases Sales by 40%</p>
+              <p className="text-xs text-blue-600 font-medium">Singapore's #1 WhatsApp AI Solution</p>
             </div>
           </div>
 
@@ -298,14 +297,13 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                 <div className="flex-1 flex flex-col justify-between pr-4">
                   {/* Services */}
                   <div>
-                    <h3 className="text-sm font-bold text-blue-900 mb-2">WhatsApp AI Chatbot Features</h3>
+                    <h3 className="text-sm font-bold text-blue-900 mb-2">WhatsApp AI Chatbot</h3>
                     <ul className="text-xs space-y-1">
                       <li>• 24/7 Automated Responses</li>
                       <li>• Voice Message Recognition</li>
-                      <li>• Multilingual Support (50+ Languages)</li>
-                      <li>• Lead Capture & CRM Integration</li>
-                      <li>• Calendar Booking Automation</li>
-                      <li>• 5-Minute Setup • Free Trial</li>
+                      <li>• Multilingual Support</li>
+                      <li>• Lead Capture & CRM</li>
+                      <li>• Calendar Integration</li>
                     </ul>
                   </div>
 
@@ -322,7 +320,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                         <p>{contactInfo.address.line2}</p>
                       </div>
                     </div>
-                    <p className="text-xs text-blue-600 font-medium">Singapore's #1 WhatsApp AI • Increases Sales by 40%</p>
+                    <p className="text-xs text-blue-600 font-medium">Singapore's #1 WhatsApp AI Solution</p>
                   </div>
                 </div>
 
