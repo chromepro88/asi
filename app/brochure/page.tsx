@@ -30,7 +30,7 @@ export default function BrochurePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="h-screen bg-white">
       {/* Print Control Button - Only visible on screen */}
       <div className="fixed top-4 right-4 z-50 print:hidden">
         <button
@@ -90,7 +90,7 @@ export default function BrochurePage() {
       `}</style>
 
       {/* Front Page of Brochure */}
-      <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white relative overflow-hidden p-8">
+      <div className="h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white relative overflow-hidden p-8">
         {/* Background Elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white transform translate-x-32 -translate-y-32"></div>
