@@ -26,7 +26,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
       <style jsx global>{`
         @media print {
           @page {
-            size: 89mm 51mm;
+            size: 93mm 58mm;
             margin: 0;
           }
           
@@ -40,8 +40,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
           }
           
           .namecard {
-            width: 89mm;
-            height: 51mm;
+            width: 93mm;
+            height: 58mm;
             page-break-after: always;
             page-break-inside: avoid;
             margin: 0;
@@ -56,8 +56,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
         
         @media screen {
           .namecard {
-            width: 356px;
-            height: 204px;
+            width: 372px;
+            height: 232px;
             margin: 20px auto;
             box-shadow: 0 8px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
             border-radius: 12px;
@@ -75,7 +75,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
               <li>1. Click the "Print Namecard" button below</li>
               <li>2. In print settings, select "More settings"</li>
               <li>3. Choose "Paper size" → "Custom"</li>
-              <li>4. Set dimensions to 89mm × 51mm (standard business card size)</li>
+              <li>4. Set dimensions to 93mm × 58mm (custom business card size)</li>
               <li>5. Enable "Background graphics" for colors</li>
               <li>6. Select "Print on both sides" (duplex printing)</li>
               <li>7. Choose "Short edge binding" for proper card orientation</li>
@@ -152,11 +152,11 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             <Image
               src="/qr code.png"
               alt="QR Code - Contact AI Super"
-              width={120}
-              height={120}
-              className="rounded-lg opacity-95 bg-white p-1"
+              width={140}
+              height={140}
+              className="rounded-lg opacity-95 bg-white p-2"
             />
-            <p className="text-xs text-center mt-1 opacity-90">Scan to Chat</p>
+            <p className="text-xs text-center mt-2 opacity-90">Scan to Chat</p>
           </div>
         </div>
       </div>
@@ -199,16 +199,16 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             <Image
               src="/qr code.png"
               alt="QR Code - Contact AI Super"
-              width={100}
-              height={100}
-              className="mx-auto mb-1 rounded-lg border border-gray-300"
+              width={120}
+              height={120}
+              className="mx-auto mb-2 rounded-lg border border-gray-300"
             />
             <div className="text-center">
               <Image
                 src="/logo_final5.png"
                 alt="AI Super Logo"
-                width={20}
-                height={20}
+                width={24}
+                height={24}
                 className="mx-auto mb-1 opacity-60"
               />
               <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
@@ -280,11 +280,11 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   <Image
                     src="/qr code.png"
                     alt="QR Code - Contact AI Super"
-                    width={120}
-                    height={120}
-                    className="rounded-lg opacity-95 bg-white p-1"
+                    width={140}
+                    height={140}
+                    className="rounded-lg opacity-95 bg-white p-2"
                   />
-                  <p className="text-xs text-center mt-1 opacity-90">Scan to Chat</p>
+                  <p className="text-xs text-center mt-2 opacity-90">Scan to Chat</p>
                 </div>
               </div>
             </div>
@@ -327,16 +327,16 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   <Image
                     src="/qr code.png"
                     alt="QR Code - Contact AI Super"
-                    width={100}
-                    height={100}
-                    className="mx-auto mb-1 rounded-lg border border-gray-300"
+                    width={120}
+                    height={120}
+                    className="mx-auto mb-2 rounded-lg border border-gray-300"
                   />
                   <div className="text-center">
                     <Image
                       src="/logo_final5.png"
                       alt="AI Super Logo"
-                      width={20}
-                      height={20}
+                      width={24}
+                      height={24}
                       className="mx-auto mb-1 opacity-60"
                     />
                     <p className="text-xs text-gray-600 font-medium">Scan to Chat</p>
