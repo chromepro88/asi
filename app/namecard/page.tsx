@@ -128,8 +128,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
               <Image
                 src="/qr code.png"
                 alt="QR Code - Contact AI Super"
-                width={24}
-                height={24}
+                width={36}
+                height={36}
                 className="rounded opacity-90"
               />
             </div>
@@ -182,8 +182,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             <Image
               src="/qr code.png"
               alt="QR Code - Contact AI Super"
-              width={28}
-              height={28}
+              width={40}
+              height={40}
               className="opacity-60"
             />
           </div>{/* Address and Social */}
@@ -242,8 +242,8 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                     <Image
                       src="/qr code.png"
                       alt="QR Code - Contact AI Super"
-                      width={24}
-                      height={24}
+                      width={36}
+                      height={36}
                       className="rounded opacity-90"
                     />
                   </div>
