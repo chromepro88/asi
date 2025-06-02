@@ -41,7 +41,7 @@ export default function BrochurePage() {
           }}
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg font-medium transition-colors"
         >
-          🖨️ Print A5 Brochure
+          🖨️ Print 152x214mm Brochure
         </button>
       </div>
 
