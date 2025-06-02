@@ -36,7 +36,7 @@ export default function BrochurePage() {
       <div className="fixed top-4 right-4 z-50 print:hidden">
         <button
           onClick={() => {
-            alert('To print 152x214mm brochure with colors:\n\n1. In print dialog, select "Custom" paper size\n2. Set size to 152mm x 214mm\n3. Click "More settings"\n4. Check "Background graphics"\n5. Set margins to "Custom: 5mm"\n6. Make sure "Fit to page" is unchecked\n7. Click "Print"');
+            alert('To print with 3mm bleed for A5 cutting:\n\n1. In print dialog, select "Custom" paper size\n2. Set size to 158mm x 220mm (includes 3mm bleed)\n3. Click "More settings"\n4. Check "Background graphics"\n5. Set margins to "None" or "0mm"\n6. Make sure "Fit to page" is unchecked\n7. Print on 158x220mm paper\n8. Cut to final A5 size (152x214mm) after printing');
             window.print();
           }}
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg font-medium transition-colors"
@@ -56,7 +56,7 @@ export default function BrochurePage() {
           
           @page {
             margin: 0mm; /* Remove page margins */
-            size: 152mm 214mm; /* Custom size: 152mm x 214mm */
+            size: 152mm 214mm; /* Bleed size: 152mm + 6mm, 214mm + 6mm */
           }
           
           html, body {
@@ -91,13 +91,21 @@ export default function BrochurePage() {
           
           /* Custom size specific adjustments */
           .a5-page {
-            height: 214mm !important; /* Full height */
-            width: 152mm !important;  /* Full width */
+            height: 214mm !important; /* Full bleed height */
+            width: 152mm !important;  /* Full bleed width */
             margin: 0 !important;
-            padding: 3mm !important; /* Reduced padding */
+            padding: 0 !important; /* No padding - content will handle safe area */
             box-sizing: border-box !important;
             page-break-after: always !important;
             page-break-inside: avoid !important;
+          }
+          
+          /* Safe area for content - keeps text away from trim lines */
+          .safe-area {
+            margin: 6mm !important; /* 3mm bleed + 3mm safe margin */
+            height: calc(214mm - 12mm) !important; /* Full height minus margins */
+            width: calc(152mm - 12mm) !important; /* Full width minus margins */
+            box-sizing: border-box !important;
           }
           
           /* Ensure second page appears */
@@ -130,7 +138,7 @@ export default function BrochurePage() {
           <div className="absolute top-1/2 left-1/2 w-16 h-16 rounded-full bg-white transform -translate-x-8 -translate-y-8"></div>
         </div>
 
-        <div className="relative h-full flex flex-col">
+        <div className="relative h-full flex flex-col safe-area">
           {/* Header - Compact */}
           <div className="mb-3">
             <div className="flex items-center space-x-3 mb-2">
@@ -199,7 +207,7 @@ export default function BrochurePage() {
         </div>
       </div>      {/* Back Page of Brochure - A5 Optimized */}
       <div className="a5-page bg-white text-gray-800">
-        <div className="h-full flex flex-col">
+        <div className="h-full flex flex-col safe-area">
           {/* Header - Compact */}
           <div className="text-center mb-6">
             <h2 className="text-3xl font-bold text-blue-900 mb-2">Why Choose AI Super?</h2>
