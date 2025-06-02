@@ -55,7 +55,7 @@ export default function BrochurePage() {
           }
           
           @page {
-            margin: 5mm;
+            margin: 0mm; /* Remove page margins */
             size: 152mm 214mm; /* Custom size: 152mm x 214mm */
           }
           
@@ -91,10 +91,10 @@ export default function BrochurePage() {
           
           /* Custom size specific adjustments */
           .a5-page {
-            height: 204mm !important; /* 214mm - 10mm margins */
-            width: 142mm !important;  /* 152mm - 10mm margins */
-            margin: 0 auto !important;
-            padding: 6mm !important;
+            height: 214mm !important; /* Full height */
+            width: 152mm !important;  /* Full width */
+            margin: 0 !important;
+            padding: 3mm !important; /* Reduced padding */
             box-sizing: border-box !important;
             page-break-after: always !important;
             page-break-inside: avoid !important;
@@ -107,15 +107,16 @@ export default function BrochurePage() {
           
           /* Smaller font sizes for A5 */
           .a5-title {
-            font-size: 2rem !important;
+            font-size: 2.5rem !important;
+            line-height: 1.1 !important;
           }
           
           .a5-subtitle {
-            font-size: 1rem !important;
+            font-size: 1.1rem !important;
           }
           
           .a5-body {
-            font-size: 0.8rem !important;
+            font-size: 0.9rem !important;
           }
         }
       `}</style>
@@ -129,68 +130,68 @@ export default function BrochurePage() {
           <div className="absolute top-1/2 left-1/2 w-16 h-16 rounded-full bg-white transform -translate-x-8 -translate-y-8"></div>
         </div>
 
-        <div className="relative h-full flex flex-col max-w-lg mx-auto">
+        <div className="relative h-full flex flex-col">
           {/* Header - Compact */}
-          <div className="mb-4">
-            <div className="flex items-center space-x-3 mb-3">
+          <div className="mb-3">
+            <div className="flex items-center space-x-3 mb-2">
               <Image
                 src="/logo_final5.png"
                 alt="AI Super Logo"
-                width={50}
-                height={50}
+                width={60}
+                height={60}
                 className="rounded-lg"
               />
               <div>
-                <h1 className="text-xl font-bold">AI SUPER</h1>
-                <p className="text-blue-200 text-sm">WhatsApp AI Solutions</p>
+                <h1 className="text-2xl font-bold">AI SUPER</h1>
+                <p className="text-blue-200 text-base">WhatsApp AI Solutions</p>
               </div>
             </div>
           </div>
 
           {/* Main Content - Optimized for A5 */}
           <div className="flex-1 flex flex-col justify-center">
-            <div className="text-center mb-6">
-              <h2 className="a5-title text-3xl font-bold mb-3 leading-tight">
+            <div className="text-center mb-8">
+              <h2 className="a5-title text-4xl font-bold mb-4 leading-tight">
                 Transform Your<br />
                 <span className="text-yellow-300">WhatsApp</span><br />
                 Into a Sales Machine
               </h2>
-              <p className="a5-subtitle text-sm text-blue-100 mb-4 leading-relaxed">
+              <p className="a5-subtitle text-lg text-blue-100 mb-6 leading-relaxed px-4">
                 Automate customer service, capture leads, and close sales 24/7 
                 with Singapore's #1 WhatsApp AI chatbot
               </p>
             </div>
 
             {/* Key Features Grid - 2x2 for A5 */}
-            <div className="grid grid-cols-2 gap-3 mb-6">
+            <div className="grid grid-cols-2 gap-4 mb-8 px-2">
               {features.map((feature, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-3 text-center">
-                  <div className="text-yellow-300 mb-2 flex justify-center">
-                    <div className="w-8 h-8 flex items-center justify-center">
-                      {React.cloneElement(feature.icon, { className: "w-4 h-4" })}
+                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+                  <div className="text-yellow-300 mb-3 flex justify-center">
+                    <div className="w-10 h-10 flex items-center justify-center">
+                      {React.cloneElement(feature.icon, { className: "w-6 h-6" })}
                     </div>
                   </div>
-                  <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
-                  <p className="text-xs text-blue-100">{feature.desc}</p>
+                  <h3 className="font-semibold text-base mb-2">{feature.title}</h3>
+                  <p className="text-sm text-blue-100">{feature.desc}</p>
                 </div>
               ))}
             </div>
 
             {/* CTA Section - Compact */}
-            <div className="text-center">
-              <div className="bg-yellow-400 text-blue-900 font-bold py-2 px-4 rounded-lg inline-block mb-2">
-                <span className="text-lg">Save 50% - Limited Time!</span>
+            <div className="text-center px-4">
+              <div className="bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-lg inline-block mb-3">
+                <span className="text-xl">Save 50% - Limited Time!</span>
               </div>
-              <p className="text-base text-blue-100">
-                Starting from <span className="font-bold text-yellow-300 text-lg">$49/month</span>
+              <p className="text-xl text-blue-100">
+                Starting from <span className="font-bold text-yellow-300 text-2xl">$49/month</span>
               </p>
             </div>
           </div>
 
           {/* Footer - Compact */}
-          <div className="mt-4">
-            <div className="text-center border-t border-white/20 pt-3">
-              <p className="text-sm text-blue-200">
+          <div className="mt-6">
+            <div className="text-center border-t border-white/20 pt-4">
+              <p className="text-base text-blue-200">
                 Trusted by 500+ businesses • Setup in 5 minutes
               </p>
             </div>
@@ -198,17 +199,17 @@ export default function BrochurePage() {
         </div>
       </div>      {/* Back Page of Brochure - A5 Optimized */}
       <div className="a5-page bg-white text-gray-800">
-        <div className="h-full flex flex-col max-w-lg mx-auto">
+        <div className="h-full flex flex-col">
           {/* Header - Compact */}
-          <div className="text-center mb-4">
-            <h2 className="text-2xl font-bold text-blue-900 mb-1">Why Choose AI Super?</h2>
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-bold text-blue-900 mb-2">Why Choose AI Super?</h2>
           </div>
 
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 space-y-6">
             {/* Services Section - Ultra Compact */}
             <div>
-              <h3 className="text-base font-bold text-blue-900 mb-2">Our Services</h3>
-              <div className="grid grid-cols-2 gap-1 text-xs">
+              <h3 className="text-xl font-bold text-blue-900 mb-3">Our Services</h3>
+              <div className="grid grid-cols-2 gap-2 text-sm">
                 {[
                   "WhatsApp AI Chatbots",
                   "Voice Recognition", 
@@ -217,8 +218,8 @@ export default function BrochurePage() {
                   "Lead Capture",
                   "Custom AI Solutions"
                 ].map((service, index) => (
-                  <div key={index} className="flex items-center space-x-1">
-                    <CheckCircle className="w-3 h-3 text-green-500 flex-shrink-0" />
+                  <div key={index} className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                     <span>{service}</span>
                   </div>
                 ))}
@@ -226,31 +227,31 @@ export default function BrochurePage() {
             </div>
 
             {/* Pricing & Testimonials - Side by Side */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-6">
               {/* Pricing - Very Compact */}
               <div>
-                <h3 className="text-base font-bold text-blue-900 mb-2">Launch Pricing</h3>
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-2">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Launch Pricing</h3>
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-4">
                   <div className="text-center">
-                    <p className="text-xs opacity-90">Monthly</p>
-                    <p className="text-lg font-bold">$49</p>
-                    <p className="text-xs line-through opacity-70">$99</p>
-                    <p className="text-xs mt-1">⚡ Save 50%!</p>
+                    <p className="text-sm opacity-90">Monthly</p>
+                    <p className="text-3xl font-bold">$49</p>
+                    <p className="text-sm line-through opacity-70">$99</p>
+                    <p className="text-sm mt-2">⚡ Save 50%!</p>
                   </div>
                 </div>
               </div>
 
               {/* Testimonials - Very Compact */}
               <div>
-                <h3 className="text-base font-bold text-blue-900 mb-2">Client Reviews</h3>
-                <div className="space-y-1">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Client Reviews</h3>
+                <div className="space-y-2">
                   {testimonials.slice(0, 2).map((testimonial, index) => (
-                    <div key={index} className="bg-blue-50 rounded p-2">
-                      <div className="flex items-start space-x-1">
-                        <Star className="w-3 h-3 text-yellow-500 mt-0.5 flex-shrink-0" />
+                    <div key={index} className="bg-blue-50 rounded p-3">
+                      <div className="flex items-start space-x-2">
+                        <Star className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-xs italic">"{testimonial.text}"</p>
-                          <p className="text-xs text-gray-600">- {testimonial.name}</p>
+                          <p className="text-sm italic">"{testimonial.text}"</p>
+                          <p className="text-sm text-gray-600">- {testimonial.name}</p>
                         </div>
                       </div>
                     </div>
@@ -260,40 +261,40 @@ export default function BrochurePage() {
             </div>
 
             {/* Contact - Large QR Code Focus */}
-            <div className="bg-gray-50 rounded-lg p-3 flex-1">
+            <div className="bg-gray-50 rounded-lg p-6 flex-1">
               <div className="text-center">
                 {/* QR Code - Prominent */}
-                <div className="bg-white p-3 rounded-lg inline-block shadow-md border border-blue-200 mb-3">
+                <div className="bg-white p-4 rounded-lg inline-block shadow-md border border-blue-200 mb-4">
                   <Image
                     src="/qr code.png"
                     alt="QR Code - Contact AI Super"
-                    width={100}
-                    height={100}
+                    width={120}
+                    height={120}
                     className="rounded"
                   />
                 </div>
-                <p className="text-lg font-bold text-blue-900">📱 Scan to Chat</p>
-                <p className="text-xs text-gray-600 mb-3">Get instant demo & pricing</p>
+                <p className="text-2xl font-bold text-blue-900">📱 Scan to Chat</p>
+                <p className="text-sm text-gray-600 mb-4">Get instant demo & pricing</p>
                 
                 {/* Company Info - Minimal */}
-                <div className="border-t border-gray-200 pt-2">
-                  <div className="flex items-center justify-center space-x-2 mb-1">
+                <div className="border-t border-gray-200 pt-3">
+                  <div className="flex items-center justify-center space-x-3 mb-2">
                     <Image
                       src="/logo_final5.png"
                       alt="AI Super Logo"
-                      width={20}
-                      height={20}
+                      width={24}
+                      height={24}
                       className="rounded"
                     />
-                    <span className="font-bold text-blue-900 text-xs">AI SUPER PTE LTD</span>
+                    <span className="font-bold text-blue-900 text-sm">AI SUPER PTE LTD</span>
                   </div>
                   
-                  <div className="text-xs space-y-1">
-                    <div className="flex items-center justify-center space-x-3">
+                  <div className="text-sm space-y-2">
+                    <div className="flex items-center justify-center space-x-4">
                       <span>{companyInfo.phone}</span>
                       <span>{companyInfo.website}</span>
                     </div>
-                    <p className="text-blue-900 font-semibold">🚀 Singapore's #1 WhatsApp AI Solution</p>
+                    <p className="text-blue-900 font-semibold text-base">🚀 Singapore's #1 WhatsApp AI Solution</p>
                   </div>
                 </div>
               </div>
