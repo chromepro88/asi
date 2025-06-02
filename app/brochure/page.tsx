@@ -55,7 +55,7 @@ export default function BrochurePage() {
           
           @page {
             margin: 0.5in;
-            size: auto;
+            size: 152mm 214mm;
           }
           
           body {
