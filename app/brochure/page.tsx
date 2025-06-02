@@ -36,7 +36,7 @@ export default function BrochurePage() {
       <div className="fixed top-4 right-4 z-50 print:hidden">
         <button
           onClick={() => {
-            alert('To print A5 brochure with colors:\n\n1. In print dialog, select "A5" paper size\n2. Click "More settings"\n3. Check "Background graphics"\n4. Set margins to "Minimum" or "Custom: 0.3in"\n5. Click "Print"');
+            alert('To print 152x214mm brochure with colors:\n\n1. In print dialog, select "Custom" paper size\n2. Set size to 152mm x 214mm\n3. Click "More settings"\n4. Check "Background graphics"\n5. Set margins to "Minimum" or "Custom: 0.3in"\n6. Click "Print"');
             window.print();
           }}
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg font-medium transition-colors"
@@ -56,7 +56,7 @@ export default function BrochurePage() {
           
           @page {
             margin: 0.3in;
-            size: A5 portrait; /* 148mm x 210mm */
+            size: 152mm 214mm; /* Custom size: 152mm x 214mm */
           }
           
           body {
@@ -89,10 +89,10 @@ export default function BrochurePage() {
             print-color-adjust: exact !important;
           }
           
-          /* A5 specific adjustments */
+          /* Custom size specific adjustments */
           .a5-page {
-            height: 210mm !important;
-            width: 148mm !important;
+            height: 214mm !important;
+            width: 152mm !important;
           }
           
           /* Smaller font sizes for A5 */
