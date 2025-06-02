@@ -36,7 +36,7 @@ export default function BrochurePage() {
       <div className="fixed top-4 right-4 z-50 print:hidden">
         <button
           onClick={() => {
-            alert('To print 152x214mm brochure with colors:\n\n1. In print dialog, select "Custom" paper size\n2. Set size to 152mm x 214mm\n3. Click "More settings"\n4. Check "Background graphics"\n5. Set margins to "None" or "0"\n6. Make sure "Fit to page" is unchecked\n7. Click "Print"');
+            alert('To print 152x214mm brochure with colors:\n\n1. In print dialog, select "Custom" paper size\n2. Set size to 152mm x 214mm\n3. Click "More settings"\n4. Check "Background graphics"\n5. Set margins to "Custom: 5mm"\n6. Make sure "Fit to page" is unchecked\n7. Click "Print"');
             window.print();
           }}
           className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg font-medium transition-colors"
@@ -52,14 +52,11 @@ export default function BrochurePage() {
             -webkit-print-color-adjust: exact !important;
             color-adjust: exact !important;
             print-color-adjust: exact !important;
-            margin: 0 !important;
-            padding: 0 !important;
           }
           
           @page {
-            margin: 0 !important;
+            margin: 5mm;
             size: 152mm 214mm; /* Custom size: 152mm x 214mm */
-            padding: 0 !important;
           }
           
           html, body {
@@ -67,11 +64,6 @@ export default function BrochurePage() {
             color-adjust: exact !important;
             print-color-adjust: exact !important;
             font-size: 12px;
-            margin: 0 !important;
-            padding: 0 !important;
-            width: 152mm !important;
-            height: 214mm !important;
-            overflow: hidden !important;
           }
           
           /* Force background colors and gradients to print */
@@ -99,21 +91,18 @@ export default function BrochurePage() {
           
           /* Custom size specific adjustments */
           .a5-page {
-            height: 214mm !important;
-            width: 152mm !important;
-            margin: 0 !important;
-            padding: 8mm !important; /* Internal padding instead of page margin */
+            height: 204mm !important; /* 214mm - 10mm margins */
+            width: 142mm !important;  /* 152mm - 10mm margins */
+            margin: 0 auto !important;
+            padding: 6mm !important;
             box-sizing: border-box !important;
             page-break-after: always !important;
+            page-break-inside: avoid !important;
           }
           
-          /* Remove any default margins/padding that might cause black bars */
-          .a5-page:first-child {
-            page-break-before: avoid !important;
-          }
-          
+          /* Ensure second page appears */
           .a5-page:last-child {
-            page-break-after: avoid !important;
+            page-break-after: auto !important;
           }
           
           /* Smaller font sizes for A5 */
