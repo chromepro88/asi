@@ -190,130 +190,101 @@ export default function BrochurePage() {
       <div className="a5-page bg-white text-gray-800 p-4">
         <div className="h-full flex flex-col max-w-lg mx-auto">
           {/* Header - Compact */}
-          <div className="text-center mb-6">
-            <h2 className="a5-title text-3xl font-bold text-blue-900 mb-2">Why Choose AI Super?</h2>
-            <p className="a5-body text-gray-600 text-sm">Join Singapore's leading businesses</p>
+          <div className="text-center mb-4">
+            <h2 className="text-2xl font-bold text-blue-900 mb-1">Why Choose AI Super?</h2>
           </div>
 
-          <div className="flex-1 grid grid-cols-1 gap-6">
-            {/* Services Section - Streamlined */}
+          <div className="flex-1 space-y-4">
+            {/* Services Section - Ultra Compact */}
             <div>
-              <h3 className="text-lg font-bold text-blue-900 mb-3">Our Services</h3>
-              <div className="grid grid-cols-1 gap-2">
+              <h3 className="text-base font-bold text-blue-900 mb-2">Our Services</h3>
+              <div className="grid grid-cols-2 gap-1 text-xs">
                 {[
                   "WhatsApp AI Chatbots",
-                  "Voice Message Recognition", 
-                  "Multilingual Support (50+ languages)",
+                  "Voice Recognition", 
+                  "50+ Languages",
                   "Calendar Integration",
-                  "Lead Capture & CRM",
+                  "Lead Capture",
                   "Custom AI Solutions"
                 ].map((service, index) => (
-                  <div key={index} className="flex items-start space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{service}</span>
+                  <div key={index} className="flex items-center space-x-1">
+                    <CheckCircle className="w-3 h-3 text-green-500 flex-shrink-0" />
+                    <span>{service}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Pricing - Compact */}
-            <div>
-              <h3 className="text-lg font-bold text-blue-900 mb-3">Special Launch Pricing</h3>
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-4">
-                <div className="grid grid-cols-3 gap-2 text-center mb-3">
-                  <div>
+            {/* Pricing & Testimonials - Side by Side */}
+            <div className="grid grid-cols-2 gap-3">
+              {/* Pricing - Very Compact */}
+              <div>
+                <h3 className="text-base font-bold text-blue-900 mb-2">Launch Pricing</h3>
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-2">
+                  <div className="text-center">
                     <p className="text-xs opacity-90">Monthly</p>
                     <p className="text-lg font-bold">$49</p>
                     <p className="text-xs line-through opacity-70">$99</p>
-                  </div>
-                  <div>
-                    <p className="text-xs opacity-90">3 Months</p>
-                    <p className="text-lg font-bold">$129</p>
-                    <p className="text-xs line-through opacity-70">$199</p>
-                  </div>
-                  <div>
-                    <p className="text-xs opacity-90">12 Months</p>
-                    <p className="text-lg font-bold">$449</p>
-                    <p className="text-xs line-through opacity-70">$699</p>
+                    <p className="text-xs mt-1">⚡ Save 50%!</p>
                   </div>
                 </div>
-                <p className="text-xs text-center opacity-90">⚡ Save up to 50% - Limited time!</p>
               </div>
-            </div>
 
-            {/* Testimonials - Compact */}
-            <div>
-              <h3 className="text-lg font-bold text-blue-900 mb-3">Client Reviews</h3>
-              <div className="space-y-2">
-                {testimonials.map((testimonial, index) => (
-                  <div key={index} className="bg-blue-50 rounded-lg p-3">
-                    <div className="flex items-start space-x-2">
-                      <Star className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <div>
-                        <p className="text-xs italic mb-1">"{testimonial.text}"</p>
-                        <p className="text-xs text-gray-600">
-                          <strong>{testimonial.name}</strong> - {testimonial.company}
-                        </p>
+              {/* Testimonials - Very Compact */}
+              <div>
+                <h3 className="text-base font-bold text-blue-900 mb-2">Client Reviews</h3>
+                <div className="space-y-1">
+                  {testimonials.slice(0, 2).map((testimonial, index) => (
+                    <div key={index} className="bg-blue-50 rounded p-2">
+                      <div className="flex items-start space-x-1">
+                        <Star className="w-3 h-3 text-yellow-500 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-xs italic">"{testimonial.text}"</p>
+                          <p className="text-xs text-gray-600">- {testimonial.name}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Contact - Prominent QR Code */}
-            <div className="bg-gray-50 rounded-lg p-4">
-              {/* QR Code Section */}
-              <div className="text-center mb-4">
-                <div className="bg-white p-4 rounded-lg inline-block shadow-md border border-blue-200">
+            {/* Contact - Large QR Code Focus */}
+            <div className="bg-gray-50 rounded-lg p-3 flex-1">
+              <div className="text-center">
+                {/* QR Code - Prominent */}
+                <div className="bg-white p-3 rounded-lg inline-block shadow-md border border-blue-200 mb-3">
                   <Image
                     src="/qr code.png"
                     alt="QR Code - Contact AI Super"
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
                     className="rounded"
                   />
                 </div>
-                <p className="text-lg font-bold text-blue-900 mt-2">📱 Scan to Chat</p>
-                <p className="text-xs text-gray-600">Get instant demo & pricing</p>
-              </div>
-
-              {/* Company Info */}
-              <div className="text-center">
-                <div className="flex items-center justify-center space-x-2 mb-2">
-                  <Image
-                    src="/logo_final5.png"
-                    alt="AI Super Logo"
-                    width={25}
-                    height={25}
-                    className="rounded"
-                  />
-                  <div>
-                    <h4 className="font-bold text-blue-900 text-xs">{companyInfo.name}</h4>
-                    <p className="text-xs text-gray-600">Reg. No: {companyInfo.regNo}</p>
-                  </div>
-                </div>
+                <p className="text-lg font-bold text-blue-900">📱 Scan to Chat</p>
+                <p className="text-xs text-gray-600 mb-3">Get instant demo & pricing</p>
                 
-                <div className="text-xs space-y-1">
-                  <div className="flex items-center justify-center space-x-4">
-                    <div className="flex items-center space-x-1">
-                      <Phone className="w-3 h-3 text-blue-600" />
+                {/* Company Info - Minimal */}
+                <div className="border-t border-gray-200 pt-2">
+                  <div className="flex items-center justify-center space-x-2 mb-1">
+                    <Image
+                      src="/logo_final5.png"
+                      alt="AI Super Logo"
+                      width={20}
+                      height={20}
+                      className="rounded"
+                    />
+                    <span className="font-bold text-blue-900 text-xs">AI SUPER PTE LTD</span>
+                  </div>
+                  
+                  <div className="text-xs space-y-1">
+                    <div className="flex items-center justify-center space-x-3">
                       <span>{companyInfo.phone}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Globe className="w-3 h-3 text-blue-600" />
                       <span>{companyInfo.website}</span>
                     </div>
+                    <p className="text-blue-900 font-semibold">🚀 Singapore's #1 WhatsApp AI Solution</p>
                   </div>
-                </div>
-                
-                <div className="mt-3 pt-2 border-t border-gray-200">
-                  <p className="text-sm font-bold text-blue-900">
-                    🚀 Singapore's #1 WhatsApp AI Solution
-                  </p>
-                  <p className="text-xs text-gray-600 mt-1">
-                    Free 14-day trial • Setup in 5 minutes
-                  </p>
                 </div>
               </div>
             </div>
