@@ -7,7 +7,7 @@ import { Phone, Mail, Globe, MapPin, User, Building } from "lucide-react";
 export default function NamecardPage() {  // Contact information for Sin Ren Xiang, CEO
   const contactInfo = {
     name: "SIN REN XIANG",
-    title: "Chief Executive Officer", 
+    title: "Sales & Marketing Director", 
     phone: "+65 8837 9368",
     email: "hello@asi.sg",
     website: "www.asi.sg",
