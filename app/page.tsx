@@ -103,17 +103,11 @@ const Home: React.FC = () => {
                 <span>No coding required</span>
               </div>
             </div>
-            
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
-              <Button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 text-lg font-semibold" asChild>
+              {/* CTAs */}
+            <div className="flex justify-center w-full max-w-md">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 text-lg font-semibold" asChild>
                 <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                   Get Started Now
-                </Link>
-              </Button>
-              <Button variant="outline" className="flex-1 border-blue-600 text-blue-600 hover:bg-blue-50 py-3 px-6 text-lg font-semibold" asChild>
-                <Link href="#video-embed">
-                  Watch Demo
                 </Link>
               </Button>
             </div>
