@@ -415,9 +415,9 @@ const Home: React.FC = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-lg font-semibold text-gray-900">12 Months</CardTitle>
                 <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$449</span>
+                  <span className="text-2xl font-bold text-gray-900">$349</span>
                   <p className="text-red-500 line-through mt-2">$699</p>
-                  <p className="text-green-500 font-semibold">Save $250!</p>
+                  <p className="text-green-500 font-semibold">Save $350!</p>
                   <p className="text-xs text-gray-500 mt-2">Maximum savings</p>
                 </CardDescription>
               </CardHeader>
