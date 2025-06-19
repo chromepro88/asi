@@ -39,28 +39,33 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
       <WhatsAppButton />
-      <SmoothScroll />
-
-      {/* Header */}
+      <SmoothScroll />      {/* Header */}
       <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
             <Image src="logo_final5.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
           </Link>
-          <nav className="flex gap-3 sm:gap-5">
-            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-              Features
-            </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-              Pricing
-            </Link>
-            <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-              Demo
-            </Link>
-            <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-              Contact
-            </Link>
-          </nav>
+          <div className="flex items-center gap-4">
+            <nav className="flex gap-3 sm:gap-5">
+              <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
+                Features
+              </Link>
+              <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
+                Pricing
+              </Link>
+              <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
+                Demo
+              </Link>
+              <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
+                Contact
+              </Link>
+            </nav>
+            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                Sign Up
+              </Link>
+            </Button>
+          </div>
         </div>
       </header>
 
