@@ -70,63 +70,68 @@ const Home: React.FC = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-20 lg:py-28 xl:py-36 bg-white">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center space-y-6 text-center">
+      <section className="w-full py-20 md:py-32 lg:py-40 bg-white">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-5xl mx-auto">
+          <div className="flex flex-col items-center space-y-10 text-center">
             {/* Trust Badge */}
-            <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full border border-blue-200">
+            <div className="flex items-center gap-2 bg-blue-50 px-6 py-3 rounded-full border border-blue-200">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm text-blue-700 font-medium">Trusted by 500+ businesses worldwide</span>
             </div>
-              <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-gray-900">
-              The No.1 AI Chatbot in the World
+            
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
+              The No.1 AI Chatbot<br/>in the World
             </h1>
-            <p className="max-w-[700px] text-gray-600 text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed">
-              Transform your WhatsApp into a powerful sales machine. Our AI chatbot automatically responds to customers 24/7, 
-              nurtures leads, and <span className="font-semibold text-blue-600">increases sales by up to 40%</span> - all while you sleep.
+            
+            <p className="max-w-[600px] text-gray-600 text-xl md:text-2xl lg:text-3xl leading-relaxed">
+              Transform your WhatsApp into a powerful sales machine. 
+              <span className="font-semibold text-blue-600"> Increase sales by 40%</span> while you sleep.
             </p>
-              {/* Key Benefits */}
-            <div className="flex flex-wrap justify-center gap-6 text-base md:text-lg lg:text-xl text-gray-600">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span>5-minute setup</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span>24/7 automation</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs">✓</span>
-                </div>
-                <span>No coding required</span>
-              </div>
-            </div>
-              {/* CTAs */}
-            <div className="flex justify-center w-full max-w-md">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 text-lg md:text-xl lg:text-2xl font-semibold" asChild>
+            
+            {/* CTA */}
+            <div className="pt-4">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
                 <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                  Start Free
+                  Start Free Today
                 </Link>
               </Button>
             </div>
             
+            {/* Key Benefits */}
+            <div className="flex flex-wrap justify-center gap-8 text-lg text-gray-600 pt-6">
+              <div className="flex items-center gap-3">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">✓</span>
+                </div>
+                <span>5-minute setup</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">✓</span>
+                </div>
+                <span>24/7 automation</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">✓</span>
+                </div>
+                <span>No coding required</span>
+              </div>
+            </div>
+            
             {/* Social Proof Numbers */}
-            <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t border-gray-200 w-full max-w-lg">              <div className="text-center">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">10K+</div>
-                <div className="text-sm md:text-base lg:text-lg text-gray-500">Messages Automated Daily</div>
+            <div className="grid grid-cols-3 gap-12 pt-16 mt-16 border-t border-gray-200 w-full max-w-2xl">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">10K+</div>
+                <div className="text-gray-500 mt-2">Messages Daily</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">500+</div>
-                <div className="text-sm md:text-base lg:text-lg text-gray-500">Happy Clients</div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">500+</div>
+                <div className="text-gray-500 mt-2">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">40%</div>
-                <div className="text-sm md:text-base lg:text-lg text-gray-500">Average Sales Increase</div>
+                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">40%</div>
+                <div className="text-gray-500 mt-2">Sales Increase</div>
               </div>
             </div>
           </div>
@@ -134,84 +139,119 @@ const Home: React.FC = () => {
       </section>
 
       {/* Real Estate Partners Section */}
-      <section className="w-full py-8 md:py-12 bg-gray-50">
+      <section className="w-full py-12 md:py-16 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">Trusted by Real Estate Leaders</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <Image src="/PropNex.png" alt="PropNex" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/Huttons.png" alt="Huttons" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/OrangeTee.jpeg" alt="OrangeTee" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/realstar.png" alt="Realstar Premier Group" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+          <div className="text-center mb-8">
+            <h3 className="text-lg font-semibold text-gray-700 mb-2">Trusted by Singapore's Top Real Estate Agencies</h3>
+            <p className="text-gray-600">Helping agents close more deals with AI automation</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+              <Image src="/PropNex.png" alt="PropNex" width={100} height={40} className="mb-2" />
+              <span className="text-xs text-gray-500">Leading Agency</span>
+            </div>
+            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+              <Image src="/Huttons.png" alt="Huttons" width={100} height={40} className="mb-2" />
+              <span className="text-xs text-gray-500">Premium Properties</span>
+            </div>
+            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+              <Image src="/OrangeTee.jpeg" alt="OrangeTee" width={100} height={40} className="mb-2" />
+              <span className="text-xs text-gray-500">Established 1995</span>
+            </div>
+            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
+              <Image src="/realstar.png" alt="Realstar Premier Group" width={100} height={40} className="mb-2" />
+              <span className="text-xs text-gray-500">Premier Group</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Press Coverage Section */}
-      <section className="w-full py-8 md:py-12 bg-white">
+      <section className="w-full py-12 md:py-16 bg-white">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">As Featured In</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <Image src="/techcrunch.jpg" alt="TechCrunch" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/ycombinator.jpg" alt="Y Combinator" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/google.jpg" alt="Google" width={80} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/meta.jpg" alt="Meta" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/yahoo.jpg" alt="Yahoo" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+          <h3 className="text-center text-lg font-semibold text-gray-600 mb-8">Recognized by Industry Leaders</h3>
+          <div className="flex flex-wrap justify-center items-center gap-12 opacity-70">
+            <div className="flex flex-col items-center">
+              <Image src="/techcrunch.jpg" alt="TechCrunch" width={120} height={40} className="grayscale hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-gray-400 mt-2">AI Innovation</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image src="/ycombinator.jpg" alt="Y Combinator" width={120} height={40} className="grayscale hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-gray-400 mt-2">Startup Accelerator</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Image src="/google.jpg" alt="Google Cloud Partner" width={80} height={40} className="grayscale hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-gray-400 mt-2">Cloud Partner</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-6 text-gray-900">
-            Transform Your Business with AI Automation
-          </h2>
-          <p className="text-center text-gray-600 text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto">
-            Stop losing customers to slow responses. Our AI chatbot works 24/7 to capture leads, answer questions, and close sales automatically.
-          </p>
-          <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-3xl">🤖</span>
-                </div>
-                <CardTitle className="text-blue-600 text-xl md:text-2xl lg:text-3xl">Never Miss a Lead Again</CardTitle>
-                <CardDescription className="text-gray-600 text-lg md:text-xl lg:text-2xl">
-                  AI responds to customers instantly, 24/7. Capture leads while you sleep and 
-                  <span className="font-semibold text-green-600"> convert 40% more prospects</span> into paying customers.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-3xl">📢</span>
-                </div>
-                <CardTitle className="text-blue-600 text-xl md:text-2xl lg:text-3xl">Reach Thousands Instantly</CardTitle>
-                <CardDescription className="text-gray-600 text-lg md:text-xl lg:text-2xl">
-                  Send personalized bulk messages to your entire customer base in seconds. 
-                  <span className="font-semibold text-green-600"> Increase engagement by 300%</span> with targeted messaging.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-3xl">⚡</span>
-                </div>
-                <CardTitle className="text-blue-600 text-xl md:text-2xl lg:text-3xl">Setup in Minutes, Not Days</CardTitle>
-                <CardDescription className="text-gray-600 text-lg md:text-xl lg:text-2xl">
-                  Connect your WhatsApp and go live instantly. No technical skills needed. 
-                  <span className="font-semibold text-green-600"> Start earning in 5 minutes.</span>
-                </CardDescription>
-              </CardHeader>
-            </Card>
+      <section id="features" className="w-full py-20 md:py-28 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
+              Transform Your Business with AI
+            </h2>
+            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
+              Stop losing customers to slow responses. Let AI work 24/7 for you.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            {/* Feature 1 */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                <span className="text-4xl">🤖</span>
+              </div>
+              <h3 className="text-blue-600 text-2xl font-bold mb-4">Never Miss a Lead</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                AI responds instantly, 24/7. <br/>
+                <span className="font-semibold text-green-600">Convert 40% more prospects</span> while you sleep.
+              </p>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                <span className="text-4xl">📢</span>
+              </div>
+              <h3 className="text-purple-600 text-2xl font-bold mb-4">Reach Thousands</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Send bulk messages in seconds. <br/>
+                <span className="font-semibold text-green-600">Increase engagement by 300%</span> instantly.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
+                <span className="text-4xl">⚡</span>
+              </div>
+              <h3 className="text-green-600 text-2xl font-bold mb-4">Setup in Minutes</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                No technical skills needed. <br/>
+                <span className="font-semibold text-green-600">Start earning in 5 minutes</span> flat.
+              </p>
+            </div>
+          </div>
+          
+          {/* CTA in Features Section */}
+          <div className="text-center mt-16">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
+              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                Get Started Now
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
 
-      <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 text-gray-900">
+      <section id="testimonials" className="w-full py-20 md:py-28 bg-blue-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-gray-900">
             Trusted by Leading Brands
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -274,29 +314,40 @@ const Home: React.FC = () => {
       <section className="w-full py-8 md:py-12 bg-white border-t border-gray-200">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <h3 className="text-center text-sm font-medium text-gray-500 mb-6">Secure Payment Methods</h3>
-          <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
-            <Image src="/visa.jpg" alt="Visa" width={60} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/mastercard.jpg" alt="Mastercard" width={60} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/paypal.jpg" alt="PayPal" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/stripe.jpg" alt="Stripe" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/googlepay.jpg" alt="Google Pay" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/applepay.jpg" alt="Apple Pay" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+          <div className="flex flex-wrap justify-center items-center gap-8 text-gray-500">
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <span className="text-blue-600">💳</span>
+              <span>Visa & Mastercard</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <span className="text-blue-600">🔒</span>
+              <span>PayPal & Stripe</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <span className="text-green-600">📱</span>
+              <span>Apple & Google Pay</span>
+            </div>
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <span className="text-green-500">🛡️</span>
+              <span>256-bit SSL Encryption</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
+      <section id="pricing" className="w-full py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-8">            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-gray-900">
-              Choose Your Success Plan
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
+              Choose Your Plan
             </h2>
-            <p className="text-gray-600 text-lg md:text-xl lg:text-2xl mb-4">
-              Join 500+ businesses already automating their WhatsApp sales
+            <p className="text-gray-600 text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+              Join 500+ businesses automating their WhatsApp sales
             </p>
             {/* Urgency Element */}
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4 max-w-2xl mx-auto mb-8">
-              <p className="text-red-600 font-semibold">⚡ Limited Time: Save up to 50% - Offer ends soon!</p>
+            <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 max-w-lg mx-auto">
+              <p className="text-red-600 font-bold text-lg">⚡ Limited Time: Save up to 50%</p>
             </div>
           </div>
           
@@ -485,36 +536,76 @@ const Home: React.FC = () => {
       </section>
 
       {/* Video Section */}
-      <section id="video-embed" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
-          <div className="w-full flex flex-col items-center justify-center gap-6 md:flex-row md:gap-6">
-            <div className="w-full md:w-1/3 flex justify-center">
-              <Image
-                src="/output.gif"
-                alt="AI Super WhatsApp Chatbot Calendar Integration Demo"
-                width={315}
-                height={560}
-                className="rounded-lg shadow-lg"
-              />
+      <section id="video-embed" className="w-full py-20 md:py-28 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
+              See AI Super in Action
+            </h2>
+            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
+              Watch how our AI chatbot transforms customer conversations
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            <div className="flex flex-col items-center">
+              <div className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <Image
+                  src="/output.gif"
+                  alt="Calendar Integration Demo"
+                  width={280}
+                  height={500}
+                  className="rounded-xl"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Calendar Integration</h3>
+              <p className="text-gray-600 text-center">Book appointments automatically</p>
             </div>
-            <div className="w-full md:w-1/3 flex justify-center">
-              <Image
-                src="/output2.gif"
-                alt="AI Super WhatsApp Chatbot Voice Message and Multilingual Support Demo"
-                width={315}
-                height={560}
-                className="rounded-lg shadow-lg"
-              />
+            
+            <div className="flex flex-col items-center">
+              <div className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <Image
+                  src="/output2.gif"
+                  alt="Voice & Multilingual Demo"
+                  width={280}
+                  height={500}
+                  className="rounded-xl"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Voice & Multilingual</h3>
+              <p className="text-gray-600 text-center">Understands voice in any language</p>
             </div>
-            <div className="w-full md:w-1/3 flex justify-center">
-              <Image
-                src="/output3.gif"
-                alt="AI Super WhatsApp Chatbot Demo"
-                width={315}
-                height={560}
-                className="rounded-lg shadow-lg"
-              />
+            
+            <div className="flex flex-col items-center">
+              <div className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <Image
+                  src="/output3.gif"
+                  alt="AI Conversation Demo"
+                  width={280}
+                  height={500}
+                  className="rounded-xl"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Smart Conversations</h3>
+              <p className="text-gray-600 text-center">Natural AI responses 24/7</p>
             </div>
+          </div>
+          
+          <div className="text-center mt-16">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
+              <Link href="/video" target="_blank" rel="noopener noreferrer">
+                Watch Full Demo
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -547,52 +638,39 @@ const Home: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-center mb-12 text-gray-900">
-            Frequently Asked Questions
+      <section id="faq" className="w-full py-20 md:py-28 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-gray-900">
+            Common Questions
           </h2>
-          <div className="grid gap-6">            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">How quickly can I set up the WhatsApp chatbot?</h3>
-              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
-                Setup takes just 5 minutes! Simply connect your WhatsApp number, customize your responses, and you're live. 
-                No technical skills or coding required - we handle everything for you.
+          <div className="space-y-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">How quickly can I set up?</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required.
               </p>
-            </Card>
-              <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">Will I still receive calls on my WhatsApp number?</h3>
-              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
-                Absolutely! Your phone number remains fully functional for calls and personal messages. 
-                The AI only handles business messages automatically while preserving all your normal WhatsApp functionality.
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Will I still receive calls?</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Absolutely! Your phone works normally. AI only handles business messages automatically.
               </p>
-            </Card>
-              <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">What languages does the chatbot support?</h3>
-              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
-                Our AI chatbot supports multiple languages including English, Mandarin, Malay, Tamil, and many others. 
-                It can even understand and respond to voice messages in different languages automatically.
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">What languages are supported?</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                English, Mandarin, Malay, Tamil, and 50+ others. Even understands voice messages automatically.
               </p>
-            </Card>
-              <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">Is my customer data secure?</h3>
-              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
-                Yes, we take security seriously. We don't store your chat conversations - all messages are processed in real-time 
-                and not saved on our servers. Your customer data is encrypted during processing and we're fully compliant with 
-                privacy regulations. We never share your customer information with third parties.
+            </div>
+            
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Is my data secure?</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Yes! We don't store conversations. Everything is encrypted and processed in real-time only.
               </p>
-            </Card>
-              <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">What if I need to cancel my subscription?</h3>
-              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
-                You can cancel anytime with no questions asked.
-              </p>
-            </Card>
-              <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">Can the AI handle complex customer inquiries?</h3>
-              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
-                Our AI is trained to handle 90% of common customer questions automatically. For complex issues, 
-                it can be programmed to connect customers to a human agent with full conversation context, so you never miss important details.
-              </p>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
