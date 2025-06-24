@@ -212,6 +212,33 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Press Coverage Section */}
+      <section className="w-full py-8 md:py-12 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">As Featured In</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <Image src="/techcrunch.jpg" alt="TechCrunch" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/ycombinator.jpg" alt="Y Combinator" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/google.jpg" alt="Google" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/meta.jpg" alt="Meta" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/yahoo.jpg" alt="Yahoo" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+          </div>
+        </div>
+      </section>
+
+      {/* Real Estate Partners Section */}
+      <section className="w-full py-8 md:py-12 bg-white">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">Trusted by Real Estate Leaders</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <Image src="/PropNex.png" alt="PropNex" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/Huttons.png" alt="Huttons" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/OrangeTee.jpeg" alt="OrangeTee" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/realstar.png" alt="Realstar Premier Group" width={120} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+          </div>
+        </div>
+      </section>
+
       <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 text-gray-900">
             Trusted by Leading Brands
@@ -268,6 +295,21 @@ const Home: React.FC = () => {
                 <p className="text-sm text-gray-500 mt-2">James Lee, Realstar Premier Group Private Limited</p>
               </CardHeader>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Payment Methods Section */}
+      <section className="w-full py-8 md:py-12 bg-white border-t border-gray-200">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">Secure Payment Methods</h3>
+          <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
+            <Image src="/visa.jpg" alt="Visa" width={60} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/mastercard.jpg" alt="Mastercard" width={60} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/paypal.jpg" alt="PayPal" width={80} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/stripe.jpg" alt="Stripe" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/googlepay.jpg" alt="Google Pay" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/applepay.jpg" alt="Apple Pay" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
           </div>
         </div>
       </section>
