@@ -43,7 +43,7 @@ const Home: React.FC = () => {
       <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
-            <Image src="logo_final5.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
+            <Image src="logo2.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
           </Link>
           <div className="flex items-center gap-4">
             <nav className="flex gap-3 sm:gap-5">
@@ -518,39 +518,30 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col items-center justify-center gap-6">
           <div className="w-full flex flex-col items-center justify-center gap-6 md:flex-row md:gap-6">
             <div className="w-full md:w-1/3 flex justify-center">
-              <iframe
-                width="315"
-                height="560"
-                src="https://www.youtube.com/embed/mU-sAJOYk4U"
-                title="AI Super WhatsApp Chatbot Calendar Integration Demo - YouTube Short"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
+              <Image
+                src="/output.gif"
+                alt="AI Super WhatsApp Chatbot Calendar Integration Demo"
+                width={315}
+                height={560}
+                className="rounded-lg shadow-lg"
               />
             </div>
             <div className="w-full md:w-1/3 flex justify-center">
-              <iframe
-                width="315"
-                height="560"
-                src="https://www.youtube.com/embed/eyRn4bsszTE"
-                title="AI Super WhatsApp Chatbot Voice Message and Multilingual Support Demo - YouTube Short"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
+              <Image
+                src="/output2.gif"
+                alt="AI Super WhatsApp Chatbot Voice Message and Multilingual Support Demo"
+                width={315}
+                height={560}
+                className="rounded-lg shadow-lg"
               />
             </div>
             <div className="w-full md:w-1/3 flex justify-center">
-              <iframe
-                width="315"
-                height="560"
-                src="https://www.youtube.com/embed/O2Pi231Sjs0"
-                title="AI Super WhatsApp Chatbot Demo - YouTube Short"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
+              <Image
+                src="/output3.gif"
+                alt="AI Super WhatsApp Chatbot Demo"
+                width={315}
+                height={560}
+                className="rounded-lg shadow-lg"
               />
             </div>
           </div>
