@@ -62,7 +62,7 @@ const Home: React.FC = () => {
             </nav>
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
               <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                Sign Up
+                Start Free
               </Link>
             </Button>
           </div>
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
             <div className="flex justify-center w-full max-w-md">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 text-lg font-semibold" asChild>
                 <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                  Get Started Now
+                  Start Free
                 </Link>
               </Button>
             </div>
