@@ -15,29 +15,89 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
 
 export const generateMetadata = (): Metadata => ({
-  title: "AI Super Private Limited | No.1 WhatsApp Chatbot in the World",
-  description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
-  keywords: ["WhatsApp Chatbot", "AI Customer Support", "World AI", "AI Super", "Business Automation"],
+  title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7 | AI Super",
+  description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Start at $49/month. Try free demo!",
+  keywords: ["WhatsApp chatbot Singapore", "AI customer service", "WhatsApp automation", "AI chatbot Singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "chatbot Singapore", "real estate chatbot"],
   openGraph: {
-    title: "AI Super Private Limited | No.1 WhatsApp Chatbot in the World",
-    description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
+    title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7 | AI Super",
+    description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Try free demo!",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
-    images: [{ url: "logo2.png", width: 120, height: 120, alt: "AI Super Private Limited Logo" }],
+    images: [{ url: "/logo2.png", width: 1200, height: 630, alt: "AI Super WhatsApp Chatbot Singapore" }],
     locale: "en_SG",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Super Private Limited | No.1 WhatsApp Chatbot in the World",
-    description: "Boost your business with AI Super's WhatsApp Chatbot—24/7 support, automated responses, starting at $29/month.",
-    images: ["logo2.png"],
+    title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7",
+    description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Try free demo!",
+    images: ["/logo2.png"],
   },
 });
 
 const Home: React.FC = () => {
+  // Structured Data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AI Super WhatsApp Chatbot",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Singapore's #1 WhatsApp AI chatbot for automating customer service, capturing leads, and increasing sales by 40%.",
+    "url": "https://asi.sg",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Super Private Limited",
+      "url": "https://asi.sg",
+      "logo": "https://asi.sg/logo2.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "540 Sims Avenue, #03-05, Sims Avenue Centre",
+        "addressLocality": "Singapore",
+        "postalCode": "387603",
+        "addressCountry": "SG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+65-8837-9368",
+        "contactType": "customer service"
+      }
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "49",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "description": "Monthly subscription for WhatsApp AI chatbot automation"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Patrick Ho"
+        },
+        "reviewBody": "Transformed our engagement and boosted sales.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        }
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "500"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <WhatsAppButton />
       <SmoothScroll />      {/* Header */}
       <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
@@ -80,12 +140,12 @@ const Home: React.FC = () => {
             </div>
             
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
-              The No.1 AI Chatbot<br/>in the World
+              Singapore's #1 WhatsApp AI Chatbot<br/>for Business Automation
             </h1>
             
             <p className="max-w-[600px] text-gray-600 text-xl md:text-2xl lg:text-3xl leading-relaxed">
-              Transform your WhatsApp into a powerful sales machine. 
-              <span className="font-semibold text-blue-600"> Increase sales by 40%</span> while you sleep.
+              Transform your WhatsApp into a powerful sales machine. Our <Link href="#features" className="text-blue-600 hover:underline">AI chatbot automation</Link> helps 
+              <span className="font-semibold text-blue-600"> increase sales by 40%</span> while you sleep.
             </p>
             
             {/* CTA */}
@@ -192,10 +252,10 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
-              Transform Your Business with AI
+              WhatsApp Customer Service Automation for Singapore Businesses
             </h2>
             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
-              Stop losing customers to slow responses. Let AI work 24/7 for you.
+              Stop losing customers to slow responses. Our <Link href="#video-embed" className="text-blue-600 hover:underline">WhatsApp automation</Link> works 24/7 for Singapore businesses. See our <Link href="#pricing" className="text-blue-600 hover:underline">affordable pricing plans</Link>.
             </p>
           </div>
           
@@ -205,7 +265,7 @@ const Home: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
                 <span className="text-4xl">🤖</span>
               </div>
-              <h3 className="text-blue-600 text-2xl font-bold mb-4">Never Miss a Lead</h3>
+              <h3 className="text-blue-600 text-2xl font-bold mb-4">AI Customer Support Singapore</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 AI responds instantly, 24/7. <br/>
                 <span className="font-semibold text-green-600">Convert 40% more prospects</span> while you sleep.
