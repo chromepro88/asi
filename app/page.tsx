@@ -9,6 +9,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import DynamicLogo from "@/components/DynamicLogo";
+import ThemeToggle from "@/components/ThemeToggle";
 
 
 // Lazy load components
@@ -23,7 +25,7 @@ export const generateMetadata = (): Metadata => ({
     description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Try free demo!",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
-    images: [{ url: "/logo2.png", width: 1200, height: 630, alt: "AI Super WhatsApp Chatbot Singapore" }],
+    images: [{ url: "/logo_black.png", width: 1200, height: 630, alt: "AI Super WhatsApp Chatbot Singapore" }],
     locale: "en_SG",
     type: "website",
   },
@@ -31,7 +33,7 @@ export const generateMetadata = (): Metadata => ({
     card: "summary_large_image",
     title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7",
     description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Try free demo!",
-    images: ["/logo2.png"],
+    images: ["/logo_black.png"],
   },
 });
 
@@ -49,7 +51,7 @@ const Home: React.FC = () => {
       "@type": "Organization",
       "name": "AI Super Private Limited",
       "url": "https://asi.sg",
-      "logo": "https://asi.sg/logo2.png",
+      "logo": "https://asi.sg/logo_black.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "540 Sims Avenue, #03-05, Sims Avenue Centre",
@@ -103,7 +105,7 @@ const Home: React.FC = () => {
       <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
-            <Image src="logo2.png" alt="AI Super Logo" width={48} height={48} className="h-12 w-12" />
+            <DynamicLogo width={48} height={48} className="h-12 w-12" />
           </Link>
           <div className="flex items-center gap-4">
             <nav className="flex gap-3 sm:gap-5">
@@ -120,11 +122,14 @@ const Home: React.FC = () => {
                 Contact
               </Link>
             </nav>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
-              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                Start Free
-              </Link>
-            </Button>
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                  Start Free
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </header>

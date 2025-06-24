@@ -143,7 +143,7 @@ export default function BrochurePage() {
           <div className="mb-3">
             <div className="flex items-center space-x-3 mb-2">
               <Image
-                src="/logo_final5.png"
+                src="/logo_white.png"
                 alt="AI Super Logo"
                 width={60}
                 height={60}
@@ -288,7 +288,7 @@ export default function BrochurePage() {
                 <div className="border-t border-gray-200 pt-3">
                   <div className="flex items-center justify-center space-x-3 mb-2">
                     <Image
-                      src="/logo_final5.png"
+                      src="/logo_black.png"
                       alt="AI Super Logo"
                       width={24}
                       height={24}

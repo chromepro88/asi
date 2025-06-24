@@ -111,7 +111,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             {/* Header with Logo */}
             <div className="flex items-center space-x-2">
               <Image
-                src="/logo_final5.png"
+                src="/logo_white.png"
                 alt="AI Super Logo"
                 width={28}
                 height={28}
@@ -205,7 +205,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
             />
             <div className="text-center">
               <Image
-                src="/logo_final5.png"
+                src="/logo_white.png"
                 alt="AI Super Logo"
                 width={20}
                 height={20}
@@ -239,7 +239,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   {/* Header with Logo */}
                   <div className="flex items-center space-x-2">
                     <Image
-                      src="/logo_final5.png"
+                      src="/logo_white.png"
                       alt="AI Super Logo"
                       width={28}
                       height={28}
@@ -334,7 +334,7 @@ export default function NamecardPage() {  // Contact information for Sin Ren Xia
                   />
                   <div className="text-center">
                     <Image
-                      src="/logo_final5.png"
+                      src="/logo_white.png"
                       alt="AI Super Logo"
                       width={24}
                       height={24}
