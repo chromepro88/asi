@@ -133,101 +133,8 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-6 text-gray-900">
-            Transform Your Business with AI Automation
-          </h2>
-          <p className="text-center text-gray-600 text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto">
-            Stop losing customers to slow responses. Our AI chatbot works 24/7 to capture leads, answer questions, and close sales automatically.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📢</span>
-                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Reach Thousands Instantly</CardTitle>
-                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
-                  Send personalized bulk messages to your entire customer base in seconds. 
-                  <span className="font-semibold text-green-600"> Increase engagement by 300%</span> with targeted messaging.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🤖</span>
-                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Never Miss a Lead Again</CardTitle>
-                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
-                  AI responds to customers instantly, 24/7. Capture leads while you sleep and 
-                  <span className="font-semibold text-green-600"> convert 40% more prospects</span> into paying customers.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📊</span>
-                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Manage Customers Effortlessly</CardTitle>
-                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
-                  Automatically organize contacts and track conversations. 
-                  <span className="font-semibold text-green-600"> Save 10+ hours per week</span> on customer management.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🔄</span>
-                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Automatic Follow-ups</CardTitle>
-                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
-                  Smart AI nurtures leads with perfectly timed follow-ups. 
-                  <span className="font-semibold text-green-600"> Close 60% more deals</span> without lifting a finger.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">⚡</span>
-                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Setup in Minutes, Not Days</CardTitle>
-                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
-                  Connect your WhatsApp and go live instantly. No technical skills needed. 
-                  <span className="font-semibold text-green-600"> Start earning in 5 minutes.</span>
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🗣️</span>
-                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Voice & Multilingual Support</CardTitle>
-                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
-                  Understands voice messages and speaks multiple languages. 
-                  <span className="font-semibold text-green-600"> Serve global customers</span> effortlessly.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Press Coverage Section */}
-      <section className="w-full py-8 md:py-12 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">As Featured In</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <Image src="/techcrunch.jpg" alt="TechCrunch" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/ycombinator.jpg" alt="Y Combinator" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/google.jpg" alt="Google" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/meta.jpg" alt="Meta" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/yahoo.jpg" alt="Yahoo" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
-          </div>
-        </div>
-      </section>
-
       {/* Real Estate Partners Section */}
-      <section className="w-full py-8 md:py-12 bg-white">
+      <section className="w-full py-8 md:py-12 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <h3 className="text-center text-sm font-medium text-gray-500 mb-6">Trusted by Real Estate Leaders</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
@@ -238,6 +145,70 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Press Coverage Section */}
+      <section className="w-full py-8 md:py-12 bg-white">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">As Featured In</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <Image src="/techcrunch.jpg" alt="TechCrunch" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/ycombinator.jpg" alt="Y Combinator" width={140} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/google.jpg" alt="Google" width={80} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/meta.jpg" alt="Meta" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/yahoo.jpg" alt="Yahoo" width={100} height={48} className="grayscale hover:grayscale-0 transition-all duration-300" />
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-6 text-gray-900">
+            Transform Your Business with AI Automation
+          </h2>
+          <p className="text-center text-gray-600 text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto">
+            Stop losing customers to slow responses. Our AI chatbot works 24/7 to capture leads, answer questions, and close sales automatically.
+          </p>
+          <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-3xl">🤖</span>
+                </div>
+                <CardTitle className="text-blue-600 text-xl md:text-2xl lg:text-3xl">Never Miss a Lead Again</CardTitle>
+                <CardDescription className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+                  AI responds to customers instantly, 24/7. Capture leads while you sleep and 
+                  <span className="font-semibold text-green-600"> convert 40% more prospects</span> into paying customers.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-3xl">📢</span>
+                </div>
+                <CardTitle className="text-blue-600 text-xl md:text-2xl lg:text-3xl">Reach Thousands Instantly</CardTitle>
+                <CardDescription className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+                  Send personalized bulk messages to your entire customer base in seconds. 
+                  <span className="font-semibold text-green-600"> Increase engagement by 300%</span> with targeted messaging.
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-white shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-3xl">⚡</span>
+                </div>
+                <CardTitle className="text-blue-600 text-xl md:text-2xl lg:text-3xl">Setup in Minutes, Not Days</CardTitle>
+                <CardDescription className="text-gray-600 text-lg md:text-xl lg:text-2xl">
+                  Connect your WhatsApp and go live instantly. No technical skills needed. 
+                  <span className="font-semibold text-green-600"> Start earning in 5 minutes.</span>
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
 
       <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 text-gray-900">
@@ -306,7 +277,7 @@ const Home: React.FC = () => {
           <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
             <Image src="/visa.jpg" alt="Visa" width={60} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
             <Image src="/mastercard.jpg" alt="Mastercard" width={60} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
-            <Image src="/paypal.jpg" alt="PayPal" width={80} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
+            <Image src="/paypal.jpg" alt="PayPal" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
             <Image src="/stripe.jpg" alt="Stripe" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
             <Image src="/googlepay.jpg" alt="Google Pay" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
             <Image src="/applepay.jpg" alt="Apple Pay" width={70} height={36} className="grayscale hover:grayscale-0 transition-all duration-300" />
