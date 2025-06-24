@@ -10,7 +10,6 @@ import { Instagram, Facebook } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DynamicLogo from "@/components/DynamicLogo";
-import ThemeToggle from "@/components/ThemeToggle";
 
 
 // Lazy load components
@@ -122,14 +121,11 @@ const Home: React.FC = () => {
                 Contact
               </Link>
             </nav>
-            <div className="flex items-center gap-2">
-              <ThemeToggle />
-              <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                  Start Free
-                </Link>
-              </Button>
-            </div>
+            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                Start Free
+              </Link>
+            </Button>
           </div>
         </div>
       </header>

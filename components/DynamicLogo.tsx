@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 interface DynamicLogoProps {
@@ -17,12 +16,24 @@ export default function DynamicLogo({
   className = "", 
   alt = "AI Super Logo" 
 }: DynamicLogoProps) {
-  const { theme, systemTheme } = useTheme();
+  const [isDark, setIsDark] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  // Ensure component is mounted to avoid hydration mismatch
   useEffect(() => {
     setMounted(true);
+    
+    // Check initial system theme
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDark(mediaQuery.matches);
+    
+    // Listen for system theme changes
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsDark(e.matches);
+    };
+    
+    mediaQuery.addEventListener('change', handleChange);
+    
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   if (!mounted) {
@@ -39,11 +50,7 @@ export default function DynamicLogo({
     );
   }
 
-  // Determine the current theme
-  const currentTheme = theme === 'system' ? systemTheme : theme;
-  const isDark = currentTheme === 'dark';
-
-  // Use white logo for dark theme, black logo for light theme
+  // Use white logo for dark system theme, black logo for light system theme
   const logoSrc = isDark ? "/logo_white.png" : "/logo_black.png";
 
   return (
