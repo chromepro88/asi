@@ -627,12 +627,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold" asChild>
               <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
-                Get Started Now
-              </Link>
-            </Button>
-            <Button variant="outline" className="flex-1 border-white text-white hover:bg-white hover:text-blue-600 py-3 px-8 text-lg font-semibold" asChild>
-              <Link href="#contact">
-                Talk to Sales
+                Start Free
               </Link>
             </Button>
           </div>
