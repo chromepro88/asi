@@ -78,17 +78,15 @@ const Home: React.FC = () => {
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm text-blue-700 font-medium">Trusted by 500+ businesses worldwide</span>
             </div>
-            
-            <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">
+              <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-gray-900">
               The No.1 AI Chatbot in the World
             </h1>
-            <p className="max-w-[700px] text-gray-600 text-lg md:text-xl leading-relaxed">
+            <p className="max-w-[700px] text-gray-600 text-lg md:text-xl lg:text-2xl xl:text-3xl leading-relaxed">
               Transform your WhatsApp into a powerful sales machine. Our AI chatbot automatically responds to customers 24/7, 
               nurtures leads, and <span className="font-semibold text-blue-600">increases sales by up to 40%</span> - all while you sleep.
             </p>
-            
-            {/* Key Benefits */}
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+              {/* Key Benefits */}
+            <div className="flex flex-wrap justify-center gap-6 text-base md:text-lg lg:text-xl text-gray-600">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
                   <span className="text-white text-xs">✓</span>
@@ -110,7 +108,7 @@ const Home: React.FC = () => {
             </div>
               {/* CTAs */}
             <div className="flex justify-center w-full max-w-md">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 text-lg font-semibold" asChild>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 text-lg md:text-xl lg:text-2xl font-semibold" asChild>
                 <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                   Start Free
                 </Link>
@@ -118,18 +116,17 @@ const Home: React.FC = () => {
             </div>
             
             {/* Social Proof Numbers */}
-            <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t border-gray-200 w-full max-w-lg">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">10K+</div>
-                <div className="text-sm text-gray-500">Messages Automated Daily</div>
+            <div className="grid grid-cols-3 gap-8 mt-8 pt-8 border-t border-gray-200 w-full max-w-lg">              <div className="text-center">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">10K+</div>
+                <div className="text-sm md:text-base lg:text-lg text-gray-500">Messages Automated Daily</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">500+</div>
-                <div className="text-sm text-gray-500">Happy Clients</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">500+</div>
+                <div className="text-sm md:text-base lg:text-lg text-gray-500">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">40%</div>
-                <div className="text-sm text-gray-500">Average Sales Increase</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-600">40%</div>
+                <div className="text-sm md:text-base lg:text-lg text-gray-500">Average Sales Increase</div>
               </div>
             </div>
           </div>
@@ -138,11 +135,10 @@ const Home: React.FC = () => {
 
       {/* Features Section */}
       <section id="features" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-6 text-gray-900">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-6 text-gray-900">
             Transform Your Business with AI Automation
           </h2>
-          <p className="text-center text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-gray-600 text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto">
             Stop losing customers to slow responses. Our AI chatbot works 24/7 to capture leads, answer questions, and close sales automatically.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -150,9 +146,8 @@ const Home: React.FC = () => {
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📢</span>
-                </div>
-                <CardTitle className="text-blue-600">Reach Thousands Instantly</CardTitle>
-                <CardDescription className="text-gray-600">
+                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Reach Thousands Instantly</CardTitle>
+                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
                   Send personalized bulk messages to your entire customer base in seconds. 
                   <span className="font-semibold text-green-600"> Increase engagement by 300%</span> with targeted messaging.
                 </CardDescription>
@@ -162,9 +157,8 @@ const Home: React.FC = () => {
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🤖</span>
-                </div>
-                <CardTitle className="text-blue-600">Never Miss a Lead Again</CardTitle>
-                <CardDescription className="text-gray-600">
+                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Never Miss a Lead Again</CardTitle>
+                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
                   AI responds to customers instantly, 24/7. Capture leads while you sleep and 
                   <span className="font-semibold text-green-600"> convert 40% more prospects</span> into paying customers.
                 </CardDescription>
@@ -174,9 +168,8 @@ const Home: React.FC = () => {
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">📊</span>
-                </div>
-                <CardTitle className="text-blue-600">Manage Customers Effortlessly</CardTitle>
-                <CardDescription className="text-gray-600">
+                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Manage Customers Effortlessly</CardTitle>
+                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
                   Automatically organize contacts and track conversations. 
                   <span className="font-semibold text-green-600"> Save 10+ hours per week</span> on customer management.
                 </CardDescription>
@@ -186,9 +179,8 @@ const Home: React.FC = () => {
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🔄</span>
-                </div>
-                <CardTitle className="text-blue-600">Automatic Follow-ups</CardTitle>
-                <CardDescription className="text-gray-600">
+                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Automatic Follow-ups</CardTitle>
+                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
                   Smart AI nurtures leads with perfectly timed follow-ups. 
                   <span className="font-semibold text-green-600"> Close 60% more deals</span> without lifting a finger.
                 </CardDescription>
@@ -198,9 +190,8 @@ const Home: React.FC = () => {
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">⚡</span>
-                </div>
-                <CardTitle className="text-blue-600">Setup in Minutes, Not Days</CardTitle>
-                <CardDescription className="text-gray-600">
+                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Setup in Minutes, Not Days</CardTitle>
+                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
                   Connect your WhatsApp and go live instantly. No technical skills needed. 
                   <span className="font-semibold text-green-600"> Start earning in 5 minutes.</span>
                 </CardDescription>
@@ -210,9 +201,8 @@ const Home: React.FC = () => {
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-2xl">🗣️</span>
-                </div>
-                <CardTitle className="text-blue-600">Voice & Multilingual Support</CardTitle>
-                <CardDescription className="text-gray-600">
+                </div>                <CardTitle className="text-blue-600 text-lg md:text-xl lg:text-2xl">Voice & Multilingual Support</CardTitle>
+                <CardDescription className="text-gray-600 text-base md:text-lg lg:text-xl">
                   Understands voice messages and speaks multiple languages. 
                   <span className="font-semibold text-green-600"> Serve global customers</span> effortlessly.
                 </CardDescription>
@@ -223,8 +213,7 @@ const Home: React.FC = () => {
       </section>
 
       <section id="testimonials" className="w-full py-8 md:py-16 lg:py-20 bg-blue-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-8 text-gray-900">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-center mb-8 text-gray-900">
             Trusted by Leading Brands
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -286,11 +275,10 @@ const Home: React.FC = () => {
       {/* Pricing Section */}
       <section id="pricing" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-4 text-gray-900">
+          <div className="text-center mb-8">            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-gray-900">
               Choose Your Success Plan
             </h2>
-            <p className="text-gray-600 text-lg mb-4">
+            <p className="text-gray-600 text-lg md:text-xl lg:text-2xl mb-4">
               Join 500+ businesses already automating their WhatsApp sales
             </p>
             {/* Urgency Element */}
@@ -529,9 +517,8 @@ const Home: React.FC = () => {
 
       {/* Referral Program Section */}
       <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Refer a Friend</h2>
-          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 text-gray-900">Refer a Friend</h2>
+          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl lg:text-2xl mb-4 text-center mx-auto">
             Invite a friend and get 5% off your next purchase!
           </p>
           <ShareButton />
@@ -540,9 +527,8 @@ const Home: React.FC = () => {
 
       {/* Contact Section */}
       <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-white">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-3 text-gray-900">Get in Touch</h2>
-          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl mb-4 text-center mx-auto">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 text-gray-900">Get in Touch</h2>
+          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl lg:text-2xl mb-4 text-center mx-auto">
             Questions? Contact us to learn more about our solutions.
           </p>
           <div className="flex justify-center gap-3">
@@ -558,54 +544,47 @@ const Home: React.FC = () => {
 
       {/* FAQ Section */}
       <section id="faq" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-center mb-12 text-gray-900">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl text-center mb-12 text-gray-900">
             Frequently Asked Questions
           </h2>
-          <div className="grid gap-6">
-            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">How quickly can I set up the WhatsApp chatbot?</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+          <div className="grid gap-6">            <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">How quickly can I set up the WhatsApp chatbot?</h3>
+              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
                 Setup takes just 5 minutes! Simply connect your WhatsApp number, customize your responses, and you're live. 
                 No technical skills or coding required - we handle everything for you.
               </p>
             </Card>
-            
-            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Will I still receive calls on my WhatsApp number?</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">Will I still receive calls on my WhatsApp number?</h3>
+              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
                 Absolutely! Your phone number remains fully functional for calls and personal messages. 
                 The AI only handles business messages automatically while preserving all your normal WhatsApp functionality.
               </p>
             </Card>
-            
-            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">What languages does the chatbot support?</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">What languages does the chatbot support?</h3>
+              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
                 Our AI chatbot supports multiple languages including English, Mandarin, Malay, Tamil, and many others. 
                 It can even understand and respond to voice messages in different languages automatically.
               </p>
             </Card>
-            
-            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Is my customer data secure?</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">Is my customer data secure?</h3>
+              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
                 Yes, we take security seriously. We don't store your chat conversations - all messages are processed in real-time 
                 and not saved on our servers. Your customer data is encrypted during processing and we're fully compliant with 
                 privacy regulations. We never share your customer information with third parties.
               </p>
             </Card>
-            
-            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">What if I need to cancel my subscription?</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">What if I need to cancel my subscription?</h3>
+              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
                 You can cancel anytime with no questions asked.
               </p>
             </Card>
-            
-            <Card className="p-6 bg-white shadow-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Can the AI handle complex customer inquiries?</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+              <Card className="p-6 bg-white shadow-lg border border-gray-200">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">Can the AI handle complex customer inquiries?</h3>
+              <p className="text-gray-700 text-base md:text-lg lg:text-xl leading-relaxed">
                 Our AI is trained to handle 90% of common customer questions automatically. For complex issues, 
                 it can be programmed to connect customers to a human agent with full conversation context, so you never miss important details.
               </p>
@@ -616,16 +595,15 @@ const Home: React.FC = () => {
 
       {/* Final CTA Section */}
       <section className="w-full py-12 md:py-20 bg-blue-600">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl mb-6 text-white">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 text-white">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-blue-100 text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 max-w-2xl mx-auto">
             Join 500+ successful businesses using AI to automate their WhatsApp sales. 
             Get started today and see results in just 5 minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-            <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg font-semibold" asChild>
+            <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg md:text-xl lg:text-2xl font-semibold" asChild>
               <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                 Start Free
               </Link>
