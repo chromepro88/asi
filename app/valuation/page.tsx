@@ -38,8 +38,8 @@ export default function ValuationPage() {
   const currentValuation = 7500000; // SGD 7.5M
 
   return (
-    <SmoothScroll>
-      <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white">
+      <SmoothScroll />
         <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
           <div className="container flex items-center justify-between max-w-6xl mx-auto">
             <Link href="/" className="flex items-center">
@@ -264,6 +264,5 @@ export default function ValuationPage() {
 
         <WhatsAppButton />
       </div>
-    </SmoothScroll>
   );
 }
