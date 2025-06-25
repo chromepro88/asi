@@ -27,18 +27,8 @@ export default function PitchPage() {
 
   if (isMobile) {
     return (
-      <div className="w-full h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-        <div className="text-center">
-          <h2 className="text-xl font-bold mb-2">Downloading PDF...</h2>
-          <p className="text-gray-600">If download doesn't start automatically:</p>
-          <a
-            href="/chatbot.pdf"
-            download
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium mt-4 inline-block"
-          >
-            Click to Download
-          </a>
-        </div>
+      <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
+        <h2 className="text-xl font-bold">Downloading PDF...</h2>
       </div>
     );
   }
