@@ -26,11 +26,7 @@ export default function PitchPage() {
   }, [isMobile]);
 
   if (isMobile) {
-    return (
-      <div className="w-full h-screen bg-gray-100 flex items-center justify-center">
-        <h2 className="text-xl font-bold">Downloading PDF...</h2>
-      </div>
-    );
+    return null;
   }
 
   return (
