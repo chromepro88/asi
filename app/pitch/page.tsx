@@ -19,28 +19,25 @@ export default function PitchPage() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  useEffect(() => {
+    if (isMobile) {
+      window.location.href = '/chatbot.pdf';
+    }
+  }, [isMobile]);
+
   if (isMobile) {
     return (
       <div className="w-full h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-        <div className="text-center mb-4">
-          <h2 className="text-xl font-bold mb-2">AI SUPER Whatsapp Chatbot</h2>
-          <p className="text-gray-600 mb-4">For the best viewing experience on mobile, please download the PDF</p>
-        </div>
-        <a
-          href="/chatbot.pdf"
-          download
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium"
-        >
-          Download PDF
-        </a>
-        <div className="mt-4 w-full">
-          <object
-            data="/chatbot.pdf"
-            type="application/pdf"
-            className="w-full h-96 border rounded"
+        <div className="text-center">
+          <h2 className="text-xl font-bold mb-2">Downloading PDF...</h2>
+          <p className="text-gray-600">If download doesn't start automatically:</p>
+          <a
+            href="/chatbot.pdf"
+            download
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium mt-4 inline-block"
           >
-            <p>Your browser doesn't support PDF viewing.</p>
-          </object>
+            Click to Download
+          </a>
         </div>
       </div>
     );
