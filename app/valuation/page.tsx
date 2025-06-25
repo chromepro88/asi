@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { DynamicLogo } from "@/components/dynamic-logo";
-import { WhatsAppButton } from "@/components/whatsapp-button";
-import { SmoothScroll } from "@/components/smooth-scroll";
+import DynamicLogo from "@/components/DynamicLogo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Company Valuation | AI Super",
