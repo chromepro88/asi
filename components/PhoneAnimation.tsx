@@ -7,14 +7,35 @@ interface PhoneAnimationProps {
 
 const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
   const [messageOffset, setMessageOffset] = useState(20); // Start messages below visible area
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    const handleVisibilityChange = () => {
+      setIsVisible(!document.hidden);
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return; // Don't run animation when tab is hidden
+
     const interval = setInterval(() => {
-      setMessageOffset(prev => prev - 6); // Move by 6rem per scroll (4rem height + 2rem margin)
+      setMessageOffset(prev => {
+        // Reset to start position when messages have scrolled too far
+        if (prev <= -72) { // 12 messages * 6rem per message
+          return 20;
+        }
+        return prev - 6; // Move by 6rem per scroll (4rem height + 2rem margin)
+      });
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isVisible]);
 
   return (
     <div className={`relative flex flex-col items-center justify-center min-h-[500px] py-8 ${className}`}>
