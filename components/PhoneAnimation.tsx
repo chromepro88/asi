@@ -345,35 +345,55 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           }
           
           .phone {
-            width: 20rem;
-            height: 38rem;
+            width: 16rem;
+            height: 30rem;
           }
           
           .messages-outer {
-            width: 28rem;
-            left: -4rem;
+            width: 14rem;
+            height: 26rem;
+            left: 50%;
+            transform: translateX(-50%);
           }
           
           .message {
-            width: 22rem;
-            height: 5rem;
-            font-size: 1.2rem;
+            width: 12rem;
+            height: 3.5rem;
+            font-size: 0.8rem;
+            padding: 0.5rem 0.8rem;
+          }
+          
+          .message-time {
+            font-size: 0.6rem;
+            bottom: 0.2rem;
+            right: 0.6rem;
           }
         }
 
         @media (max-width: 480px) {
           .phone {
-            width: 18rem;
-            height: 34rem;
+            width: 14rem;
+            height: 28rem;
           }
           
           .messages-outer {
-            width: 24rem;
-            left: -3rem;
+            width: 12rem;
+            height: 24rem;
+            left: 50%;
+            transform: translateX(-50%);
           }
           
           .message {
-            width: 20rem;
+            width: 10rem;
+            height: 3rem;
+            font-size: 0.7rem;
+            padding: 0.4rem 0.6rem;
+          }
+          
+          .message-time {
+            font-size: 0.5rem;
+            bottom: 0.1rem;
+            right: 0.4rem;
           }
         }
       `}</style>

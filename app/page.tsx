@@ -172,6 +172,9 @@ const Home: React.FC = () => {
                   Start Free Today
                 </Link>
               </Button>
+              <p className="text-gray-500 text-lg mt-4">
+                Get 30-Day Free Trial • No credit card required
+              </p>
             </div>
             
             {/* Key Benefits */}
