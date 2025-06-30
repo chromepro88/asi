@@ -122,7 +122,7 @@ const Home: React.FC = () => {
                 Contact
               </Link>
             </nav>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50">
               <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                 Start Free
               </Link>

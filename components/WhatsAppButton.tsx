@@ -6,7 +6,7 @@ export function WhatsAppButton() {
       href="https://wa.me/6588379368?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Whatsapp%20Chatbot%20%40%20%2449%2FMonth.%20"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 transition-all hover:scale-110 [transform-origin:center] animate-float-prominent"
+      className="fixed bottom-6 right-6 z-40 transition-all hover:scale-110 [transform-origin:center] animate-float-prominent"
       aria-label="Chat with us on WhatsApp"
     >
       <Image
