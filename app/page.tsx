@@ -108,7 +108,7 @@ const Home: React.FC = () => {
             <DynamicLogo width={48} height={48} className="h-12 w-12" />
           </Link>
           <div className="flex items-center gap-4">
-            <nav className="flex gap-3 sm:gap-5">
+            <nav className="flex gap-3 sm:gap-5 relative z-50">
               <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
                 Features
               </Link>
