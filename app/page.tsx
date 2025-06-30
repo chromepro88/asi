@@ -10,6 +10,7 @@ import { Instagram, Facebook } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DynamicLogo from "@/components/DynamicLogo";
+import PhoneAnimation from "@/components/PhoneAnimation";
 
 
 // Lazy load components
@@ -129,6 +130,21 @@ const Home: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {/* Phone Animation Section */}
+      <section className="w-full py-12 md:py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              See Your AI Assistant in Action
+            </h2>
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+              Watch how our WhatsApp AI handles real customer conversations
+            </p>
+          </div>
+          <PhoneAnimation />
+        </div>
+      </section>
 
       {/* Hero Section */}
       <section className="w-full py-20 md:py-32 lg:py-40 bg-white">
