@@ -49,8 +49,8 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <Button asChild variant="outline" className="w-full">
-                  <Link href="mailto:support@asi.sg">
-                    support@asi.sg
+                  <Link href="mailto:hello@asi.sg">
+                    hello@asi.sg
                   </Link>
                 </Button>
               </CardContent>
@@ -64,8 +64,8 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <Button asChild variant="outline" className="w-full">
-                  <Link href="tel:+6582737373">
-                    +65 8273 7373
+                  <Link href="tel:+6588379368">
+                    +65 8837 9368
                   </Link>
                 </Button>
               </CardContent>
