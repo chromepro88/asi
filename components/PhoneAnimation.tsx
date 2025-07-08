@@ -391,9 +391,11 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           }
 
           .hand-wave {
-            font-size: 2.5rem;
-            left: 50%;
-            transform: translateX(-50%);
+            font-size: 2.5rem !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            position: absolute !important;
+            top: -2rem !important;
           }
         }
 
@@ -424,9 +426,11 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           }
 
           .hand-wave {
-            font-size: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
+            font-size: 2rem !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            position: absolute !important;
+            top: -1.5rem !important;
           }
         }
       `}</style>
