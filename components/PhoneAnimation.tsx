@@ -158,7 +158,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
       </div>
 
       {/* Hand Wave Animation - Positioned to avoid phone overlap */}
-      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-4xl hand-wave">
+      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-4xl hand-wave z-10">
         👋
       </div>
 
@@ -389,6 +389,12 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
             bottom: 0.2rem;
             right: 0.6rem;
           }
+
+          .hand-wave {
+            font-size: 2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
         }
 
         @media (max-width: 480px) {
@@ -415,6 +421,12 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
             font-size: 0.5rem;
             bottom: 0.1rem;
             right: 0.4rem;
+          }
+
+          .hand-wave {
+            font-size: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       `}</style>
