@@ -219,9 +219,6 @@ const Home: React.FC = () => {
 
       <section id="testimonials" className="w-full py-20 md:py-28 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-gray-900">
-            Trusted by Leading Brands
-          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
@@ -533,16 +530,6 @@ const Home: React.FC = () => {
               </Link>
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* Referral Program Section */}
-      <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-xl font-bold tracking-tight sm:text-2xl md:text-3xl mb-3 text-gray-900">Refer a Friend</h2>
-          <p className="max-w-[400px] text-gray-600 text-base md:text-lg mb-4 text-center mx-auto">
-            Invite a friend and get 5% off your next purchase!
-          </p>
-          <ShareButton />
         </div>
       </section>
 
