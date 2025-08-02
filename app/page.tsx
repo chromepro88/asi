@@ -244,7 +244,7 @@ const Home: React.FC = () => {
       </section>
       </main>
 
-      {/* Pricing Section */>
+      {/* Pricing Section */}
       <section id="pricing" className="w-full py-20 md:py-28 bg-white" aria-labelledby="pricing-heading">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-16">
