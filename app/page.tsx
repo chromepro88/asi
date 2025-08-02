@@ -72,26 +72,6 @@ const Home: React.FC = () => {
       "availability": "https://schema.org/InStock",
       "description": "Monthly subscription for WhatsApp AI chatbot automation"
     },
-    "review": [
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Patrick Ho"
-        },
-        "reviewBody": "Transformed our engagement and boosted sales.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        }
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "500"
-    }
   };
 
   return (
@@ -109,17 +89,8 @@ const Home: React.FC = () => {
           </Link>
           <div className="flex items-center gap-4">
             <nav className="flex gap-3 sm:gap-5 relative z-50">
-              <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-                Features
-              </Link>
               <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
                 Pricing
-              </Link>
-              <Link href="/video" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-                Demo
-              </Link>
-              <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-                Contact
               </Link>
             </nav>
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50">
@@ -246,112 +217,12 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Press Coverage Section */}
-      <section className="w-full py-12 md:py-16 bg-white">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h3 className="text-center text-lg font-semibold text-gray-600 mb-8">Recognized by Industry Leaders</h3>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-70">
-            <div className="flex flex-col items-center">
-              <Image src="/techcrunch.jpg" alt="TechCrunch" width={120} height={40} className="grayscale hover:grayscale-0 transition-all duration-300" />
-              <span className="text-xs text-gray-400 mt-2">AI Innovation</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/ycombinator.jpg" alt="Y Combinator" width={120} height={40} className="grayscale hover:grayscale-0 transition-all duration-300" />
-              <span className="text-xs text-gray-400 mt-2">Startup Accelerator</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/google.jpg" alt="Google Cloud Partner" width={80} height={40} className="grayscale hover:grayscale-0 transition-all duration-300" />
-              <span className="text-xs text-gray-400 mt-2">Cloud Partner</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section id="features" className="w-full py-20 md:py-28 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
-              WhatsApp Customer Service Automation for Singapore Businesses
-            </h2>
-            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
-              Stop losing customers to slow responses. Our <Link href="#video-embed" className="text-blue-600 hover:underline">WhatsApp automation</Link> works 24/7 for Singapore businesses. See our <Link href="#pricing" className="text-blue-600 hover:underline">affordable pricing plans</Link>.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            {/* Feature 1 */}
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <span className="text-4xl">🤖</span>
-              </div>
-              <h3 className="text-blue-600 text-2xl font-bold mb-4">AI Customer Support Singapore</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                AI responds instantly, 24/7. <br/>
-                <span className="font-semibold text-green-600">Convert 40% more prospects</span> while you sleep.
-              </p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <span className="text-4xl">📢</span>
-              </div>
-              <h3 className="text-purple-600 text-2xl font-bold mb-4">Reach Thousands</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Send bulk messages in seconds. <br/>
-                <span className="font-semibold text-green-600">Increase engagement by 300%</span> instantly.
-              </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg">
-                <span className="text-4xl">⚡</span>
-              </div>
-              <h3 className="text-green-600 text-2xl font-bold mb-4">Setup in Minutes</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                No technical skills needed. <br/>
-                <span className="font-semibold text-green-600">Start earning in 5 minutes</span> flat.
-              </p>
-            </div>
-          </div>
-          
-          {/* CTA in Features Section */}
-          <div className="text-center mt-16">
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
-              <Link href="/signup">
-                Get Started Now
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-
       <section id="testimonials" className="w-full py-20 md:py-28 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-gray-900">
             Trusted by Leading Brands
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Image
-                    src="/PropNex.png"
-                    alt="PropNex Logo"
-                    width={64}
-                    height={64}
-                    className="rounded-full"
-                  />
-                </div>
-                <CardDescription className="text-gray-600 text-base italic">
-                  “Transformed our engagement and <strong>boosted sales</strong>.”
-                </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">Patrick Ho, PropNex</p>
-              </CardHeader>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
@@ -386,31 +257,6 @@ const Home: React.FC = () => {
                 <p className="text-sm text-gray-500 mt-2">James Lee, Realstar Premier Group Private Limited</p>
               </CardHeader>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Payment Methods Section */}
-      <section className="w-full py-8 md:py-12 bg-white border-t border-gray-200">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <h3 className="text-center text-sm font-medium text-gray-500 mb-6">Secure Payment Methods</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-gray-500">
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <span className="text-blue-600">💳</span>
-              <span>Visa & Mastercard</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <span className="text-blue-600">🔒</span>
-              <span>PayPal & Stripe</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <span className="text-green-600">📱</span>
-              <span>Apple & Google Pay</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <span className="text-green-500">🛡️</span>
-              <span>256-bit SSL Encryption</span>
-            </div>
           </div>
         </div>
       </section>
@@ -692,8 +538,8 @@ const Home: React.FC = () => {
 
       {/* Referral Program Section */}
       <section id="referral" className="w-full py-8 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 text-gray-900">Refer a Friend</h2>
-          <p className="max-w-[600px] text-gray-600 text-lg md:text-xl lg:text-2xl mb-4 text-center mx-auto">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-xl font-bold tracking-tight sm:text-2xl md:text-3xl mb-3 text-gray-900">Refer a Friend</h2>
+          <p className="max-w-[400px] text-gray-600 text-base md:text-lg mb-4 text-center mx-auto">
             Invite a friend and get 5% off your next purchase!
           </p>
           <ShareButton />
@@ -756,16 +602,16 @@ const Home: React.FC = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="w-full py-12 md:py-20 bg-blue-600">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 text-white">
+      <section className="w-full py-8 md:py-12 bg-blue-600">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-3xl mx-auto text-center">          <h2 className="text-xl font-bold tracking-tight sm:text-2xl md:text-3xl mb-4 text-white">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-blue-100 text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 max-w-2xl mx-auto">
+          <p className="text-blue-100 text-base md:text-lg mb-6 max-w-xl mx-auto">
             Join 500+ successful businesses using AI to automate their WhatsApp sales. 
             Get started today and see results in just 5 minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-            <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg md:text-xl lg:text-2xl font-semibold" asChild>
+            <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-2 px-6 text-base md:text-lg font-semibold" asChild>
               <Link href="/signup">
                 Start Free
               </Link>
