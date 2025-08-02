@@ -46,8 +46,37 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo_black.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo_black.png" />
+        <link rel="icon" href="/logo_white.png" type="image/png" id="favicon" />
+        <link rel="apple-touch-icon" href="/logo_white.png" id="apple-touch-icon" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function updateFavicon() {
+                  const isDark = document.documentElement.classList.contains('dark') || 
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                  const favicon = document.getElementById('favicon');
+                  const appleTouchIcon = document.getElementById('apple-touch-icon');
+                  const iconPath = isDark ? '/logo_white.png' : '/logo_black.png';
+                  
+                  if (favicon) favicon.href = iconPath;
+                  if (appleTouchIcon) appleTouchIcon.href = iconPath;
+                }
+                
+                updateFavicon();
+                
+                // Listen for theme changes
+                const observer = new MutationObserver(updateFavicon);
+                observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+                
+                // Listen for system theme changes
+                if (window.matchMedia) {
+                  window.matchMedia('(prefers-color-scheme: dark)').addListener(updateFavicon);
+                }
+              })();
+            `
+          }}
+        />
       </head>
       <body>
         <ThemeProvider
