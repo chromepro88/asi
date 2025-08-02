@@ -81,19 +81,24 @@ const Home: React.FC = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <WhatsAppButton />
-      <SmoothScroll />      {/* Header */}
-      <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm">
+      <SmoothScroll />      {/* Skip to main content for accessibility */}
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+      </a>
+      
+      {/* Header */}
+      <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm" role="banner">
         <div className="container flex items-center justify-between max-w-6xl mx-auto">
           <Link href="/" className="flex items-center">
             <DynamicLogo width={48} height={48} className="h-12 w-12" />
           </Link>
           <div className="flex items-center gap-4">
-            <nav className="flex gap-3 sm:gap-5 relative z-50">
+            <nav className="flex gap-3 sm:gap-5 relative z-50" role="navigation" aria-label="Main navigation">
               <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
                 Pricing
               </Link>
             </nav>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50">
+            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105">
               <Link href="/signup">
                 Start Free
               </Link>
@@ -118,7 +123,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="w-full py-20 md:py-32 lg:py-40 bg-white">
+      <main id="main-content" role="main">
+      <section className="w-full py-20 md:py-32 lg:py-40 bg-white" aria-labelledby="hero-heading">
         <div className="container px-4 md:px-6 lg:px-8 max-w-5xl mx-auto">
           <div className="flex flex-col items-center space-y-10 text-center">
             {/* Trust Badge */}
@@ -127,7 +133,7 @@ const Home: React.FC = () => {
               <span className="text-sm text-blue-700 font-medium">Trusted by 500+ businesses worldwide</span>
             </div>
             
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
+            <h1 id="hero-heading" className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
               Singapore's #1 WhatsApp AI Chatbot<br/>for Business Automation
             </h1>
             
@@ -138,7 +144,7 @@ const Home: React.FC = () => {
             
             {/* CTA */}
             <div className="pt-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105" asChild>
                 <Link href="/signup">
                   Start Free Today
                 </Link>
@@ -198,19 +204,19 @@ const Home: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center mb-8">
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/PropNex.png" alt="PropNex" width={80} height={32} className="mb-1" />
+              <Image src="/PropNex.png" alt="PropNex real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
               <span className="text-xs text-gray-500">Leading Agency</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Huttons.png" alt="Huttons" width={80} height={32} className="mb-1" />
+              <Image src="/Huttons.png" alt="Huttons real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
               <span className="text-xs text-gray-500">Premium Properties</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/OrangeTee.jpeg" alt="OrangeTee" width={80} height={32} className="mb-1" />
+              <Image src="/OrangeTee.jpeg" alt="OrangeTee real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
               <span className="text-xs text-gray-500">Established 1995</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/realstar.png" alt="Realstar Premier Group" width={80} height={32} className="mb-1" />
+              <Image src="/realstar.png" alt="Realstar Premier Group real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
               <span className="text-xs text-gray-500">Premier Group</span>
             </div>
           </div>
@@ -218,7 +224,7 @@ const Home: React.FC = () => {
             <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader className="text-center py-4">
                 <div className="flex justify-center mb-3">
-                  <Image src="/dade.png" alt="Dade Logo" width={48} height={48} className="rounded-full" />
+                  <Image src="/dade.png" alt="Dade.sg company logo" width={48} height={48} className="rounded-full" loading="lazy" />
                 </div>
                 <CardDescription className="text-gray-600 text-sm italic">"Good!"</CardDescription>
                 <p className="text-xs text-gray-500 mt-1">Victor, Dade.sg</p>
@@ -227,7 +233,7 @@ const Home: React.FC = () => {
             <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader className="text-center py-4">
                 <div className="flex justify-center mb-3">
-                  <Image src="/realstar.png" alt="Realstar Premier Group Logo" width={48} height={48} className="rounded-full" />
+                  <Image src="/realstar.png" alt="Realstar Premier Group company logo" width={48} height={48} className="rounded-full" loading="lazy" />
                 </div>
                 <CardDescription className="text-gray-600 text-sm italic">"Wow, it worked like Magic with the voice command to input appointment. This helps a lot. Like a PA!"</CardDescription>
                 <p className="text-xs text-gray-500 mt-1">James Lee, Realstar Premier Group Private Limited</p>
@@ -236,12 +242,13 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      </main>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="w-full py-20 md:py-28 bg-white">
+      {/* Pricing Section */>
+      <section id="pricing" className="w-full py-20 md:py-28 bg-white" aria-labelledby="pricing-heading">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
+            <h2 id="pricing-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
               Choose Your Plan
             </h2>
             <p className="text-gray-600 text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
@@ -300,7 +307,7 @@ const Home: React.FC = () => {
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer" aria-label="Start monthly plan for $49">
                     Start Now
                   </Link>
                 </Button>
@@ -353,7 +360,7 @@ const Home: React.FC = () => {
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="https://buy.stripe.com/fZeeYCdLNdpCe9W7sw" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://buy.stripe.com/fZeeYCdLNdpCe9W7sw" target="_blank" rel="noopener noreferrer" aria-label="Start 3-month plan for $129">
                     Start Now
                   </Link>
                 </Button>
@@ -411,7 +418,7 @@ const Home: React.FC = () => {
                   </li>
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer" aria-label="Start 12-month plan for $349 - Best Value">
                     Start Now
                   </Link>
                 </Button>
@@ -587,7 +594,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-4 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700">
+      <footer className="flex flex-col gap-2 sm:flex-row py-4 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700" role="contentinfo">
         <div className="container flex flex-col items-center justify-between max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2">
             <p className="text-xs text-gray-400">© 2025 AI Super Private Limited. All rights reserved.</p>
