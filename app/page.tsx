@@ -123,7 +123,7 @@ const Home: React.FC = () => {
               </Link>
             </nav>
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50">
-              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+              <Link href="/signup">
                 Start Free
               </Link>
             </Button>
@@ -168,7 +168,7 @@ const Home: React.FC = () => {
             {/* CTA */}
             <div className="pt-4">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
-                <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+                <Link href="/signup">
                   Start Free Today
                 </Link>
               </Button>
@@ -320,7 +320,7 @@ const Home: React.FC = () => {
           {/* CTA in Features Section */}
           <div className="text-center mt-16">
             <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
-              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+              <Link href="/signup">
                 Get Started Now
               </Link>
             </Button>
@@ -766,7 +766,7 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
             <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-3 px-8 text-lg md:text-xl lg:text-2xl font-semibold" asChild>
-              <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
+              <Link href="/signup">
                 Start Free
               </Link>
             </Button>
