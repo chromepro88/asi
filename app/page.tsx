@@ -189,69 +189,48 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Real Estate Partners Section */}
+      {/* Trusted Partners & Testimonials */}
       <section className="w-full py-12 md:py-16 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="text-lg font-semibold text-gray-700 mb-2">Trusted by Singapore's Top Real Estate Agencies</h3>
             <p className="text-gray-600">Helping agents close more deals with AI automation</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-              <Image src="/PropNex.png" alt="PropNex" width={100} height={40} className="mb-2" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center mb-8">
+            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/PropNex.png" alt="PropNex" width={80} height={32} className="mb-1" />
               <span className="text-xs text-gray-500">Leading Agency</span>
             </div>
-            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-              <Image src="/Huttons.png" alt="Huttons" width={100} height={40} className="mb-2" />
+            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/Huttons.png" alt="Huttons" width={80} height={32} className="mb-1" />
               <span className="text-xs text-gray-500">Premium Properties</span>
             </div>
-            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-              <Image src="/OrangeTee.jpeg" alt="OrangeTee" width={100} height={40} className="mb-2" />
+            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/OrangeTee.jpeg" alt="OrangeTee" width={80} height={32} className="mb-1" />
               <span className="text-xs text-gray-500">Established 1995</span>
             </div>
-            <div className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-              <Image src="/realstar.png" alt="Realstar Premier Group" width={100} height={40} className="mb-2" />
+            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/realstar.png" alt="Realstar Premier Group" width={80} height={32} className="mb-1" />
               <span className="text-xs text-gray-500">Premier Group</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="testimonials" className="w-full py-20 md:py-28 bg-blue-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Image
-                    src="/dade.png"
-                    alt="Dade Logo"
-                    width={64}
-                    height={64}
-                    className="rounded-full"
-                  />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card className="bg-white shadow-md border border-gray-200">
+              <CardHeader className="text-center py-4">
+                <div className="flex justify-center mb-3">
+                  <Image src="/dade.png" alt="Dade Logo" width={48} height={48} className="rounded-full" />
                 </div>
-                <CardDescription className="text-gray-600 text-base italic">
-                  “Good!”
-                </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">Victor, Dade.sg</p>
+                <CardDescription className="text-gray-600 text-sm italic">"Good!"</CardDescription>
+                <p className="text-xs text-gray-500 mt-1">Victor, Dade.sg</p>
               </CardHeader>
             </Card>
-            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
-              <CardHeader className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Image
-                    src="/realstar.png"
-                    alt="Realstar Premier Group Logo"
-                    width={64}
-                    height={64}
-                    className="rounded-full"
-                  />
+            <Card className="bg-white shadow-md border border-gray-200">
+              <CardHeader className="text-center py-4">
+                <div className="flex justify-center mb-3">
+                  <Image src="/realstar.png" alt="Realstar Premier Group Logo" width={48} height={48} className="rounded-full" />
                 </div>
-                <CardDescription className="text-gray-600 text-base italic">
-                  “Wow, it worked like Magic with the voice command to input appointment. This helps a lot. Like a PA!”
-                </CardDescription>
-                <p className="text-sm text-gray-500 mt-2">James Lee, Realstar Premier Group Private Limited</p>
+                <CardDescription className="text-gray-600 text-sm italic">"Wow, it worked like Magic with the voice command to input appointment. This helps a lot. Like a PA!"</CardDescription>
+                <p className="text-xs text-gray-500 mt-1">James Lee, Realstar Premier Group Private Limited</p>
               </CardHeader>
             </Card>
           </div>
