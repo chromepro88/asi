@@ -260,170 +260,66 @@ const Home: React.FC = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
-                <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$49</span>
-                  <p className="text-red-500 line-through mt-2">$99</p>
-                  <p className="text-green-500 font-semibold">Save $50!</p>
-                  <p className="text-xs text-gray-500 mt-2">Pay monthly</p>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Unlimited AI responses
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    WhatsApp integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Voice message recognition
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Multilingual support
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Google Calendar integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    CRM features
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Free installation & setup
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Email & chat support
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer" aria-label="Start monthly plan for $49">
-                    Start Now
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-md border border-gray-200 transition-shadow hover:shadow-lg">
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">3 Months</CardTitle>
-                <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$129</span>
-                  <p className="text-red-500 line-through mt-2">$199</p>
-                  <p className="text-green-500 font-semibold">Save $70!</p>
-                  <p className="text-xs text-gray-500 mt-2">Most popular choice</p>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Unlimited AI responses
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    WhatsApp integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Voice message recognition
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Multilingual support
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Google Calendar integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    CRM features
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Free installation & setup
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Email & chat support
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="https://buy.stripe.com/fZeeYCdLNdpCe9W7sw" target="_blank" rel="noopener noreferrer" aria-label="Start 3-month plan for $129">
-                    Start Now
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white shadow-md border-2 border-blue-500 transition-shadow hover:shadow-lg relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                  BEST VALUE
-                </span>
-              </div>
-              <CardHeader className="text-center">
-                <CardTitle className="text-lg font-semibold text-gray-900">12 Months</CardTitle>
-                <CardDescription className="flex flex-col items-center">
-                  <span className="text-2xl font-bold text-gray-900">$349</span>
-                  <p className="text-red-500 line-through mt-2">$699</p>
-                  <p className="text-green-500 font-semibold">Save $350!</p>
-                  <p className="text-xs text-gray-500 mt-2">Maximum savings</p>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Unlimited AI responses
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    WhatsApp integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Voice message recognition
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Multilingual support
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Google Calendar integration
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    CRM features
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Free installation & setup
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">✓</span>
-                    Email & chat support
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                  <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer" aria-label="Start 12-month plan for $349 - Best Value">
-                    Start Now
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+          <div className="flex justify-center">
+            <div className="max-w-md w-full">
+              <Card className="bg-white shadow-md border-2 border-blue-500 transition-shadow hover:shadow-lg relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    BEST VALUE
+                  </span>
+                </div>
+                <CardHeader className="text-center">
+                  <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
+                  <CardDescription className="flex flex-col items-center">
+                    <span className="text-2xl font-bold text-gray-900">$49</span>
+                    <p className="text-red-500 line-through mt-2">$99</p>
+                    <p className="text-green-500 font-semibold">Save $50!</p>
+                    <p className="text-xs text-gray-500 mt-2">Pay monthly</p>
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Unlimited AI responses
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      WhatsApp integration
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Voice message recognition
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Multilingual support
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Google Calendar integration
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      CRM features
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Free installation & setup
+                    </li>
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      Email & chat support
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
+                    <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer" aria-label="Start monthly plan for $49">
+                      Start Now
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
           
           <div className="text-center mt-8">
