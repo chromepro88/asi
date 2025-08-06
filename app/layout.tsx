@@ -46,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
+        <meta property="fb:app_id" content="1846789336144846" />
         <link rel="icon" href="/logo_white.png" type="image/png" id="favicon" />
         <link rel="apple-touch-icon" href="/logo_white.png" id="apple-touch-icon" />
         <script

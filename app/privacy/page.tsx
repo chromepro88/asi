@@ -23,9 +23,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://asi.sg/privacy",
   },
-  other: {
-    "fb:app_id": "1846789336144846",
-  },
 };
 
 export default function PrivacyPolicy() {
