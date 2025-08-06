@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     url: "https://asi.sg/privacy",
     siteName: "AI Super Private Limited",
     type: "website",
+    images: [
+      {
+        url: "https://asi.sg/logo_black.png",
+        width: 800,
+        height: 600,
+        alt: "AI Super Private Limited - Privacy Policy",
+      },
+    ],
   },
   alternates: {
     canonical: "https://asi.sg/privacy",
