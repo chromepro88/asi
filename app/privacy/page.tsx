@@ -3,8 +3,18 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy| AI Super",
-  description: "Learn how AI Super Private Limited collects, uses, and protects your personal information.",
+  title: "Privacy Policy | AI Super Private Limited",
+  description: "Learn how AI Super Private Limited collects, uses, and protects your personal information when you use our WhatsApp AI chatbot services.",
+  openGraph: {
+    title: "Privacy Policy | AI Super Private Limited",
+    description: "Learn how AI Super Private Limited collects, uses, and protects your personal information when you use our WhatsApp AI chatbot services.",
+    url: "https://asi.sg/privacy",
+    siteName: "AI Super Private Limited",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://asi.sg/privacy",
+  },
 };
 
 export default function PrivacyPolicy() {
@@ -13,12 +23,12 @@ export default function PrivacyPolicy() {
       <main className="flex-grow container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">Privacy Policy</h1>
         <div className="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
-          <p className="text-gray-600 mb-4">Last updated: April 12, 2025</p>
+          <p className="text-gray-600 mb-4">Last updated: August 6, 2025</p>
 
           <section className="mb-6">
             <h2 className="text-2xl font-semibold mb-3 text-blue-600">1. Introduction</h2>
             <p className="text-gray-700">
-              Welcome to AI Super Private Limited ("we," "us," or "our"). We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application and services.
+              Welcome to AI Super Private Limited ("we," "us," or "our"). We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application and services, including when you interact with us through social media platforms like Facebook.
             </p>
           </section>
 
@@ -31,6 +41,9 @@ export default function PrivacyPolicy() {
               </li>
               <li>
                 <strong>Usage Data:</strong> Information about how you interact with our app, such as IP address, browser type, pages visited, and timestamps.
+              </li>
+              <li>
+                <strong>Social Media Data:</strong> When you connect through social media platforms like Facebook, we may receive information you've made publicly available or that you authorize us to access.
               </li>
               <li>
                 <strong>Cookies:</strong> We use cookies to enhance your experience. You can manage cookie preferences through your browser settings.
