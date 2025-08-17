@@ -225,7 +225,7 @@ const Home: React.FC = () => {
               <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={120} height={48} loading="lazy" />
             </div>
             <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/DollarBack%20Mortgage.png" alt="DollarBack Mortgage logo" width={140} height={48} loading="lazy" />
+              <Image src="/Mortgage%20Titan.jpg" alt="Mortgage Titan logo" width={140} height={48} loading="lazy" />
             </div>
             <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
               <Image src="/FX%20Tech.png" alt="FX Tech logo" width={120} height={48} loading="lazy" />
