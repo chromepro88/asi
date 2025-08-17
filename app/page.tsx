@@ -205,19 +205,42 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center mb-8">
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
               <Image src="/PropNex.png" alt="PropNex real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-              <span className="text-xs text-gray-500">Leading Agency</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
               <Image src="/Huttons.png" alt="Huttons real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-              <span className="text-xs text-gray-500">Premium Properties</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
               <Image src="/OrangeTee.jpeg" alt="OrangeTee real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-              <span className="text-xs text-gray-500">Established 1995</span>
             </div>
             <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
               <Image src="/realstar.png" alt="Realstar Premier Group real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-              <span className="text-xs text-gray-500">Premier Group</span>
+            </div>
+          </div>
+          {/* Additional Clients */}
+          <div className="text-center mb-6">
+            <h4 className="text-base font-semibold text-gray-700">Also powering businesses across industries</h4>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 items-center mb-12">
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={120} height={48} loading="lazy" />
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/DollarBack%20Mortgage.png" alt="DollarBack Mortgage logo" width={140} height={48} loading="lazy" />
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/FX%20Tech.png" alt="FX Tech logo" width={120} height={48} loading="lazy" />
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={160} height={48} loading="lazy" />
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/Hotel%20Grand%20Central.png" alt="Hotel Grand Central logo" width={160} height={48} loading="lazy" />
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={140} height={48} loading="lazy" />
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
+              <Image src="/SgVenusFlyTrap.png" alt="SgVenusFlyTrap logo" width={140} height={48} loading="lazy" />
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
