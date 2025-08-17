@@ -201,9 +201,43 @@ const Home: React.FC = () => {
           <div className="text-center mb-6">
             <h3 className="text-lg font-semibold text-gray-700">Trusted by businesses across industries</h3>
           </div>
-          {/* Single horizontal logo bar */}
-          <div className="bg-white rounded-xl shadow-sm p-4 overflow-x-auto">
-            <div className="flex items-center gap-10 min-w-max">
+          {/* Single horizontal auto-scrolling logo bar */}
+          <div className="bg-white rounded-xl shadow-sm p-4 overflow-hidden logo-marquee">
+            <div className="flex items-center gap-10 min-w-max logo-track">
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/PropNex.png" alt="PropNex logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Huttons.png" alt="Huttons logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/OrangeTee.jpeg" alt="OrangeTee logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/realstar.png" alt="Realstar Premier Group logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Mortgage%20Titan.jpg" alt="Mortgage Titan logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/FX%20Tech.png" alt="FX Tech logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Hotel%20Grand%20Central.png" alt="Hotel Grand Central logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/SgVenusFlyTrap.png" alt="SgVenusFlyTrap logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              {/* Duplicate set for seamless marquee */}
               <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
                 <Image src="/PropNex.png" alt="PropNex logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
               </div>
@@ -239,7 +273,8 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Gap before testimonials */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-12">
             <Card className="bg-white shadow-md border border-gray-200">
               <CardHeader className="text-center py-4">
                 <div className="flex justify-center mb-3">

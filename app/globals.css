@@ -9,6 +9,15 @@ body {
   line-height: 1.6;
 }
 
+/* Logo marquee animation */
+.logo-marquee { position: relative; }
+.logo-track { animation: logo-scroll 30s linear infinite; }
+.logo-marquee:hover .logo-track { animation-play-state: paused; }
+@keyframes logo-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
