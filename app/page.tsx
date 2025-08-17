@@ -198,49 +198,45 @@ const Home: React.FC = () => {
       {/* Trusted Partners & Testimonials */}
       <section className="w-full py-12 md:py-16 bg-blue-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <h3 className="text-lg font-semibold text-gray-700 mb-2">Trusted by Singapore's Top Real Estate Agencies</h3>
-            <p className="text-gray-600">Helping agents close more deals with AI automation</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center mb-8">
-            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/PropNex.png" alt="PropNex real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-            </div>
-            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Huttons.png" alt="Huttons real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-            </div>
-            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/OrangeTee.jpeg" alt="OrangeTee real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-            </div>
-            <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/realstar.png" alt="Realstar Premier Group real estate agency logo" width={80} height={32} className="mb-1" loading="lazy" />
-            </div>
-          </div>
-          {/* Additional Clients */}
           <div className="text-center mb-6">
-            <h4 className="text-base font-semibold text-gray-700">Also powering businesses across industries</h4>
+            <h3 className="text-lg font-semibold text-gray-700">Trusted by businesses across industries</h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 items-center mb-12">
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={120} height={48} loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Mortgage%20Titan.jpg" alt="Mortgage Titan logo" width={140} height={48} loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/FX%20Tech.png" alt="FX Tech logo" width={120} height={48} loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={160} height={48} loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Hotel%20Grand%20Central.png" alt="Hotel Grand Central logo" width={160} height={48} loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={140} height={48} loading="lazy" />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-xl shadow-sm">
-              <Image src="/SgVenusFlyTrap.png" alt="SgVenusFlyTrap logo" width={140} height={48} loading="lazy" />
+          {/* Single horizontal logo bar */}
+          <div className="bg-white rounded-xl shadow-sm p-4 overflow-x-auto">
+            <div className="flex items-center gap-10 min-w-max">
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/PropNex.png" alt="PropNex logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Huttons.png" alt="Huttons logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/OrangeTee.jpeg" alt="OrangeTee logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/realstar.png" alt="Realstar Premier Group logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Mortgage%20Titan.jpg" alt="Mortgage Titan logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/FX%20Tech.png" alt="FX Tech logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Hotel%20Grand%20Central.png" alt="Hotel Grand Central logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
+              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                <Image src="/SgVenusFlyTrap.png" alt="SgVenusFlyTrap logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
