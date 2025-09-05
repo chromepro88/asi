@@ -274,25 +274,37 @@ const Home: React.FC = () => {
             </div>
           </div>
           {/* Gap before testimonials */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 md:mt-12">
-            <Card className="bg-white shadow-md border border-gray-200">
-              <CardHeader className="text-center py-4">
-                <div className="flex justify-center mb-3">
-                  <Image src="/dade.png" alt="Dade.sg company logo" width={48} height={48} className="rounded-full" loading="lazy" />
-                </div>
-                <CardDescription className="text-gray-600 text-sm italic">"Good!"</CardDescription>
-                <p className="text-xs text-gray-500 mt-1">Victor, Dade.sg</p>
-              </CardHeader>
-            </Card>
-            <Card className="bg-white shadow-md border border-gray-200">
-              <CardHeader className="text-center py-4">
-                <div className="flex justify-center mb-3">
-                  <Image src="/realstar.png" alt="Realstar Premier Group company logo" width={48} height={48} className="rounded-full" loading="lazy" />
-                </div>
-                <CardDescription className="text-gray-600 text-sm italic">"Wow, it worked like Magic with the voice command to input appointment. This helps a lot. Like a PA!"</CardDescription>
-                <p className="text-xs text-gray-500 mt-1">James Lee, Realstar Premier Group Private Limited</p>
-              </CardHeader>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mt-12 max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+              <Image 
+                src="/darren.png" 
+                alt="Customer testimonial from Darren - SgVenusFlyTrap" 
+                width={828} 
+                height={1792} 
+                className="w-full h-auto max-h-96 object-cover object-top" 
+                loading="lazy" 
+              />
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+              <Image 
+                src="/james.png" 
+                alt="Customer testimonial from James - Realstar Premier Group" 
+                width={828} 
+                height={1792} 
+                className="w-full h-auto max-h-96 object-cover object-top" 
+                loading="lazy" 
+              />
+            </div>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+              <Image 
+                src="/hakeem.png" 
+                alt="Customer testimonial from Hakeem - Mortgage Titan" 
+                width={828} 
+                height={1792} 
+                className="w-full h-auto max-h-96 object-cover object-top" 
+                loading="lazy" 
+              />
+            </div>
           </div>
         </div>
       </section>

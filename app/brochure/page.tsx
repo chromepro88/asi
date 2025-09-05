@@ -25,9 +25,9 @@ export default function BrochurePage() {
   ];
 
   const testimonials = [
-    { name: "Patrick Lee", company: "PropNex", text: "Transformed our engagement completely!" },
-    { name: "James Lee", company: "Realstar Premier Group", text: "Works like magic with voice commands!" },
-    { name: "Victor", company: "Dade.sg", text: "Good!" }
+    { name: "Darren", company: "SgVenusFlyTrap", image: "/darren.png", alt: "Customer testimonial from Darren - SgVenusFlyTrap" },
+    { name: "James", company: "Realstar Premier Group", image: "/james.png", alt: "Customer testimonial from James - Realstar Premier Group" },
+    { name: "Hakeem", company: "Mortgage Titan", image: "/hakeem.png", alt: "Customer testimonial from Hakeem - Mortgage Titan" }
   ];
 
   return (
@@ -252,18 +252,25 @@ export default function BrochurePage() {
               {/* Testimonials - Very Compact */}
               <div>
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Client Reviews</h3>
-                <div className="space-y-2">
-                  {testimonials.slice(0, 2).map((testimonial, index) => (
-                    <div key={index} className="bg-blue-50 rounded p-3">
-                      <div className="flex items-start space-x-2">
-                        <Star className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
-                        <div>
-                          <p className="text-sm italic">"{testimonial.text}"</p>
-                          <p className="text-sm text-gray-600">- {testimonial.name}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                <div className="grid grid-cols-2 gap-1">
+                  <div className="bg-white rounded border overflow-hidden">
+                    <Image 
+                      src="/darren.png" 
+                      alt="Customer testimonial from Darren - SgVenusFlyTrap" 
+                      width={414} 
+                      height={896} 
+                      className="w-full h-20 object-cover object-top" 
+                    />
+                  </div>
+                  <div className="bg-white rounded border overflow-hidden">
+                    <Image 
+                      src="/james.png" 
+                      alt="Customer testimonial from James - Realstar Premier Group" 
+                      width={414} 
+                      height={896} 
+                      className="w-full h-20 object-cover object-top" 
+                    />
+                  </div>
                 </div>
               </div>
             </div>
