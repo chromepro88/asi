@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'AI Super Private Limited',
     images: [
       {
-        url: '/logo_black.png',
+        url: '/screenshot.png',
         width: 1200,
         height: 630,
         alt: 'AI Super WhatsApp Chatbot Singapore - Business Automation',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'WhatsApp AI Chatbot Singapore | Business Automation',
     description: 'Singapore\'s leading WhatsApp AI chatbot for business automation. Boost sales by 40%, automate customer service 24/7.',
-    images: ['/logo_black.png'],
+    images: ['/screenshot.png'],
   },
   verification: {
     google: 'your-google-verification-code',
