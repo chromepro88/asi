@@ -276,135 +276,129 @@ const Home: React.FC = () => {
           {/* Gap before testimonials */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mt-12 max-w-4xl mx-auto">
             <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-              <Image 
-                src="/darren.png" 
-                alt="Customer testimonial from Darren - SgVenusFlyTrap" 
-                width={828} 
-                height={1792} 
-                className="w-full h-auto max-h-96 object-cover object-top" 
-                loading="lazy" 
+              <Image
+                src="/darren.png"
+                alt="Customer testimonial from Darren - SgVenusFlyTrap"
+                width={828}
+                height={1792}
+                className="w-full h-auto max-h-96 object-cover object-top"
+                loading="lazy"
               />
             </div>
             <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-              <Image 
-                src="/james.png" 
-                alt="Customer testimonial from James - Realstar Premier Group" 
-                width={828} 
-                height={1792} 
-                className="w-full h-auto max-h-96 object-cover object-top" 
-                loading="lazy" 
+              <Image
+                src="/james.png"
+                alt="Customer testimonial from James - Realstar Premier Group"
+                width={828}
+                height={1792}
+                className="w-full h-auto max-h-96 object-cover object-top"
+                loading="lazy"
               />
             </div>
             <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-              <Image 
-                src="/hakeem.png" 
-                alt="Customer testimonial from Hakeem - Mortgage Titan" 
-                width={828} 
-                height={1792} 
-                className="w-full h-auto max-h-96 object-cover object-top" 
-                loading="lazy" 
+              <Image
+                src="/hakeem.png"
+                alt="Customer testimonial from Hakeem - Mortgage Titan"
+                width={828}
+                height={1792}
+                className="w-full h-auto max-h-96 object-cover object-top"
+                loading="lazy"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="w-full py-20 md:py-28 bg-white" aria-labelledby="features-heading">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 id="features-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
+              Powerful Features That Drive Results
+            </h2>
+            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
+              Everything you need to automate customer conversations and boost sales
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">💬</span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Unlimited AI Responses</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Handle thousands of customer conversations simultaneously. No limits on messages - your AI works around the clock without getting tired.
+              </p>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">🎤</span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Voice Message Recognition</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Customers prefer voice? No problem. Our AI automatically transcribes and responds to voice messages in real-time.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">🌍</span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Multilingual Support</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Speak your customers' language. Supports English, Mandarin, Malay, Tamil, and 50+ languages with automatic detection.
+              </p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">📅</span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Google Calendar Integration</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Let AI schedule appointments directly. Syncs with your Google Calendar to avoid double bookings and send automatic reminders.
+              </p>
+            </div>
+
+            {/* Feature 5 */}
+            <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">📊</span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Built-in CRM</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Track every lead automatically. Capture customer details, conversation history, and follow-ups in one organized dashboard.
+              </p>
+            </div>
+
+            {/* Feature 6 */}
+            <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">⚡</span>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">5-Minute Setup</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Start automating today. Free installation and setup with expert support. No technical skills or coding required.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105" asChild>
+              <Link href="/signup">
+                Try All Features Free
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
       </main>
-
-      {/* Pricing Section */}
-      <section id="pricing" className="w-full py-20 md:py-28 bg-white" aria-labelledby="pricing-heading">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 id="pricing-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
-              Choose Your Plan
-            </h2>
-            <p className="text-gray-600 text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-              Join 500+ businesses automating their WhatsApp sales
-            </p>
-            {/* Urgency Element */}
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-6 max-w-lg mx-auto">
-              <p className="text-red-600 font-bold text-lg">⚡ Limited Time: Save up to 50%</p>
-            </div>
-          </div>
-          
-          <div className="flex justify-center">
-            <div className="max-w-md w-full">
-              <Card className="bg-white shadow-md border-2 border-blue-500 transition-shadow hover:shadow-lg relative">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    BEST VALUE
-                  </span>
-                </div>
-                <CardHeader className="text-center">
-                  <CardTitle className="text-lg font-semibold text-gray-900">Monthly</CardTitle>
-                  <CardDescription className="flex flex-col items-center">
-                    <span className="text-2xl font-bold text-gray-900">$49</span>
-                    <p className="text-red-500 line-through mt-2">$99</p>
-                    <p className="text-green-500 font-semibold">Save $50!</p>
-                    <p className="text-xs text-gray-500 mt-2">Pay monthly</p>
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Unlimited AI responses
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      WhatsApp integration
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Voice message recognition
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Multilingual support
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Google Calendar integration
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      CRM features
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Free installation & setup
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-green-500 mr-2">✓</span>
-                      Email & chat support
-                    </li>
-                  </ul>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white" asChild>
-                    <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer" aria-label="Start monthly plan for $49">
-                      Start Now
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-          
-          <div className="text-center mt-8">
-            <p className="text-gray-600 text-sm mb-4">
-              All plans include: Free Installation, Voice Message Recognition, Multilingual Support, and Google Calendar Integration.
-            </p>
-            <div className="flex justify-center items-center gap-4 text-sm text-gray-500">
-              <span className="flex items-center">
-                <span className="text-green-500 mr-1">🔒</span>
-                SSL Secured
-              </span>
-              <span className="flex items-center">
-                <span className="text-green-500 mr-1">💳</span>
-                Secure Payment
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Video Section */}
       <section id="video-embed" className="w-full py-20 md:py-28 bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -536,21 +530,87 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="w-full py-8 md:py-12 bg-blue-600">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-3xl mx-auto text-center">          <h2 className="text-xl font-bold tracking-tight sm:text-2xl md:text-3xl mb-4 text-white">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-blue-100 text-base md:text-lg mb-6 max-w-xl mx-auto">
-            Join 500+ successful businesses using AI to automate their WhatsApp sales. 
-            Get started today and see results in just 5 minutes.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-            <Button className="flex-1 bg-white text-blue-600 hover:bg-gray-100 py-2 px-6 text-base md:text-lg font-semibold" asChild>
-              <Link href="/signup">
-                Start Free
-              </Link>
-            </Button>
+      {/* Pricing Section */}
+      <section id="pricing" className="w-full py-20 md:py-28 bg-gradient-to-b from-white to-blue-50" aria-labelledby="pricing-heading">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 id="pricing-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4 text-gray-900">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
+              Everything you need to automate your WhatsApp
+            </p>
+          </div>
+
+          <div className="max-w-lg mx-auto">
+            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-blue-100">
+              {/* Price Header */}
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
+                <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                  50% OFF Launch Offer
+                </div>
+                <div className="flex items-center justify-center gap-4 mb-2">
+                  <span className="text-5xl font-bold">$49</span>
+                  <span className="text-2xl text-blue-200 line-through">$99</span>
+                </div>
+                <p className="text-blue-100 text-lg">per month</p>
+              </div>
+
+              {/* Features List */}
+              <div className="p-8">
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">Unlimited AI responses</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">Voice message recognition</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">Multilingual support (50+ languages)</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">Google Calendar integration</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">Built-in CRM</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">Free setup & installation</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-green-500 text-xl mt-0.5">✓</span>
+                    <span className="text-gray-700">24/7 email & chat support</span>
+                  </div>
+                </div>
+
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
+                  <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
+                    Get Started Now
+                  </Link>
+                </Button>
+
+                <p className="text-center text-gray-500 text-sm mt-4">
+                  30-day free trial • No credit card required
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center items-center gap-6 text-sm text-gray-500 mt-8">
+            <span className="flex items-center gap-2">
+              <span className="text-green-500">🔒</span>
+              SSL Secured
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="text-green-500">💳</span>
+              Secure Payment
+            </span>
           </div>
         </div>
       </section>
