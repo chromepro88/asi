@@ -547,7 +547,7 @@ const Home: React.FC = () => {
               {/* Price Header */}
               <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
                 <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                  50% OFF Launch Offer
+                  30% OFF Launch Offer
                 </div>
                 <div className="flex items-center justify-center gap-4 mb-2">
                   <span className="text-5xl font-bold">$69</span>
