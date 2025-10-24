@@ -67,7 +67,7 @@ const Home: React.FC = () => {
     },
     "offers": {
       "@type": "Offer",
-      "price": "49",
+      "price": "69",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "description": "Monthly subscription for WhatsApp AI chatbot automation"
@@ -550,7 +550,7 @@ const Home: React.FC = () => {
                   50% OFF Launch Offer
                 </div>
                 <div className="flex items-center justify-center gap-4 mb-2">
-                  <span className="text-5xl font-bold">$49</span>
+                  <span className="text-5xl font-bold">$69</span>
                   <span className="text-2xl text-blue-200 line-through">$99</span>
                 </div>
                 <p className="text-blue-100 text-lg">per month</p>
