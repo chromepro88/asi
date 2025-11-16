@@ -606,7 +606,7 @@ const Home: React.FC = () => {
                     </div>
 
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
-                      <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                         Get Started Now
                       </Link>
                     </Button>
@@ -668,7 +668,7 @@ const Home: React.FC = () => {
                     </div>
 
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
-                      <Link href="https://buy.stripe.com/6oE7wagXZ71e1nafZ3" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                         Get Started Now
                       </Link>
                     </Button>
