@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
@@ -543,63 +544,142 @@ const Home: React.FC = () => {
           </div>
 
           <div className="max-w-lg mx-auto">
-            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-blue-100">
-              {/* Price Header */}
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
-                <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                  30% OFF Launch Offer
-                </div>
-                <div className="flex items-center justify-center gap-4 mb-2">
-                  <span className="text-5xl font-bold">$69</span>
-                  <span className="text-2xl text-blue-200 line-through">$99</span>
-                </div>
-                <p className="text-blue-100 text-lg">per month</p>
+            <Tabs defaultValue="monthly" className="w-full">
+              {/* Pricing Toggle */}
+              <div className="flex justify-center mb-8">
+                <TabsList className="grid w-full max-w-md grid-cols-2 bg-blue-100/50 p-1">
+                  <TabsTrigger value="monthly" className="text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-blue-600">
+                    Monthly
+                  </TabsTrigger>
+                  <TabsTrigger value="yearly" className="text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-blue-600">
+                    Yearly <span className="ml-1 text-xs text-green-600 font-bold">SAVE 29%</span>
+                  </TabsTrigger>
+                </TabsList>
               </div>
 
-              {/* Features List */}
-              <div className="p-8">
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">Unlimited AI responses</span>
+              {/* Monthly Pricing */}
+              <TabsContent value="monthly" className="mt-0">
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-blue-100">
+                  {/* Price Header */}
+                  <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
+                    <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                      30% OFF Launch Offer
+                    </div>
+                    <div className="flex items-center justify-center gap-4 mb-2">
+                      <span className="text-5xl font-bold">$69</span>
+                      <span className="text-2xl text-blue-200 line-through">$99</span>
+                    </div>
+                    <p className="text-blue-100 text-lg">per month</p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">Voice message recognition</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">Multilingual support (50+ languages)</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">Google Calendar integration</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">Built-in CRM</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">Free setup & installation</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-green-500 text-xl mt-0.5">✓</span>
-                    <span className="text-gray-700">24/7 email & chat support</span>
+
+                  {/* Features List */}
+                  <div className="p-8">
+                    <div className="space-y-4 mb-8">
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Unlimited AI responses</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Voice message recognition</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Multilingual support (50+ languages)</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Google Calendar integration</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Built-in CRM</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Free setup & installation</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">24/7 email & chat support</span>
+                      </div>
+                    </div>
+
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
+                      <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
+                        Get Started Now
+                      </Link>
+                    </Button>
+
+                    <p className="text-center text-gray-500 text-sm mt-4">
+                      30-day free trial • No credit card required
+                    </p>
                   </div>
                 </div>
+              </TabsContent>
 
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
-                  <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
-                    Get Started Now
-                  </Link>
-                </Button>
+              {/* Yearly Pricing */}
+              <TabsContent value="yearly" className="mt-0">
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-blue-100">
+                  {/* Price Header */}
+                  <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
+                    <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                      Best Value - Save $240/year
+                    </div>
+                    <div className="flex items-center justify-center gap-4 mb-2">
+                      <span className="text-5xl font-bold">$49</span>
+                      <span className="text-2xl text-blue-200 line-through">$69</span>
+                    </div>
+                    <p className="text-blue-100 text-lg">per month, billed annually</p>
+                    <p className="text-blue-200 text-sm mt-2">($588/year instead of $828)</p>
+                  </div>
 
-                <p className="text-center text-gray-500 text-sm mt-4">
-                  30-day free trial • No credit card required
-                </p>
-              </div>
-            </div>
+                  {/* Features List */}
+                  <div className="p-8">
+                    <div className="space-y-4 mb-8">
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Unlimited AI responses</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Voice message recognition</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Multilingual support (50+ languages)</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Google Calendar integration</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Built-in CRM</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">Free setup & installation</span>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-green-500 text-xl mt-0.5">✓</span>
+                        <span className="text-gray-700">24/7 email & chat support</span>
+                      </div>
+                    </div>
+
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
+                      <Link href="https://buy.stripe.com/aEUbMqfTV5Xa4zmcMP" target="_blank" rel="noopener noreferrer">
+                        Get Started Now
+                      </Link>
+                    </Button>
+
+                    <p className="text-center text-gray-500 text-sm mt-4">
+                      30-day free trial • No credit card required
+                    </p>
+                  </div>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
 
           <div className="flex justify-center items-center gap-6 text-sm text-gray-500 mt-8">
