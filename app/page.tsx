@@ -547,11 +547,11 @@ const Home: React.FC = () => {
             <Tabs defaultValue="monthly" className="w-full">
               {/* Pricing Toggle */}
               <div className="flex justify-center mb-8">
-                <TabsList className="grid w-full max-w-md grid-cols-2 bg-blue-100/50 p-1">
-                  <TabsTrigger value="monthly" className="text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-blue-600">
+                <TabsList className="grid w-full max-w-md grid-cols-2 bg-gray-100 p-1 border-0">
+                  <TabsTrigger value="monthly" className="text-base font-semibold rounded-md data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:shadow-sm">
                     Monthly
                   </TabsTrigger>
-                  <TabsTrigger value="yearly" className="text-base font-semibold data-[state=active]:bg-white data-[state=active]:text-blue-600">
+                  <TabsTrigger value="yearly" className="text-base font-semibold rounded-md data-[state=active]:bg-white data-[state=active]:text-blue-600 data-[state=active]:shadow-sm">
                     Yearly <span className="ml-1 text-xs text-green-600 font-bold">SAVE 29%</span>
                   </TabsTrigger>
                 </TabsList>
