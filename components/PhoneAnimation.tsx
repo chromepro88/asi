@@ -256,8 +256,10 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
       </div>
 
       {/* Hand Wave Animation */}
-      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-4xl hand-wave z-10">
-        👋
+      <div className="hand-wave-container">
+        <div className="text-4xl hand-wave">
+          👋
+        </div>
       </div>
 
       <style jsx>{`
@@ -711,6 +713,17 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         }
 
         /* Hand Wave Animation */
+        .hand-wave-container {
+          position: absolute;
+          top: -1.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 10;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
         @keyframes wave {
           0% { transform: rotate(0deg); }
           10% { transform: rotate(14deg); }
@@ -789,6 +802,10 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
             margin-left: 0.5rem;
           }
 
+          .hand-wave-container {
+            top: -1.2rem;
+          }
+
           .hand-wave {
             font-size: 2.5rem !important;
           }
@@ -852,6 +869,10 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           .right-actions {
             gap: 0.4rem;
             margin-left: 0.4rem;
+          }
+
+          .hand-wave-container {
+            top: -1rem;
           }
 
           .hand-wave {
