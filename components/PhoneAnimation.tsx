@@ -222,18 +222,18 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
               </div>
             );
           })}
-        </div>
-
-        {/* Typing Indicator */}
-        {showTyping && (
-          <div className="typing-indicator" ref={typingIndicatorRef}>
-            <div className="typing-bubbles">
-              <div className="bubble"></div>
-              <div className="bubble"></div>
-              <div className="bubble"></div>
+          
+          {/* Typing Indicator */}
+          {showTyping && (
+            <div className="typing-indicator" ref={typingIndicatorRef}>
+              <div className="typing-bubbles">
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
         {/* Footer Input */}
         <div className="wa-footer">
@@ -443,9 +443,10 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         .chat-content {
           flex: 1;
           overflow-y: auto;
-          padding: 0.5rem 0.6rem;
+          padding: 0.5rem 0.6rem 0 0.6rem;
           display: flex;
           flex-direction: column;
+          justify-content: flex-end;
           gap: 0.25rem;
         }
 
@@ -534,12 +535,8 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           display: flex;
           align-items: center;
           gap: 0.4rem;
-          padding: 0.4rem 0.6rem;
-          margin-bottom: 0.2rem;
+          padding: 0 0 0.5rem 0;
           animation: fadeInUp 0.3s ease;
-          position: absolute;
-          bottom: 4rem;
-          left: 0.6rem;
         }
 
         .typing-bubbles {
