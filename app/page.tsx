@@ -230,7 +230,7 @@ const Home: React.FC = () => {
                 <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
               </div>
               <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Hotel%20Grand%20Central.png" alt="Hotel Grand Central logo" width={270} height={48} className="h-10 w-auto" loading="lazy" />
+                <Image src="/Hotel%20Grand%20Central.jpg" alt="Hotel Grand Central logo" width={512} height={128} className="h-10 w-auto" loading="lazy" />
               </div>
               <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
                 <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
@@ -264,7 +264,7 @@ const Home: React.FC = () => {
                 <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
               </div>
               <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Hotel%20Grand%20Central.png" alt="Hotel Grand Central logo" width={270} height={48} className="h-10 w-auto" loading="lazy" />
+                <Image src="/Hotel%20Grand%20Central.jpg" alt="Hotel Grand Central logo" width={512} height={128} className="h-10 w-auto" loading="lazy" />
               </div>
               <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
                 <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
