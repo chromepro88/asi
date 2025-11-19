@@ -174,7 +174,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           </div>
           <div className="profile-info">
             <div className="avatar">
-              <img src="https://i.pravatar.cc/150?u=mom" alt="Profile" />
+              <img src="https://img.freepik.com/premium-psd/portrait-business-asian-woman-isolated-transparent-background_177659-232.jpg" alt="Profile" />
             </div>
             <div className="contact-text">
               <span className="contact-name">Property Agent</span>
@@ -443,11 +443,14 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         .chat-content {
           flex: 1;
           overflow-y: auto;
+          overflow-x: hidden;
           padding: 0.5rem 0.6rem 0 0.6rem;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
           gap: 0.25rem;
+          -webkit-overflow-scrolling: touch;
+          touch-action: pan-y;
         }
 
         .chat-content::-webkit-scrollbar {
@@ -589,15 +592,17 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           background-color: #f6f6f6;
           padding: 0.4rem 0.6rem 1.2rem 0.6rem;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           border-top: 1px solid #ddd;
         }
 
         .plus-btn {
           color: #007aff;
           font-size: 1rem;
-          padding: 0.3rem 0.5rem 0.3rem 0;
+          padding: 0 0.5rem 0 0;
           cursor: pointer;
+          display: flex;
+          align-items: center;
         }
 
         .plus-btn i {
@@ -635,7 +640,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           align-items: center;
           gap: 0.6rem;
           margin-left: 0.6rem;
-          padding-bottom: 0.3rem;
+          padding-bottom: 0;
         }
 
         .right-actions i {
@@ -766,6 +771,24 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
             font-size: 0.55rem;
           }
 
+          .wa-footer {
+            padding: 0.3rem 0.5rem 1.1rem 0.5rem;
+          }
+
+          .plus-btn {
+            padding: 0.25rem 0.4rem 0.25rem 0;
+          }
+
+          .input-box {
+            padding: 0.35rem 0.55rem;
+            min-height: 1.6rem;
+          }
+
+          .right-actions {
+            gap: 0.5rem;
+            margin-left: 0.5rem;
+          }
+
           .hand-wave {
             font-size: 2.5rem !important;
           }
@@ -811,6 +834,24 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
 
           .input-field {
             font-size: 0.7rem;
+          }
+
+          .wa-footer {
+            padding: 0.3rem 0.4rem 1rem 0.4rem;
+          }
+
+          .plus-btn {
+            padding: 0.2rem 0.3rem 0.2rem 0;
+          }
+
+          .input-box {
+            padding: 0.3rem 0.5rem;
+            min-height: 1.5rem;
+          }
+
+          .right-actions {
+            gap: 0.4rem;
+            margin-left: 0.4rem;
           }
 
           .hand-wave {
