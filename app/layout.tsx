@@ -49,6 +49,7 @@ export default function RootLayout({
         <meta property="fb:app_id" content="1846789336144846" />
         <link rel="icon" href="/logo_white.png" type="image/png" id="favicon" />
         <link rel="apple-touch-icon" href="/logo_white.png" id="apple-touch-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
