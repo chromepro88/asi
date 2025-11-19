@@ -259,7 +259,7 @@ export default function BrochurePage() {
                       alt="Customer testimonial from Darren - SgVenusFlyTrap" 
                       width={414} 
                       height={896} 
-                      className="w-full h-20 object-cover object-top" 
+                      className="w-full h-auto max-h-32 object-contain" 
                     />
                   </div>
                   <div className="bg-white rounded border overflow-hidden">
@@ -268,7 +268,7 @@ export default function BrochurePage() {
                       alt="Customer testimonial from James - Realstar Premier Group" 
                       width={414} 
                       height={896} 
-                      className="w-full h-20 object-cover object-top" 
+                      className="w-full h-auto max-h-32 object-contain" 
                     />
                   </div>
                 </div>

@@ -282,7 +282,7 @@ const Home: React.FC = () => {
                 alt="Customer testimonial from Darren - SgVenusFlyTrap"
                 width={828}
                 height={1792}
-                className="w-full h-auto max-h-96 object-cover object-top"
+                className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
                 loading="lazy"
               />
             </div>
@@ -292,7 +292,7 @@ const Home: React.FC = () => {
                 alt="Customer testimonial from James - Realstar Premier Group"
                 width={828}
                 height={1792}
-                className="w-full h-auto max-h-96 object-cover object-top"
+                className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
                 loading="lazy"
               />
             </div>
@@ -302,7 +302,7 @@ const Home: React.FC = () => {
                 alt="Customer testimonial from Hakeem - Mortgage Titan"
                 width={828}
                 height={1792}
-                className="w-full h-auto max-h-96 object-cover object-top"
+                className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
                 loading="lazy"
               />
             </div>
