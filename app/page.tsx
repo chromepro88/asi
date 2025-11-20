@@ -421,14 +421,13 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             <div className="flex flex-col items-center group">
-              <div className="bg-gray-900 p-2 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-4 border-gray-800 relative overflow-hidden">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-xl z-10"></div>
+              <div className="bg-gray-900 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-[4px] border-gray-900 relative overflow-hidden w-[280px] aspect-[9/19.5]">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-2xl z-20"></div>
                 <Image
                   src="/output.gif"
                   alt="Calendar Integration Demo"
-                  width={280}
-                  height={500}
-                  className="rounded-[2rem] w-full h-auto"
+                  fill
+                  className="object-cover"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -439,14 +438,13 @@ const Home: React.FC = () => {
             </div>
             
             <div className="flex flex-col items-center group">
-              <div className="bg-gray-900 p-2 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-4 border-gray-800 relative overflow-hidden">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-xl z-10"></div>
+              <div className="bg-gray-900 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-[4px] border-gray-900 relative overflow-hidden w-[280px] aspect-[9/19.5]">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-2xl z-20"></div>
                 <Image
                   src="/output2.gif"
                   alt="Voice & Multilingual Demo"
-                  width={280}
-                  height={500}
-                  className="rounded-[2rem] w-full h-auto"
+                  fill
+                  className="object-cover"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -457,14 +455,13 @@ const Home: React.FC = () => {
             </div>
             
             <div className="flex flex-col items-center group">
-              <div className="bg-gray-900 p-2 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-4 border-gray-800 relative overflow-hidden">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-xl z-10"></div>
+              <div className="bg-gray-900 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-[4px] border-gray-900 relative overflow-hidden w-[280px] aspect-[9/19.5]">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-black rounded-b-2xl z-20"></div>
                 <Image
                   src="/output3.gif"
                   alt="AI Conversation Demo"
-                  width={280}
-                  height={500}
-                  className="rounded-[2rem] w-full h-auto"
+                  fill
+                  className="object-cover"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
