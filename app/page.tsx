@@ -5,6 +5,12 @@ import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
@@ -76,7 +82,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-gray-100 text-gray-900">
+    <div className="flex flex-col min-h-screen bg-white text-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -109,7 +115,7 @@ const Home: React.FC = () => {
       </header>
 
       {/* Phone Animation Section */}
-      <section className="w-full py-12 md:py-16 bg-gradient-to-b from-blue-50 to-white">
+      <section className="w-full py-12 md:py-16 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -197,7 +203,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Trusted Partners & Testimonials */}
-      <section className="w-full py-12 md:py-16 bg-blue-50">
+      <section className="w-full py-12 md:py-16 bg-white border-y border-gray-100">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-6">
             <h3 className="text-lg font-semibold text-gray-700">Trusted by businesses across industries</h3>
@@ -324,66 +330,66 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white text-2xl">💬</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Unlimited AI Responses</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Unlimited AI Responses</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Handle thousands of customer conversations simultaneously. No limits on messages - your AI works around the clock without getting tired.
               </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white text-2xl">🎤</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Voice Message Recognition</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Voice Message Recognition</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Customers prefer voice? No problem. Our AI automatically transcribes and responds to voice messages in real-time.
               </p>
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white text-2xl">🌍</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Multilingual Support</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Multilingual Support</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Speak your customers' language. Supports English, Mandarin, Malay, Tamil, and 50+ languages with automatic detection.
               </p>
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white text-2xl">📅</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Google Calendar Integration</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Google Calendar Integration</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Let AI schedule appointments directly. Syncs with your Google Calendar to avoid double bookings and send automatic reminders.
               </p>
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-gradient-to-br from-pink-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white text-2xl">📊</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Built-in CRM</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Built-in CRM</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Track every lead automatically. Capture customer details, conversation history, and follow-ups in one organized dashboard.
               </p>
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
+              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-white text-2xl">⚡</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">5-Minute Setup</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">5-Minute Setup</h3>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Start automating today. Free installation and setup with expert support. No technical skills or coding required.
               </p>
@@ -402,7 +408,7 @@ const Home: React.FC = () => {
       </main>
 
       {/* Video Section */}
-      <section id="video-embed" className="w-full py-20 md:py-28 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section id="video-embed" className="w-full py-20 md:py-28 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
@@ -414,60 +420,63 @@ const Home: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            <div className="flex flex-col items-center">
-              <div className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="flex flex-col items-center group">
+              <div className="bg-gray-900 p-2 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-4 border-gray-800 relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-xl z-10"></div>
                 <Image
                   src="/output.gif"
                   alt="Calendar Integration Demo"
                   width={280}
                   height={500}
-                  className="rounded-xl"
+                  className="rounded-[2rem] w-full h-auto"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Calendar Integration</h3>
+              <h3 className="text-xl font-bold text-gray-900 mt-8 mb-2 group-hover:text-blue-600 transition-colors">Calendar Integration</h3>
               <p className="text-gray-600 text-center">Book appointments automatically</p>
             </div>
             
-            <div className="flex flex-col items-center">
-              <div className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="flex flex-col items-center group">
+              <div className="bg-gray-900 p-2 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-4 border-gray-800 relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-xl z-10"></div>
                 <Image
                   src="/output2.gif"
                   alt="Voice & Multilingual Demo"
                   width={280}
                   height={500}
-                  className="rounded-xl"
+                  className="rounded-[2rem] w-full h-auto"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Voice & Multilingual</h3>
+              <h3 className="text-xl font-bold text-gray-900 mt-8 mb-2 group-hover:text-blue-600 transition-colors">Voice & Multilingual</h3>
               <p className="text-gray-600 text-center">Understands voice in any language</p>
             </div>
             
-            <div className="flex flex-col items-center">
-              <div className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="flex flex-col items-center group">
+              <div className="bg-gray-900 p-2 rounded-[2.5rem] shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 border-4 border-gray-800 relative overflow-hidden">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-800 rounded-b-xl z-10"></div>
                 <Image
                   src="/output3.gif"
                   alt="AI Conversation Demo"
                   width={280}
                   height={500}
-                  className="rounded-xl"
+                  className="rounded-[2rem] w-full h-auto"
                   loading="lazy"
                   placeholder="blur"
                   blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Smart Conversations</h3>
+              <h3 className="text-xl font-bold text-gray-900 mt-8 mb-2 group-hover:text-blue-600 transition-colors">Smart Conversations</h3>
               <p className="text-gray-600 text-center">Natural AI responses 24/7</p>
             </div>
           </div>
           
           <div className="text-center mt-16">
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-12 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200" asChild>
               <Link href="/video" target="_blank" rel="noopener noreferrer">
                 Watch Full Demo
               </Link>
@@ -495,44 +504,43 @@ const Home: React.FC = () => {
 
       {/* FAQ Section */}
       <section id="faq" className="w-full py-20 md:py-28 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-gray-900">
             Common Questions
           </h2>
-          <div className="space-y-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">How quickly can I set up?</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Will I still receive calls?</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Absolutely! Your phone works normally. AI only handles business messages automatically.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">What languages are supported?</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                English, Mandarin, Malay, Tamil, and 50+ others. Even understands voice messages automatically.
-              </p>
-            </div>
-            
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Is my data secure?</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Yes! We don't store conversations. Everything is encrypted and processed in real-time only.
-              </p>
-            </div>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">How quickly can I set up?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide to get you started immediately.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Will I still receive calls?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  Absolutely! Your phone works normally. AI only handles business messages automatically. You can choose to intervene at any time and take over the conversation.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What languages are supported?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  We support English, Mandarin, Malay, Tamil, and 50+ other languages. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Is my data secure?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  Yes! We prioritize your data security. We don't store your personal conversations. Everything is encrypted and processed in real-time only to generate responses.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="w-full py-20 md:py-28 bg-gradient-to-b from-white to-blue-50" aria-labelledby="pricing-heading">
+      <section id="pricing" className="w-full py-20 md:py-28 bg-white" aria-labelledby="pricing-heading">
         <div className="container px-4 md:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 id="pricing-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4 text-gray-900">
@@ -559,59 +567,73 @@ const Home: React.FC = () => {
 
               {/* Monthly Pricing */}
               <TabsContent value="monthly" className="mt-0">
-                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-blue-100">
+                <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
                   {/* Price Header */}
-                  <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
-                    <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                  <div className="bg-white text-gray-900 text-center py-10 px-6 border-b border-gray-100">
+                    <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold mb-6">
                       30% OFF Launch Offer
                     </div>
-                    <div className="flex items-center justify-center gap-4 mb-2">
-                      <span className="text-5xl font-bold">$69</span>
-                      <span className="text-2xl text-blue-200 line-through">$99</span>
+                    <div className="flex items-center justify-center gap-3 mb-2">
+                      <span className="text-6xl font-bold tracking-tight">$69</span>
+                      <span className="text-2xl text-gray-400 line-through font-medium">$99</span>
                     </div>
-                    <p className="text-blue-100 text-lg">per month</p>
+                    <p className="text-gray-500 text-lg font-medium">per month</p>
                   </div>
 
                   {/* Features List */}
-                  <div className="p-8">
-                    <div className="space-y-4 mb-8">
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Unlimited AI responses</span>
+                  <div className="p-8 md:p-10 bg-gray-50/50">
+                    <div className="space-y-5 mb-10">
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">Unlimited AI responses</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Voice message recognition</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">Voice message recognition</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Multilingual support (50+ languages)</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">Multilingual support (50+ languages)</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Google Calendar integration</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">Google Calendar integration</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Built-in CRM</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">Built-in CRM</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Free setup & installation</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">Free setup & installation</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">24/7 email & chat support</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-green-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg">24/7 email & chat support</span>
                       </div>
                     </div>
 
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
+                    <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-7 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5" asChild>
                       <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                         Get Started Now
                       </Link>
                     </Button>
 
-                    <p className="text-center text-gray-500 text-sm mt-4">
+                    <p className="text-center text-gray-500 text-sm mt-6 font-medium">
                       30-day free trial • No credit card required
                     </p>
                   </div>
@@ -620,60 +642,75 @@ const Home: React.FC = () => {
 
               {/* Yearly Pricing */}
               <TabsContent value="yearly" className="mt-0">
-                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-blue-100">
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-blue-600 relative transform hover:-translate-y-1 transition-all duration-300">
+                  <div className="absolute top-0 inset-x-0 h-2 bg-blue-600"></div>
                   {/* Price Header */}
-                  <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-8 px-6">
-                    <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                  <div className="bg-white text-gray-900 text-center py-10 px-6 border-b border-gray-100">
+                    <div className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-6 shadow-md">
                       Best Value - Save $240/year
                     </div>
-                    <div className="flex items-center justify-center gap-4 mb-2">
-                      <span className="text-5xl font-bold">$49</span>
-                      <span className="text-2xl text-blue-200 line-through">$69</span>
+                    <div className="flex items-center justify-center gap-3 mb-2">
+                      <span className="text-6xl font-bold tracking-tight text-blue-600">$49</span>
+                      <span className="text-2xl text-gray-400 line-through font-medium">$69</span>
                     </div>
-                    <p className="text-blue-100 text-lg">per month, billed annually</p>
-                    <p className="text-blue-200 text-sm mt-2">($588/year instead of $828)</p>
+                    <p className="text-gray-500 text-lg font-medium">per month, billed annually</p>
+                    <p className="text-green-600 text-sm mt-2 font-bold">($588/year instead of $828)</p>
                   </div>
 
                   {/* Features List */}
-                  <div className="p-8">
-                    <div className="space-y-4 mb-8">
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Unlimited AI responses</span>
+                  <div className="p-8 md:p-10 bg-blue-50/30">
+                    <div className="space-y-5 mb-10">
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">Unlimited AI responses</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Voice message recognition</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">Voice message recognition</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Multilingual support (50+ languages)</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">Multilingual support (50+ languages)</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Google Calendar integration</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">Google Calendar integration</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Built-in CRM</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">Built-in CRM</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">Free setup & installation</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">Free setup & installation</span>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <span className="text-green-500 text-xl mt-0.5">✓</span>
-                        <span className="text-gray-700">24/7 email & chat support</span>
+                      <div className="flex items-start gap-4">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                        </div>
+                        <span className="text-gray-700 text-lg font-medium">24/7 email & chat support</span>
                       </div>
                     </div>
 
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all" asChild>
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-7 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5" asChild>
                       <Link href="https://aisupersg.com/signup" target="_blank" rel="noopener noreferrer">
                         Get Started Now
                       </Link>
                     </Button>
 
-                    <p className="text-center text-gray-500 text-sm mt-4">
+                    <p className="text-center text-gray-500 text-sm mt-6 font-medium">
                       30-day free trial • No credit card required
                     </p>
                   </div>
