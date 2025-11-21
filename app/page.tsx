@@ -48,37 +48,87 @@ const Home: React.FC = () => {
   // Structured Data for SEO
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "AI Super WhatsApp Chatbot",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web",
-    "description": "Singapore's #1 WhatsApp AI chatbot for automating customer service, capturing leads, and increasing sales by 40%.",
-    "url": "https://asi.sg",
-    "publisher": {
-      "@type": "Organization",
-      "name": "AI Super Private Limited",
-      "url": "https://asi.sg",
-      "logo": "https://asi.sg/logo_black.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "540 Sims Avenue, #03-05, Sims Avenue Centre",
-        "addressLocality": "Singapore",
-        "postalCode": "387603",
-        "addressCountry": "SG"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "AI Super",
+        "url": "https://asi.sg"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+65-8837-9368",
-        "contactType": "customer service"
+      {
+        "@type": "SoftwareApplication",
+        "name": "AI Super WhatsApp Chatbot",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Singapore's #1 WhatsApp AI chatbot for automating customer service, capturing leads, and increasing sales by 40%.",
+        "url": "https://asi.sg",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Super Private Limited",
+          "url": "https://asi.sg",
+          "logo": "https://asi.sg/logo_black.png",
+          "sameAs": [
+            "https://www.instagram.com/aisupersg/",
+            "https://www.facebook.com/people/AI-Super-SG/61573691083537/"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "540 Sims Avenue, #03-05, Sims Avenue Centre",
+            "addressLocality": "Singapore",
+            "postalCode": "387603",
+            "addressCountry": "SG"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+65-8837-9368",
+            "contactType": "customer service"
+          }
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "69",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "description": "Monthly subscription for WhatsApp AI chatbot automation"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How quickly can I set up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide to get you started immediately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I still receive calls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Your phone works normally. AI only handles business messages automatically. You can choose to intervene at any time and take over the conversation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What languages are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We support English, Mandarin, Malay, Tamil, and 50+ other languages. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data secure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We prioritize your data security. We don't store your personal conversations. Everything is encrypted and processed in real-time only to generate responses."
+            }
+          }
+        ]
       }
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "69",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "description": "Monthly subscription for WhatsApp AI chatbot automation"
-    },
+    ]
   };
 
   return (
