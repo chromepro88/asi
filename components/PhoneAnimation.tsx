@@ -1,5 +1,18 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
+import { 
+  Signal, 
+  Wifi, 
+  BatteryMedium, 
+  ChevronLeft, 
+  Video, 
+  Phone, 
+  CheckCheck, 
+  Plus, 
+  StickyNote, 
+  Camera, 
+  Mic 
+} from 'lucide-react';
 
 interface PhoneAnimationProps {
   className?: string;
@@ -161,16 +174,16 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         <div className="status-bar">
           <div className="time">10:35</div>
           <div className="status-right">
-            <i className="fas fa-signal"></i>
-            <i className="fas fa-wifi"></i>
-            <i className="fas fa-battery-three-quarters"></i>
+            <Signal size={12} className="text-black" />
+            <Wifi size={12} className="text-black" />
+            <BatteryMedium size={12} className="text-black" />
           </div>
         </div>
 
         {/* WhatsApp Header */}
         <div className="wa-header">
           <div className="back-btn">
-            <i className="fas fa-chevron-left"></i>
+            <ChevronLeft size={24} className="text-[#007aff]" />
           </div>
           <div className="profile-info">
             <div className="avatar">
@@ -182,8 +195,8 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
             </div>
           </div>
           <div className="header-actions">
-            <i className="fas fa-video"></i>
-            <i className="fas fa-phone"></i>
+            <Video size={20} className="text-[#007aff]" />
+            <Phone size={18} className="text-[#007aff]" />
           </div>
         </div>
 
@@ -197,7 +210,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
                   <div className="image-overlay">
                     {message.time}
                     {message.readReceipt && (
-                      <i className="fas fa-check-double blue-tick" style={{ color: 'white', marginLeft: '3px' }}></i>
+                      <CheckCheck size={10} className="text-[#34b7f1] ml-[3px]" />
                     )}
                   </div>
                 </div>
@@ -216,7 +229,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
                 <span className="meta">
                   {message.time}
                   {message.readReceipt && (
-                    <i className="fas fa-check-double blue-tick"></i>
+                    <CheckCheck size={10} className="text-[#34b7f1]" />
                   )}
                 </span>
               </div>
@@ -238,15 +251,15 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         {/* Footer Input */}
         <div className="wa-footer">
           <div className="plus-btn">
-            <i className="fas fa-plus"></i>
+            <Plus size={20} className="text-[#007aff]" />
           </div>
           <div className="input-box">
             <input type="text" className="input-field" placeholder="Message" readOnly />
-            <i className="far fa-sticky-note sticker-btn"></i>
+            <StickyNote size={18} className="text-[#333] opacity-70 ml-2" />
           </div>
           <div className="right-actions">
-            <i className="fas fa-camera"></i>
-            <i className="fas fa-microphone"></i>
+            <Camera size={20} className="text-[#007aff]" />
+            <Mic size={20} className="text-[#007aff]" />
           </div>
         </div>
 

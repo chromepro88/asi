@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
 import { Analytics } from "@vercel/analytics/react";
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'WhatsApp AI Chatbot Singapore | Business Automation | AI Super',
@@ -49,7 +52,6 @@ export default function RootLayout({
         <meta property="fb:app_id" content="1846789336144846" />
         <link rel="icon" href="/logo_white.png" type="image/png" id="favicon" />
         <link rel="apple-touch-icon" href="/logo_white.png" id="apple-touch-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -80,7 +82,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
