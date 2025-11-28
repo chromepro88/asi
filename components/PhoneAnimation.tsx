@@ -605,7 +605,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         /* Footer Input */
         .wa-footer {
           background-color: #f6f6f6;
-          padding: 0.4rem 0.6rem 1.2rem 0.6rem;
+          padding: 0.4rem 0.6rem 2.4rem 0.6rem;
           display: flex;
           align-items: center;
           border-top: 1px solid #ddd;
@@ -618,6 +618,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           cursor: pointer;
           display: flex;
           align-items: center;
+          flex-shrink: 0;
         }
 
         .plus-btn i {
@@ -633,6 +634,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           display: flex;
           align-items: center;
           min-height: 1.8rem;
+          min-width: 0;
         }
 
         .input-field {
@@ -656,6 +658,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           gap: 0.6rem;
           margin-left: 0.6rem;
           padding-bottom: 0;
+          flex-shrink: 0;
         }
 
         .right-actions i {
@@ -798,7 +801,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           }
 
           .wa-footer {
-            padding: 0.3rem 0.5rem 1.1rem 0.5rem;
+            padding: 0.3rem 0.5rem 2.2rem 0.5rem;
           }
 
           .plus-btn {
@@ -867,7 +870,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           }
 
           .wa-footer {
-            padding: 0.3rem 0.4rem 1rem 0.4rem;
+            padding: 0.3rem 0.4rem 2rem 0.4rem;
           }
 
           .plus-btn {
