@@ -1,0 +1,624 @@
+/* Background Circles */
+.circlesContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border: 0.1rem solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle1 {
+  width: 5rem;
+  height: 5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.08);
+}
+
+.circle2 {
+  width: 25rem;
+  height: 25rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.07);
+}
+
+.circle3 {
+  width: 45rem;
+  height: 45rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.06);
+}
+
+.circle4 {
+  width: 65rem;
+  height: 65rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.05);
+}
+
+.circle5 {
+  width: 85rem;
+  height: 85rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.04);
+}
+
+/* Phone Container - WhatsApp iOS Style */
+.phone {
+  position: relative;
+  width: 18rem;
+  height: 36rem;
+  border: 0.6rem solid #333;
+  border-radius: 3.2rem;
+  background-color: #efe6dd;
+  background-image: url("/phone-frame.png");
+  background-size: 400px;
+  overflow: visible;
+  z-index: 1;
+  margin-bottom: -3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone > *:not(.heroIcon) {
+  position: relative;
+  z-index: 2;
+}
+
+.phoneScreen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Status Bar */
+.statusBar {
+  height: 2rem;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #000;
+  z-index: 20;
+}
+
+.statusRight {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.65rem;
+}
+
+.statusRight i {
+  margin-left: 0.25rem;
+  font-size: 0.6rem;
+}
+
+/* WhatsApp Header */
+.waHeader {
+  height: 3rem;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.backBtn {
+  color: #007aff;
+  font-size: 1.5rem;
+  padding-right: 0.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.profileInfo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1;
+}
+
+.contactStatus {
+  font-size: 0.6rem;
+  color: #8e8e93;
+  margin-top: 0.1rem;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.headerActions i {
+  color: #007aff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+/* Chat Content Area */
+.chatContent {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.5rem 0.6rem 0 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+.chatContent::-webkit-scrollbar {
+  display: none;
+}
+
+/* Messages */
+.message {
+  max-width: 75%;
+  padding: 0.4rem 0.6rem 0.5rem 0.6rem;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 0.15rem;
+  animation: fadeInUp 0.3s ease;
+  word-wrap: break-word;
+}
+
+.received {
+  background-color: #ffffff;
+  align-self: flex-start;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  border-bottom-right-radius: 0.25rem;
+}
+
+/* Image Messages */
+.imageMsg {
+  padding: 0.25rem;
+  border-radius: 0.8rem;
+}
+
+.imageMsg img {
+  width: 100%;
+  border-radius: 0.7rem;
+  display: block;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  color: white;
+  font-size: 0.6rem;
+  background: rgba(0,0,0,0.3);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* Meta (Time & Ticks) */
+.meta {
+  float: right;
+  font-size: 0.6rem;
+  color: rgba(0,0,0,0.45);
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.blueTick {
+  color: #34b7f1;
+  font-size: 0.55rem;
+}
+
+.edited {
+  font-size: 0.6rem;
+  color: rgba(0,0,0,0.45);
+  margin-left: 0.25rem;
+  font-style: italic;
+}
+
+/* Typing Indicator */
+.typingIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0 0 0.5rem 0;
+  animation: fadeInUp 0.3s ease;
+}
+
+.typingBubbles {
+  background: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 0.2rem;
+}
+
+.typingBubbles .bubble {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #9e9e9e;
+  border-radius: 50%;
+  animation: typing 1.4s infinite;
+}
+
+.typingBubbles .bubble:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typingBubbles .bubble:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Input */
+.waFooter {
+  background-color: #f6f6f6;
+  padding: 0.4rem 0.6rem 2.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+.plusBtn {
+  color: #007aff;
+  font-size: 1rem;
+  padding: 0 0.5rem 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.plusBtn i {
+  font-size: 1.2rem;
+}
+
+.inputBox {
+  flex: 1;
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  min-height: 1.8rem;
+  min-width: 0;
+}
+
+.inputField {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  background: transparent;
+}
+
+.stickerBtn {
+  margin-left: 0.4rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  color: #333;
+}
+
+.rightActions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: 0.6rem;
+  padding-bottom: 0;
+  flex-shrink: 0;
+}
+
+.rightActions i {
+  font-size: 1rem;
+  color: #007aff;
+  cursor: pointer;
+}
+
+/* Home Indicator */
+.homeIndicator {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6.5rem;
+  height: 0.25rem;
+  background-color: #000;
+  border-radius: 0.5rem;
+  z-index: 30;
+}
+
+/* Floating Icons Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.heroIcon {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
+
+.heroIcon1 {
+  top: -3rem;
+  left: -9rem;
+  animation-delay: 0s;
+}
+
+.heroIcon2 {
+  top: 12rem;
+  left: -15rem;
+  animation-delay: -1.5s;
+}
+
+.heroIcon3 {
+  top: -3rem;
+  right: -9rem;
+  animation-delay: -3s;
+}
+
+.heroIcon4 {
+  top: 12rem;
+  right: -15rem;
+  animation-delay: -4.5s;
+}
+
+/* Hand Wave Animation */
+.handWaveContainer {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.handWave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 1s ease-in-out infinite;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .heroIcon {
+    display: none;
+  }
+  
+  .phone {
+    width: 16rem;
+    height: 32rem;
+  }
+
+  .statusBar {
+    height: 1.8rem;
+    font-size: 0.65rem;
+  }
+
+  .waHeader {
+    height: 2.5rem;
+    padding: 0 0.4rem;
+  }
+
+  .avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .contactName {
+    font-size: 0.75rem;
+  }
+
+  .contactStatus {
+    font-size: 0.55rem;
+  }
+
+  .message {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.5rem 0.45rem 0.5rem;
+  }
+
+  .meta {
+    font-size: 0.55rem;
+  }
+
+  .waFooter {
+    padding: 0.3rem 0.5rem 2.2rem 0.5rem;
+  }
+
+  .plusBtn {
+    padding: 0.25rem 0.4rem 0.25rem 0;
+  }
+
+  .inputBox {
+    padding: 0.35rem 0.55rem;
+    min-height: 1.6rem;
+  }
+
+  .rightActions {
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .handWaveContainer {
+    top: -1.2rem;
+  }
+
+  .handWave {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .phone {
+    width: 14rem;
+    height: 28rem;
+  }
+
+  .statusBar {
+    height: 1.6rem;
+    font-size: 0.6rem;
+  }
+
+  .waHeader {
+    height: 2.2rem;
+    padding: 0 0.3rem;
+  }
+
+  .avatar {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .contactName {
+    font-size: 0.7rem;
+  }
+
+  .contactStatus {
+    font-size: 0.5rem;
+  }
+
+  .message {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.4rem 0.4rem 0.4rem;
+  }
+
+  .meta {
+    font-size: 0.5rem;
+  }
+
+  .inputField {
+    font-size: 0.7rem;
+  }
+
+  .waFooter {
+    padding: 0.3rem 0.4rem 2rem 0.4rem;
+  }
+
+  .plusBtn {
+    padding: 0.2rem 0.3rem 0.2rem 0;
+  }
+
+  .inputBox {
+    padding: 0.3rem 0.5rem;
+    min-height: 1.5rem;
+  }
+
+  .rightActions {
+    gap: 0.4rem;
+    margin-left: 0.4rem;
+  }
+
+  .handWaveContainer {
+    top: -1rem;
+  }
+
+  .handWave {
+    font-size: 2rem !important;
+  }
+}
+
+.text4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
