@@ -273,9 +273,6 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
 
         {/* Home Indicator */}
         <div className={styles.homeIndicator}></div>
-        
-        {/* Transparent Overlay */}
-        <div className={styles.overlay}></div>
         </div>
       </div>
 
