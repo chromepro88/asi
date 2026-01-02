@@ -52,6 +52,8 @@ export default function RootLayout({
         <meta property="fb:app_id" content="1846789336144846" />
         <link rel="icon" href="/logo_white.png" type="image/png" id="favicon" />
         <link rel="apple-touch-icon" href="/logo_white.png" id="apple-touch-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

@@ -2,18 +2,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import styles from './PhoneAnimation.module.css';
-import { 
-  Signal, 
-  Wifi, 
-  BatteryMedium, 
-  ChevronLeft, 
-  Video, 
-  Phone, 
-  CheckCheck, 
-  Plus, 
-  StickyNote, 
-  Camera, 
-  Mic 
+import {
+  Signal,
+  Wifi,
+  BatteryMedium,
+  ChevronLeft,
+  Video,
+  Phone,
+  CheckCheck,
+  Plus,
+  StickyNote,
+  Camera,
+  Mic
 } from 'lucide-react';
 
 interface PhoneAnimationProps {
@@ -158,16 +158,16 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
       <div className={styles.phone}>
         {/* Floating Icons */}
         <div className={`${styles.heroIcon} ${styles.heroIcon1}`}>
-          <Image src="/icon-googlecalendar.svg" alt="icon google calendar" width={48} height={48} priority />
+          <Image src="/icon-googlecalendar.svg" alt="icon google calendar" width={48} height={48} loading="lazy" />
         </div>
         <div className={`${styles.heroIcon} ${styles.heroIcon2}`}>
-          <Image src="/icon-openai.svg" alt="icon openai" width={48} height={48} priority />
+          <Image src="/icon-openai.svg" alt="icon openai" width={48} height={48} loading="lazy" />
         </div>
         <div className={`${styles.heroIcon} ${styles.heroIcon3}`}>
-          <Image src="/icon-googlesheets.svg" alt="icon googlesheets" width={48} height={48} priority />
+          <Image src="/icon-googlesheets.svg" alt="icon googlesheets" width={48} height={48} loading="lazy" />
         </div>
         <div className={`${styles.heroIcon} ${styles.heroIcon4}`}>
-          <Image src="/icon-whatsapp.svg" alt="icon whatsapp" width={48} height={48} priority />
+          <Image src="/icon-whatsapp.svg" alt="icon whatsapp" width={48} height={48} loading="lazy" />
         </div>
 
         {/* Phone Screen Wrapper */}
@@ -189,7 +189,7 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
           </div>
           <div className={styles.profileInfo}>
             <div className={styles.avatar}>
-              <Image src="/avatar-agent.jpg" alt="Profile" width={32} height={32} className="object-cover" priority />
+              <Image src="/avatar-agent.jpg" alt="Profile" width={32} height={32} className="object-cover" loading="lazy" />
             </div>
             <div className={styles.contactText}>
               <span className={styles.contactName}>Property Agent</span>

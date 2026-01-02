@@ -17,11 +17,18 @@ import { Instagram, Facebook } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DynamicLogo from "@/components/DynamicLogo";
-import PhoneAnimation from "@/components/PhoneAnimation";
 
 
 // Lazy load components
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
+const PhoneAnimation = dynamic(() => import("@/components/PhoneAnimation").then((mod) => mod.default), {
+  ssr: true,
+  loading: () => (
+    <div className="relative flex flex-col items-center justify-center min-h-[500px] py-8">
+      <div className="w-72 h-[36rem] border-8 border-gray-300 rounded-3xl bg-gray-100 animate-pulse"></div>
+    </div>
+  )
+});
 
 export const generateMetadata = (): Metadata => ({
   title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7 | AI Super",

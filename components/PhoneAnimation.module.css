@@ -56,8 +56,6 @@
   border: 0.6rem solid #333;
   border-radius: 3.2rem;
   background-color: #efe6dd;
-  background-image: url("/phone-frame.png");
-  background-size: 400px;
   overflow: visible;
   z-index: 1;
   margin-bottom: -3rem;
@@ -67,6 +65,8 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .phone > *:not(.heroIcon) {
@@ -192,6 +192,7 @@
   gap: 0.25rem;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-y;
+  contain: layout style paint;
 }
 
 .chatContent::-webkit-scrollbar {
