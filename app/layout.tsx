@@ -8,15 +8,22 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'WhatsApp AI Chatbot Singapore | Business Automation | AI Super',
-  description: 'Singapore\'s leading WhatsApp AI chatbot for business automation. Boost sales by 40%, automate customer service 24/7. Free demo available!',
-  keywords: ['WhatsApp chatbot Singapore', 'AI customer service', 'business automation Singapore', 'WhatsApp AI', 'chatbot Singapore', 'automated customer support', 'lead generation Singapore', 'real estate chatbot'],
+  metadataBase: new URL('https://asi.sg'),
+  title: {
+    default: 'Singapore WhatsApp Chatbot | AI Business Automation | AI Super',
+    template: '%s | AI Super',
+  },
+  description: 'Singapore\'s #1 WhatsApp chatbot for business. Automate customer service 24/7, boost sales by 40%. Free setup in 5 minutes. Try free demo!',
+  keywords: ['singapore whatsapp chatbot', 'whatsapp chatbot singapore', 'WhatsApp AI chatbot', 'chatbot singapore', 'whatsapp automation singapore', 'AI customer service singapore', 'business automation Singapore', 'WhatsApp AI', 'automated customer support', 'lead generation Singapore', 'real estate chatbot singapore'],
   authors: [{ name: 'AI Super Private Limited' }],
   creator: 'AI Super Private Limited',
   publisher: 'AI Super Private Limited',
+  alternates: {
+    canonical: 'https://asi.sg',
+  },
   openGraph: {
-    title: 'WhatsApp AI Chatbot Singapore | Business Automation | AI Super',
-    description: 'Singapore\'s leading WhatsApp AI chatbot for business automation. Boost sales by 40%, automate customer service 24/7. Free demo available!',
+    title: 'Singapore WhatsApp Chatbot | AI Business Automation | AI Super',
+    description: 'Singapore\'s #1 WhatsApp chatbot for business. Automate customer service 24/7, boost sales by 40%. Free setup in 5 minutes. Try free demo!',
     url: 'https://asi.sg',
     siteName: 'AI Super Private Limited',
     images: [
@@ -24,7 +31,7 @@ export const metadata: Metadata = {
         url: '/api/og',
         width: 1200,
         height: 630,
-        alt: 'AI Super WhatsApp Chatbot Singapore - Business Automation',
+        alt: 'AI Super - Singapore WhatsApp Chatbot for Business Automation',
       },
     ],
     locale: 'en_SG',
@@ -32,13 +39,26 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WhatsApp AI Chatbot Singapore | Business Automation',
-    description: 'Singapore\'s leading WhatsApp AI chatbot for business automation. Boost sales by 40%, automate customer service 24/7.',
+    title: 'Singapore WhatsApp Chatbot | AI Business Automation',
+    description: 'Singapore\'s #1 WhatsApp chatbot for business. Automate customer service 24/7, boost sales by 40%. Try free demo!',
     images: ['/api/og'],
   },
-  verification: {
-    google: 'your-google-verification-code',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+  // TODO: Replace with your actual Google Search Console verification code
+  // Get it from https://search.google.com/search-console
+  // verification: {
+  //   google: 'YOUR_ACTUAL_VERIFICATION_CODE',
+  // },
 };
 
 export default function RootLayout({

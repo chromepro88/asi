@@ -31,23 +31,26 @@ const PhoneAnimation = dynamic(() => import("@/components/PhoneAnimation").then(
 });
 
 export const generateMetadata = (): Metadata => ({
-  title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7 | AI Super",
-  description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Start at $49/month. Try free demo!",
-  keywords: ["WhatsApp chatbot Singapore", "AI customer service", "WhatsApp automation", "AI chatbot Singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "chatbot Singapore", "real estate chatbot"],
+  title: "Singapore WhatsApp Chatbot | Automate Sales 24/7 | AI Super",
+  description: "Looking for a WhatsApp chatbot in Singapore? AI Super is the #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Start at $49/month. Try free demo!",
+  keywords: ["singapore whatsapp chatbot", "whatsapp chatbot singapore", "WhatsApp AI chatbot", "AI chatbot Singapore", "whatsapp automation singapore", "chatbot singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "real estate chatbot"],
+  alternates: {
+    canonical: "https://asi.sg",
+  },
   openGraph: {
-    title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7 | AI Super",
-    description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Try free demo!",
+    title: "Singapore WhatsApp Chatbot | Automate Sales 24/7 | AI Super",
+    description: "Looking for a WhatsApp chatbot in Singapore? AI Super is the #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Try free demo!",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
-    images: [{ url: "/logo_black.png", width: 1200, height: 630, alt: "AI Super WhatsApp Chatbot Singapore" }],
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "AI Super - Singapore WhatsApp Chatbot for Business Automation" }],
     locale: "en_SG",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WhatsApp AI Chatbot Singapore | Automate Sales 24/7",
+    title: "Singapore WhatsApp Chatbot | Automate Sales 24/7",
     description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Try free demo!",
-    images: ["/logo_black.png"],
+    images: ["/api/og"],
   },
 });
 
@@ -59,14 +62,67 @@ const Home: React.FC = () => {
       {
         "@type": "WebSite",
         "name": "AI Super",
-        "url": "https://asi.sg"
+        "url": "https://asi.sg",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://asi.sg/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://asi.sg"
+          }
+        ]
+      },
+      {
+        "@type": ["LocalBusiness", "SoftwareCompany"],
+        "name": "AI Super Private Limited",
+        "description": "Singapore's #1 WhatsApp chatbot provider. AI-powered business automation for customer service, lead generation, and sales.",
+        "url": "https://asi.sg",
+        "logo": "https://asi.sg/logo_black.png",
+        "image": "https://asi.sg/logo_black.png",
+        "telephone": "+65-8837-9368",
+        "email": "hello@asi.sg",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "540 Sims Avenue, #03-05, Sims Avenue Centre",
+          "addressLocality": "Singapore",
+          "postalCode": "387603",
+          "addressCountry": "SG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "1.3145",
+          "longitude": "103.8756"
+        },
+        "sameAs": [
+          "https://www.instagram.com/aisupersg/",
+          "https://www.facebook.com/people/AI-Super-SG/61573691083537/"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Singapore"
+        }
       },
       {
         "@type": "SoftwareApplication",
         "name": "AI Super WhatsApp Chatbot",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": "Singapore's #1 WhatsApp AI chatbot for automating customer service, capturing leads, and increasing sales by 40%.",
+        "description": "Singapore's #1 WhatsApp chatbot for automating customer service, capturing leads, and increasing sales by 40%.",
         "url": "https://asi.sg",
         "publisher": {
           "@type": "Organization",
@@ -158,6 +214,9 @@ const Home: React.FC = () => {
           </Link>
           <div className="flex items-center gap-4">
             <nav className="flex gap-3 sm:gap-5 relative z-50" role="navigation" aria-label="Main navigation">
+              <Link href="/blog" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
+                Blog
+              </Link>
               <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
                 Pricing
               </Link>
@@ -176,10 +235,10 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              See Your AI Assistant in Action
+              See Our Singapore WhatsApp Chatbot in Action
             </h2>
             <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-              Watch how our WhatsApp AI handles real customer conversations
+              Watch how our AI-powered WhatsApp chatbot handles real customer conversations in Singapore — in English, Mandarin, Malay, and more
             </p>
           </div>
           <PhoneAnimation />
@@ -194,16 +253,15 @@ const Home: React.FC = () => {
             {/* Trust Badge */}
             <div className="flex items-center gap-2 bg-blue-50 px-6 py-3 rounded-full border border-blue-200">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm text-blue-700 font-medium">Trusted by 500+ businesses worldwide</span>
+              <span className="text-sm text-blue-700 font-medium">Trusted by 500+ Singapore businesses</span>
             </div>
             
             <h1 id="hero-heading" className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
-              Singapore's #1 WhatsApp AI Chatbot<br/>for Business Automation
+              Singapore WhatsApp Chatbot<br/>for Business Automation
             </h1>
             
             <p className="max-w-[600px] text-gray-600 text-xl md:text-2xl lg:text-3xl leading-relaxed">
-              Transform your WhatsApp into a powerful sales machine. Our <Link href="#features" className="text-blue-600 hover:underline">AI chatbot automation</Link> helps 
-              <span className="font-semibold text-blue-600"> increase sales by 40%</span> while you sleep.
+              The #1 AI-powered <strong>WhatsApp chatbot in Singapore</strong>. Automate customer service 24/7, capture leads, and <span className="font-semibold text-blue-600">increase sales by 40%</span>. Setup in 5 minutes — no coding required.
             </p>
             
             {/* CTA */}
@@ -378,10 +436,10 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 id="features-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
-              Powerful Features That Drive Results
+              Why Businesses Choose Our WhatsApp Chatbot in Singapore
             </h2>
             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
-              Everything you need to automate customer conversations and boost sales
+              Everything you need to automate WhatsApp customer conversations and boost sales
             </p>
           </div>
 
@@ -462,7 +520,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-      </main>
 
       {/* Video Section */}
       <section id="video-embed" className="w-full py-20 md:py-28 bg-gray-50">
@@ -785,13 +842,17 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="flex flex-col gap-2 sm:flex-row py-4 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700" role="contentinfo">
         <div className="container flex flex-col items-center justify-between max-w-6xl mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2">
-            <p className="text-xs text-gray-400">© 2025 AI Super Private Limited. All rights reserved.</p>
+            <p className="text-xs text-gray-400">© 2026 AI Super Private Limited. All rights reserved.</p>
             <nav className="flex gap-3 sm:gap-5 mt-2 sm:mt-0">
+              <Link href="/blog" className="text-xs hover:underline underline-offset-4 text-gray-400">
+                Blog
+              </Link>
               <Link href="/terms-of-service" className="text-xs hover:underline underline-offset-4 text-gray-400">
                 Terms
               </Link>
