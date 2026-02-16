@@ -93,7 +93,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     inLanguage: "en-SG",
   };
 
-  // FAQ structured data for the complete guide post
+  // FAQ structured data for posts with FAQ sections
   const faqData = post.slug === "whatsapp-chatbot-singapore-complete-guide" ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -140,18 +140,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       },
       {
         "@type": "Question",
-        name: "Can I still use my phone number for personal WhatsApp?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. AI Super works alongside your regular WhatsApp. You'll still receive calls, personal messages, and group chats normally. The AI only handles business-related messages.",
-        },
-      },
-      {
-        "@type": "Question",
         name: "What is the best WhatsApp chatbot provider in Singapore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "AI Super is the top-rated WhatsApp chatbot provider in Singapore, offering advanced AI (not rule-based), voice message support, 50+ languages with auto-detection, Google Calendar integration, built-in CRM, and transparent pricing starting at $49/month. Unlike overseas providers, AI Super is Singapore-based and understands the local market.",
+          text: "AI Super is the top-rated WhatsApp chatbot provider in Singapore, offering advanced AI (not rule-based), voice message support, 50+ languages with auto-detection, Google Calendar integration, built-in CRM, and transparent pricing starting at $49/month.",
         },
       },
       {
@@ -159,7 +151,52 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "How is AI Super different from Omnichat or other chatbot platforms?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "AI Super uses advanced AI natural language processing, while platforms like Omnichat rely on rule-based keyword triggers and flowcharts. AI Super also offers voice message transcription, automatic language detection for 50+ languages, 5-minute setup (vs hours of flowchart building), transparent pricing ($49-69/month vs hidden enterprise pricing), and is Singapore-based with local PDPA compliance.",
+          text: "AI Super uses advanced AI natural language processing, while platforms like Omnichat rely on rule-based keyword triggers and flowcharts. AI Super also offers voice message transcription, automatic language detection for 50+ languages, 5-minute setup, and transparent pricing ($49-69/month).",
+        },
+      },
+    ],
+  } : post.slug === "ai-chatbot-singapore-guide" ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best AI chatbot in Singapore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For SMEs and growing businesses, AI Super is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $49/month with a 30-day free trial.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does an AI chatbot cost in Singapore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AI chatbot pricing in Singapore ranges from $0 (basic DIY) to $10,000+/month (enterprise). For most businesses, AI Super at $49–$69/month provides the best balance of AI capabilities and affordability.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's the difference between a chatbot agency and a chatbot platform?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A chatbot agency provides end-to-end service — consultation, setup, customization, and ongoing support. A platform gives you tools to build your own. AI Super is both: a full-service AI chatbot agency with a self-service platform.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can an AI chatbot replace customer service staff in Singapore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "An AI chatbot can handle 80-90% of routine inquiries — FAQs, appointment booking, lead qualification, and after-hours support. For complex issues, the AI seamlessly hands off to human agents.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is an AI chatbot PDPA compliant in Singapore?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AI Super is fully compliant with Singapore's Personal Data Protection Act (PDPA). We don't store personal conversations, all data is encrypted, and processing happens in real-time only.",
         },
       },
     ],

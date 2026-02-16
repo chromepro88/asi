@@ -31,15 +31,15 @@ const PhoneAnimation = dynamic(() => import("@/components/PhoneAnimation").then(
 });
 
 export const generateMetadata = (): Metadata => ({
-  title: "Singapore WhatsApp Chatbot | Automate Sales 24/7 | AI Super",
-  description: "Looking for a WhatsApp chatbot in Singapore? AI Super is the #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Setup in 5 minutes. Start at $49/month. Try free demo!",
-  keywords: ["singapore whatsapp chatbot", "whatsapp chatbot singapore", "WhatsApp AI chatbot", "AI chatbot Singapore", "whatsapp automation singapore", "chatbot singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "real estate chatbot"],
+  title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency | AI Super",
+  description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses trust AI Super to automate customer service 24/7, capture leads & boost sales by 40%. Voice + multilingual. From $49/mo. Free 30-day trial — setup in 5 min!",
+  keywords: ["whatsapp ai chatbot singapore", "ai chatbot singapore", "singapore whatsapp chatbot", "whatsapp chatbot singapore", "chatbot agency singapore", "ai chatbot agency singapore", "chatbot and virtual assistant services singapore", "ai chatbots and virtual assistants singapore", "whatsapp ai chatbot", "whatsapp automation singapore", "chatbot singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "real estate chatbot"],
   alternates: {
     canonical: "https://asi.sg",
   },
   openGraph: {
-    title: "Singapore WhatsApp Chatbot | Automate Sales 24/7 | AI Super",
-    description: "Looking for a WhatsApp chatbot in Singapore? AI Super is the #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Try free demo!",
+    title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency | AI Super",
+    description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses automate customer service 24/7, capture leads & boost sales 40%. Free 30-day trial!",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "AI Super - Singapore WhatsApp Chatbot for Business Automation" }],
@@ -48,8 +48,8 @@ export const generateMetadata = (): Metadata => ({
   },
   twitter: {
     card: "summary_large_image",
-    title: "Singapore WhatsApp Chatbot | Automate Sales 24/7",
-    description: "Singapore's #1 WhatsApp AI chatbot. Automate customer service, capture leads & increase sales by 40%. Try free demo!",
+    title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency",
+    description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses automate customer service 24/7 & boost sales 40%. Free 30-day trial!",
     images: ["/api/og"],
   },
 });
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
       {
         "@type": ["LocalBusiness", "SoftwareCompany"],
         "name": "AI Super Private Limited",
-        "description": "Singapore's #1 WhatsApp chatbot provider. AI-powered business automation for customer service, lead generation, and sales.",
+        "description": "Singapore's #1 WhatsApp AI chatbot agency. AI-powered chatbot and virtual assistant services for customer service, lead generation, and sales automation.",
         "url": "https://asi.sg",
         "logo": "https://asi.sg/logo_black.png",
         "image": "https://asi.sg/logo_black.png",
@@ -119,10 +119,10 @@ const Home: React.FC = () => {
       },
       {
         "@type": "SoftwareApplication",
-        "name": "AI Super WhatsApp Chatbot",
+        "name": "AI Super WhatsApp AI Chatbot",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": "Singapore's #1 WhatsApp chatbot for automating customer service, capturing leads, and increasing sales by 40%.",
+        "description": "Singapore's #1 WhatsApp AI chatbot and virtual assistant. Automate customer service, capture leads, and increase sales by 40%. Trusted by 500+ Singapore businesses.",
         "url": "https://asi.sg",
         "publisher": {
           "@type": "Organization",
@@ -159,34 +159,58 @@ const Home: React.FC = () => {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How quickly can I set up?",
+            "name": "What is a WhatsApp AI chatbot and how does it work in Singapore?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide to get you started immediately."
+              "text": "A WhatsApp AI chatbot is an intelligent virtual assistant that automatically handles customer conversations on WhatsApp. AI Super's chatbot uses advanced AI to understand context, respond naturally in 50+ languages, transcribe voice messages, and book appointments — 24/7 with no human intervention needed."
             }
           },
           {
             "@type": "Question",
-            "name": "Will I still receive calls?",
+            "name": "How quickly can I set up the AI chatbot?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absolutely! Your phone works normally. AI only handles business messages automatically. You can choose to intervene at any time and take over the conversation."
+              "text": "Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide and free setup assistance to get you started immediately."
             }
           },
           {
             "@type": "Question",
-            "name": "What languages are supported?",
+            "name": "Why choose AI Super over other chatbot agencies in Singapore?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We support English, Mandarin, Malay, Tamil, and 50+ other languages. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!"
+              "text": "AI Super is Singapore's leading AI chatbot agency with true AI-powered conversations (not rule-based), voice message recognition, multilingual support, Google Calendar integration, and built-in CRM — all from $49/month. We're a registered Singapore company with 500+ local clients."
             }
           },
           {
             "@type": "Question",
-            "name": "Is my data secure?",
+            "name": "What's the difference between a chatbot and a virtual assistant?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes! We prioritize your data security. We don't store your personal conversations. Everything is encrypted and processed in real-time only to generate responses."
+              "text": "Traditional chatbots follow fixed scripts. AI Super acts as a full virtual assistant — it understands natural language, remembers context, handles voice messages, schedules appointments, captures leads in CRM, and switches languages automatically. It's chatbot and virtual assistant services combined in one platform."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What languages does the AI chatbot support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We support English, Mandarin, Malay, Tamil, and 50+ other languages — perfect for Singapore's multilingual market. Our AI automatically detects the language and responds accordingly. It even understands and transcribes voice messages!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a WhatsApp AI chatbot cost in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI Super starts at $49/month (annual plan) or $69/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and a 30-day free trial with no credit card required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data secure with your AI chatbot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We don't store personal conversations. Everything is encrypted and processed in real-time. AI Super is fully compliant with Singapore's PDPA (Personal Data Protection Act)."
             }
           }
         ]
@@ -235,10 +259,10 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              See Our Singapore WhatsApp Chatbot in Action
+              See Our WhatsApp AI Chatbot in Action
             </h2>
             <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-              Watch how our AI-powered WhatsApp chatbot handles real customer conversations in Singapore — in English, Mandarin, Malay, and more
+              Watch how our AI chatbot in Singapore handles real customer conversations — in English, Mandarin, Malay, and more
             </p>
           </div>
           <PhoneAnimation />
@@ -257,11 +281,11 @@ const Home: React.FC = () => {
             </div>
             
             <h1 id="hero-heading" className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
-              Singapore WhatsApp Chatbot<br/>for Business Automation
+              #1 WhatsApp AI Chatbot<br/>Agency in Singapore
             </h1>
             
             <p className="max-w-[600px] text-gray-600 text-xl md:text-2xl lg:text-3xl leading-relaxed">
-              The #1 AI-powered <strong>WhatsApp chatbot in Singapore</strong>. Automate customer service 24/7, capture leads, and <span className="font-semibold text-blue-600">increase sales by 40%</span>. Setup in 5 minutes — no coding required.
+              Singapore&apos;s top-rated <strong>AI chatbot agency</strong>. Our <strong>WhatsApp AI chatbot</strong> automates customer service 24/7, captures leads, and <span className="font-semibold text-blue-600">increases sales by 40%</span>. Your AI-powered virtual assistant — setup in 5 minutes, no coding required.
             </p>
             
             {/* CTA */}
@@ -436,10 +460,10 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 id="features-heading" className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900">
-              Why Businesses Choose Our WhatsApp Chatbot in Singapore
+              Why Businesses Choose Our WhatsApp AI Chatbot in Singapore
             </h2>
             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
-              Everything you need to automate WhatsApp customer conversations and boost sales
+              Everything you need from a chatbot agency — automate WhatsApp conversations, capture leads, and boost sales
             </p>
           </div>
 
@@ -526,10 +550,10 @@ const Home: React.FC = () => {
         <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6">
-              See AI Super in Action
+              See Our AI Chatbot & Virtual Assistant in Action
             </h2>
             <p className="text-gray-600 text-xl md:text-2xl max-w-2xl mx-auto">
-              Watch how our AI chatbot transforms customer conversations
+              Watch how our WhatsApp AI chatbot transforms customer conversations for Singapore businesses
             </p>
           </div>
           
@@ -598,9 +622,9 @@ const Home: React.FC = () => {
 
       {/* Contact Section */}
       <section id="contact" className="w-full py-8 md:py-16 lg:py-20 bg-white">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 text-gray-900">Get in Touch</h2>
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto text-center">          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl mb-3 text-gray-900">Talk to Singapore&apos;s #1 AI Chatbot Agency</h2>
           <p className="max-w-[600px] text-gray-600 text-lg md:text-xl lg:text-2xl mb-4 text-center mx-auto">
-            Questions? Contact us to learn more about our solutions.
+            Questions about our WhatsApp AI chatbot or virtual assistant services? Contact us today.
           </p>
           <div className="flex justify-center gap-3">
             <Button asChild className="btn-primary bg-blue-600 hover:bg-blue-700 text-white">
@@ -617,32 +641,56 @@ const Home: React.FC = () => {
       <section id="faq" className="w-full py-20 md:py-28 bg-gray-50">
         <div className="container px-4 md:px-6 lg:px-8 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-gray-900">
-            Common Questions
+            WhatsApp AI Chatbot Singapore — FAQs
           </h2>
           <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">How quickly can I set up?</AccordionTrigger>
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What is a WhatsApp AI chatbot and how does it work in Singapore?</AccordionTrigger>
                 <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide to get you started immediately.
+                  A WhatsApp AI chatbot is an intelligent virtual assistant that automatically handles customer conversations on WhatsApp. Unlike basic auto-replies, AI Super&apos;s chatbot uses advanced AI to understand context, respond naturally in 50+ languages, transcribe voice messages, and book appointments — 24/7 with no human intervention needed. It integrates with the official WhatsApp Business API approved for Singapore businesses.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Will I still receive calls?</AccordionTrigger>
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">How quickly can I set up the AI chatbot?</AccordionTrigger>
                 <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Absolutely! Your phone works normally. AI only handles business messages automatically. You can choose to intervene at any time and take over the conversation.
+                  Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide and free setup assistance to get you started immediately.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What languages are supported?</AccordionTrigger>
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Why choose AI Super over other chatbot agencies in Singapore?</AccordionTrigger>
                 <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  We support English, Mandarin, Malay, Tamil, and 50+ other languages. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!
+                  AI Super is Singapore&apos;s leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore&apos;s diverse market, Google Calendar integration, and built-in CRM — all from $49/month. We&apos;re a registered Singapore company with 500+ local clients and dedicated support.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Is my data secure?</AccordionTrigger>
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What&apos;s the difference between a chatbot and a virtual assistant?</AccordionTrigger>
                 <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Yes! We prioritize your data security. We don't store your personal conversations. Everything is encrypted and processed in real-time only to generate responses.
+                  Traditional chatbots follow fixed scripts and can only handle pre-programmed questions. AI Super acts as a full virtual assistant — it understands natural language, remembers conversation context, handles voice messages, schedules appointments, captures leads in CRM, and switches languages automatically. It&apos;s chatbot and virtual assistant services combined in one platform.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Will I still receive calls?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  Absolutely! Your phone works normally. The AI chatbot only handles WhatsApp business messages automatically. You can choose to intervene at any time and take over the conversation seamlessly.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What languages does the AI chatbot support?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  We support English, Mandarin, Malay, Tamil, and 50+ other languages — perfect for Singapore&apos;s multilingual market. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Is my data secure with your AI chatbot?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  Yes! We prioritize your data security. We don&apos;t store your personal conversations. Everything is encrypted and processed in real-time only to generate responses. AI Super is fully compliant with Singapore&apos;s PDPA (Personal Data Protection Act).
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-8">
+                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">How much does a WhatsApp AI chatbot cost in Singapore?</AccordionTrigger>
+                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
+                  AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. We also offer a 30-day free trial with no credit card required.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

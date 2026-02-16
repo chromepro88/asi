@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://asi.sg'),
   title: {
-    default: 'Singapore WhatsApp Chatbot | AI Business Automation | AI Super',
+    default: 'WhatsApp AI Chatbot Singapore | AI Chatbot Agency | AI Super',
     template: '%s | AI Super',
   },
-  description: 'Singapore\'s #1 WhatsApp chatbot for business. Automate customer service 24/7, boost sales by 40%. Free setup in 5 minutes. Try free demo!',
-  keywords: ['singapore whatsapp chatbot', 'whatsapp chatbot singapore', 'WhatsApp AI chatbot', 'chatbot singapore', 'whatsapp automation singapore', 'AI customer service singapore', 'business automation Singapore', 'WhatsApp AI', 'automated customer support', 'lead generation Singapore', 'real estate chatbot singapore'],
+  description: 'Singapore\'s #1 WhatsApp AI chatbot agency. Automate customer service 24/7, boost sales by 40%. AI-powered chatbot & virtual assistant services. Free setup in 5 minutes. Try free demo!',
+  keywords: ['whatsapp ai chatbot singapore', 'ai chatbot singapore', 'singapore whatsapp chatbot', 'whatsapp chatbot singapore', 'chatbot agency singapore', 'ai chatbot agency singapore', 'chatbot and virtual assistant services singapore', 'ai chatbots and virtual assistants singapore', 'whatsapp ai chatbot', 'chatbot singapore', 'whatsapp automation singapore', 'AI customer service singapore', 'business automation Singapore', 'WhatsApp AI', 'automated customer support', 'lead generation Singapore', 'real estate chatbot singapore'],
   authors: [{ name: 'AI Super Private Limited' }],
   creator: 'AI Super Private Limited',
   publisher: 'AI Super Private Limited',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     canonical: 'https://asi.sg',
   },
   openGraph: {
-    title: 'Singapore WhatsApp Chatbot | AI Business Automation | AI Super',
-    description: 'Singapore\'s #1 WhatsApp chatbot for business. Automate customer service 24/7, boost sales by 40%. Free setup in 5 minutes. Try free demo!',
+    title: 'WhatsApp AI Chatbot Singapore | AI Chatbot Agency | AI Super',
+    description: 'Singapore\'s #1 WhatsApp AI chatbot agency. Automate customer service 24/7, boost sales by 40%. AI-powered chatbot & virtual assistant services. Free setup in 5 minutes!',
     url: 'https://asi.sg',
     siteName: 'AI Super Private Limited',
     images: [
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Singapore WhatsApp Chatbot | AI Business Automation',
-    description: 'Singapore\'s #1 WhatsApp chatbot for business. Automate customer service 24/7, boost sales by 40%. Try free demo!',
+    title: 'WhatsApp AI Chatbot Singapore | AI Chatbot Agency',
+    description: 'Singapore\'s #1 WhatsApp AI chatbot agency. Automate customer service 24/7, boost sales by 40%. Try free demo!',
     images: ['/api/og'],
   },
   robots: {
