@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "15 min read",
     category: "Guides",
     tags: ["singapore whatsapp chatbot", "whatsapp chatbot singapore", "whatsapp automation singapore", "AI chatbot singapore", "business automation", "customer service chatbot"],
-    image: "/blog/whatsapp-chatbot-guide.jpg",
+    image: "/blog/WhatsApp Chatbot Singapore.png",
     imageAlt: "WhatsApp Chatbot Singapore: The Complete Guide for Businesses (2026) - showing WhatsApp interface with automated messages and Singapore skyline",
     content: `
       <p class="lead">WhatsApp is used by <strong>over 4.8 million people in Singapore</strong> — that's nearly every smartphone user in the country. If your business isn't using a <strong>WhatsApp chatbot in Singapore</strong>, you're leaving money on the table. This is the most comprehensive guide available on setting up, choosing, and succeeding with a WhatsApp chatbot for your Singapore business in 2026.</p>
@@ -673,7 +673,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "7 min read",
     category: "Comparison",
     tags: ["whatsapp chatbot", "live chat", "customer service", "singapore business"],
-    image: "/blog/whatsapp-vs-live-chat.jpg",
+    image: "/blog/WhatsApp Chatbot vs. Live.png",
     imageAlt: "WhatsApp Chatbot vs. Live Chat comparison for Singapore businesses showing ROI, customer satisfaction, and scalability metrics",
     content: `
       <p class="lead">When it comes to customer communication, Singapore businesses face a critical choice: should you invest in a <strong>WhatsApp chatbot</strong> or stick with traditional <strong>live chat</strong> on your website? Let's break down the pros, cons, and real costs of each.</p>
@@ -785,7 +785,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "6 min read",
     category: "Tips",
     tags: ["whatsapp automation", "sales", "singapore business", "lead generation"],
-    image: "/blog/whatsapp-automation-sales.jpg",
+    image: "/blog/5 Proven Ways WhatsApp Automation Boosts Sales for.png",
     imageAlt: "5 Proven Ways WhatsApp Automation Boosts Sales for Singapore Businesses - showing growth charts and WhatsApp interface",
     content: `
       <p class="lead">Singapore businesses using WhatsApp automation are seeing <strong>up to 40% increases in sales</strong>. But how exactly does automating your WhatsApp messages lead to more revenue? Here are 5 proven strategies that work.</p>
@@ -840,7 +840,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: "12 min read",
     category: "Guides",
     tags: ["ai chatbot singapore", "chatbot agency singapore", "ai chatbot agency singapore", "chatbot and virtual assistant services singapore", "ai chatbots and virtual assistants singapore", "whatsapp ai chatbot singapore"],
-    image: "/blog/ai-chatbot-singapore.jpg",
+    image: "/blog/AI Chatbot Singapore.png",
     imageAlt: "AI Chatbot Singapore: Best AI Chatbot Agency & Solutions for 2026 - featuring Singapore Marina Bay Sands and AI chatbot icon",
     content: `
       <p class="lead">The <strong>AI chatbot</strong> market in Singapore is booming. From WhatsApp automation to website virtual assistants, businesses across every industry are adopting AI chatbots to handle customer service, generate leads, and boost sales. But with dozens of <strong>chatbot agencies in Singapore</strong> to choose from, how do you find the right one? This comprehensive guide covers everything you need to know about AI chatbots in Singapore in 2026.</p>
