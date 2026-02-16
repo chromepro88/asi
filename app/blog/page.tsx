@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
 import DynamicLogo from "@/components/DynamicLogo";
 import { Instagram, Facebook, ArrowRight, Clock, Calendar } from "lucide-react";
@@ -122,6 +123,19 @@ export default function BlogPage() {
                 key={post.slug}
                 className="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col"
               >
+                {/* Featured Image */}
+                {post.image && (
+                  <Link href={`/blog/${post.slug}`} className="block relative w-full h-48 overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt || post.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </Link>
+                )}
+
                 {/* Category Badge */}
                 <div className="px-6 pt-6">
                   <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">

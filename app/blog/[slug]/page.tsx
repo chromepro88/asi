@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug, getAllSlugs } from "@/lib/blog";
 import DynamicLogo from "@/components/DynamicLogo";
@@ -40,11 +41,20 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       modifiedTime: post.updatedDate || post.date,
       authors: [post.author],
       tags: post.tags,
+      images: post.image ? [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.imageAlt || post.title,
+        },
+      ] : undefined,
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: post.image ? [post.image] : undefined,
     },
   };
 }
@@ -67,6 +77,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
+    image: post.image || "https://asi.sg/logo_black.png",
     datePublished: post.date,
     dateModified: post.updatedDate || post.date,
     author: {
@@ -341,6 +352,20 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <span>By {post.author}</span>
             </div>
           </header>
+
+          {/* Featured Image */}
+          {post.image && (
+            <div className="relative w-full h-[400px] md:h-[500px] mb-10 rounded-2xl overflow-hidden">
+              <Image
+                src={post.image}
+                alt={post.imageAlt || post.title}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 768px) 100vw, 896px"
+              />
+            </div>
+          )}
 
           {/* Article Body */}
           <div
