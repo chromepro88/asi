@@ -3,7 +3,6 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import {
   Accordion,
@@ -14,7 +13,6 @@ import {
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
-import ShareButton from "@/components/ShareButton";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DynamicLogo from "@/components/DynamicLogo";
 
@@ -54,7 +52,119 @@ export const generateMetadata = (): Metadata => ({
   },
 });
 
-const Home: React.FC = () => {
+const PARTNER_LOGOS = [
+  { src: "/PropNex.png", alt: "PropNex logo", width: 120, height: 48 },
+  { src: "/Huttons.png", alt: "Huttons logo", width: 120, height: 48 },
+  { src: "/OrangeTee.jpeg", alt: "OrangeTee logo", width: 140, height: 48 },
+  { src: "/realstar.png", alt: "Realstar Premier Group logo", width: 140, height: 48 },
+  { src: "/Soon%20Travel.png", alt: "Soon Travel logo", width: 140, height: 48 },
+  { src: "/Mortgage%20Titan.jpg", alt: "Mortgage Titan logo", width: 160, height: 48 },
+  { src: "/FX%20Tech.png", alt: "FX Tech logo", width: 140, height: 48 },
+  { src: "/Harmony%20Funeral%20Care.png", alt: "Harmony Funeral Care logo", width: 180, height: 48 },
+  { src: "/Hotel%20Grand%20Central.jpg", alt: "Hotel Grand Central logo", width: 512, height: 128 },
+  { src: "/Rugged-box.com.jpg", alt: "Rugged-box.com logo", width: 160, height: 48 },
+  { src: "/SgVenusFlyTrap.png", alt: "SgVenusFlyTrap logo", width: 160, height: 48 },
+] as const;
+
+const TESTIMONIALS = [
+  { src: "/darren.png", alt: "Customer testimonial from Darren - SgVenusFlyTrap" },
+  { src: "/james.png", alt: "Customer testimonial from James - Realstar Premier Group" },
+  { src: "/hakeem.png", alt: "Customer testimonial from Hakeem - Mortgage Titan" },
+] as const;
+
+const FEATURES = [
+  {
+    icon: "💬",
+    title: "Unlimited AI Responses",
+    description:
+      "Handle thousands of customer conversations simultaneously. No limits on messages - your AI works around the clock without getting tired.",
+  },
+  {
+    icon: "🎤",
+    title: "Voice Message Recognition",
+    description:
+      "Customers prefer voice? No problem. Our AI automatically transcribes and responds to voice messages in real-time.",
+  },
+  {
+    icon: "🌍",
+    title: "Multilingual Support",
+    description:
+      "Speak your customers' language. Supports English, Mandarin, Malay, Tamil, and 50+ languages with automatic detection.",
+  },
+  {
+    icon: "📅",
+    title: "Google Calendar Integration",
+    description:
+      "Let AI schedule appointments directly. Syncs with your Google Calendar to avoid double bookings and send automatic reminders.",
+  },
+  {
+    icon: "📊",
+    title: "Built-in CRM",
+    description:
+      "Track every lead automatically. Capture customer details, conversation history, and follow-ups in one organized dashboard.",
+  },
+  {
+    icon: "⚡",
+    title: "5-Minute Setup",
+    description:
+      "Start automating today. Free installation and setup with expert support. No technical skills or coding required.",
+  },
+] as const;
+
+const PRICING_FEATURES = [
+  "Unlimited AI responses",
+  "Voice message recognition",
+  "Multilingual support (50+ languages)",
+  "Google Calendar integration",
+  "Built-in CRM",
+  "Free setup & installation",
+  "24/7 email & chat support",
+] as const;
+
+const FAQ_ITEMS = [
+  {
+    question: "What is a WhatsApp AI chatbot and how does it work in Singapore?",
+    answer:
+      "A WhatsApp AI chatbot is an intelligent virtual assistant that automatically handles customer conversations on WhatsApp. Unlike basic auto-replies, AI Super&apos;s chatbot uses advanced AI to understand context, respond naturally in 50+ languages, transcribe voice messages, and book appointments — 24/7 with no human intervention needed. It integrates with the official WhatsApp Business API approved for Singapore businesses.",
+  },
+  {
+    question: "How quickly can I set up the AI chatbot?",
+    answer:
+      "Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide and free setup assistance to get you started immediately.",
+  },
+  {
+    question: "Why choose AI Super over other chatbot agencies in Singapore?",
+    answer:
+      "AI Super is Singapore&apos;s leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore&apos;s diverse market, Google Calendar integration, and built-in CRM — all from $49/month. We&apos;re a registered Singapore company with 500+ local clients and dedicated support.",
+  },
+  {
+    question: "What&apos;s the difference between a chatbot and a virtual assistant?",
+    answer:
+      "Traditional chatbots follow fixed scripts and can only handle pre-programmed questions. AI Super acts as a full virtual assistant — it understands natural language, remembers conversation context, handles voice messages, schedules appointments, captures leads in CRM, and switches languages automatically. It&apos;s chatbot and virtual assistant services combined in one platform.",
+  },
+  {
+    question: "Will I still receive calls?",
+    answer:
+      "Absolutely! Your phone works normally. The AI chatbot only handles WhatsApp business messages automatically. You can choose to intervene at any time and take over the conversation seamlessly.",
+  },
+  {
+    question: "What languages does the AI chatbot support?",
+    answer:
+      "We support English, Mandarin, Malay, Tamil, and 50+ other languages — perfect for Singapore&apos;s multilingual market. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!",
+  },
+  {
+    question: "Is my data secure with your AI chatbot?",
+    answer:
+      "Yes! We prioritize your data security. We don&apos;t store your personal conversations. Everything is encrypted and processed in real-time only to generate responses. AI Super is fully compliant with Singapore&apos;s PDPA (Personal Data Protection Act).",
+  },
+  {
+    question: "How much does a WhatsApp AI chatbot cost in Singapore?",
+    answer:
+      "AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. We also offer a 30-day free trial with no credit card required.",
+  },
+] as const;
+
+const Home = () => {
   // Structured Data for SEO
   const structuredData = {
     "@context": "https://schema.org",
@@ -350,107 +460,27 @@ const Home: React.FC = () => {
           {/* Single horizontal auto-scrolling logo bar */}
           <div className="bg-white rounded-xl shadow-sm p-4 overflow-hidden logo-marquee">
             <div className="flex items-center gap-10 min-w-max logo-track">
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/PropNex.png" alt="PropNex logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Huttons.png" alt="Huttons logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/OrangeTee.jpeg" alt="OrangeTee logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/realstar.png" alt="Realstar Premier Group logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Mortgage%20Titan.jpg" alt="Mortgage Titan logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/FX%20Tech.png" alt="FX Tech logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Hotel%20Grand%20Central.jpg" alt="Hotel Grand Central logo" width={512} height={128} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/SgVenusFlyTrap.png" alt="SgVenusFlyTrap logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              {/* Duplicate set for seamless marquee */}
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/PropNex.png" alt="PropNex logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Huttons.png" alt="Huttons logo" width={120} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/OrangeTee.jpeg" alt="OrangeTee logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/realstar.png" alt="Realstar Premier Group logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Soon%20Travel.png" alt="Soon Travel logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Mortgage%20Titan.jpg" alt="Mortgage Titan logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/FX%20Tech.png" alt="FX Tech logo" width={140} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Harmony%20Funeral%20Care.png" alt="Harmony Funeral Care logo" width={180} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Hotel%20Grand%20Central.jpg" alt="Hotel Grand Central logo" width={512} height={128} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/Rugged-box.com.jpg" alt="Rugged-box.com logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
-              <div className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
-                <Image src="/SgVenusFlyTrap.png" alt="SgVenusFlyTrap logo" width={160} height={48} className="h-10 w-auto" loading="lazy" />
-              </div>
+              {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((logo, index) => (
+                <div key={`${logo.src}-${index}`} className="shrink-0 opacity-90 hover:opacity-100 transition-opacity">
+                  <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} className="h-10 w-auto" loading="lazy" />
+                </div>
+              ))}
             </div>
           </div>
           {/* Gap before testimonials */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mt-12 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-              <Image
-                src="/darren.png"
-                alt="Customer testimonial from Darren - SgVenusFlyTrap"
-                width={828}
-                height={1792}
-                className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-              <Image
-                src="/james.png"
-                alt="Customer testimonial from James - Realstar Premier Group"
-                width={828}
-                height={1792}
-                className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
-              <Image
-                src="/hakeem.png"
-                alt="Customer testimonial from Hakeem - Mortgage Titan"
-                width={828}
-                height={1792}
-                className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
-                loading="lazy"
-              />
-            </div>
+            {TESTIMONIALS.map((testimonial) => (
+              <div key={testimonial.src} className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+                <Image
+                  src={testimonial.src}
+                  alt={testimonial.alt}
+                  width={828}
+                  height={1792}
+                  className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -468,71 +498,18 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-2xl">💬</span>
+            {FEATURES.map((feature) => (
+              <div
+                key={feature.title}
+                className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-white text-2xl">{feature.icon}</span>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">{feature.title}</h3>
+                <p className="text-gray-600 text-lg leading-relaxed">{feature.description}</p>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Unlimited AI Responses</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Handle thousands of customer conversations simultaneously. No limits on messages - your AI works around the clock without getting tired.
-              </p>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-2xl">🎤</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Voice Message Recognition</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Customers prefer voice? No problem. Our AI automatically transcribes and responds to voice messages in real-time.
-              </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-2xl">🌍</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Multilingual Support</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Speak your customers' language. Supports English, Mandarin, Malay, Tamil, and 50+ languages with automatic detection.
-              </p>
-            </div>
-
-            {/* Feature 4 */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-2xl">📅</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Google Calendar Integration</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Let AI schedule appointments directly. Syncs with your Google Calendar to avoid double bookings and send automatic reminders.
-              </p>
-            </div>
-
-            {/* Feature 5 */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-2xl">📊</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Built-in CRM</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Track every lead automatically. Capture customer details, conversation history, and follow-ups in one organized dashboard.
-              </p>
-            </div>
-
-            {/* Feature 6 */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm border border-gray-200 hover:shadow-xl hover:border-blue-200 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-2xl">⚡</span>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">5-Minute Setup</h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Start automating today. Free installation and setup with expert support. No technical skills or coding required.
-              </p>
-            </div>
+            ))}
           </div>
 
           <div className="text-center mt-16">
@@ -645,54 +622,12 @@ const Home: React.FC = () => {
           </h2>
           <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8">
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What is a WhatsApp AI chatbot and how does it work in Singapore?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  A WhatsApp AI chatbot is an intelligent virtual assistant that automatically handles customer conversations on WhatsApp. Unlike basic auto-replies, AI Super&apos;s chatbot uses advanced AI to understand context, respond naturally in 50+ languages, transcribe voice messages, and book appointments — 24/7 with no human intervention needed. It integrates with the official WhatsApp Business API approved for Singapore businesses.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">How quickly can I set up the AI chatbot?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Just 5 minutes! Connect your WhatsApp, customize responses, and go live. No coding required. We provide a simple step-by-step guide and free setup assistance to get you started immediately.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Why choose AI Super over other chatbot agencies in Singapore?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  AI Super is Singapore&apos;s leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore&apos;s diverse market, Google Calendar integration, and built-in CRM — all from $49/month. We&apos;re a registered Singapore company with 500+ local clients and dedicated support.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What&apos;s the difference between a chatbot and a virtual assistant?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Traditional chatbots follow fixed scripts and can only handle pre-programmed questions. AI Super acts as a full virtual assistant — it understands natural language, remembers conversation context, handles voice messages, schedules appointments, captures leads in CRM, and switches languages automatically. It&apos;s chatbot and virtual assistant services combined in one platform.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Will I still receive calls?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Absolutely! Your phone works normally. The AI chatbot only handles WhatsApp business messages automatically. You can choose to intervene at any time and take over the conversation seamlessly.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-6">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">What languages does the AI chatbot support?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  We support English, Mandarin, Malay, Tamil, and 50+ other languages — perfect for Singapore&apos;s multilingual market. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-7">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">Is my data secure with your AI chatbot?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  Yes! We prioritize your data security. We don&apos;t store your personal conversations. Everything is encrypted and processed in real-time only to generate responses. AI Super is fully compliant with Singapore&apos;s PDPA (Personal Data Protection Act).
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-8">
-                <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">How much does a WhatsApp AI chatbot cost in Singapore?</AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-lg leading-relaxed">
-                  AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. We also offer a 30-day free trial with no credit card required.
-                </AccordionContent>
-              </AccordionItem>
+              {FAQ_ITEMS.map((item, index) => (
+                <AccordionItem key={item.question} value={`item-${index + 1}`}>
+                  <AccordionTrigger className="text-lg md:text-xl font-semibold text-gray-900">{item.question}</AccordionTrigger>
+                  <AccordionContent className="text-gray-600 text-lg leading-relaxed">{item.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </div>
@@ -742,48 +677,14 @@ const Home: React.FC = () => {
                   {/* Features List */}
                   <div className="p-8 md:p-10 bg-gray-50/50">
                     <div className="space-y-5 mb-10">
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
+                      {PRICING_FEATURES.map((feature) => (
+                        <div key={feature} className="flex items-start gap-4">
+                          <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
+                            <span className="text-green-600 text-sm font-bold">✓</span>
+                          </div>
+                          <span className="text-gray-700 text-lg">{feature}</span>
                         </div>
-                        <span className="text-gray-700 text-lg">Unlimited AI responses</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg">Voice message recognition</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg">Multilingual support (50+ languages)</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg">Google Calendar integration</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg">Built-in CRM</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg">Free setup & installation</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-green-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg">24/7 email & chat support</span>
-                      </div>
+                      ))}
                     </div>
 
                     <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-7 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5" asChild>
@@ -819,48 +720,14 @@ const Home: React.FC = () => {
                   {/* Features List */}
                   <div className="p-8 md:p-10 bg-blue-50/30">
                     <div className="space-y-5 mb-10">
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
+                      {PRICING_FEATURES.map((feature) => (
+                        <div key={feature} className="flex items-start gap-4">
+                          <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
+                            <span className="text-blue-600 text-sm font-bold">✓</span>
+                          </div>
+                          <span className="text-gray-700 text-lg font-medium">{feature}</span>
                         </div>
-                        <span className="text-gray-700 text-lg font-medium">Unlimited AI responses</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">Voice message recognition</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">Multilingual support (50+ languages)</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">Google Calendar integration</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">Built-in CRM</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">Free setup & installation</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center shrink-0 mt-0.5">
-                          <span className="text-blue-600 text-sm font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 text-lg font-medium">24/7 email & chat support</span>
-                      </div>
+                      ))}
                     </div>
 
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-7 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5" asChild>
