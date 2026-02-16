@@ -20,7 +20,7 @@ import DynamicLogo from "@/components/DynamicLogo";
 // Lazy load components
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton").then((mod) => mod.WhatsAppButton), { ssr: false });
 const PhoneAnimation = dynamic(() => import("@/components/PhoneAnimation").then((mod) => mod.default), {
-  ssr: true,
+  ssr: false,
   loading: () => (
     <div className="relative flex flex-col items-center justify-center min-h-[500px] py-8">
       <div className="w-72 h-[36rem] border-8 border-gray-300 rounded-3xl bg-gray-100 animate-pulse"></div>
@@ -357,27 +357,12 @@ const Home = () => {
             </nav>
             <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105">
               <Link href="/signup">
-                Start Free
+                Start 30-Day Trial
               </Link>
             </Button>
           </div>
         </div>
       </header>
-
-      {/* Phone Animation Section */}
-      <section className="w-full py-12 md:py-16 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              See Our WhatsApp AI Chatbot in Action
-            </h2>
-            <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-              Watch how our AI chatbot in Singapore handles real customer conversations — in English, Mandarin, Malay, and more
-            </p>
-          </div>
-          <PhoneAnimation />
-        </div>
-      </section>
 
       {/* Hero Section */}
       <main id="main-content" role="main">
@@ -399,14 +384,24 @@ const Home = () => {
             </p>
             
             {/* CTA */}
-            <div className="pt-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105" asChild>
-                <Link href="/signup">
-                  Start Free Today
-                </Link>
-              </Button>
-              <p className="text-gray-500 text-lg mt-4">
-                Get 30-Day Free Trial • No credit card required
+            <div className="pt-4 flex flex-col items-center gap-4 w-full">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105" asChild>
+                  <Link href="/signup">
+                    Start Free 30-Day Trial
+                  </Link>
+                </Button>
+                <Button variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl transition-all duration-200" asChild>
+                  <Link href="#pricing">
+                    View Pricing
+                  </Link>
+                </Button>
+              </div>
+              <p className="text-gray-500 text-base md:text-lg text-center">
+                5-minute setup • No credit card required • Cancel anytime
+              </p>
+              <p className="text-gray-400 text-sm text-center">
+                Join 500+ Singapore businesses already automating WhatsApp
               </p>
             </div>
             
@@ -448,6 +443,21 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Product Demo Section */}
+      <section className="w-full py-12 md:py-16 bg-gray-50">
+        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              See Our WhatsApp AI Chatbot in Action
+            </h2>
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+              Watch how our AI chatbot in Singapore handles real customer conversations — in English, Mandarin, Malay, and more
+            </p>
+          </div>
+          <PhoneAnimation />
         </div>
       </section>
 
@@ -542,6 +552,7 @@ const Home = () => {
                   src="/output.gif"
                   alt="Calendar Integration Demo"
                   fill
+                  sizes="(max-width: 768px) 280px, 280px"
                   className="object-cover"
                   loading="lazy"
                   placeholder="blur"
@@ -559,6 +570,7 @@ const Home = () => {
                   src="/output2.gif"
                   alt="Voice & Multilingual Demo"
                   fill
+                  sizes="(max-width: 768px) 280px, 280px"
                   className="object-cover"
                   loading="lazy"
                   placeholder="blur"
@@ -576,6 +588,7 @@ const Home = () => {
                   src="/output3.gif"
                   alt="AI Conversation Demo"
                   fill
+                  sizes="(max-width: 768px) 280px, 280px"
                   className="object-cover"
                   loading="lazy"
                   placeholder="blur"
