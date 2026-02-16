@@ -15,6 +15,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Instagram, Facebook } from "lucide-react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DynamicLogo from "@/components/DynamicLogo";
+import { TrackedButtonLink } from "@/components/TrackedButtonLink";
 
 
 // Lazy load components
@@ -125,7 +126,7 @@ const FAQ_ITEMS = [
   {
     question: "What is a WhatsApp AI chatbot and how does it work in Singapore?",
     answer:
-      "A WhatsApp AI chatbot is an intelligent virtual assistant that automatically handles customer conversations on WhatsApp. Unlike basic auto-replies, AI Super&apos;s chatbot uses advanced AI to understand context, respond naturally in 50+ languages, transcribe voice messages, and book appointments — 24/7 with no human intervention needed. It integrates with the official WhatsApp Business API approved for Singapore businesses.",
+      "A WhatsApp AI chatbot is an intelligent virtual assistant that automatically handles customer conversations on WhatsApp. Unlike basic auto-replies, AI Super's chatbot uses advanced AI to understand context, respond naturally in 50+ languages, transcribe voice messages, and book appointments — 24/7 with no human intervention needed. It integrates with the official WhatsApp Business API approved for Singapore businesses.",
   },
   {
     question: "How quickly can I set up the AI chatbot?",
@@ -135,12 +136,12 @@ const FAQ_ITEMS = [
   {
     question: "Why choose AI Super over other chatbot agencies in Singapore?",
     answer:
-      "AI Super is Singapore&apos;s leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore&apos;s diverse market, Google Calendar integration, and built-in CRM — all from $49/month. We&apos;re a registered Singapore company with 500+ local clients and dedicated support.",
+      "AI Super is Singapore's leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore's diverse market, Google Calendar integration, and built-in CRM — all from $49/month. We're a registered Singapore company with 500+ local clients and dedicated support.",
   },
   {
-    question: "What&apos;s the difference between a chatbot and a virtual assistant?",
+    question: "What's the difference between a chatbot and a virtual assistant?",
     answer:
-      "Traditional chatbots follow fixed scripts and can only handle pre-programmed questions. AI Super acts as a full virtual assistant — it understands natural language, remembers conversation context, handles voice messages, schedules appointments, captures leads in CRM, and switches languages automatically. It&apos;s chatbot and virtual assistant services combined in one platform.",
+      "Traditional chatbots follow fixed scripts and can only handle pre-programmed questions. AI Super acts as a full virtual assistant — it understands natural language, remembers conversation context, handles voice messages, schedules appointments, captures leads in CRM, and switches languages automatically. It's chatbot and virtual assistant services combined in one platform.",
   },
   {
     question: "Will I still receive calls?",
@@ -150,12 +151,12 @@ const FAQ_ITEMS = [
   {
     question: "What languages does the AI chatbot support?",
     answer:
-      "We support English, Mandarin, Malay, Tamil, and 50+ other languages — perfect for Singapore&apos;s multilingual market. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!",
+      "We support English, Mandarin, Malay, Tamil, and 50+ other languages — perfect for Singapore's multilingual market. Our AI automatically detects the language of the incoming message and responds in the same language. It even understands and transcribes voice messages!",
   },
   {
     question: "Is my data secure with your AI chatbot?",
     answer:
-      "Yes! We prioritize your data security. We don&apos;t store your personal conversations. Everything is encrypted and processed in real-time only to generate responses. AI Super is fully compliant with Singapore&apos;s PDPA (Personal Data Protection Act).",
+      "Yes! We prioritize your data security. We don't store your personal conversations. Everything is encrypted and processed in real-time only to generate responses. AI Super is fully compliant with Singapore's PDPA (Personal Data Protection Act).",
   },
   {
     question: "How much does a WhatsApp AI chatbot cost in Singapore?",
@@ -355,11 +356,14 @@ const Home = () => {
                 Pricing
               </Link>
             </nav>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105">
-              <Link href="/signup">
-                Start 30-Day Trial
-              </Link>
-            </Button>
+            <TrackedButtonLink
+              href="/signup"
+              eventName="header_trial_cta_click"
+              size="sm"
+              className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105"
+            >
+              Start 30-Day Trial
+            </TrackedButtonLink>
           </div>
         </div>
       </header>
@@ -386,16 +390,21 @@ const Home = () => {
             {/* CTA */}
             <div className="pt-4 flex flex-col items-center gap-4 w-full">
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105" asChild>
-                  <Link href="/signup">
-                    Start Free 30-Day Trial
-                  </Link>
-                </Button>
-                <Button variant="outline" className="border-blue-200 text-blue-700 hover:bg-blue-50 py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl transition-all duration-200" asChild>
-                  <Link href="#pricing">
-                    View Pricing
-                  </Link>
-                </Button>
+                <TrackedButtonLink
+                  href="/signup"
+                  eventName="hero_primary_trial_cta_click"
+                  className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                >
+                  Start Free 30-Day Trial
+                </TrackedButtonLink>
+                <TrackedButtonLink
+                  href="#pricing"
+                  eventName="hero_secondary_pricing_cta_click"
+                  variant="outline"
+                  className="border-blue-200 text-blue-700 hover:bg-blue-50 py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl transition-all duration-200"
+                >
+                  View Pricing
+                </TrackedButtonLink>
               </div>
               <p className="text-gray-500 text-base md:text-lg text-center">
                 5-minute setup • No credit card required • Cancel anytime
