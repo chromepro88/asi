@@ -199,10 +199,10 @@ export default function BlogPage() {
             asChild
             className="bg-white text-blue-600 hover:bg-gray-100 py-4 px-10 text-xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
           >
-            <Link href="/signup">Start Free Trial</Link>
+            <Link href="/signup">Get Started</Link>
           </Button>
           <p className="text-blue-200 text-sm mt-4">
-            30-day free trial • No credit card required
+            Get started today • No credit card required
           </p>
         </div>
       </section>

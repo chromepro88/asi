@@ -31,14 +31,14 @@ const PhoneAnimation = dynamic(() => import("@/components/PhoneAnimation").then(
 
 export const generateMetadata = (): Metadata => ({
   title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency | AI Super",
-  description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses trust AI Super to automate customer service 24/7, capture leads & boost sales by 40%. Voice + multilingual. From $49/mo. Free 30-day trial — setup in 5 min!",
+  description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses trust AI Super to automate customer service 24/7, capture leads & boost sales by 40%. Voice + multilingual. From $49/mo. Setup in 5 min!",
   keywords: ["whatsapp ai chatbot singapore", "ai chatbot singapore", "singapore whatsapp chatbot", "whatsapp chatbot singapore", "chatbot agency singapore", "ai chatbot agency singapore", "chatbot and virtual assistant services singapore", "ai chatbots and virtual assistants singapore", "whatsapp ai chatbot", "whatsapp automation singapore", "chatbot singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "real estate chatbot"],
   alternates: {
     canonical: "https://asi.sg",
   },
   openGraph: {
     title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency | AI Super",
-    description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses automate customer service 24/7, capture leads & boost sales 40%. Free 30-day trial!",
+    description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses automate customer service 24/7, capture leads & boost sales 40%.",
     url: "https://asi.sg",
     siteName: "AI Super Private Limited",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "AI Super - Singapore WhatsApp Chatbot for Business Automation" }],
@@ -48,7 +48,7 @@ export const generateMetadata = (): Metadata => ({
   twitter: {
     card: "summary_large_image",
     title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency",
-    description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses automate customer service 24/7 & boost sales 40%. Free 30-day trial!",
+    description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses automate customer service 24/7 & boost sales 40%.",
     images: ["/api/og"],
   },
 });
@@ -161,7 +161,7 @@ const FAQ_ITEMS = [
   {
     question: "How much does a WhatsApp AI chatbot cost in Singapore?",
     answer:
-      "AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. We also offer a 30-day free trial with no credit card required.",
+      "AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. You can get started with no credit card required.",
   },
 ] as const;
 
@@ -313,7 +313,7 @@ const Home = () => {
             "name": "How much does a WhatsApp AI chatbot cost in Singapore?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "AI Super starts at $49/month (annual plan) or $69/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and a 30-day free trial with no credit card required."
+              "text": "AI Super starts at $49/month (annual plan) or $69/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and you can get started with no credit card required."
             }
           },
           {
@@ -716,7 +716,7 @@ const Home = () => {
                     </Button>
 
                     <p className="text-center text-gray-500 text-sm mt-6 font-medium">
-                      30-day free trial • No credit card required
+                      Get started today • No credit card required
                     </p>
                   </div>
                 </div>
@@ -759,7 +759,7 @@ const Home = () => {
                     </Button>
 
                     <p className="text-center text-gray-500 text-sm mt-6 font-medium">
-                      30-day free trial • No credit card required
+                      Get started today • No credit card required
                     </p>
                   </div>
                 </div>

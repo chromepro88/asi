@@ -239,8 +239,8 @@ export const blogPosts: BlogPost[] = [
       <h2 id="how-to-set-up">How to Set Up a WhatsApp Chatbot in Singapore (Step-by-Step)</h2>
       <p>Setting up a WhatsApp chatbot with AI Super takes just <strong>5 minutes</strong>. Here's exactly how:</p>
 
-      <h3>Step 1: Sign Up for Free</h3>
-      <p>Visit <a href="https://asi.sg/signup">asi.sg/signup</a> and create your account. No credit card required — you get a full <strong>30-day free trial</strong>.</p>
+      <h3>Step 1: Sign Up</h3>
+      <p>Visit <a href="https://asi.sg/signup">asi.sg/signup</a> and create your account. No credit card required to get started.</p>
 
       <h3>Step 2: Connect Your WhatsApp</h3>
       <p>Scan a QR code — just like setting up WhatsApp Web. Your existing WhatsApp number stays the same. You'll still receive calls and personal messages normally.</p>
@@ -396,7 +396,7 @@ export const blogPosts: BlogPost[] = [
         </tbody>
       </table>
 
-      <p><strong>Verdict:</strong> Free chatbots work for testing the concept, but for any real Singapore business handling customer inquiries, you need a professional solution. AI Super's 30-day free trial lets you test premium features before committing.</p>
+      <p><strong>Verdict:</strong> Free chatbots work for testing the concept, but for any real Singapore business handling customer inquiries, you need a professional solution. AI Super lets you test premium features before committing.</p>
 
       <h2 id="singapore-providers">Singapore WhatsApp Chatbot Providers Compared (2026)</h2>
       <p>If you're searching for a <strong>WhatsApp chatbot in Singapore</strong>, you'll come across several providers. Here's an honest, detailed comparison to help you make the right choice:</p>
@@ -449,8 +449,8 @@ export const blogPosts: BlogPost[] = [
             <td>❌ No public pricing — "Book a Demo"</td>
           </tr>
           <tr>
-            <td>Free trial</td>
-            <td><strong>✅ 30 days, no credit card</strong></td>
+            <td>No credit card required</td>
+            <td><strong>✅ Yes</strong></td>
             <td>❌ Demo request only</td>
           </tr>
           <tr>
@@ -593,7 +593,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Is pricing transparent?</strong> — Beware of per-message or per-contact hidden costs</li>
         <li><strong>Is the provider Singapore-based?</strong> — Local support, understanding of the market</li>
         <li><strong>Is data PDPA-compliant?</strong> — Non-negotiable in Singapore</li>
-        <li><strong>Can you try before you buy?</strong> — Free trial with no credit card required</li>
+        <li><strong>Can you try before you buy?</strong> — Onboarding period with no credit card required</li>
         <li><strong>How fast is setup?</strong> — If it takes weeks, that's a red flag</li>
       </ol>
 
@@ -629,7 +629,7 @@ export const blogPosts: BlogPost[] = [
       <h2 id="faq">Frequently Asked Questions About WhatsApp Chatbots in Singapore</h2>
 
       <h3>How much does a WhatsApp chatbot cost in Singapore?</h3>
-      <p>Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at <strong>$49–$69/month</strong> with unlimited messages, AI, voice support, and a built-in CRM. There's a 30-day free trial with no credit card required.</p>
+      <p>Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at <strong>$49–$69/month</strong> with unlimited messages, AI, voice support, and a built-in CRM. You can get started with no credit card required.</p>
 
       <h3>Is a WhatsApp chatbot legal in Singapore?</h3>
       <p>Yes, absolutely. WhatsApp chatbots are legal in Singapore as long as they comply with the <strong>PDPA (Personal Data Protection Act)</strong>. AI Super is fully PDPA-compliant — we encrypt data and don't store personal conversations.</p>
@@ -656,11 +656,11 @@ export const blogPosts: BlogPost[] = [
       <p>You've read the guide. You know the benefits. Now it's time to act.</p>
       <p>Join <strong>500+ Singapore businesses</strong> already using AI Super to automate their WhatsApp, capture more leads, and increase sales by up to 40%.</p>
       <ul>
-        <li>✅ <strong>30-day free trial</strong> — no credit card required</li>
+        <li>✅ <strong>No credit card required</strong> to get started</li>
         <li>✅ <strong>5-minute setup</strong> — no coding needed</li>
         <li>✅ <strong>Free installation & support</strong> — our team helps you get started</li>
       </ul>
-      <p><a href="https://asi.sg/signup" class="cta-link">Start your free 30-day trial →</a></p>
+      <p><a href="https://asi.sg/signup" class="cta-link">Get started →</a></p>
       <p>Or contact us directly: <strong><a href="https://wa.me/6588379368">WhatsApp +65 8837 9368</a></strong> | <strong><a href="mailto:hello@asi.sg">hello@asi.sg</a></strong></p>
     `,
   },
@@ -773,7 +773,7 @@ export const blogPosts: BlogPost[] = [
       <h2 id="the-verdict">The Verdict</h2>
       <p>For most Singapore businesses — especially SMEs, service providers, and local businesses — a <strong>WhatsApp chatbot is the clear winner</strong>. It's more affordable, more accessible to customers, and provides a better experience than live chat.</p>
       <p>The best approach? Use a WhatsApp AI chatbot as your <strong>primary customer communication channel</strong>, and add live chat only if your specific business case demands it.</p>
-      <p><a href="https://asi.sg/signup" class="cta-link">Try AI Super free for 30 days →</a></p>
+      <p><a href="https://asi.sg/signup" class="cta-link">Get started with AI Super →</a></p>
     `,
   },
   {
@@ -827,8 +827,8 @@ export const blogPosts: BlogPost[] = [
 
       <h2 id="getting-started">Start Boosting Your Sales Today</h2>
       <p>These aren't theoretical strategies — they're being used right now by <strong>500+ businesses in Singapore</strong> to grow revenue with WhatsApp automation.</p>
-      <p>The best part? You can try everything <strong>free for 30 days</strong>. No credit card required. Setup takes just 5 minutes.</p>
-      <p><a href="https://asi.sg/signup" class="cta-link">Start your free trial →</a></p>
+      <p>The best part? You can get started right away. No credit card required. Setup takes just 5 minutes.</p>
+      <p><a href="https://asi.sg/signup" class="cta-link">Get started →</a></p>
     `,
   },
   {
@@ -995,7 +995,7 @@ export const blogPosts: BlogPost[] = [
         <li>✅ Built-in CRM for lead tracking</li>
         <li>✅ $49/month (annual) — most affordable in market</li>
         <li>✅ 5-minute setup, no coding required</li>
-        <li>✅ 30-day free trial</li>
+        <li>✅ No credit card required to get started</li>
         <li>✅ 500+ Singapore business clients</li>
       </ul>
 
@@ -1068,13 +1068,6 @@ export const blogPosts: BlogPost[] = [
             <td>Custom quote</td>
             <td>$49/mo</td>
             <td>$79/mo</td>
-          </tr>
-          <tr>
-            <td><strong>Free Trial</strong></td>
-            <td>✅ 30 days</td>
-            <td>Demo only</td>
-            <td>7 days</td>
-            <td>7 days</td>
           </tr>
           <tr>
             <td><strong>Setup Time</strong></td>
@@ -1174,7 +1167,7 @@ export const blogPosts: BlogPost[] = [
         </tbody>
       </table>
 
-      <p><strong>AI Super offers the best value</strong> for Singapore SMEs: full AI capabilities, WhatsApp integration, CRM, voice recognition, and multilingual support — starting at just $49/month with zero setup costs and a 30-day free trial.</p>
+      <p><strong>AI Super offers the best value</strong> for Singapore SMEs: full AI capabilities, WhatsApp integration, CRM, voice recognition, and multilingual support — starting at just $49/month with zero setup costs.</p>
 
       <h2 id="how-to-choose">How to Choose the Right AI Chatbot Agency in Singapore</h2>
       <p>When evaluating <strong>AI chatbot agencies in Singapore</strong>, ask these critical questions:</p>
@@ -1191,8 +1184,8 @@ export const blogPosts: BlogPost[] = [
       <h3>4. What's the total cost of ownership?</h3>
       <p>Look beyond the headline price. Check for per-message charges, setup fees, and integration costs. AI Super's $49/month includes everything — no surprises.</p>
 
-      <h3>5. How long is the free trial?</h3>
-      <p>A 7-day trial isn't enough to properly evaluate a chatbot. AI Super offers a <strong>30-day free trial</strong> with no credit card required — enough time to see real results.</p>
+      <h3>5. How quickly can you get started?</h3>
+      <p>AI Super can be set up in minutes, with no credit card required to begin.</p>
 
       <h3>6. Can it take actions, not just chat?</h3>
       <p>The best AI chatbot agencies offer chatbot and virtual assistant services combined — booking appointments, updating CRM, sending reminders, and capturing leads automatically.</p>
@@ -1213,7 +1206,7 @@ export const blogPosts: BlogPost[] = [
       <h2 id="faq">Frequently Asked Questions About AI Chatbots in Singapore</h2>
 
       <h3>What is the best AI chatbot in Singapore?</h3>
-      <p>For SMEs and growing businesses, <strong>AI Super</strong> is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $49/month with a 30-day free trial. It's the only provider that's Singapore-based with a focus on WhatsApp AI automation.</p>
+      <p>For SMEs and growing businesses, <strong>AI Super</strong> is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $49/month. It's the only provider that's Singapore-based with a focus on WhatsApp AI automation.</p>
 
       <h3>How much does an AI chatbot cost in Singapore?</h3>
       <p>AI chatbot pricing in Singapore ranges from $0 (basic DIY) to $10,000+/month (enterprise). For most businesses, AI Super at $49–$69/month provides the best balance of AI capabilities and affordability. Custom development can cost $5,000–$50,000 for setup alone.</p>
@@ -1230,12 +1223,12 @@ export const blogPosts: BlogPost[] = [
       <h2 id="getting-started">Get Started with Singapore's #1 AI Chatbot</h2>
       <p>Whether you're looking for an <strong>AI chatbot agency in Singapore</strong>, exploring <strong>chatbot and virtual assistant services</strong>, or simply want to automate your WhatsApp, AI Super has you covered.</p>
       <ul>
-        <li>✅ <strong>30-day free trial</strong> — no credit card required</li>
+        <li>✅ <strong>No credit card required</strong> to get started</li>
         <li>✅ <strong>5-minute setup</strong> — no coding needed</li>
         <li>✅ <strong>500+ Singapore businesses</strong> already trust AI Super</li>
         <li>✅ <strong>From $49/month</strong> — all features included</li>
       </ul>
-      <p><a href="https://asi.sg/signup" class="cta-link">Start your free 30-day trial →</a></p>
+      <p><a href="https://asi.sg/signup" class="cta-link">Get started →</a></p>
     `,
   },
 ];
