@@ -202,7 +202,7 @@ export default function BlogPage() {
             <Link href="/signup">Get Started</Link>
           </Button>
           <p className="text-blue-200 text-sm mt-4">
-            Get started today • No credit card required
+            Get started today
           </p>
         </div>
       </section>

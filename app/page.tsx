@@ -161,7 +161,7 @@ const FAQ_ITEMS = [
   {
     question: "How much does a WhatsApp AI chatbot cost in Singapore?",
     answer:
-      "AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. You can get started with no credit card required.",
+      "AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. You can get started right away.",
   },
 ] as const;
 
@@ -313,7 +313,7 @@ const Home = () => {
             "name": "How much does a WhatsApp AI chatbot cost in Singapore?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "AI Super starts at $49/month (annual plan) or $69/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and you can get started with no credit card required."
+              "text": "AI Super starts at $49/month (annual plan) or $69/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and you can get started right away."
             }
           },
           {
@@ -407,7 +407,7 @@ const Home = () => {
                 </TrackedButtonLink>
               </div>
               <p className="text-gray-500 text-base md:text-lg text-center">
-                5-minute setup • No credit card required • Cancel anytime
+                5-minute setup • Cancel anytime
               </p>
               <p className="text-gray-400 text-sm text-center">
                 Join 500+ Singapore businesses already automating WhatsApp
@@ -716,7 +716,7 @@ const Home = () => {
                     </Button>
 
                     <p className="text-center text-gray-500 text-sm mt-6 font-medium">
-                      Get started today • No credit card required
+                      Get started today
                     </p>
                   </div>
                 </div>
@@ -759,7 +759,7 @@ const Home = () => {
                     </Button>
 
                     <p className="text-center text-gray-500 text-sm mt-6 font-medium">
-                      Get started today • No credit card required
+                      Get started today
                     </p>
                   </div>
                 </div>

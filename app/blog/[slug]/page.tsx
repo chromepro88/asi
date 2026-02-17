@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "How much does a WhatsApp chatbot cost in Singapore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at $49–$69/month with unlimited messages, AI, voice support, and a built-in CRM. You can get started with no credit card required.",
+          text: "Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at $49–$69/month with unlimited messages, AI, voice support, and a built-in CRM. You can get started right away.",
         },
       },
       {
@@ -454,7 +454,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <Link href="/signup">Get Started</Link>
           </Button>
           <p className="text-blue-200 text-sm mt-4">
-            Get started today • No credit card required
+            Get started today
           </p>
         </div>
       </section>
