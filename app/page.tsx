@@ -362,7 +362,7 @@ const Home = () => {
               size="sm"
               className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105"
             >
-              Start 30-Day Trial
+              Get Started
             </TrackedButtonLink>
           </div>
         </div>
@@ -395,7 +395,7 @@ const Home = () => {
                   eventName="hero_primary_trial_cta_click"
                   className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
                 >
-                  Start Free 30-Day Trial
+                  Get Started
                 </TrackedButtonLink>
                 <TrackedButtonLink
                   href="#pricing"

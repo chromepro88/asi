@@ -287,7 +287,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               size="sm"
               className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105"
             >
-              <Link href="/signup">Start Free</Link>
+              <Link href="/signup">Get Started</Link>
             </Button>
           </div>
         </div>
