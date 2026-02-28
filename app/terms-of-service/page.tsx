@@ -29,6 +29,10 @@ export default function TermsOfService() {
               <li>Use the Service in any way that violates applicable laws or regulations.</li>
               <li>Attempt to gain unauthorized access to the Service or its systems.</li>
               <li>Engage in any activity that disrupts or interferes with the Service.</li>
+              <li>
+                Comply with WhatsApp&apos;s Terms of Service. If you do not follow WhatsApp&apos;s Terms of Service, your WhatsApp
+                account may be restricted or banned by WhatsApp.
+              </li>
             </ul>
           </section>
 
