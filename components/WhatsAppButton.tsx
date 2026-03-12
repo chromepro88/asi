@@ -1,4 +1,7 @@
-import Image from "next/image"
+"use client";
+
+import Image from "next/image";
+import { track } from "@vercel/analytics";
 
 export function WhatsAppButton() {
   return (
@@ -8,6 +11,12 @@ export function WhatsAppButton() {
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 transition-all hover:scale-110 [transform-origin:center] animate-float-prominent"
       aria-label="Chat with us on WhatsApp"
+      onClick={() => {
+        track("whatsapp_click", {
+          location: "floating_button",
+          href: "https://wa.me/6588379368",
+        });
+      }}
     >
       <Image
         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/whatsapp-ImTCFZlBC1kAzHEHSJi1RgocmZJYRn.png"
@@ -17,6 +26,5 @@ export function WhatsAppButton() {
         className="drop-shadow-lg"
       />
     </a>
-  )
+  );
 }
-
