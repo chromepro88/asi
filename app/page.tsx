@@ -384,7 +384,7 @@ const Home = () => {
             </h1>
             
             <p className="max-w-[600px] text-gray-600 text-xl md:text-2xl lg:text-3xl leading-relaxed">
-              Singapore&apos;s top-rated <strong>AI chatbot agency</strong>. Our <strong>WhatsApp AI chatbot</strong> automates customer service 24/7, captures leads, and <span className="font-semibold text-blue-600">increases sales by 40%</span>. Your AI-powered virtual assistant — setup in 5 minutes, no coding required.
+              Singapore&apos;s top-rated <strong>AI chatbot agency</strong>. Our <strong>WhatsApp AI chatbot</strong> automates customer service 24/7, captures leads, and <span className="font-semibold text-blue-600">increases sales by 40%</span>.
             </p>
             
             {/* CTA */}
