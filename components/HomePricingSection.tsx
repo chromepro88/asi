@@ -93,7 +93,7 @@ export function HomePricingSection({
                 >
                   Yearly{" "}
                   <span className="ml-1 text-xs text-green-600 font-bold">
-                    SAVE 29%
+                    SAVE 30%
                   </span>
                 </TabsTrigger>
               </TabsList>
@@ -102,14 +102,8 @@ export function HomePricingSection({
             <TabsContent value="monthly" className="mt-0">
               <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
                 <div className="bg-white text-gray-900 text-center py-10 px-6 border-b border-gray-100">
-                  <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold mb-6">
-                    30% OFF Launch Offer
-                  </div>
                   <div className="flex items-center justify-center gap-3 mb-2">
-                    <span className="text-6xl font-bold tracking-tight">$69</span>
-                    <span className="text-2xl text-gray-400 line-through font-medium">
-                      $99
-                    </span>
+                    <span className="text-6xl font-bold tracking-tight">$99</span>
                   </div>
                   <p className="text-gray-500 text-lg font-medium">per month</p>
                 </div>
@@ -150,21 +144,21 @@ export function HomePricingSection({
                 <div className="absolute top-0 inset-x-0 h-2 bg-blue-600"></div>
                 <div className="bg-white text-gray-900 text-center py-10 px-6 border-b border-gray-100">
                   <div className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-6 shadow-md">
-                    Best Value - Save $240/year
+                    Best Value - Save $360/year
                   </div>
                   <div className="flex items-center justify-center gap-3 mb-2">
                     <span className="text-6xl font-bold tracking-tight text-blue-600">
-                      $49
+                      $69
                     </span>
                     <span className="text-2xl text-gray-400 line-through font-medium">
-                      $69
+                      $99
                     </span>
                   </div>
                   <p className="text-gray-500 text-lg font-medium">
                     per month, billed annually
                   </p>
                   <p className="text-green-600 text-sm mt-2 font-bold">
-                    ($588/year instead of $828)
+                    ($828/year instead of $1,188)
                   </p>
                 </div>
 

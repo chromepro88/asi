@@ -130,9 +130,9 @@ export default function SupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  We offer flexible pricing plans starting from $99/month for small businesses. 
-                  Enterprise plans are available with custom pricing. Contact us for a personalized quote 
-                  based on your specific needs and message volume.
+                  We offer flexible pricing plans at $99/month, or $69/month billed yearly, for small
+                  businesses. Enterprise plans are available with custom pricing. Contact us for a
+                  personalized quote based on your specific needs and message volume.
                 </p>
               </CardContent>
             </Card>
