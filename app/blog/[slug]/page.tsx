@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "How much does a WhatsApp chatbot cost in Singapore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at $49–$69/month with unlimited messages, AI, voice support, and a built-in CRM. You can get started right away.",
+          text: "Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at $69–$99/month with unlimited messages, AI, voice support, and a built-in CRM. You can get started right away.",
         },
       },
       {
@@ -154,7 +154,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "What is the best WhatsApp chatbot provider in Singapore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "AI Super is the top-rated WhatsApp chatbot provider in Singapore, offering advanced AI (not rule-based), voice message support, 50+ languages with auto-detection, Google Calendar integration, built-in CRM, and transparent pricing starting at $49/month.",
+          text: "AI Super is the top-rated WhatsApp chatbot provider in Singapore, offering advanced AI (not rule-based), voice message support, 50+ languages with auto-detection, Google Calendar integration, built-in CRM, and transparent pricing starting at $69/month.",
         },
       },
       {
@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "How is AI Super different from Omnichat or other chatbot platforms?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "AI Super uses advanced AI natural language processing, while platforms like Omnichat rely on rule-based keyword triggers and flowcharts. AI Super also offers voice message transcription, automatic language detection for 50+ languages, 5-minute setup, and transparent pricing ($49-69/month).",
+          text: "AI Super uses advanced AI natural language processing, while platforms like Omnichat rely on rule-based keyword triggers and flowcharts. AI Super also offers voice message transcription, automatic language detection for 50+ languages, 5-minute setup, and transparent pricing ($69-99/month).",
         },
       },
     ],
@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "What is the best AI chatbot in Singapore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "For SMEs and growing businesses, AI Super is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $49/month.",
+          text: "For SMEs and growing businesses, AI Super is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $69/month.",
         },
       },
       {
@@ -183,7 +183,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: "How much does an AI chatbot cost in Singapore?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "AI chatbot pricing in Singapore ranges from $0 (basic DIY) to $10,000+/month (enterprise). For most businesses, AI Super at $49–$69/month provides the best balance of AI capabilities and affordability.",
+          text: "AI chatbot pricing in Singapore ranges from $0 (basic DIY) to $10,000+/month (enterprise). For most businesses, AI Super at $69–$99/month provides the best balance of AI capabilities and affordability.",
         },
       },
       {

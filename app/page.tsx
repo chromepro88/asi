@@ -31,7 +31,7 @@ const PhoneAnimation = dynamic(() => import("@/components/PhoneAnimation").then(
 
 export const generateMetadata = (): Metadata => ({
   title: "WhatsApp AI Chatbot Singapore | #1 AI Chatbot Agency | AI Super",
-  description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses trust AI Super to automate customer service 24/7, capture leads & boost sales by 40%. Voice + multilingual. From $49/mo. Setup in 5 min!",
+  description: "Singapore's #1 WhatsApp AI chatbot agency. 500+ businesses trust AI Super to automate customer service 24/7, capture leads & boost sales by 40%. Voice + multilingual. From $69/mo. Setup in 5 min!",
   keywords: ["whatsapp ai chatbot singapore", "ai chatbot singapore", "singapore whatsapp chatbot", "whatsapp chatbot singapore", "chatbot agency singapore", "ai chatbot agency singapore", "chatbot and virtual assistant services singapore", "ai chatbots and virtual assistants singapore", "whatsapp ai chatbot", "whatsapp automation singapore", "chatbot singapore", "business automation", "lead generation", "customer support automation", "WhatsApp AI", "real estate chatbot"],
   alternates: {
     canonical: "https://asi.sg",
@@ -136,7 +136,7 @@ const FAQ_ITEMS = [
   {
     question: "Why choose AI Super over other chatbot agencies in Singapore?",
     answer:
-      "AI Super is Singapore's leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore's diverse market, Google Calendar integration, and built-in CRM — all from $49/month. We're a registered Singapore company with 500+ local clients and dedicated support.",
+      "AI Super is Singapore's leading AI chatbot agency, purpose-built for local businesses. Unlike competitors, we offer true AI-powered conversations (not rule-based), voice message recognition, multilingual support for Singapore's diverse market, Google Calendar integration, and built-in CRM — all from $69/month. We're a registered Singapore company with 500+ local clients and dedicated support.",
   },
   {
     question: "What's the difference between a chatbot and a virtual assistant?",
@@ -161,7 +161,7 @@ const FAQ_ITEMS = [
   {
     question: "How much does a WhatsApp AI chatbot cost in Singapore?",
     answer:
-      "AI Super starts at $49/month (annual plan) or $69/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. You can get started right away.",
+      "AI Super starts at $69/month (annual plan) or $99/month — with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. There are no hidden fees, no per-message charges, and no setup costs. You can get started right away.",
   },
 ] as const;
 
@@ -289,7 +289,7 @@ const Home = () => {
             "name": "Why choose AI Super over other chatbot agencies in Singapore?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "AI Super is Singapore's leading AI chatbot agency with true AI-powered conversations (not rule-based), voice message recognition, multilingual support, Google Calendar integration, and built-in CRM — all from $49/month. We're a registered Singapore company with 500+ local clients."
+              "text": "AI Super is Singapore's leading AI chatbot agency with true AI-powered conversations (not rule-based), voice message recognition, multilingual support, Google Calendar integration, and built-in CRM — all from $69/month. We're a registered Singapore company with 500+ local clients."
             }
           },
           {
@@ -313,7 +313,7 @@ const Home = () => {
             "name": "How much does a WhatsApp AI chatbot cost in Singapore?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "AI Super starts at $49/month (annual plan) or $69/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and you can get started right away."
+              "text": "AI Super starts at $69/month (annual plan) or $99/month with unlimited AI responses, voice recognition, multilingual support, CRM, and Google Calendar integration included. No hidden fees, no per-message charges, and you can get started right away."
             }
           },
           {

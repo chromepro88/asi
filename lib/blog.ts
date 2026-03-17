@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
       <p>A Harvard Business Review study found that <strong>82% of consumers expect an immediate response</strong> to sales or marketing questions. In Singapore's competitive market, the business that responds first usually wins the customer. A WhatsApp chatbot responds in <strong>seconds, not hours</strong>.</p>
 
       <h3>4. Cost Efficiency for SMEs</h3>
-      <p>Hiring a full-time customer service representative in Singapore costs <strong>$3,000–$4,500/month</strong> including CPF. A WhatsApp chatbot costs as little as <strong>$49/month</strong> and handles <strong>unlimited conversations simultaneously</strong> — that's a <strong>98% cost reduction</strong>.</p>
+      <p>Hiring a full-time customer service representative in Singapore costs <strong>$3,000–$4,500/month</strong> including CPF. A WhatsApp chatbot costs as little as <strong>$69/month</strong> and handles <strong>unlimited conversations simultaneously</strong> — that's a <strong>98% cost reduction</strong>.</p>
 
       <h3>5. After-Hours Revenue</h3>
       <p>Many Singaporeans browse and inquire <strong>outside business hours</strong> — during their MRT commute, after dinner, or on weekends. Without a chatbot, those leads go cold overnight. With AI Super, businesses report that <strong>35% of qualified leads come from after-hours conversations</strong>.</p>
@@ -221,7 +221,7 @@ export const blogPosts: BlogPost[] = [
           <tr>
             <td>Monthly customer service cost</td>
             <td>$3,500+</td>
-            <td>$49–$69</td>
+            <td>$69–$99</td>
           </tr>
           <tr>
             <td>Sales increase</td>
@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
         <tbody>
           <tr>
             <td><strong>AI Super</strong></td>
-            <td><strong>$49–$69</strong></td>
+            <td><strong>$69–$99</strong></td>
             <td><strong>Unlimited</strong></td>
             <td><strong>✅ Advanced</strong></td>
             <td><strong>✅</strong></td>
@@ -301,8 +301,8 @@ export const blogPosts: BlogPost[] = [
           </tr>
           <tr>
             <td>WATI</td>
-            <td>$49+</td>
-            <td>Per-conversation</td>
+            <td>S$119/month</td>
+            <td>Message charges apply</td>
             <td>⚠️ Basic</td>
             <td>❌</td>
             <td>⚠️ Basic</td>
@@ -344,7 +344,7 @@ export const blogPosts: BlogPost[] = [
           <tr>
             <th>Capability</th>
             <th>Free Chatbots</th>
-            <th>AI Super ($49–$69/mo)</th>
+            <th>AI Super ($69–$99/mo)</th>
           </tr>
         </thead>
         <tbody>
@@ -445,7 +445,7 @@ export const blogPosts: BlogPost[] = [
           </tr>
           <tr>
             <td>Pricing</td>
-            <td><strong>$49–$69/month — transparent</strong></td>
+            <td><strong>$69–$99/month — transparent</strong></td>
             <td>❌ No public pricing — "Book a Demo"</td>
           </tr>
           <tr>
@@ -516,8 +516,8 @@ export const blogPosts: BlogPost[] = [
           </tr>
           <tr>
             <td>Pricing</td>
-            <td><strong>From $49/mo (unlimited)</strong></td>
-            <td>From $49/mo (per-conversation fees apply)</td>
+            <td><strong>From $69/mo (unlimited)</strong></td>
+            <td>S$119/mo billed annually + message charges</td>
           </tr>
           <tr>
             <td>Setup</td>
@@ -554,7 +554,7 @@ export const blogPosts: BlogPost[] = [
           </tr>
           <tr>
             <td>Pricing</td>
-            <td><strong>From $49/mo</strong></td>
+            <td><strong>From $69/mo</strong></td>
             <td>From $99/mo (contact limits)</td>
           </tr>
           <tr>
@@ -576,7 +576,7 @@ export const blogPosts: BlogPost[] = [
         <li><strong>True AI, not flowcharts</strong> — Customers get natural conversations, not rigid decision trees</li>
         <li><strong>Voice message support</strong> — No other Singapore-focused provider offers this</li>
         <li><strong>5-minute setup</strong> — No flowchart building, no API configuration, no developer needed</li>
-        <li><strong>Transparent pricing</strong> — $49–$69/month, unlimited messages, no surprises</li>
+        <li><strong>Transparent pricing</strong> — $69–$99/month, unlimited messages, no surprises</li>
         <li><strong>Singapore-based</strong> — Local support team that understands your market, your customers, and PDPA</li>
         <li><strong>50+ languages with auto-detection</strong> — Perfect for Singapore's multilingual population</li>
         <li><strong>Real Singapore clients</strong> — Used by agents from PropNex, Huttons, OrangeTee, plus Hotel Grand Central, Soon Travel, and more</li>
@@ -629,7 +629,7 @@ export const blogPosts: BlogPost[] = [
       <h2 id="faq">Frequently Asked Questions About WhatsApp Chatbots in Singapore</h2>
 
       <h3>How much does a WhatsApp chatbot cost in Singapore?</h3>
-      <p>Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at <strong>$49–$69/month</strong> with unlimited messages, AI, voice support, and a built-in CRM. You can get started right away.</p>
+      <p>Prices range from free (very limited) to $2,000+/month (enterprise). AI Super offers the best value at <strong>$69–$99/month</strong> with unlimited messages, AI, voice support, and a built-in CRM. You can get started right away.</p>
 
       <h3>Is a WhatsApp chatbot legal in Singapore?</h3>
       <p>Yes, absolutely. WhatsApp chatbots are legal in Singapore as long as they comply with the <strong>PDPA (Personal Data Protection Act)</strong>. AI Super is fully PDPA-compliant — we encrypt data and don't store personal conversations.</p>
@@ -713,7 +713,7 @@ export const blogPosts: BlogPost[] = [
             </tr>
             <tr>
               <td>Monthly cost</td>
-              <td>$49–$69</td>
+              <td>$69–$99</td>
               <td>$150–$500+ (plus agent salaries)</td>
             </tr>
             <tr>
@@ -766,7 +766,7 @@ export const blogPosts: BlogPost[] = [
       <ul>
         <li><strong>Live chat with 1 agent</strong>: $3,500–$4,500/month (agent salary + software)</li>
         <li><strong>Live chat with 3 agents</strong> (for coverage): $10,000–$13,000/month</li>
-        <li><strong>AI Super WhatsApp chatbot</strong>: $49–$69/month (handles unlimited conversations)</li>
+        <li><strong>AI Super WhatsApp chatbot</strong>: $69–$99/month (handles unlimited conversations)</li>
       </ul>
       <p>That's a potential savings of <strong>$40,000–$150,000 per year</strong> — while providing better, faster customer service.</p>
 
@@ -879,7 +879,7 @@ export const blogPosts: BlogPost[] = [
       <p>Singapore is one of the most digitally advanced nations in the world. Here's why AI chatbots have become essential for local businesses:</p>
 
       <h3>1. Labour Shortage & Rising Costs</h3>
-      <p>Singapore faces a persistent <strong>tight labour market</strong> with high wages. Hiring a full-time customer service agent costs $3,000–$5,000/month. An AI chatbot handles unlimited conversations for a fraction of the cost — typically $49–$200/month.</p>
+      <p>Singapore faces a persistent <strong>tight labour market</strong> with high wages. Hiring a full-time customer service agent costs $3,000–$5,000/month. An AI chatbot handles unlimited conversations for a fraction of the cost — typically $69–$200/month.</p>
 
       <h3>2. 24/7 Customer Expectations</h3>
       <p>Singapore consumers expect <strong>instant responses</strong>. A study by Salesforce found that <strong>64% of consumers expect companies to respond in real-time</strong>. AI chatbots deliver sub-3-second response times around the clock — even on public holidays and weekends.</p>
@@ -993,7 +993,7 @@ export const blogPosts: BlogPost[] = [
         <li>✅ 50+ language support with auto-detection</li>
         <li>✅ Google Calendar integration</li>
         <li>✅ Built-in CRM for lead tracking</li>
-        <li>✅ $49/month (annual) — most affordable in market</li>
+        <li>✅ $69/month (annual) — most affordable in market</li>
         <li>✅ 5-minute setup, no coding required</li>
         <li>✅ Get started right away</li>
         <li>✅ 500+ Singapore business clients</li>
@@ -1064,9 +1064,9 @@ export const blogPosts: BlogPost[] = [
           </tr>
           <tr>
             <td><strong>Starting Price</strong></td>
-            <td><strong>$49/mo</strong></td>
+            <td><strong>$69/mo</strong></td>
             <td>Custom quote</td>
-            <td>$49/mo</td>
+            <td>S$119/mo</td>
             <td>$79/mo</td>
           </tr>
           <tr>
@@ -1142,7 +1142,7 @@ export const blogPosts: BlogPost[] = [
           </tr>
           <tr>
             <td><strong>WhatsApp AI Chatbot</strong></td>
-            <td><strong>$49–$99</strong></td>
+            <td><strong>$69–$99</strong></td>
             <td><strong>Free</strong></td>
             <td><strong>AI Super</strong></td>
           </tr>
@@ -1167,7 +1167,7 @@ export const blogPosts: BlogPost[] = [
         </tbody>
       </table>
 
-      <p><strong>AI Super offers the best value</strong> for Singapore SMEs: full AI capabilities, WhatsApp integration, CRM, voice recognition, and multilingual support — starting at just $49/month with zero setup costs.</p>
+      <p><strong>AI Super offers the best value</strong> for Singapore SMEs: full AI capabilities, WhatsApp integration, CRM, voice recognition, and multilingual support — starting at just $69/month with zero setup costs.</p>
 
       <h2 id="how-to-choose">How to Choose the Right AI Chatbot Agency in Singapore</h2>
       <p>When evaluating <strong>AI chatbot agencies in Singapore</strong>, ask these critical questions:</p>
@@ -1182,7 +1182,7 @@ export const blogPosts: BlogPost[] = [
       <p>Working with a local company means local support, understanding of Singapore business culture, and compliance with Singapore data protection laws (PDPA).</p>
 
       <h3>4. What's the total cost of ownership?</h3>
-      <p>Look beyond the headline price. Check for per-message charges, setup fees, and integration costs. AI Super's $49/month includes everything — no surprises.</p>
+      <p>Look beyond the headline price. Check for per-message charges, setup fees, and integration costs. AI Super's $69/month includes everything — no surprises.</p>
 
       <h3>5. How quickly can you get started?</h3>
       <p>AI Super can be set up in minutes.</p>
@@ -1206,10 +1206,10 @@ export const blogPosts: BlogPost[] = [
       <h2 id="faq">Frequently Asked Questions About AI Chatbots in Singapore</h2>
 
       <h3>What is the best AI chatbot in Singapore?</h3>
-      <p>For SMEs and growing businesses, <strong>AI Super</strong> is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $49/month. It's the only provider that's Singapore-based with a focus on WhatsApp AI automation.</p>
+      <p>For SMEs and growing businesses, <strong>AI Super</strong> is the best AI chatbot in Singapore. It offers true AI-powered conversations, voice recognition, 50+ languages, Google Calendar integration, and built-in CRM — all from $69/month. It's the only provider that's Singapore-based with a focus on WhatsApp AI automation.</p>
 
       <h3>How much does an AI chatbot cost in Singapore?</h3>
-      <p>AI chatbot pricing in Singapore ranges from $0 (basic DIY) to $10,000+/month (enterprise). For most businesses, AI Super at $49–$69/month provides the best balance of AI capabilities and affordability. Custom development can cost $5,000–$50,000 for setup alone.</p>
+      <p>AI chatbot pricing in Singapore ranges from $0 (basic DIY) to $10,000+/month (enterprise). For most businesses, AI Super at $69–$99/month provides the best balance of AI capabilities and affordability. Custom development can cost $5,000–$50,000 for setup alone.</p>
 
       <h3>What's the difference between a chatbot agency and a chatbot platform?</h3>
       <p>A chatbot agency provides end-to-end service — consultation, setup, customization, and ongoing support. A platform gives you tools to build your own. AI Super is both: a full-service <strong>AI chatbot agency</strong> with a self-service platform, so you can start in 5 minutes but also get expert help when needed.</p>
@@ -1226,7 +1226,7 @@ export const blogPosts: BlogPost[] = [
         <li>✅ <strong>Quick onboarding available</strong></li>
         <li>✅ <strong>5-minute setup</strong> — no coding needed</li>
         <li>✅ <strong>500+ Singapore businesses</strong> already trust AI Super</li>
-        <li>✅ <strong>From $49/month</strong> — all features included</li>
+        <li>✅ <strong>From $69/month</strong> — all features included</li>
       </ul>
       <p><a href="https://asi.sg/signup" class="cta-link">Get started →</a></p>
     `,

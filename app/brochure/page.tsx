@@ -188,10 +188,10 @@ export default function BrochurePage() {
             {/* CTA Section - Compact */}
             <div className="text-center px-4">
               <div className="bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-lg inline-block mb-3">
-                <span className="text-xl">Save 50% - Limited Time!</span>
+                <span className="text-xl">Save $30/mo with annual billing</span>
               </div>
               <p className="text-xl text-blue-100">
-                Starting from <span className="font-bold text-yellow-300 text-2xl">$69/month</span>
+                Starting from <span className="font-bold text-yellow-300 text-2xl">$99/month</span>
               </p>
             </div>
           </div>
@@ -241,10 +241,10 @@ export default function BrochurePage() {
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Launch Pricing</h3>
                 <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-4">
                   <div className="text-center">
-                    <p className="text-sm opacity-90">Monthly</p>
+                    <p className="text-sm opacity-90">Billed yearly</p>
                     <p className="text-3xl font-bold">$69</p>
                     <p className="text-sm line-through opacity-70">$99</p>
-                    <p className="text-sm mt-2">⚡ Save 50%!</p>
+                    <p className="text-sm mt-2">⚡ Save $30/mo</p>
                   </div>
                 </div>
               </div>
