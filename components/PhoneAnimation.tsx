@@ -204,56 +204,58 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
 
         {/* Chat Content */}
         <div className={styles.chatContent} ref={chatMessagesRef}>
-          {messages.map((message, index) => {
-            if (message.variant === 'image-msg') {
+          <div className={styles.chatStack}>
+            {messages.map((message, index) => {
+              if (message.variant === 'image-msg') {
+                return (
+                  <div key={index} className={`${styles.message} ${message.type === 'user' ? styles.sent : styles.received} ${styles.imageMsg}`}>
+                    <Image
+                      src={message.image!}
+                      alt={message.alt || 'Image'}
+                      width={200}
+                      height={150}
+                      className="w-full h-auto rounded-[0.7rem]"
+                    />
+                    <div className={styles.imageOverlay}>
+                      {message.time}
+                      {message.readReceipt && (
+                        <CheckCheck size={10} className="text-[#34b7f1] ml-[3px]" />
+                      )}
+                    </div>
+                  </div>
+                );
+              }
+
               return (
-                <div key={index} className={`${styles.message} ${message.type === 'user' ? styles.sent : styles.received} ${styles.imageMsg}`}>
-                  <Image 
-                    src={message.image!} 
-                    alt={message.alt || 'Image'} 
-                    width={200} 
-                    height={150} 
-                    className="w-full h-auto rounded-[0.7rem]"
-                  />
-                  <div className={styles.imageOverlay}>
+                <div key={index} className={`${styles.message} ${message.type === 'user' ? styles.sent : styles.received}`}>
+                  {message.text?.split('\n').map((line, i) => (
+                    <React.Fragment key={i}>
+                      {i > 0 && <br />}
+                      {line}
+                    </React.Fragment>
+                  ))}
+                  {message.edited && <span className={styles.edited}>Edited</span>}
+                  <span className={styles.meta}>
                     {message.time}
                     {message.readReceipt && (
-                      <CheckCheck size={10} className="text-[#34b7f1] ml-[3px]" />
+                      <CheckCheck size={10} className="text-[#34b7f1]" />
                     )}
-                  </div>
+                  </span>
                 </div>
               );
-            }
-            
-            return (
-              <div key={index} className={`${styles.message} ${message.type === 'user' ? styles.sent : styles.received}`}>
-                {message.text?.split('\n').map((line, i) => (
-                  <React.Fragment key={i}>
-                    {i > 0 && <br />}
-                    {line}
-                  </React.Fragment>
-                ))}
-                {message.edited && <span className={styles.edited}>Edited</span>}
-                <span className={styles.meta}>
-                  {message.time}
-                  {message.readReceipt && (
-                    <CheckCheck size={10} className="text-[#34b7f1]" />
-                  )}
-                </span>
+            })}
+
+            {/* Typing Indicator */}
+            {showTyping && (
+              <div className={styles.typingIndicator} ref={typingIndicatorRef}>
+                <div className={styles.typingBubbles}>
+                  <div className={styles.bubble}></div>
+                  <div className={styles.bubble}></div>
+                  <div className={styles.bubble}></div>
+                </div>
               </div>
-            );
-          })}
-          
-          {/* Typing Indicator */}
-          {showTyping && (
-            <div className={styles.typingIndicator} ref={typingIndicatorRef}>
-              <div className={styles.typingBubbles}>
-                <div className={styles.bubble}></div>
-                <div className={styles.bubble}></div>
-                <div className={styles.bubble}></div>
-              </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* Footer Input */}

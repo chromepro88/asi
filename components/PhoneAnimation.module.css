@@ -188,15 +188,23 @@
   padding: 0.5rem 0.6rem 0 0.6rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 0.25rem;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-y;
+  overscroll-behavior-y: contain;
   contain: layout style paint;
+  scrollbar-width: none;
 }
 
 .chatContent::-webkit-scrollbar {
   display: none;
+}
+
+.chatStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: auto;
+  min-height: max-content;
 }
 
 /* Messages */
