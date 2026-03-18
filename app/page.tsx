@@ -449,15 +449,15 @@ const Home = () => {
             </div>
           </div>
           {/* Gap before testimonials */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 md:mt-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 mt-10 md:mt-12 max-w-6xl mx-auto md:grid-cols-3">
             {TESTIMONIALS.map((testimonial) => (
-              <div key={testimonial.src} className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs mx-auto">
+              <div key={testimonial.src} className="bg-white rounded-xl shadow-md overflow-hidden max-w-sm mx-auto">
                 <Image
                   src={testimonial.src}
                   alt={testimonial.alt}
                   width={828}
                   height={1792}
-                  className="w-full h-auto max-h-[500px] md:max-h-96 object-contain"
+                  className="w-full h-auto max-h-[720px] object-contain"
                   loading="lazy"
                 />
               </div>
