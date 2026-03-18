@@ -4,8 +4,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug, getAllSlugs } from "@/lib/blog";
 import DynamicLogo from "@/components/DynamicLogo";
-import { Instagram, Facebook, ArrowLeft, Clock, Calendar, Share2 } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiteFooter } from "@/components/SiteFooter";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -459,57 +460,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer
-        className="flex flex-col gap-2 sm:flex-row py-4 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700"
-        role="contentinfo"
-      >
-        <div className="container flex flex-col items-center justify-between max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2">
-            <p className="text-xs text-gray-400">
-              © 2026 AI Super Private Limited. All rights reserved.
-            </p>
-            <nav className="flex gap-3 sm:gap-5 mt-2 sm:mt-0">
-              <Link
-                href="/terms-of-service"
-                className="text-xs hover:underline underline-offset-4 text-gray-400"
-              >
-                Terms
-              </Link>
-              <Link
-                href="/privacy"
-                className="text-xs hover:underline underline-offset-4 text-gray-400"
-              >
-                Privacy
-              </Link>
-              <Link
-                href="https://www.instagram.com/aisupersg/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-400"
-              >
-                <Instagram className="inline-block mr-1 h-4 w-4" /> Instagram
-              </Link>
-              <Link
-                href="https://www.facebook.com/people/AI-Super-SG/61573691083537/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-400"
-              >
-                <Facebook className="inline-block mr-1 h-4 w-4" /> Facebook
-              </Link>
-            </nav>
-          </div>
-          <div className="text-center text-xs text-gray-400 space-y-0.5">
-            <p>AI SUPER PRIVATE LIMITED</p>
-            <p>Reg. No: 202508712N</p>
-            <p>
-              540 Sims Avenue, #03-05, Sims Avenue Centre, Singapore 387603
-            </p>
-            <p>Phone: +65 8837 9368</p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
+import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -11,10 +12,10 @@ import {
 } from "@/components/ui/accordion";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { Analytics } from "@vercel/analytics/react";
-import { Instagram, Facebook } from "lucide-react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DynamicLogo from "@/components/DynamicLogo";
 import { HomePricingSection } from "@/components/HomePricingSection";
+import { SiteFooter } from "@/components/SiteFooter";
 import { TrackedButtonLink } from "@/components/TrackedButtonLink";
 
 
@@ -342,131 +343,92 @@ const Home = () => {
       </a>
       
       {/* Header */}
-      <header className="px-4 lg:px-6 h-12 flex items-center justify-center bg-white shadow-sm" role="banner">
-        <div className="container flex items-center justify-between max-w-6xl mx-auto">
+      <header className="flex h-16 items-center justify-center bg-white px-4 shadow-sm lg:px-6" role="banner">
+        <div className="container mx-auto flex max-w-7xl items-center justify-between gap-6">
           <Link href="/" className="flex items-center">
             <DynamicLogo width={48} height={48} className="h-12 w-12" />
           </Link>
-          <div className="flex items-center gap-4">
-            <nav className="flex gap-3 sm:gap-5 relative z-50" role="navigation" aria-label="Main navigation">
-              <Link href="/blog" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
-                Blog
+          <div className="flex flex-1 items-center justify-end gap-5 lg:gap-8">
+            <nav className="hidden items-center gap-6 text-sm font-medium text-gray-700 md:flex lg:gap-8" role="navigation" aria-label="Main navigation">
+              <Link href="#features" className="inline-flex items-center gap-1 transition-colors hover:text-blue-600">
+                Product
+                <ChevronDown className="h-4 w-4" />
               </Link>
-              <Link href="#pricing" className="text-sm font-medium hover:underline underline-offset-4 text-blue-600">
+              <Link href="#video-embed" className="inline-flex items-center gap-1 transition-colors hover:text-blue-600">
+                Integrations
+                <ChevronDown className="h-4 w-4" />
+              </Link>
+              <Link href="/blog" className="inline-flex items-center gap-1 transition-colors hover:text-blue-600">
+                Resources
+                <ChevronDown className="h-4 w-4" />
+              </Link>
+              <Link href="#pricing" className="transition-colors hover:text-blue-600">
                 Pricing
               </Link>
             </nav>
-            <TrackedButtonLink
-              href="/signup"
-              eventName="header_trial_cta_click"
-              size="sm"
-              className="bg-blue-600 hover:bg-blue-700 text-white relative z-50 transition-transform hover:scale-105"
-            >
-              Get Started
-            </TrackedButtonLink>
+            <div className="flex items-center gap-3">
+              <Link href="/signup" className="hidden text-sm font-medium text-gray-700 transition-colors hover:text-blue-600 sm:inline-flex">
+                Login
+              </Link>
+              <TrackedButtonLink
+                href="/signup"
+                eventName="header_trial_cta_click"
+                size="sm"
+                className="relative z-50 rounded-xl bg-blue-600 px-5 py-2.5 text-white transition-transform hover:scale-105 hover:bg-blue-700"
+              >
+                Sign Up
+              </TrackedButtonLink>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
       <main id="main-content" role="main">
-      <section className="w-full py-20 md:py-32 lg:py-40 bg-white" aria-labelledby="hero-heading">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-5xl mx-auto">
-          <div className="flex flex-col items-center space-y-10 text-center">
-            {/* Trust Badge */}
-            <div className="flex items-center gap-2 bg-blue-50 px-6 py-3 rounded-full border border-blue-200">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-sm text-blue-700 font-medium">Trusted by 500+ Singapore businesses</span>
+      <section className="w-full overflow-hidden bg-white py-16 md:py-24 lg:py-28" aria-labelledby="hero-heading">
+        <div className="container mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+          <div className="flex flex-col items-center text-center">
+            <div className="mb-6 flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-5 py-2.5">
+              <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
+              <span className="text-sm font-medium text-blue-700">Trusted by 500+ Singapore businesses</span>
             </div>
-            
-            <h1 id="hero-heading" className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight">
-              #1 WhatsApp AI Chatbot<br/>Agency in Singapore
-            </h1>
-            
-            <p className="max-w-[600px] text-gray-600 text-xl md:text-2xl lg:text-3xl leading-relaxed">
-              Singapore&apos;s top-rated <strong>AI chatbot agency</strong>. Our <strong>WhatsApp AI chatbot</strong> automates customer service 24/7, captures leads, and <span className="font-semibold text-blue-600">increases sales by 40%</span>.
-            </p>
-            
-            {/* CTA */}
-            <div className="pt-4 flex flex-col items-center gap-4 w-full">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <TrackedButtonLink
-                  href="/signup"
-                  eventName="hero_primary_trial_cta_click"
-                  className="bg-blue-600 hover:bg-blue-700 text-white py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
-                >
-                  Get Started
-                </TrackedButtonLink>
-                <TrackedButtonLink
-                  href="#pricing"
-                  eventName="hero_secondary_pricing_cta_click"
-                  variant="outline"
-                  className="border-blue-200 text-blue-700 hover:bg-blue-50 py-4 px-10 text-xl md:text-2xl font-semibold rounded-xl transition-all duration-200"
-                >
-                  View Pricing
-                </TrackedButtonLink>
-              </div>
-              <p className="text-gray-500 text-base md:text-lg text-center">
-                5-minute setup • Cancel anytime
-              </p>
-              <p className="text-gray-400 text-sm text-center">
-                Join 500+ Singapore businesses already automating WhatsApp
-              </p>
-            </div>
-            
-            {/* Key Benefits */}
-            <div className="flex flex-wrap justify-center gap-8 text-lg text-gray-600 pt-6">
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">✓</span>
-                </div>
-                <span>5-minute setup</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">✓</span>
-                </div>
-                <span>24/7 automation</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">✓</span>
-                </div>
-                <span>No coding required</span>
-              </div>
-            </div>
-            
-            {/* Social Proof Numbers */}
-            <div className="grid grid-cols-3 gap-12 pt-16 mt-16 border-t border-gray-200 w-full max-w-2xl">
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">10K+</div>
-                <div className="text-gray-500 mt-2">Messages Daily</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">500+</div>
-                <div className="text-gray-500 mt-2">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600">40%</div>
-                <div className="text-gray-500 mt-2">Sales Increase</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Product Demo Section */}
-      <section className="w-full py-12 md:py-16 bg-gray-50">
-        <div className="container px-4 md:px-6 lg:px-8 max-w-6xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              See Our WhatsApp AI Chatbot in Action
-            </h2>
-            <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-              Watch how our AI chatbot in Singapore handles real customer conversations — in English, Mandarin, Malay, and more
+            <h1 id="hero-heading" className="max-w-[10ch] text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95]">
+              WhatsApp AI that closes leads
+            </h1>
+
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600 md:text-xl">
+              Automate replies, capture leads, and book faster.
             </p>
+
+            <div className="mt-8 flex w-full flex-col items-center justify-center gap-3 sm:flex-row">
+              <TrackedButtonLink
+                href="/signup"
+                eventName="hero_primary_trial_cta_click"
+                className="w-full justify-center bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-blue-700 hover:shadow-xl sm:w-auto"
+              >
+                Get Started
+              </TrackedButtonLink>
+              <TrackedButtonLink
+                href="#pricing"
+                eventName="hero_secondary_pricing_cta_click"
+                variant="outline"
+                className="w-full justify-center border-blue-200 px-8 py-4 text-lg font-semibold text-blue-700 transition-all duration-200 hover:bg-blue-50 sm:w-auto"
+              >
+                View Pricing
+              </TrackedButtonLink>
+            </div>
+
+            <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-500">
+              <span>5-minute setup</span>
+              <span>24/7 replies</span>
+              <span>No coding</span>
+            </div>
+
+            <div className="relative mt-10 flex min-h-[420px] w-full items-start justify-center md:min-h-[520px] lg:min-h-[640px]">
+              <PhoneAnimation className="w-full scale-[0.82] md:scale-95 lg:scale-100" />
+            </div>
           </div>
-          <PhoneAnimation />
         </div>
       </section>
 
@@ -658,47 +620,7 @@ const Home = () => {
       <HomePricingSection pricingFeatures={PRICING_FEATURES} />
       </main>
 
-      {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-4 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t border-gray-700" role="contentinfo">
-        <div className="container flex flex-col items-center justify-between max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center justify-between w-full mb-2">
-            <p className="text-xs text-gray-400">© 2026 AI Super Private Limited. All rights reserved.</p>
-            <nav className="flex gap-3 sm:gap-5 mt-2 sm:mt-0">
-              <Link href="/blog" className="text-xs hover:underline underline-offset-4 text-gray-400">
-                Blog
-              </Link>
-              <Link href="/terms-of-service" className="text-xs hover:underline underline-offset-4 text-gray-400">
-                Terms
-              </Link>
-              <Link href="/privacy" className="text-xs hover:underline underline-offset-4 text-gray-400">
-                Privacy
-              </Link>
-              <Link
-                href="https://www.instagram.com/aisupersg/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-400"
-              >
-                <Instagram className="inline-block mr-1 h-4 w-4" /> Instagram
-              </Link>
-              <Link
-                href="https://www.facebook.com/people/AI-Super-SG/61573691083537/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:underline underline-offset-4 text-gray-400"
-              >
-                <Facebook className="inline-block mr-1 h-4 w-4" /> Facebook
-              </Link>
-            </nav>
-          </div>
-          <div className="text-center text-xs text-gray-400 space-y-0.5">
-            <p>AI SUPER PRIVATE LIMITED</p>
-            <p>Reg. No: 202508712N</p>
-            <p>540 Sims Avenue, #03-05, Sims Avenue Centre, Singapore 387603</p>
-            <p>Phone: +65 8837 9368</p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
       <Analytics />
       <SpeedInsights />
     </div>

@@ -277,13 +277,6 @@ const PhoneAnimation: React.FC<PhoneAnimationProps> = ({ className = '' }) => {
         <div className={styles.homeIndicator}></div>
         </div>
       </div>
-
-      {/* Hand Wave Animation */}
-      <div className={styles.handWaveContainer}>
-        <div className={`${styles.text4xl} ${styles.handWave}`}>
-          👋
-        </div>
-      </div>
     </div>
   );
 };

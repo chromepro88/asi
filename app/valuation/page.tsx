@@ -6,6 +6,9 @@ import DynamicLogo from "@/components/DynamicLogo";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SmoothScroll } from "@/components/SmoothScroll";
 
+const DEMO_WHATSAPP_URL =
+  "https://api.whatsapp.com/send/?phone=6588379368&text=Demo&type=phone_number&app_absent=0";
+
 export const metadata: Metadata = {
   title: "Company Valuation | AI Super",
   description: "Discover AI Super's current company valuation and investment opportunities in artificial super intelligence technology.",
@@ -59,7 +62,9 @@ export default function ValuationPage() {
                 Pitch Deck
               </Link>
               <Link
-                href="/demo"
+                href={DEMO_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
               >
                 Demo
@@ -250,7 +255,7 @@ export default function ValuationPage() {
                         className="w-full border-white text-white hover:bg-white hover:text-purple-600"
                         asChild
                       >
-                        <Link href="/demo">
+                        <Link href={DEMO_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                           Watch Demo
                         </Link>
                       </Button>

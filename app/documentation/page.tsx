@@ -17,6 +17,8 @@ import {
   Download
 } from "lucide-react";
 
+const AI_SUPER_SITE_URL = "https://aisupersg.com";
+
 export const metadata: Metadata = {
   title: "Documentation | AI Super",
   description: "Complete documentation for AI Super's WhatsApp AI chatbot platform. Learn how to setup, customize, and optimize your business automation.",
@@ -52,9 +54,11 @@ export default function DocumentationPage() {
                   First, ensure you have a WhatsApp Business account. We'll help you connect it to our platform 
                   and verify your business profile.
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  WhatsApp Business Setup
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                  <Link href={AI_SUPER_SITE_URL} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    WhatsApp Business Setup
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -73,9 +77,11 @@ export default function DocumentationPage() {
                   Train your chatbot with your business information, set up automated responses, 
                   and create conversation flows that match your brand voice.
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  <Settings className="h-4 w-4 mr-2" />
-                  Bot Configuration
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                  <Link href={AI_SUPER_SITE_URL} target="_blank" rel="noopener noreferrer">
+                    <Settings className="h-4 w-4 mr-2" />
+                    Bot Configuration
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -94,9 +100,11 @@ export default function DocumentationPage() {
                   Test your chatbot, review the setup, and launch your automated customer service. 
                   Start engaging with customers 24/7!
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  <Zap className="h-4 w-4 mr-2" />
-                  Launch Guide
+                <Button variant="outline" size="sm" className="w-full" asChild>
+                  <Link href={AI_SUPER_SITE_URL} target="_blank" rel="noopener noreferrer">
+                    <Zap className="h-4 w-4 mr-2" />
+                    Launch Guide
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -383,7 +391,7 @@ export default function DocumentationPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="/demo">
+                <Link href={AI_SUPER_SITE_URL} target="_blank" rel="noopener noreferrer">
                   Try Demo
                 </Link>
               </Button>
